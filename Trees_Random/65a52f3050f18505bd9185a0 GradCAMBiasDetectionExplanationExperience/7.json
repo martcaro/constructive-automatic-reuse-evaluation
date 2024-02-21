@@ -1,0 +1,255 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "cb7dfc78-284e-4e09-8425-622db6f1776e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "90b1e5a8-3836-4bb8-ae08-f34d5a2d7f98",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "90b1e5a8-3836-4bb8-ae08-f34d5a2d7f98": {
+      "id": "90b1e5a8-3836-4bb8-ae08-f34d5a2d7f98",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a173bdab-44f2-484d-be8f-09234052e03e",
+        "Next": {
+          "Id": "5ecc502b-9930-4938-8ad9-e92747a6f191",
+          "Next": {
+            "Id": "8c7be366-6eeb-48e6-85f3-940dc9174c49",
+            "Next": {
+              "Id": "eac99d4d-692c-4512-8c77-d3fd8300e419",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "a173bdab-44f2-484d-be8f-09234052e03e": {
+      "id": "a173bdab-44f2-484d-be8f-09234052e03e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "5ecc502b-9930-4938-8ad9-e92747a6f191": {
+      "id": "5ecc502b-9930-4938-8ad9-e92747a6f191",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "8c7be366-6eeb-48e6-85f3-940dc9174c49": {
+      "id": "8c7be366-6eeb-48e6-85f3-940dc9174c49",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "eac99d4d-692c-4512-8c77-d3fd8300e419": {
+      "id": "eac99d4d-692c-4512-8c77-d3fd8300e419",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "78c534e7-50c4-4136-863d-d2450c3b47b9",
+        "Next": {
+          "Id": "76a0b7fe-5ed4-4af9-8d40-6336fb2e0f33",
+          "Next": null
+        }
+      }
+    },
+    "78c534e7-50c4-4136-863d-d2450c3b47b9": {
+      "id": "78c534e7-50c4-4136-863d-d2450c3b47b9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "643acdd3-bce2-492f-8a40-be8b0edc8ef7",
+        "Next": {
+          "Id": "1c8aa80f-c592-4af0-843d-1aa9c079a3e9",
+          "Next": null
+        }
+      }
+    },
+    "76a0b7fe-5ed4-4af9-8d40-6336fb2e0f33": {
+      "id": "76a0b7fe-5ed4-4af9-8d40-6336fb2e0f33",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "643acdd3-bce2-492f-8a40-be8b0edc8ef7": {
+      "id": "643acdd3-bce2-492f-8a40-be8b0edc8ef7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "1c8aa80f-c592-4af0-843d-1aa9c079a3e9": {
+      "id": "1c8aa80f-c592-4af0-843d-1aa9c079a3e9",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "type": "number"
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

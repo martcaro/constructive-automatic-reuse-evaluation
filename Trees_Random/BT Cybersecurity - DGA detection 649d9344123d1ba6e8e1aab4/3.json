@@ -1,0 +1,378 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "cac436ec-9a31-4104-8b78-530a27294a03",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "1a9b6b91-e137-4d58-8aee-d7038ce76572",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "1a9b6b91-e137-4d58-8aee-d7038ce76572": {
+      "id": "1a9b6b91-e137-4d58-8aee-d7038ce76572",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "7eeb5c16-8236-41da-88e9-b078e4e9f1f0",
+        "Next": {
+          "Id": "c5f1e934-f4aa-4ebf-bba1-116f36ff98fc",
+          "Next": {
+            "Id": "98fdeb99-dc99-40db-a366-2122ef96f145",
+            "Next": {
+              "Id": "a9904443-10e1-4830-bd39-53fb8d05ebe5",
+              "Next": {
+                "Id": "b4ed63c8-1662-48a0-98cb-9c7a9adc4e53",
+                "Next": {
+                  "Id": "60b751d8-4b55-4b3a-826e-f3aa4334464f",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "7eeb5c16-8236-41da-88e9-b078e4e9f1f0": {
+      "id": "7eeb5c16-8236-41da-88e9-b078e4e9f1f0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -708,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "c5f1e934-f4aa-4ebf-bba1-116f36ff98fc": {
+      "id": "c5f1e934-f4aa-4ebf-bba1-116f36ff98fc",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradientInput",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -504,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "98fdeb99-dc99-40db-a366-2122ef96f145": {
+      "id": "98fdeb99-dc99-40db-a366-2122ef96f145",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -288,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "a9904443-10e1-4830-bd39-53fb8d05ebe5": {
+      "id": "a9904443-10e1-4830-bd39-53fb8d05ebe5",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "86bc39e4-fde0-4226-86e1-2529a4c79587",
+        "Next": {
+          "Id": "25b75e37-1c5e-4432-986a-c3b4d76e08c9",
+          "Next": null
+        }
+      }
+    },
+    "b4ed63c8-1662-48a0-98cb-9c7a9adc4e53": {
+      "id": "b4ed63c8-1662-48a0-98cb-9c7a9adc4e53",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 540,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "60b751d8-4b55-4b3a-826e-f3aa4334464f": {
+      "id": "60b751d8-4b55-4b3a-826e-f3aa4334464f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 744,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "86bc39e4-fde0-4226-86e1-2529a4c79587": {
+      "id": "86bc39e4-fde0-4226-86e1-2529a4c79587",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1d9ded3b-a3e9-4479-b2da-20b525941eca",
+        "Next": {
+          "Id": "1635ae81-7f61-4ff4-b508-177724cceb90",
+          "Next": null
+        }
+      }
+    },
+    "25b75e37-1c5e-4432-986a-c3b4d76e08c9": {
+      "id": "25b75e37-1c5e-4432-986a-c3b4d76e08c9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 336,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "1d9ded3b-a3e9-4479-b2da-20b525941eca": {
+      "id": "1d9ded3b-a3e9-4479-b2da-20b525941eca",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/KernelSHAP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -84,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "1635ae81-7f61-4ff4-b508-177724cceb90": {
+      "id": "1635ae81-7f61-4ff4-b508-177724cceb90",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of integers representing the classes to be explained.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.25,
+    "x": 0,
+    "y": 0
+  }
+}

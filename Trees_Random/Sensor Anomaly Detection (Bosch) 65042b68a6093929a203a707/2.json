@@ -1,0 +1,405 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "321badb2-e18d-4758-88b9-69b0209da853",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "adf33b55-8aff-4282-a679-bf7b46019ece",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "adf33b55-8aff-4282-a679-bf7b46019ece": {
+      "id": "adf33b55-8aff-4282-a679-bf7b46019ece",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "ebcc51b6-2dc9-4719-83a6-02cb389227cf",
+        "Next": {
+          "Id": "16ab044f-4b8d-4aa1-8ab3-09cf38986a1f",
+          "Next": {
+            "Id": "4f2be085-f5f3-4a4c-a2c4-94d29abec26a",
+            "Next": {
+              "Id": "1bea4156-e48f-4285-85fe-7f69d92d803d",
+              "Next": {
+                "Id": "75e5d61d-b9dd-48b3-93d4-3975c85271e0",
+                "Next": {
+                  "Id": "8b6c0672-d3be-4d0d-8d76-4cbfd9ed265a",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ebcc51b6-2dc9-4719-83a6-02cb389227cf": {
+      "id": "ebcc51b6-2dc9-4719-83a6-02cb389227cf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the limitations of the AI system?"
+        }
+      }
+    },
+    "16ab044f-4b8d-4aa1-8ab3-09cf38986a1f": {
+      "id": "16ab044f-4b8d-4aa1-8ab3-09cf38986a1f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "4f2be085-f5f3-4a4c-a2c4-94d29abec26a": {
+      "id": "4f2be085-f5f3-4a4c-a2c4-94d29abec26a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "1bea4156-e48f-4285-85fe-7f69d92d803d": {
+      "id": "1bea4156-e48f-4285-85fe-7f69d92d803d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "75e5d61d-b9dd-48b3-93d4-3975c85271e0": {
+      "id": "75e5d61d-b9dd-48b3-93d4-3975c85271e0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "8b6c0672-d3be-4d0d-8d76-4cbfd9ed265a": {
+      "id": "8b6c0672-d3be-4d0d-8d76-4cbfd9ed265a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6d200223-04f1-4300-b177-daa31cf1f141",
+        "Next": {
+          "Id": "8cb08ea6-fb97-4d44-8337-86a720520c8f",
+          "Next": null
+        }
+      }
+    },
+    "6d200223-04f1-4300-b177-daa31cf1f141": {
+      "id": "6d200223-04f1-4300-b177-daa31cf1f141",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "cd7121c3-c221-47a5-89c0-849b2e7723c5",
+        "Next": {
+          "Id": "fb016ac1-021a-43de-8a39-df21fa0ebc0f",
+          "Next": null
+        }
+      }
+    },
+    "8cb08ea6-fb97-4d44-8337-86a720520c8f": {
+      "id": "8cb08ea6-fb97-4d44-8337-86a720520c8f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "cd7121c3-c221-47a5-89c0-849b2e7723c5": {
+      "id": "cd7121c3-c221-47a5-89c0-849b2e7723c5",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SmoothGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "fb016ac1-021a-43de-8a39-df21fa0ebc0f": {
+      "id": "fb016ac1-021a-43de-8a39-df21fa0ebc0f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.25,
+    "x": 0,
+    "y": 0
+  }
+}

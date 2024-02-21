@@ -1,0 +1,355 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "99e19a3a-0342-461a-9389-6c42ff800144",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b8fdac7b-ddc1-492f-b0a0-5277946e7361",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "b8fdac7b-ddc1-492f-b0a0-5277946e7361": {
+      "id": "b8fdac7b-ddc1-492f-b0a0-5277946e7361",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "98f0f836-d424-44d4-a687-2de0dbc760e1",
+        "Next": {
+          "Id": "b45db7f9-a1fb-4f20-bb0c-048f020c475c",
+          "Next": {
+            "Id": "eee6fa54-d037-42fe-8b50-59e1cdc143d6",
+            "Next": {
+              "Id": "159dd6de-000d-4b6b-89b4-68eedb2f58ff",
+              "Next": {
+                "Id": "356c332e-06e3-4b96-9a54-d085183862bc",
+                "Next": {
+                  "Id": "f2437062-9f15-4d21-89d9-1616ad969c43",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "98f0f836-d424-44d4-a687-2de0dbc760e1": {
+      "id": "98f0f836-d424-44d4-a687-2de0dbc760e1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What features does the AI system consider?"
+        }
+      }
+    },
+    "b45db7f9-a1fb-4f20-bb0c-048f020c475c": {
+      "id": "b45db7f9-a1fb-4f20-bb0c-048f020c475c",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -360,
+        "y": 252
+      }
+    },
+    "eee6fa54-d037-42fe-8b50-59e1cdc143d6": {
+      "id": "eee6fa54-d037-42fe-8b50-59e1cdc143d6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the AI system?"
+        }
+      }
+    },
+    "159dd6de-000d-4b6b-89b4-68eedb2f58ff": {
+      "id": "159dd6de-000d-4b6b-89b4-68eedb2f58ff",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "356c332e-06e3-4b96-9a54-d085183862bc": {
+      "id": "356c332e-06e3-4b96-9a54-d085183862bc",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "f2437062-9f15-4d21-89d9-1616ad969c43": {
+      "id": "f2437062-9f15-4d21-89d9-1616ad969c43",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5443106a-ffde-467c-911b-c50f71ade3d4",
+        "Next": {
+          "Id": "72d903c5-cf68-4514-89e8-4eac4b75123a",
+          "Next": null
+        }
+      }
+    },
+    "5443106a-ffde-467c-911b-c50f71ade3d4": {
+      "id": "5443106a-ffde-467c-911b-c50f71ade3d4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ce29f628-d32c-42b5-8180-930c1f88f59b",
+        "Next": {
+          "Id": "834459c3-501a-48b9-8a00-44df227fa650",
+          "Next": null
+        }
+      }
+    },
+    "72d903c5-cf68-4514-89e8-4eac4b75123a": {
+      "id": "72d903c5-cf68-4514-89e8-4eac4b75123a",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "fixed": false
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "fixed": false
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "heatmap",
+          "default": "heatmap",
+          "range": [
+            "heatmap",
+            "attributions"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Plot style to be used. It can be either 'heatmap' or 'attributions'. Defaults to 'heatmap'.",
+          "fixed": false
+        }
+      }
+    },
+    "ce29f628-d32c-42b5-8180-930c1f88f59b": {
+      "id": "ce29f628-d32c-42b5-8180-930c1f88f59b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "834459c3-501a-48b9-8a00-44df227fa650": {
+      "id": "834459c3-501a-48b9-8a00-44df227fa650",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

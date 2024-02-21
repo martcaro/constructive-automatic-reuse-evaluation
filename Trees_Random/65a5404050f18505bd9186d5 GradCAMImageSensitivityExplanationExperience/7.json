@@ -1,0 +1,430 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "bda5c7d7-b9b7-4320-a440-073135258fad",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "877a40db-246e-497a-adb7-e55a4bb03b43",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "877a40db-246e-497a-adb7-e55a4bb03b43": {
+      "id": "877a40db-246e-497a-adb7-e55a4bb03b43",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a843607b-a81d-40fa-acae-71a64fb5fff6",
+        "Next": {
+          "Id": "6f460165-1460-4e08-8f7e-a2a5137dd37f",
+          "Next": {
+            "Id": "4210bf62-7044-4191-89f3-38a6d395c0dd",
+            "Next": {
+              "Id": "75daa4cb-2bb7-4028-bb3e-0c6fd3b97b70",
+              "Next": {
+                "Id": "667ed118-3070-44c7-a1f1-c0d4f6404348",
+                "Next": {
+                  "Id": "9b81127b-6e02-43e0-8a71-41ad225b864c",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a843607b-a81d-40fa-acae-71a64fb5fff6": {
+      "id": "a843607b-a81d-40fa-acae-71a64fb5fff6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the necessary features that guarantee this outcome?"
+        }
+      }
+    },
+    "6f460165-1460-4e08-8f7e-a2a5137dd37f": {
+      "id": "6f460165-1460-4e08-8f7e-a2a5137dd37f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "4210bf62-7044-4191-89f3-38a6d395c0dd": {
+      "id": "4210bf62-7044-4191-89f3-38a6d395c0dd",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -336,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "75daa4cb-2bb7-4028-bb3e-0c6fd3b97b70": {
+      "id": "75daa4cb-2bb7-4028-bb3e-0c6fd3b97b70",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 132,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "86e4f24a-9c00-4922-87be-a813f27ad116",
+        "Next": {
+          "Id": "43226663-512c-44d7-a1d6-157be4aa4aae",
+          "Next": null
+        }
+      }
+    },
+    "667ed118-3070-44c7-a1f1-c0d4f6404348": {
+      "id": "667ed118-3070-44c7-a1f1-c0d4f6404348",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered in the current outcome?"
+        }
+      }
+    },
+    "9b81127b-6e02-43e0-8a71-41ad225b864c": {
+      "id": "9b81127b-6e02-43e0-8a71-41ad225b864c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 960,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "22f22335-37c7-41e0-a11d-2406ab166d65",
+        "Next": {
+          "Id": "d0d82f6e-1777-436c-89fe-bbb03d9ab403",
+          "Next": null
+        }
+      }
+    },
+    "86e4f24a-9c00-4922-87be-a813f27ad116": {
+      "id": "86e4f24a-9c00-4922-87be-a813f27ad116",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "c1dcccd3-0ee1-42de-b8de-b2c3f004394c",
+        "Next": {
+          "Id": "4c3ea007-f341-4354-94c5-ed06398a5e45",
+          "Next": null
+        }
+      }
+    },
+    "43226663-512c-44d7-a1d6-157be4aa4aae": {
+      "id": "43226663-512c-44d7-a1d6-157be4aa4aae",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 288,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "22f22335-37c7-41e0-a11d-2406ab166d65": {
+      "id": "22f22335-37c7-41e0-a11d-2406ab166d65",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "8396b1e1-ea63-4708-88d2-f232770d1743",
+        "Next": {
+          "Id": "7d65d763-b4dc-4d1c-a0ca-d7bff2c312aa",
+          "Next": null
+        }
+      }
+    },
+    "d0d82f6e-1777-436c-89fe-bbb03d9ab403": {
+      "id": "d0d82f6e-1777-436c-89fe-bbb03d9ab403",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LiftCurve",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1116,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "c1dcccd3-0ee1-42de-b8de-b2c3f004394c": {
+      "id": "c1dcccd3-0ee1-42de-b8de-b2c3f004394c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -132,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "fixed": false
+        }
+      }
+    },
+    "4c3ea007-f341-4354-94c5-ed06398a5e45": {
+      "id": "4c3ea007-f341-4354-94c5-ed06398a5e45",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 84,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "8396b1e1-ea63-4708-88d2-f232770d1743": {
+      "id": "8396b1e1-ea63-4708-88d2-f232770d1743",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 708,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "7d65d763-b4dc-4d1c-a0ca-d7bff2c312aa": {
+      "id": "7d65d763-b4dc-4d1c-a0ca-d7bff2c312aa",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 912,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

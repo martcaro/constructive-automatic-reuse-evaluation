@@ -1,0 +1,425 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "3ad059ea-5d74-42e5-8b91-3f5c1bca869f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "0dc6ea78-f38a-4918-b82e-0f523eacb6a4",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "0dc6ea78-f38a-4918-b82e-0f523eacb6a4": {
+      "id": "0dc6ea78-f38a-4918-b82e-0f523eacb6a4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "d2520e0c-9f8e-477d-87da-a426f1ae7eb8",
+        "Next": {
+          "Id": "c0485cfb-ca40-4412-9608-2241d63f96f5",
+          "Next": {
+            "Id": "a9740cd8-ac93-449b-8341-4aa7d94a95dc",
+            "Next": {
+              "Id": "37e3ddea-29bc-4e5f-86c5-e39be09a3f2f",
+              "Next": {
+                "Id": "e2697068-d847-4e1c-8583-e5d5c3bfacd3",
+                "Next": {
+                  "Id": "a0d6cfb8-4bc1-457f-b25d-c9c27bc0b87c",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "d2520e0c-9f8e-477d-87da-a426f1ae7eb8": {
+      "id": "d2520e0c-9f8e-477d-87da-a426f1ae7eb8",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "c0485cfb-ca40-4412-9608-2241d63f96f5": {
+      "id": "c0485cfb-ca40-4412-9608-2241d63f96f5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PertCF",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "encode_cat": {
+          "key": "encode_cat",
+          "value": "OrdinalEncoder",
+          "default": "OrdinalEncoder",
+          "range": [
+            "auto",
+            "manual",
+            "BackwardDifferenceEncoder",
+            "BaseNEncoder",
+            "BinaryEncoder",
+            "CatBoostEncoder",
+            "CountEncoder",
+            "GLMMEncoder",
+            "GrayEncoder",
+            "HelmertEncoder",
+            "JamesSteinEncoder",
+            "LeaveOneOutEncoder",
+            "MEstimateEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder",
+            "PolynomialEncoder",
+            "QuantileEncoder",
+            "RankHotEncoder",
+            "SumEncoder",
+            "TargetEncoder",
+            "WOEEncoder"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Encoding technique for categorical features. Prefer the same technique that is used for the model for reliable results.",
+          "fixed": false
+        },
+        "global_sim": {
+          "key": "global_sim",
+          "value": "euclidean",
+          "default": "euclidean",
+          "range": [
+            "ManualEuclidean",
+            "ShapEuclidean",
+            "braycurtis",
+            "canberra",
+            "chebyshev",
+            "jaccard",
+            "hamming",
+            "cosine",
+            "sqeuclidean",
+            "cityblock",
+            "minkowski",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Global similarity technique.",
+          "fixed": false
+        },
+        "local_sim": {
+          "key": "local_sim",
+          "value": "auto",
+          "default": "auto",
+          "range": [
+            "manual",
+            "auto"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Local similarity technique.",
+          "fixed": false
+        },
+        "shap_sample": {
+          "key": "shap_sample",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use for calculating the SHAP values faster.",
+          "fixed": false
+        },
+        "candidate_threshold": {
+          "key": "candidate_threshold",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Step size threshold between CF candidates.",
+          "fixed": false
+        },
+        "candidate_max_iter": {
+          "key": "candidate_max_iter",
+          "value": 20,
+          "default": 20,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Maximum number of iterations to generate CF.",
+          "fixed": false
+        }
+      }
+    },
+    "a9740cd8-ac93-449b-8341-4aa7d94a95dc": {
+      "id": "a9740cd8-ac93-449b-8341-4aa7d94a95dc",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "37e3ddea-29bc-4e5f-86c5-e39be09a3f2f": {
+      "id": "37e3ddea-29bc-4e5f-86c5-e39be09a3f2f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "e2697068-d847-4e1c-8583-e5d5c3bfacd3": {
+      "id": "e2697068-d847-4e1c-8583-e5d5c3bfacd3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does feature X impact the outcome?"
+        }
+      }
+    },
+    "a0d6cfb8-4bc1-457f-b25d-c9c27bc0b87c": {
+      "id": "a0d6cfb8-4bc1-457f-b25d-c9c27bc0b87c",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "bcd5cda0-dddb-4a7b-8f53-33e11d58889b",
+        "Next": {
+          "Id": "ecfab509-1041-4041-9f94-dd0001df206e",
+          "Next": null
+        }
+      }
+    },
+    "bcd5cda0-dddb-4a7b-8f53-33e11d58889b": {
+      "id": "bcd5cda0-dddb-4a7b-8f53-33e11d58889b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "734dd935-f4c5-45ec-8188-d77a27b57795",
+        "Next": {
+          "Id": "68d3f849-ac3f-4ab9-8980-c46a768f550f",
+          "Next": null
+        }
+      }
+    },
+    "ecfab509-1041-4041-9f94-dd0001df206e": {
+      "id": "ecfab509-1041-4041-9f94-dd0001df206e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "734dd935-f4c5-45ec-8188-d77a27b57795": {
+      "id": "734dd935-f4c5-45ec-8188-d77a27b57795",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "68d3f849-ac3f-4ab9-8980-c46a768f550f": {
+      "id": "68d3f849-ac3f-4ab9-8980-c46a768f550f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

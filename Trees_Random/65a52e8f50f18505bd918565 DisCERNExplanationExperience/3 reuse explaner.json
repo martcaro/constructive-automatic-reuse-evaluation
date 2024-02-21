@@ -1,0 +1,239 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "3af54839-29e9-4820-bd9c-a0b34fd81161",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "2c09ac78-320d-48a8-857c-b7fcb2481d43",
+  "properties": {},
+  "idModel": "65a52e8f50f18505bd918565",
+  "custom_nodes": [],
+  "nodes": {
+    "2c09ac78-320d-48a8-857c-b7fcb2481d43": {
+      "id": "2c09ac78-320d-48a8-857c-b7fcb2481d43",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "6d916376-1009-4eb5-bc6e-79cca4eed762",
+        "Next": {
+          "Id": "4f733183-92ff-4765-885d-33a19c50319a",
+          "Next": {
+            "Id": "b4d9adc1-2799-472e-8a25-da13fa3f0104",
+            "Next": {
+              "Id": "026bcbe9-b8aa-4ef5-89da-420843e07ea9",
+              "Next": {
+                "Id": "6659f7fd-cfcf-4e6a-98e2-6a49951cbf22",
+                "Next": {
+                  "Id": "efc4cf17-5f4e-4bac-a40d-9f155504d726",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "6d916376-1009-4eb5-bc6e-79cca4eed762": {
+      "id": "6d916376-1009-4eb5-bc6e-79cca4eed762",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "4f733183-92ff-4765-885d-33a19c50319a": {
+      "id": "4f733183-92ff-4765-885d-33a19c50319a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    },
+    "b4d9adc1-2799-472e-8a25-da13fa3f0104": {
+      "id": "b4d9adc1-2799-472e-8a25-da13fa3f0104",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "026bcbe9-b8aa-4ef5-89da-420843e07ea9": {
+      "id": "026bcbe9-b8aa-4ef5-89da-420843e07ea9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "6659f7fd-cfcf-4e6a-98e2-6a49951cbf22": {
+      "id": "6659f7fd-cfcf-4e6a-98e2-6a49951cbf22",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "efc4cf17-5f4e-4bac-a40d-9f155504d726": {
+      "id": "efc4cf17-5f4e-4bac-a40d-9f155504d726",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

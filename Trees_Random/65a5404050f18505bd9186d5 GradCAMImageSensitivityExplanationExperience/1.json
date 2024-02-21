@@ -1,0 +1,194 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8a91ba72-2d7a-420e-97c7-f4ef8b18b9a2",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "7ca8d773-1847-4f00-bb0a-e919d6fad8f6",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "7ca8d773-1847-4f00-bb0a-e919d6fad8f6": {
+      "id": "7ca8d773-1847-4f00-bb0a-e919d6fad8f6",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "dade3fea-3244-4760-bc61-ef1c7970b62b",
+        "Next": {
+          "Id": "54601b7a-7542-4b33-ab30-2bf635050677",
+          "Next": null
+        }
+      }
+    },
+    "dade3fea-3244-4760-bc61-ef1c7970b62b": {
+      "id": "dade3fea-3244-4760-bc61-ef1c7970b62b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "54601b7a-7542-4b33-ab30-2bf635050677": {
+      "id": "54601b7a-7542-4b33-ab30-2bf635050677",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "1292ef51-8e06-43b2-86af-538e93f288d4",
+        "Next": {
+          "Id": "c4c302af-3874-48d5-a4b1-f0adcfa56a4b",
+          "Next": null
+        }
+      }
+    },
+    "1292ef51-8e06-43b2-86af-538e93f288d4": {
+      "id": "1292ef51-8e06-43b2-86af-538e93f288d4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "6f199f39-6ad8-46b7-8022-32436d073efd",
+        "Next": {
+          "Id": "003d824f-3496-4f8b-9868-dc70ec810878",
+          "Next": null
+        }
+      }
+    },
+    "c4c302af-3874-48d5-a4b1-f0adcfa56a4b": {
+      "id": "c4c302af-3874-48d5-a4b1-f0adcfa56a4b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "6f199f39-6ad8-46b7-8022-32436d073efd": {
+      "id": "6f199f39-6ad8-46b7-8022-32436d073efd",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "003d824f-3496-4f8b-9868-dc70ec810878": {
+      "id": "003d824f-3496-4f8b-9868-dc70ec810878",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 609,
+    "camera_y": 536,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

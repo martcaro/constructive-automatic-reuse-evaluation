@@ -1,0 +1,304 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "5174c192-5c81-45c8-8de4-e08481680462",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "1bafe499-9f9d-4d45-85f0-603ca3adbbec",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "1bafe499-9f9d-4d45-85f0-603ca3adbbec": {
+      "id": "1bafe499-9f9d-4d45-85f0-603ca3adbbec",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "fd8d1606-bc6c-4027-8f88-008605bf3eb3",
+        "Next": {
+          "Id": "6b20e17f-14c3-4662-9753-88c2feb18147",
+          "Next": {
+            "Id": "9a30eb88-0aeb-45d8-8ae0-26eb01e71e1e",
+            "Next": {
+              "Id": "91448e5b-47f8-4541-8d19-35f51b9a59a5",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "fd8d1606-bc6c-4027-8f88-008605bf3eb3": {
+      "id": "fd8d1606-bc6c-4027-8f88-008605bf3eb3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "6b20e17f-14c3-4662-9753-88c2feb18147": {
+      "id": "6b20e17f-14c3-4662-9753-88c2feb18147",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "4f9a94d7-d0cb-4374-ab61-18f798479b2b",
+        "Next": {
+          "Id": "4089bd85-4bf0-461c-ac19-eb3b4777da53",
+          "Next": null
+        }
+      }
+    },
+    "9a30eb88-0aeb-45d8-8ae0-26eb01e71e1e": {
+      "id": "9a30eb88-0aeb-45d8-8ae0-26eb01e71e1e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "91448e5b-47f8-4541-8d19-35f51b9a59a5": {
+      "id": "91448e5b-47f8-4541-8d19-35f51b9a59a5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        }
+      }
+    },
+    "4f9a94d7-d0cb-4374-ab61-18f798479b2b": {
+      "id": "4f9a94d7-d0cb-4374-ab61-18f798479b2b",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2295ecce-8964-4502-8e7a-a748fd42213c",
+        "Next": {
+          "Id": "e4380413-c49d-4496-82b7-5a4121905b4e",
+          "Next": null
+        }
+      }
+    },
+    "4089bd85-4bf0-461c-ac19-eb3b4777da53": {
+      "id": "4089bd85-4bf0-461c-ac19-eb3b4777da53",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "2295ecce-8964-4502-8e7a-a748fd42213c": {
+      "id": "2295ecce-8964-4502-8e7a-a748fd42213c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "e4380413-c49d-4496-82b7-5a4121905b4e": {
+      "id": "e4380413-c49d-4496-82b7-5a4121905b4e",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "type": "text"
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "type": "number"
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "type": "text"
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

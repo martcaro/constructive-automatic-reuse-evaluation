@@ -1,0 +1,326 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "343a823e-7547-4c52-8405-848f84a3d7b1",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "27bb6051-1b08-47f2-a3b0-aadb1b6c868f",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "27bb6051-1b08-47f2-a3b0-aadb1b6c868f": {
+      "id": "27bb6051-1b08-47f2-a3b0-aadb1b6c868f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "d07f70dd-f26d-4836-b47c-308193f7660d",
+        "Next": {
+          "Id": "cc48c5ec-c54c-495e-8fee-3d3eebbd165b",
+          "Next": {
+            "Id": "3a5f593c-9a6b-41f6-92cd-4cfd26b56167",
+            "Next": {
+              "Id": "a85c7d50-07dc-4ad0-8ea3-2ca7d10efd15",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "d07f70dd-f26d-4836-b47c-308193f7660d": {
+      "id": "d07f70dd-f26d-4836-b47c-308193f7660d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get a similar outcome?"
+        }
+      }
+    },
+    "cc48c5ec-c54c-495e-8fee-3d3eebbd165b": {
+      "id": "cc48c5ec-c54c-495e-8fee-3d3eebbd165b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "type": "number"
+        }
+      }
+    },
+    "3a5f593c-9a6b-41f6-92cd-4cfd26b56167": {
+      "id": "3a5f593c-9a6b-41f6-92cd-4cfd26b56167",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "a85c7d50-07dc-4ad0-8ea3-2ca7d10efd15": {
+      "id": "a85c7d50-07dc-4ad0-8ea3-2ca7d10efd15",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "648168d1-7eda-49fb-8e5d-03c45d612de5",
+        "Next": {
+          "Id": "d82b8fcd-bc02-4f25-9c80-3956d120cd07",
+          "Next": null
+        }
+      }
+    },
+    "648168d1-7eda-49fb-8e5d-03c45d612de5": {
+      "id": "648168d1-7eda-49fb-8e5d-03c45d612de5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "b022898d-086f-40b2-81cc-512770902c6a",
+        "Next": {
+          "Id": "b43a1fa7-a2e7-452d-874e-36b99b97802f",
+          "Next": null
+        }
+      }
+    },
+    "d82b8fcd-bc02-4f25-9c80-3956d120cd07": {
+      "id": "d82b8fcd-bc02-4f25-9c80-3956d120cd07",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "b022898d-086f-40b2-81cc-512770902c6a": {
+      "id": "b022898d-086f-40b2-81cc-512770902c6a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "opposite",
+          "default": "opposite",
+          "range": [
+            "opposite",
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "type": "select"
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "default": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "range": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "type": "checkbox"
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "type": "select"
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "type": "text"
+        }
+      }
+    },
+    "b43a1fa7-a2e7-452d-874e-36b99b97802f": {
+      "id": "b43a1fa7-a2e7-452d-874e-36b99b97802f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "description": "Function used to perturb the instances.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

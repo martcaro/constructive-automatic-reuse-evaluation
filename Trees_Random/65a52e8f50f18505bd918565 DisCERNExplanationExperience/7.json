@@ -1,0 +1,256 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "1bc0247e-f364-4884-9281-bd3ba12dc145",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ed0bfcbb-3867-4bf2-8e4f-cdd58fb6804e",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "ed0bfcbb-3867-4bf2-8e4f-cdd58fb6804e": {
+      "id": "ed0bfcbb-3867-4bf2-8e4f-cdd58fb6804e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "5c423bc4-74c8-42bb-b4e8-56083d041a57",
+        "Next": {
+          "Id": "821656f4-7246-404c-9e51-d2e8618c6de8",
+          "Next": {
+            "Id": "55b2aa84-5c9e-4070-8c5b-6d5c21747e15",
+            "Next": {
+              "Id": "d75c053f-92bd-42ea-9aeb-d324cbf4e1d4",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "5c423bc4-74c8-42bb-b4e8-56083d041a57": {
+      "id": "5c423bc4-74c8-42bb-b4e8-56083d041a57",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "821656f4-7246-404c-9e51-d2e8618c6de8": {
+      "id": "821656f4-7246-404c-9e51-d2e8618c6de8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6e04228f-5998-4509-87cd-b5b18328f8f1",
+        "Next": {
+          "Id": "05879424-d428-4bf7-8b0b-5e3061d17852",
+          "Next": null
+        }
+      }
+    },
+    "55b2aa84-5c9e-4070-8c5b-6d5c21747e15": {
+      "id": "55b2aa84-5c9e-4070-8c5b-6d5c21747e15",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "d75c053f-92bd-42ea-9aeb-d324cbf4e1d4": {
+      "id": "d75c053f-92bd-42ea-9aeb-d324cbf4e1d4",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "6e04228f-5998-4509-87cd-b5b18328f8f1": {
+      "id": "6e04228f-5998-4509-87cd-b5b18328f8f1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "639a70e0-74af-4f27-862b-e0d920ce20d6",
+        "Next": {
+          "Id": "125010e9-682d-40a2-b81c-910c0b5ad1f3",
+          "Next": null
+        }
+      }
+    },
+    "05879424-d428-4bf7-8b0b-5e3061d17852": {
+      "id": "05879424-d428-4bf7-8b0b-5e3061d17852",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DisCERN",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class, or 'opposite' in the case of binary classification. Defaults to 'opposite'.",
+          "fixed": false
+        },
+        "feature_attribution_method": {
+          "key": "feature_attribution_method",
+          "value": "LIME",
+          "default": "LIME",
+          "range": [
+            "LIME",
+            "SHAP",
+            "IntG"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Feature attribution method used for obtaining feature weights; currently supports LIME, SHAP and Integrated Gradients. Defaults to LIME.",
+          "fixed": false
+        },
+        "immutable_features": {
+          "key": "immutable_features",
+          "value": [],
+          "default": [],
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of feature names that are immutable. The counterfactual will not recommend to change these features. Default is an empty array",
+          "fixed": false
+        }
+      }
+    },
+    "639a70e0-74af-4f27-862b-e0d920ce20d6": {
+      "id": "639a70e0-74af-4f27-862b-e0d920ce20d6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "125010e9-682d-40a2-b81c-910c0b5ad1f3": {
+      "id": "125010e9-682d-40a2-b81c-910c0b5ad1f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

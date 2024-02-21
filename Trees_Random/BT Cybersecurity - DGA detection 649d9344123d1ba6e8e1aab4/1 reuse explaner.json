@@ -1,0 +1,343 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "87104303-00cc-4bb4-8149-b70c81aac3aa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "8b11fcb0-7c2f-45a1-9f23-0287d4ecd9dd",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "8b11fcb0-7c2f-45a1-9f23-0287d4ecd9dd": {
+      "id": "8b11fcb0-7c2f-45a1-9f23-0287d4ecd9dd",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "610e4081-22f4-46e0-ae14-eb8ee6207a1d",
+        "Next": {
+          "Id": "c26cedcc-ccbc-4be3-8197-15b1b8e19737",
+          "Next": {
+            "Id": "b97f150b-b600-400f-8c33-d3068a10e7e9",
+            "Next": {
+              "Id": "9f5bd114-d2c8-4152-8763-7e6b3e43ac26",
+              "Next": {
+                "Id": "c4fa5f0a-f2f7-4cf4-8934-a4836cc7fee3",
+                "Next": {
+                  "Id": "a9813100-0056-4361-9f2c-b3d69e06148f",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "610e4081-22f4-46e0-ae14-eb8ee6207a1d": {
+      "id": "610e4081-22f4-46e0-ae14-eb8ee6207a1d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "c26cedcc-ccbc-4be3-8197-15b1b8e19737": {
+      "id": "c26cedcc-ccbc-4be3-8197-15b1b8e19737",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "da89624f-4b41-4498-8b4b-1b714dd63636",
+        "Next": {
+          "Id": "c35756b8-b220-456f-8433-f711a5956a67",
+          "Next": null
+        }
+      }
+    },
+    "b97f150b-b600-400f-8c33-d3068a10e7e9": {
+      "id": "b97f150b-b600-400f-8c33-d3068a10e7e9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "9f5bd114-d2c8-4152-8763-7e6b3e43ac26": {
+      "id": "9f5bd114-d2c8-4152-8763-7e6b3e43ac26",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "c4fa5f0a-f2f7-4cf4-8934-a4836cc7fee3": {
+      "id": "c4fa5f0a-f2f7-4cf4-8934-a4836cc7fee3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "a9813100-0056-4361-9f2c-b3d69e06148f": {
+      "id": "a9813100-0056-4361-9f2c-b3d69e06148f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "da89624f-4b41-4498-8b4b-1b714dd63636": {
+      "id": "da89624f-4b41-4498-8b4b-1b714dd63636",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "fe41156c-717c-4dd3-883c-215123167559",
+        "Next": {
+          "Id": "6974d6e2-9a4b-4bed-8c1a-e8ba2a317c88",
+          "Next": null
+        }
+      }
+    },
+    "c35756b8-b220-456f-8433-f711a5956a67": {
+      "id": "c35756b8-b220-456f-8433-f711a5956a67",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "fe41156c-717c-4dd3-883c-215123167559": {
+      "id": "fe41156c-717c-4dd3-883c-215123167559",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SummaryMetrics",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "6974d6e2-9a4b-4bed-8c1a-e8ba2a317c88": {
+      "id": "6974d6e2-9a4b-4bed-8c1a-e8ba2a317c88",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 913.8000000715256,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

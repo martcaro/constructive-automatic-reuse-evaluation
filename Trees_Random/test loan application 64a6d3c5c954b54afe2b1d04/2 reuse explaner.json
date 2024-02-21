@@ -1,0 +1,148 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8598e1c8-64da-451d-83f4-5a5a69af0daa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "67542bb6-96fa-4e65-9fd9-e8dffd4a6305",
+  "properties": {},
+  "idModel": "64a6d3c5c954b54afe2b1d04",
+  "custom_nodes": [],
+  "nodes": {
+    "67542bb6-96fa-4e65-9fd9-e8dffd4a6305": {
+      "id": "67542bb6-96fa-4e65-9fd9-e8dffd4a6305",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5",
+        "Next": {
+          "Id": "a74d8091-d874-4615-aaae-3de2b1386dce",
+          "Next": {
+            "Id": "b607ced8-6fe4-43e8-8c16-231c812f627e",
+            "Next": {
+              "Id": "c8ff47cb-2cc6-4ec8-8096-f96337626715",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5": {
+      "id": "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "a74d8091-d874-4615-aaae-3de2b1386dce": {
+      "id": "a74d8091-d874-4615-aaae-3de2b1386dce",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "b607ced8-6fe4-43e8-8c16-231c812f627e": {
+      "id": "b607ced8-6fe4-43e8-8c16-231c812f627e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "c8ff47cb-2cc6-4ec8-8096-f96337626715": {
+      "id": "c8ff47cb-2cc6-4ec8-8096-f96337626715",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

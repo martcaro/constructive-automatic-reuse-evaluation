@@ -1,0 +1,327 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "7b4b6337-b9c2-4e20-be51-acd5620d140a",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "c87521d5-aac8-4ba9-878d-e55daa521999",
+  "properties": {},
+  "idModel": "645e3b81cbf032384d5a550e",
+  "custom_nodes": [],
+  "nodes": {
+    "c87521d5-aac8-4ba9-878d-e55daa521999": {
+      "id": "c87521d5-aac8-4ba9-878d-e55daa521999",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "306075af-35e2-4428-89c3-031fe8daab0b",
+        "Next": {
+          "Id": "b02ddc8c-adc3-495f-8722-9d334714e35f",
+          "Next": {
+            "Id": "ce3ede6d-bc10-4aab-820b-6933ed445e50",
+            "Next": {
+              "Id": "e105cfc3-dd6d-446c-8d74-c1f825f222ef",
+              "Next": {
+                "Id": "8161d460-fd11-4c6c-918c-190175122b6e",
+                "Next": {
+                  "Id": "528d6382-cf51-401c-8d99-3e611a16fe57",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "306075af-35e2-4428-89c3-031fe8daab0b": {
+      "id": "306075af-35e2-4428-89c3-031fe8daab0b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "b02ddc8c-adc3-495f-8722-9d334714e35f": {
+      "id": "b02ddc8c-adc3-495f-8722-9d334714e35f",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "ce3ede6d-bc10-4aab-820b-6933ed445e50": {
+      "id": "ce3ede6d-bc10-4aab-820b-6933ed445e50",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "e105cfc3-dd6d-446c-8d74-c1f825f222ef": {
+      "id": "e105cfc3-dd6d-446c-8d74-c1f825f222ef",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "8161d460-fd11-4c6c-918c-190175122b6e": {
+      "id": "8161d460-fd11-4c6c-918c-190175122b6e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does feature X impact the outcome?"
+        }
+      }
+    },
+    "528d6382-cf51-401c-8d99-3e611a16fe57": {
+      "id": "528d6382-cf51-401c-8d99-3e611a16fe57",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "004dc7af-0110-4f3f-9088-5c4f67c82682",
+        "Next": {
+          "Id": "6fc16fd9-00dc-4a00-863f-5b2b38695331",
+          "Next": null
+        }
+      }
+    },
+    "004dc7af-0110-4f3f-9088-5c4f67c82682": {
+      "id": "004dc7af-0110-4f3f-9088-5c4f67c82682",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "249d9feb-0a67-4558-ae31-01277e15080f",
+        "Next": {
+          "Id": "211ab9fd-72f6-4b8b-9791-58578166de34",
+          "Next": null
+        }
+      }
+    },
+    "6fc16fd9-00dc-4a00-863f-5b2b38695331": {
+      "id": "6fc16fd9-00dc-4a00-863f-5b2b38695331",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    },
+    "249d9feb-0a67-4558-ae31-01277e15080f": {
+      "id": "249d9feb-0a67-4558-ae31-01277e15080f",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    },
+    "211ab9fd-72f6-4b8b-9791-58578166de34": {
+      "id": "211ab9fd-72f6-4b8b-9791-58578166de34",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 773.0999999642372,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

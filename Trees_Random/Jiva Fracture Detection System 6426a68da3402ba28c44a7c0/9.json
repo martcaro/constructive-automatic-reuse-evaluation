@@ -1,0 +1,484 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "64e20edc-4491-44cc-8b8f-a96b6a0be241",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "51126281-f2e6-4104-9969-d0dcd50558d1",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "51126281-f2e6-4104-9969-d0dcd50558d1": {
+      "id": "51126281-f2e6-4104-9969-d0dcd50558d1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a917aebf-c093-485e-8cc6-2a60dac42d73",
+        "Next": {
+          "Id": "034036d7-944e-4d90-8a2e-62249cc1de2b",
+          "Next": {
+            "Id": "1da75886-933d-4c8f-9c4a-f3b3a7cfda7f",
+            "Next": {
+              "Id": "198962f8-5b36-4453-a28a-21463a41880d",
+              "Next": {
+                "Id": "151ebf0d-5e0b-44da-9046-a08857427737",
+                "Next": {
+                  "Id": "0a80105b-ff03-464a-940b-60ffa98a4b7f",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a917aebf-c093-485e-8cc6-2a60dac42d73": {
+      "id": "a917aebf-c093-485e-8cc6-2a60dac42d73",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "034036d7-944e-4d90-8a2e-62249cc1de2b": {
+      "id": "034036d7-944e-4d90-8a2e-62249cc1de2b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "741e1c5e-dba7-4ad2-8c90-311d058cff5f",
+        "Next": {
+          "Id": "e9a742d8-fafc-4663-af32-7ed3f9e10de5",
+          "Next": null
+        }
+      }
+    },
+    "1da75886-933d-4c8f-9c4a-f3b3a7cfda7f": {
+      "id": "1da75886-933d-4c8f-9c4a-f3b3a7cfda7f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "198962f8-5b36-4453-a28a-21463a41880d": {
+      "id": "198962f8-5b36-4453-a28a-21463a41880d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "36b8df34-e282-4c32-b5d3-5f06084e03a0",
+        "Next": {
+          "Id": "48fb577c-2f27-4ced-84b9-96401d2bf8d4",
+          "Next": null
+        }
+      }
+    },
+    "151ebf0d-5e0b-44da-9046-a08857427737": {
+      "id": "151ebf0d-5e0b-44da-9046-a08857427737",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "0a80105b-ff03-464a-940b-60ffa98a4b7f": {
+      "id": "0a80105b-ff03-464a-940b-60ffa98a4b7f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "741e1c5e-dba7-4ad2-8c90-311d058cff5f": {
+      "id": "741e1c5e-dba7-4ad2-8c90-311d058cff5f",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "555a1c91-aa3a-46f0-b7f9-c70ea939aac1",
+        "Next": {
+          "Id": "34541326-9934-46c3-b45a-c47c370f328d",
+          "Next": null
+        }
+      }
+    },
+    "e9a742d8-fafc-4663-af32-7ed3f9e10de5": {
+      "id": "e9a742d8-fafc-4663-af32-7ed3f9e10de5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "36b8df34-e282-4c32-b5d3-5f06084e03a0": {
+      "id": "36b8df34-e282-4c32-b5d3-5f06084e03a0",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1db96d85-2852-438c-8666-b3cd6937bec3",
+        "Next": {
+          "Id": "c8de412e-c350-41a6-86d6-093c662916be",
+          "Next": null
+        }
+      }
+    },
+    "48fb577c-2f27-4ced-84b9-96401d2bf8d4": {
+      "id": "48fb577c-2f27-4ced-84b9-96401d2bf8d4",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 432,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of integers representing the classes to be explained.",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "555a1c91-aa3a-46f0-b7f9-c70ea939aac1": {
+      "id": "555a1c91-aa3a-46f0-b7f9-c70ea939aac1",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained.",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "34541326-9934-46c3-b45a-c47c370f328d": {
+      "id": "34541326-9934-46c3-b45a-c47c370f328d",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -612,
+        "y": 516
+      }
+    },
+    "1db96d85-2852-438c-8666-b3cd6937bec3": {
+      "id": "1db96d85-2852-438c-8666-b3cd6937bec3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "c8de412e-c350-41a6-86d6-093c662916be": {
+      "id": "c8de412e-c350-41a6-86d6-093c662916be",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/KernelSHAP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

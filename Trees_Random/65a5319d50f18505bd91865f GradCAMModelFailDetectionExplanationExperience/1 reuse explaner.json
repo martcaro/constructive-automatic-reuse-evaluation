@@ -1,0 +1,379 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2cfc7e1d-a970-452c-b8c5-cbd5fc76c3c0",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "6cf9d297-d410-4d44-a95b-a74a53c92e16",
+  "properties": {},
+  "idModel": "65a5319d50f18505bd91865f",
+  "custom_nodes": [],
+  "nodes": {
+    "6cf9d297-d410-4d44-a95b-a74a53c92e16": {
+      "id": "6cf9d297-d410-4d44-a95b-a74a53c92e16",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f",
+        "Next": {
+          "Id": "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91",
+          "Next": {
+            "Id": "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485",
+            "Next": {
+              "Id": "0d96042e-f01a-4bd8-80e9-ff1838410c82",
+              "Next": {
+                "Id": "131bbe85-40b0-491b-ad4b-ddb43dfb3148",
+                "Next": {
+                  "Id": "a78e06d7-b132-43c9-80bd-027edc6a5dab",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f": {
+      "id": "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91": {
+      "id": "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485": {
+      "id": "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "0d96042e-f01a-4bd8-80e9-ff1838410c82": {
+      "id": "0d96042e-f01a-4bd8-80e9-ff1838410c82",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "131bbe85-40b0-491b-ad4b-ddb43dfb3148": {
+      "id": "131bbe85-40b0-491b-ad4b-ddb43dfb3148",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the alternative scenarios available?"
+        }
+      }
+    },
+    "a78e06d7-b132-43c9-80bd-027edc6a5dab": {
+      "id": "a78e06d7-b132-43c9-80bd-027edc6a5dab",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 497.50000001490116,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

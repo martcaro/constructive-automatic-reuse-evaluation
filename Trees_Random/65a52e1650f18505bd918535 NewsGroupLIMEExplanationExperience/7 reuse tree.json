@@ -1,0 +1,131 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "5facd9d0-5348-4aeb-9122-c911a03c2382",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "50023460-dfe7-4b9f-ba2b-456e522257a6",
+  "properties": {},
+  "idModel": "65a52e1650f18505bd918535",
+  "custom_nodes": [],
+  "nodes": {
+    "50023460-dfe7-4b9f-ba2b-456e522257a6": {
+      "id": "50023460-dfe7-4b9f-ba2b-456e522257a6",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+        "Next": {
+          "Id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+          "Next": null
+        }
+      }
+    },
+    "85b9b22e-1b0a-4a9b-81a9-83952d27271a": {
+      "id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "5829d6db-5011-4ad8-846a-ab8452c6be46": {
+      "id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of integers representing the classes to be explained. Defaults to class 1.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

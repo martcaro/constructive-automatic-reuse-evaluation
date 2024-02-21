@@ -1,0 +1,230 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "d09691b0-3697-4523-a6bc-8ae6307f44cf",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "8006c6ef-495d-4f9d-8ff2-2443ccce5b81",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "8006c6ef-495d-4f9d-8ff2-2443ccce5b81": {
+      "id": "8006c6ef-495d-4f9d-8ff2-2443ccce5b81",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "325171cd-4767-4abb-990e-c09700e8f7ea",
+        "Next": {
+          "Id": "73af7b70-33ef-46b0-8528-2de24157443f",
+          "Next": {
+            "Id": "75983d46-13ca-4d73-b0c8-67f29ec4cc1c",
+            "Next": {
+              "Id": "dc7382e0-3f6c-4d0d-8a29-1b6804231cbc",
+              "Next": {
+                "Id": "d989b75f-7af4-4017-81d2-2e9fb0f9ec70",
+                "Next": {
+                  "Id": "44fa1f1a-b9cc-4cf4-8311-27c99ec04871",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "325171cd-4767-4abb-990e-c09700e8f7ea": {
+      "id": "325171cd-4767-4abb-990e-c09700e8f7ea",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "73af7b70-33ef-46b0-8528-2de24157443f": {
+      "id": "73af7b70-33ef-46b0-8528-2de24157443f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "75983d46-13ca-4d73-b0c8-67f29ec4cc1c": {
+      "id": "75983d46-13ca-4d73-b0c8-67f29ec4cc1c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What features does the AI system consider?"
+        }
+      }
+    },
+    "dc7382e0-3f6c-4d0d-8a29-1b6804231cbc": {
+      "id": "dc7382e0-3f6c-4d0d-8a29-1b6804231cbc",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "d989b75f-7af4-4017-81d2-2e9fb0f9ec70": {
+      "id": "d989b75f-7af4-4017-81d2-2e9fb0f9ec70",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does feature X impact the outcome?"
+        }
+      }
+    },
+    "44fa1f1a-b9cc-4cf4-8311-27c99ec04871": {
+      "id": "44fa1f1a-b9cc-4cf4-8311-27c99ec04871",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SmoothGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

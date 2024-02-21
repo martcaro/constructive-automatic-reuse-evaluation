@@ -1,0 +1,369 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "cc2b8b1d-7b5b-44e7-a474-ce2bb83267fa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ff0a4d62-3925-4a18-8c23-b5a27b4930c9",
+  "properties": {},
+  "idModel": "65a5319d50f18505bd91865f",
+  "custom_nodes": [],
+  "nodes": {
+    "ff0a4d62-3925-4a18-8c23-b5a27b4930c9": {
+      "id": "ff0a4d62-3925-4a18-8c23-b5a27b4930c9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "4a71e74b-6781-4826-9fd6-a3243b3e1d05",
+        "Next": {
+          "Id": "ad411662-2fb3-475d-8c08-2f2c02dc16ee",
+          "Next": null
+        }
+      }
+    },
+    "4a71e74b-6781-4826-9fd6-a3243b3e1d05": {
+      "id": "4a71e74b-6781-4826-9fd6-a3243b3e1d05",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "ad411662-2fb3-475d-8c08-2f2c02dc16ee": {
+      "id": "ad411662-2fb3-475d-8c08-2f2c02dc16ee",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "c2bf106c-7df0-4d7b-90f4-05ddeff70709",
+        "Next": {
+          "Id": "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3",
+          "Next": null
+        }
+      }
+    },
+    "c2bf106c-7df0-4d7b-90f4-05ddeff70709": {
+      "id": "c2bf106c-7df0-4d7b-90f4-05ddeff70709",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "278a9ebf-1398-42ab-b1db-320d90de416c",
+        "Next": {
+          "Id": "e0aefdc6-72ea-4675-8f58-291e54fe6e22",
+          "Next": null
+        }
+      }
+    },
+    "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3": {
+      "id": "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "278a9ebf-1398-42ab-b1db-320d90de416c": {
+      "id": "278a9ebf-1398-42ab-b1db-320d90de416c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "e0aefdc6-72ea-4675-8f58-291e54fe6e22": {
+      "id": "e0aefdc6-72ea-4675-8f58-291e54fe6e22",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 442.8999999910593,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

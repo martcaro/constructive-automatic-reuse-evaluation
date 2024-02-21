@@ -1,0 +1,256 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "033b72a5-dce9-41d0-b6ca-0e7e524ca266",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "2a946834-6f12-46a8-979a-43e06c8a860b",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "2a946834-6f12-46a8-979a-43e06c8a860b": {
+      "id": "2a946834-6f12-46a8-979a-43e06c8a860b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "82a9bcc9-f1a0-46a4-8a3e-7d40122496c2",
+        "Next": {
+          "Id": "b5572293-61e8-4763-bdda-9d9aba45bcdf",
+          "Next": {
+            "Id": "aadcabd2-0dc8-462c-90d6-b5678a316251",
+            "Next": {
+              "Id": "c98d14e0-c138-4ea2-9153-c875db17a7d9",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "82a9bcc9-f1a0-46a4-8a3e-7d40122496c2": {
+      "id": "82a9bcc9-f1a0-46a4-8a3e-7d40122496c2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "b5572293-61e8-4763-bdda-9d9aba45bcdf": {
+      "id": "b5572293-61e8-4763-bdda-9d9aba45bcdf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5715ac66-5c2f-4776-8be1-b89569c76710",
+        "Next": {
+          "Id": "4fb0782d-1c28-48a0-97f7-b7d3afd58d57",
+          "Next": null
+        }
+      }
+    },
+    "aadcabd2-0dc8-462c-90d6-b5678a316251": {
+      "id": "aadcabd2-0dc8-462c-90d6-b5678a316251",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "c98d14e0-c138-4ea2-9153-c875db17a7d9": {
+      "id": "c98d14e0-c138-4ea2-9153-c875db17a7d9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "5715ac66-5c2f-4776-8be1-b89569c76710": {
+      "id": "5715ac66-5c2f-4776-8be1-b89569c76710",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "82f6c93f-5a8f-4eb8-8c41-505d0a4be54b",
+        "Next": {
+          "Id": "d324260e-738d-45fd-81b5-c82197078d37",
+          "Next": null
+        }
+      }
+    },
+    "4fb0782d-1c28-48a0-97f7-b7d3afd58d57": {
+      "id": "4fb0782d-1c28-48a0-97f7-b7d3afd58d57",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      }
+    },
+    "82f6c93f-5a8f-4eb8-8c41-505d0a4be54b": {
+      "id": "82f6c93f-5a8f-4eb8-8c41-505d0a4be54b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "d324260e-738d-45fd-81b5-c82197078d37": {
+      "id": "d324260e-738d-45fd-81b5-c82197078d37",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/iGenCBR",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "num_neigbours": {
+          "key": "num_neigbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of neighbours to be included in the explanation. Defaults to 3.",
+          "fixed": false
+        },
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature to be included in the explanation. Defaults to the first feature in the dataset.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

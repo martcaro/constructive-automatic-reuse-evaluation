@@ -1,0 +1,511 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b85ec44b-d5b4-47d4-88f7-d11cf6b58820",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+  "properties": {},
+  "idModel": "65a52f3050f18505bd9185a0",
+  "custom_nodes": [],
+  "nodes": {
+    "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d": {
+      "id": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "43842ba9-6df6-4657-ae59-758330f33468",
+        "Next": {
+          "Id": "c696b1c9-2c23-4d5d-8b63-7689f7bb4634",
+          "Next": {
+            "Id": "f49afa9c-027e-49c2-9d09-35cf3ce849d0",
+            "Next": {
+              "Id": "9ceec878-28f4-4965-9c42-19f154546f52",
+              "Next": {
+                "Id": "91fbabe4-257b-412d-82c9-945aef8b6e37",
+                "Next": {
+                  "Id": "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "43842ba9-6df6-4657-ae59-758330f33468": {
+      "id": "43842ba9-6df6-4657-ae59-758330f33468",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "c696b1c9-2c23-4d5d-8b63-7689f7bb4634": {
+      "id": "c696b1c9-2c23-4d5d-8b63-7689f7bb4634",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "type": "text"
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "type": "number"
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "type": "text"
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "type": "text"
+        }
+      }
+    },
+    "f49afa9c-027e-49c2-9d09-35cf3ce849d0": {
+      "id": "f49afa9c-027e-49c2-9d09-35cf3ce849d0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "9ceec878-28f4-4965-9c42-19f154546f52": {
+      "id": "9ceec878-28f4-4965-9c42-19f154546f52",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "91fbabe4-257b-412d-82c9-945aef8b6e37": {
+      "id": "91fbabe4-257b-412d-82c9-945aef8b6e37",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf": {
+      "id": "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3cdb73be-2ee0-4518-9c78-3924f559b379",
+        "Next": {
+          "Id": "88c8ea75-4c11-465e-b4aa-a5e547eeae0e",
+          "Next": null
+        }
+      }
+    },
+    "3cdb73be-2ee0-4518-9c78-3924f559b379": {
+      "id": "3cdb73be-2ee0-4518-9c78-3924f559b379",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "5a045166-9574-4426-9fdf-29c3b516cc03",
+        "Next": {
+          "Id": "06c6068c-08f3-469e-8eed-b915eb251fd9",
+          "Next": null
+        }
+      }
+    },
+    "88c8ea75-4c11-465e-b4aa-a5e547eeae0e": {
+      "id": "88c8ea75-4c11-465e-b4aa-a5e547eeae0e",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "5a045166-9574-4426-9fdf-29c3b516cc03": {
+      "id": "5a045166-9574-4426-9fdf-29c3b516cc03",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "06c6068c-08f3-469e-8eed-b915eb251fd9": {
+      "id": "06c6068c-08f3-469e-8eed-b915eb251fd9",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

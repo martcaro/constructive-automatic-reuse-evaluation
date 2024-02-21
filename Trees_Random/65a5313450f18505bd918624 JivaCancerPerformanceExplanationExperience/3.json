@@ -1,0 +1,247 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "eb937793-d6f9-4908-8b69-67e7a8ef2362",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "15bed326-4112-499b-814c-081087c80fad",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "15bed326-4112-499b-814c-081087c80fad": {
+      "id": "15bed326-4112-499b-814c-081087c80fad",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd",
+        "Next": {
+          "Id": "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b",
+          "Next": null
+        }
+      }
+    },
+    "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd": {
+      "id": "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b": {
+      "id": "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fe3230d0-d0df-4bee-8720-54eb824e836e",
+        "Next": {
+          "Id": "6b40f0c3-8431-4109-b7af-b9d39b1b9637",
+          "Next": null
+        }
+      }
+    },
+    "fe3230d0-d0df-4bee-8720-54eb824e836e": {
+      "id": "fe3230d0-d0df-4bee-8720-54eb824e836e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "fbd3b9c0-45e9-4457-8308-a6ae61ddb294",
+        "Next": {
+          "Id": "9d2c02b4-8180-4698-9ed0-15c02cded91e",
+          "Next": null
+        }
+      }
+    },
+    "6b40f0c3-8431-4109-b7af-b9d39b1b9637": {
+      "id": "6b40f0c3-8431-4109-b7af-b9d39b1b9637",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "fixed": false
+        }
+      }
+    },
+    "fbd3b9c0-45e9-4457-8308-a6ae61ddb294": {
+      "id": "fbd3b9c0-45e9-4457-8308-a6ae61ddb294",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "9d2c02b4-8180-4698-9ed0-15c02cded91e": {
+      "id": "9d2c02b4-8180-4698-9ed0-15c02cded91e",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "fa0d16e9-8c97-4b16-877b-1bcf5c7a6943",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "689b37b1-a3db-4c7b-8364-90d62785dd9d",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "689b37b1-a3db-4c7b-8364-90d62785dd9d": {
+      "id": "689b37b1-a3db-4c7b-8364-90d62785dd9d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "71be5f0b-d440-4a85-8410-31f5fa4fad5d",
+        "Next": {
+          "Id": "f0d7d6a8-5adc-499b-a998-11318cb85592",
+          "Next": null
+        }
+      }
+    },
+    "71be5f0b-d440-4a85-8410-31f5fa4fad5d": {
+      "id": "71be5f0b-d440-4a85-8410-31f5fa4fad5d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "f0d7d6a8-5adc-499b-a998-11318cb85592": {
+      "id": "f0d7d6a8-5adc-499b-a998-11318cb85592",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "8f414a72-18c7-4c41-9815-bf2ea04d2eed",
+        "Next": {
+          "Id": "af72474e-887b-41d5-8079-c78c8301a5a9",
+          "Next": null
+        }
+      }
+    },
+    "8f414a72-18c7-4c41-9815-bf2ea04d2eed": {
+      "id": "8f414a72-18c7-4c41-9815-bf2ea04d2eed",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "23043acd-491a-44e3-9099-c46c26c43654",
+        "Next": {
+          "Id": "b84d9f9d-3e30-481d-9152-406ba4300043",
+          "Next": null
+        }
+      }
+    },
+    "af72474e-887b-41d5-8079-c78c8301a5a9": {
+      "id": "af72474e-887b-41d5-8079-c78c8301a5a9",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "23043acd-491a-44e3-9099-c46c26c43654": {
+      "id": "23043acd-491a-44e3-9099-c46c26c43654",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the method to calculate the residuals.",
+          "fixed": false
+        }
+      }
+    },
+    "b84d9f9d-3e30-481d-9152-406ba4300043": {
+      "id": "b84d9f9d-3e30-481d-9152-406ba4300043",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

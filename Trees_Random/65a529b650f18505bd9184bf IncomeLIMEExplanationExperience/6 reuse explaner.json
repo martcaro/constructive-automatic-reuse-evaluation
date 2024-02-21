@@ -1,0 +1,226 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2974ec11-a15c-4a0b-a5a9-6e421b14c00c",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ce14ab6c-007d-480c-81f7-cf0cbae91ed5",
+  "properties": {},
+  "idModel": "65a529b650f18505bd9184bf",
+  "custom_nodes": [],
+  "nodes": {
+    "ce14ab6c-007d-480c-81f7-cf0cbae91ed5": {
+      "id": "ce14ab6c-007d-480c-81f7-cf0cbae91ed5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "595f2a68-6c22-4579-9b46-21937700e532",
+        "Next": {
+          "Id": "815917ba-f2be-4f51-8d99-c4b78914054c",
+          "Next": null
+        }
+      }
+    },
+    "595f2a68-6c22-4579-9b46-21937700e532": {
+      "id": "595f2a68-6c22-4579-9b46-21937700e532",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "815917ba-f2be-4f51-8d99-c4b78914054c": {
+      "id": "815917ba-f2be-4f51-8d99-c4b78914054c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0eddf0d3-2e29-4779-83de-96f05c045a37",
+        "Next": {
+          "Id": "06220ad0-5fef-419e-8f41-24091720ac66",
+          "Next": null
+        }
+      }
+    },
+    "0eddf0d3-2e29-4779-83de-96f05c045a37": {
+      "id": "0eddf0d3-2e29-4779-83de-96f05c045a37",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "976e3ae7-b12c-42fa-bb16-5fd9df597ca5",
+        "Next": {
+          "Id": "08158a3c-c280-44f6-8877-d88aa61e65b3",
+          "Next": null
+        }
+      }
+    },
+    "06220ad0-5fef-419e-8f41-24091720ac66": {
+      "id": "06220ad0-5fef-419e-8f41-24091720ac66",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "976e3ae7-b12c-42fa-bb16-5fd9df597ca5": {
+      "id": "976e3ae7-b12c-42fa-bb16-5fd9df597ca5",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "08158a3c-c280-44f6-8877-d88aa61e65b3": {
+      "id": "08158a3c-c280-44f6-8877-d88aa61e65b3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "description": "Function used to perturb the instances.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

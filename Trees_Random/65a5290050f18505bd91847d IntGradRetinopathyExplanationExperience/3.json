@@ -1,0 +1,129 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b4f590aa-f43d-475a-918d-1ce7979c03ac",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "34f5945e-cded-4d03-bbc9-04808840c9cc",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "34f5945e-cded-4d03-bbc9-04808840c9cc": {
+      "id": "34f5945e-cded-4d03-bbc9-04808840c9cc",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "bd2baac1-ffe6-4fbd-8577-61561f12b166",
+        "Next": {
+          "Id": "513654ce-7087-40d3-8553-c2c7a2e69f03",
+          "Next": {
+            "Id": "33168deb-dc7e-4fed-ac08-f9585f43c71b",
+            "Next": {
+              "Id": "1adeb132-7df2-40c3-85fb-08d6f7199c8f",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "bd2baac1-ffe6-4fbd-8577-61561f12b166": {
+      "id": "bd2baac1-ffe6-4fbd-8577-61561f12b166",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "513654ce-7087-40d3-8553-c2c7a2e69f03": {
+      "id": "513654ce-7087-40d3-8553-c2c7a2e69f03",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "33168deb-dc7e-4fed-ac08-f9585f43c71b": {
+      "id": "33168deb-dc7e-4fed-ac08-f9585f43c71b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "1adeb132-7df2-40c3-85fb-08d6f7199c8f": {
+      "id": "1adeb132-7df2-40c3-85fb-08d6f7199c8f",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

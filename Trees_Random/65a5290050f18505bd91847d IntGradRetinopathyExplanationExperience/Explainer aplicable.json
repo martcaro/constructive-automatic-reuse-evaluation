@@ -1,0 +1,258 @@
+{
+    "/Tabular/LIME": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/LIME only supports Multivariate tabular data."
+    },
+    "/Images/Anchors": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/LIME": {
+        "flag": true,
+        "message": ""
+    },
+    "/Tabular/ALE": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/ALE only supports Multivariate tabular data."
+    },
+    "/Tabular/Anchors": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/Anchors only supports Multivariate tabular data."
+    },
+    "/Tabular/DicePrivate": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/DicePrivate only supports Multivariate tabular data."
+    },
+    "/Tabular/DicePublic": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/DicePublic only supports Multivariate tabular data."
+    },
+    "/Tabular/DisCERN": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/DisCERN only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/DisCERN only supports Sklearn implementations."
+    },
+    "/Tabular/Importance": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/Importance only supports Multivariate tabular data."
+    },
+    "/Tabular/DeepSHAPGlobal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/DeepSHAPGlobal only supports Multivariate tabular data."
+    },
+    "/Tabular/DeepSHAPLocal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/DeepSHAPLocal only supports Multivariate tabular data."
+    },
+    "/Tabular/KernelSHAPLocal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/KernelSHAPLocal only supports Multivariate tabular data."
+    },
+    "/Tabular/KernelSHAPGlobal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/KernelSHAPGlobal only supports Multivariate tabular data."
+    },
+    "/Tabular/TreeSHAPGlobal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/TreeSHAPGlobal only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/TreeSHAPGlobal only supports LightGBM, Sklearn and XGBoost implementations.\n- AI Method Mismatch: The model is a Convolutional Neural Network but /Tabular/TreeSHAPGlobal only supports Ensemble Method."
+    },
+    "/Tabular/TreeSHAPLocal": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/TreeSHAPLocal only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/TreeSHAPLocal only supports LightGBM, Sklearn and XGBoost implementations.\n- AI Method Mismatch: The model is a Convolutional Neural Network but /Tabular/TreeSHAPLocal only supports Ensemble Method."
+    },
+    "/Tabular/NICE": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/NICE only supports Multivariate tabular data."
+    },
+    "/Text/LIME": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Text/LIME only supports Text data."
+    },
+    "/Images/IntegratedGradients": {
+        "flag": true,
+        "message": ""
+    },
+    "/Tabular/IREX": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/IREX only supports Multivariate tabular data."
+    },
+    "/Text/NLPClassifier": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Text/NLPClassifier only supports Text data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Text/NLPClassifier only supports Sklearn implementations."
+    },
+    "/Timeseries/CBRFox": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/CBRFox only supports Multivariate time series data.\n- AI Task Mismatch: /Timeseries/CBRFox does not support Binary Classification tasks."
+    },
+    "/Images/GradCam": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/NearestNeighbours": {
+        "flag": true,
+        "message": ""
+    },
+    "/Misc/AIModelPerformance": {
+        "flag": true,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Misc/AIModelPerformance only supports Multivariate tabular data."
+    },
+    "/Tabular/PertCF": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/PertCF only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/PertCF only supports Sklearn implementations."
+    },
+    "/Timeseries/iGenCBR": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/iGenCBR only supports Multivariate time series data.\n- AI Method Mismatch: The model is a Convolutional Neural Network but /Timeseries/iGenCBR only supports Recurrent Neural Network.\n- AI Task Mismatch: /Timeseries/iGenCBR does not support Binary Classification tasks."
+    },
+    "/Timeseries/LEFTIST": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/LEFTIST only supports Univariate time series data."
+    },
+    "/Images/SSIMNearestNeighbours": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/SSIMCounterfactuals": {
+        "flag": true,
+        "message": ""
+    },
+    "/Tabular/ROC-AUC": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/ROC-AUC only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/ROC-AUC only supports Sklearn implementations."
+    },
+    "/Tabular/PR-AUC": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/PR-AUC only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/PR-AUC only supports Sklearn implementations."
+    },
+    "/Tabular/SHAPSummary": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/SHAPSummary only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/SHAPSummary only supports LightGBM, Sklearn and XGBoost implementations."
+    },
+    "/Tabular/PDP": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/PDP only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/PDP only supports Sklearn implementations."
+    },
+    "/Tabular/SHAPDependence": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/SHAPDependence only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/SHAPDependence only supports LightGBM, Sklearn and XGBoost implementations."
+    },
+    "/Tabular/SHAPInteraction": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/SHAPInteraction only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/SHAPInteraction only supports LightGBM, Sklearn and XGBoost implementations."
+    },
+    "/Timeseries/LIMESegment": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/LIMESegment only supports Univariate time series data."
+    },
+    "/Timeseries/NEVES": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/NEVES only supports Univariate time series data."
+    },
+    "/Timeseries/NearestNeighbours": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/NearestNeighbours only supports Univariate time series data."
+    },
+    "/Timeseries/NativeGuides": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/NativeGuides only supports Univariate time series data."
+    },
+    "/Images/ClassificationReport": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/ConfusionMatrix": {
+        "flag": true,
+        "message": ""
+    },
+    "/Tabular/LiftCurve": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/LiftCurve only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/LiftCurve only supports Sklearn implementations."
+    },
+    "/Tabular/PrecisionGraph": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/PrecisionGraph only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/PrecisionGraph only supports Sklearn implementations."
+    },
+    "/Tabular/CumulativePrecision": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/CumulativePrecision only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/CumulativePrecision only supports Sklearn implementations."
+    },
+    "/Tabular/RegressionPredictedVsActual": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/RegressionPredictedVsActual only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/RegressionPredictedVsActual only supports Sklearn implementations.\n- AI Task Mismatch: /Tabular/RegressionPredictedVsActual does not support Binary Classification tasks."
+    },
+    "/Tabular/RegressionResiduals": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/RegressionResiduals only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/RegressionResiduals only supports Sklearn implementations.\n- AI Task Mismatch: /Tabular/RegressionResiduals does not support Binary Classification tasks."
+    },
+    "/Tabular/ConfusionMatrix": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/ConfusionMatrix only supports Univariate time series data."
+    },
+    "/Tabular/SummaryMetrics": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/SummaryMetrics only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/SummaryMetrics only supports Sklearn implementations."
+    },
+    "/Tabular/ICE": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Tabular/ICE only supports Multivariate tabular data.\n- Implementation Mismatch: This is a TensorFlow 1 model but /Tabular/ICE only supports Sklearn implementations."
+    },
+    "/Timeseries/SummaryMetrics": {
+        "flag": false,
+        "message": "\n- Dataset Type Mismatch: The model uses Image data but /Timeseries/SummaryMetrics only supports Univariate time series data."
+    },
+    "/Images/Saliency": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/GradientInput": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/GuidedBackprop": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/GradCam++": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/SmoothGrad": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/SquareGrad": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/VarGrad": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/DeconvNet": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/KernelSHAP": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/Occlusion": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/RISE": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/HSIC": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/Sobol": {
+        "flag": true,
+        "message": ""
+    },
+    "/Images/FORGrad": {
+        "flag": true,
+        "message": ""
+    }
+}

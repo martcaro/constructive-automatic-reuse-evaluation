@@ -1,0 +1,194 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9415f49b-6275-425a-85c9-511ad46d5b34",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8": {
+      "id": "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "85081b32-c1b0-45ad-8f4e-ce99248a5fba",
+        "Next": {
+          "Id": "aadda5c2-338b-4477-8790-9d6731b64bd5",
+          "Next": null
+        }
+      }
+    },
+    "85081b32-c1b0-45ad-8f4e-ce99248a5fba": {
+      "id": "85081b32-c1b0-45ad-8f4e-ce99248a5fba",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "aadda5c2-338b-4477-8790-9d6731b64bd5": {
+      "id": "aadda5c2-338b-4477-8790-9d6731b64bd5",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "b4cc3159-26fa-406a-b8e9-4ccb175ec2de",
+        "Next": {
+          "Id": "c02fba75-9adb-4c7a-8090-f6190be8b86b",
+          "Next": null
+        }
+      }
+    },
+    "b4cc3159-26fa-406a-b8e9-4ccb175ec2de": {
+      "id": "b4cc3159-26fa-406a-b8e9-4ccb175ec2de",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "f4ac67a8-3e2d-4a66-8a42-9b88629a1053",
+        "Next": {
+          "Id": "bcf3f20d-019b-4059-8222-e5f36ed8d713",
+          "Next": null
+        }
+      }
+    },
+    "c02fba75-9adb-4c7a-8090-f6190be8b86b": {
+      "id": "c02fba75-9adb-4c7a-8090-f6190be8b86b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "f4ac67a8-3e2d-4a66-8a42-9b88629a1053": {
+      "id": "f4ac67a8-3e2d-4a66-8a42-9b88629a1053",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "bcf3f20d-019b-4059-8222-e5f36ed8d713": {
+      "id": "bcf3f20d-019b-4059-8222-e5f36ed8d713",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

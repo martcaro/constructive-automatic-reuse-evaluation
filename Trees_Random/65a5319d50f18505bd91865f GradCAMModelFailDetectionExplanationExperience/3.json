@@ -1,0 +1,246 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "cc2b8b1d-7b5b-44e7-a474-ce2bb83267fa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ff0a4d62-3925-4a18-8c23-b5a27b4930c9",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "ff0a4d62-3925-4a18-8c23-b5a27b4930c9": {
+      "id": "ff0a4d62-3925-4a18-8c23-b5a27b4930c9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "4a71e74b-6781-4826-9fd6-a3243b3e1d05",
+        "Next": {
+          "Id": "ad411662-2fb3-475d-8c08-2f2c02dc16ee",
+          "Next": null
+        }
+      }
+    },
+    "4a71e74b-6781-4826-9fd6-a3243b3e1d05": {
+      "id": "4a71e74b-6781-4826-9fd6-a3243b3e1d05",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "ad411662-2fb3-475d-8c08-2f2c02dc16ee": {
+      "id": "ad411662-2fb3-475d-8c08-2f2c02dc16ee",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "c2bf106c-7df0-4d7b-90f4-05ddeff70709",
+        "Next": {
+          "Id": "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3",
+          "Next": null
+        }
+      }
+    },
+    "c2bf106c-7df0-4d7b-90f4-05ddeff70709": {
+      "id": "c2bf106c-7df0-4d7b-90f4-05ddeff70709",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "278a9ebf-1398-42ab-b1db-320d90de416c",
+        "Next": {
+          "Id": "e0aefdc6-72ea-4675-8f58-291e54fe6e22",
+          "Next": null
+        }
+      }
+    },
+    "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3": {
+      "id": "08423d0f-7d7e-4cd5-8390-f0bc3b9e54f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "softdtw",
+            "ctw",
+            "euclidean",
+            "sqeuclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "n_neighbours": {
+          "key": "n_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be shown. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "278a9ebf-1398-42ab-b1db-320d90de416c": {
+      "id": "278a9ebf-1398-42ab-b1db-320d90de416c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "e0aefdc6-72ea-4675-8f58-291e54fe6e22": {
+      "id": "e0aefdc6-72ea-4675-8f58-291e54fe6e22",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

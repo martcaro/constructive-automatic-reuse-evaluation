@@ -1,0 +1,200 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "d0fb2d42-2771-4e67-94c2-5d10c84e1777",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d3ed6d07-2a31-4bff-9983-cb3ecefecbaf",
+  "properties": {},
+  "idModel": "65a5290050f18505bd91847d",
+  "custom_nodes": [],
+  "nodes": {
+    "d3ed6d07-2a31-4bff-9983-cb3ecefecbaf": {
+      "id": "d3ed6d07-2a31-4bff-9983-cb3ecefecbaf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "923d1344-8d32-4894-b26e-ee19c5580cdf",
+        "Next": {
+          "Id": "b3ee99b1-9e61-46f9-8237-3604ccef2c6f",
+          "Next": null
+        }
+      }
+    },
+    "923d1344-8d32-4894-b26e-ee19c5580cdf": {
+      "id": "923d1344-8d32-4894-b26e-ee19c5580cdf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "b3ee99b1-9e61-46f9-8237-3604ccef2c6f": {
+      "id": "b3ee99b1-9e61-46f9-8237-3604ccef2c6f",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "75709896-a3ee-4386-8177-beb59cab5578",
+        "Next": {
+          "Id": "fe15d287-6eb9-457e-873d-3defc2699d4b",
+          "Next": null
+        }
+      }
+    },
+    "75709896-a3ee-4386-8177-beb59cab5578": {
+      "id": "75709896-a3ee-4386-8177-beb59cab5578",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "224700ed-12ef-4c29-be56-4e11b50cc5fb",
+        "Next": {
+          "Id": "7fe43146-93b0-4eae-a060-bd46fe3e7587",
+          "Next": null
+        }
+      }
+    },
+    "fe15d287-6eb9-457e-873d-3defc2699d4b": {
+      "id": "fe15d287-6eb9-457e-873d-3defc2699d4b",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "224700ed-12ef-4c29-be56-4e11b50cc5fb": {
+      "id": "224700ed-12ef-4c29-be56-4e11b50cc5fb",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "7fe43146-93b0-4eae-a060-bd46fe3e7587": {
+      "id": "7fe43146-93b0-4eae-a060-bd46fe3e7587",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

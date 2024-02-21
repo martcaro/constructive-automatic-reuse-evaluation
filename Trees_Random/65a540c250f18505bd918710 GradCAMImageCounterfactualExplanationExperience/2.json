@@ -1,0 +1,328 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9627199a-3da5-4e56-9143-c1cd180778b4",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "65cdf6c8-1ad2-4ccd-b841-cb3c04111214",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "65cdf6c8-1ad2-4ccd-b841-cb3c04111214": {
+      "id": "65cdf6c8-1ad2-4ccd-b841-cb3c04111214",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "058a731c-e652-4eae-9304-b2589ff5e341",
+        "Next": {
+          "Id": "f6420740-51c4-44f7-8a90-4e17487f72a9",
+          "Next": {
+            "Id": "4f07d336-57bf-4e8f-9f7e-c9dac76afdbf",
+            "Next": {
+              "Id": "17fc5ba2-9b26-4701-8f17-0bb030d882e6",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "058a731c-e652-4eae-9304-b2589ff5e341": {
+      "id": "058a731c-e652-4eae-9304-b2589ff5e341",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "f6420740-51c4-44f7-8a90-4e17487f72a9": {
+      "id": "f6420740-51c4-44f7-8a90-4e17487f72a9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "d08824f4-245a-49d9-8588-a88686a1da8a",
+        "Next": {
+          "Id": "f13af3a2-a7ef-4390-8885-280b0b3af72f",
+          "Next": null
+        }
+      }
+    },
+    "4f07d336-57bf-4e8f-9f7e-c9dac76afdbf": {
+      "id": "4f07d336-57bf-4e8f-9f7e-c9dac76afdbf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "17fc5ba2-9b26-4701-8f17-0bb030d882e6": {
+      "id": "17fc5ba2-9b26-4701-8f17-0bb030d882e6",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5892d5be-736f-4723-8956-d1457796ee82",
+        "Next": {
+          "Id": "65db574d-8253-49c8-8625-6232da215665",
+          "Next": null
+        }
+      }
+    },
+    "d08824f4-245a-49d9-8588-a88686a1da8a": {
+      "id": "d08824f4-245a-49d9-8588-a88686a1da8a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "5bd4df40-a557-4507-8808-f36c6054bbf9",
+        "Next": {
+          "Id": "7f567e96-f782-48b6-b899-7b7083bea887",
+          "Next": null
+        }
+      }
+    },
+    "f13af3a2-a7ef-4390-8885-280b0b3af72f": {
+      "id": "f13af3a2-a7ef-4390-8885-280b0b3af72f",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "5892d5be-736f-4723-8956-d1457796ee82": {
+      "id": "5892d5be-736f-4723-8956-d1457796ee82",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d0979edc-9f4e-441e-87bf-93fa706952b7",
+        "Next": {
+          "Id": "b361a111-a4ef-40da-8b0b-cd026f5e532b",
+          "Next": null
+        }
+      }
+    },
+    "65db574d-8253-49c8-8625-6232da215665": {
+      "id": "65db574d-8253-49c8-8625-6232da215665",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      }
+    },
+    "5bd4df40-a557-4507-8808-f36c6054bbf9": {
+      "id": "5bd4df40-a557-4507-8808-f36c6054bbf9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "7f567e96-f782-48b6-b899-7b7083bea887": {
+      "id": "7f567e96-f782-48b6-b899-7b7083bea887",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "d0979edc-9f4e-441e-87bf-93fa706952b7": {
+      "id": "d0979edc-9f4e-441e-87bf-93fa706952b7",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "b361a111-a4ef-40da-8b0b-cd026f5e532b": {
+      "id": "b361a111-a4ef-40da-8b0b-cd026f5e532b",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

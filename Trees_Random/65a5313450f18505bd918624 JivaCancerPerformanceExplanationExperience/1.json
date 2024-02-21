@@ -1,0 +1,373 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "73184429-f52b-484b-bf20-3ff570e2e4e2",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "5b9b68ec-97d8-417f-9e00-46e9263ed571",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "5b9b68ec-97d8-417f-9e00-46e9263ed571": {
+      "id": "5b9b68ec-97d8-417f-9e00-46e9263ed571",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "f7bbf2ae-b06e-4950-8d0a-00ee52318e62",
+        "Next": {
+          "Id": "f493c5e0-247c-4958-894f-d9cf3a027e18",
+          "Next": {
+            "Id": "c287f141-5f93-4e76-8cd3-0f211f1a7a33",
+            "Next": {
+              "Id": "fdffd741-f129-4021-808c-0de312a4e129",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "f7bbf2ae-b06e-4950-8d0a-00ee52318e62": {
+      "id": "f7bbf2ae-b06e-4950-8d0a-00ee52318e62",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "f493c5e0-247c-4958-894f-d9cf3a027e18": {
+      "id": "f493c5e0-247c-4958-894f-d9cf3a027e18",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0107c5e0-d82f-4b9a-89f0-5257c53a00bf",
+        "Next": {
+          "Id": "690f8c7a-ff13-4b07-a1f4-8358df71271a",
+          "Next": null
+        }
+      }
+    },
+    "c287f141-5f93-4e76-8cd3-0f211f1a7a33": {
+      "id": "c287f141-5f93-4e76-8cd3-0f211f1a7a33",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "fdffd741-f129-4021-808c-0de312a4e129": {
+      "id": "fdffd741-f129-4021-808c-0de312a4e129",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "d21ac1ed-2546-40b9-8765-221b4a9fce37",
+        "Next": {
+          "Id": "56a8f189-7555-4788-836c-4a5b101c09f0",
+          "Next": null
+        }
+      }
+    },
+    "0107c5e0-d82f-4b9a-89f0-5257c53a00bf": {
+      "id": "0107c5e0-d82f-4b9a-89f0-5257c53a00bf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "727846da-76f3-40f5-8948-44e355c00221",
+        "Next": {
+          "Id": "6636f667-ca6c-4748-8b6a-c96b962994a2",
+          "Next": null
+        }
+      }
+    },
+    "690f8c7a-ff13-4b07-a1f4-8358df71271a": {
+      "id": "690f8c7a-ff13-4b07-a1f4-8358df71271a",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "softdtw",
+            "ctw",
+            "euclidean",
+            "sqeuclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "n_neighbours": {
+          "key": "n_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be shown. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "d21ac1ed-2546-40b9-8765-221b4a9fce37": {
+      "id": "d21ac1ed-2546-40b9-8765-221b4a9fce37",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d546f8b4-459c-4f47-a32c-8d16e97ebc13",
+        "Next": {
+          "Id": "e9ac41e8-44cd-4a1d-baae-f1e431e8907e",
+          "Next": null
+        }
+      }
+    },
+    "56a8f189-7555-4788-836c-4a5b101c09f0": {
+      "id": "56a8f189-7555-4788-836c-4a5b101c09f0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "727846da-76f3-40f5-8948-44e355c00221": {
+      "id": "727846da-76f3-40f5-8948-44e355c00221",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "6636f667-ca6c-4748-8b6a-c96b962994a2": {
+      "id": "6636f667-ca6c-4748-8b6a-c96b962994a2",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "d546f8b4-459c-4f47-a32c-8d16e97ebc13": {
+      "id": "d546f8b4-459c-4f47-a32c-8d16e97ebc13",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "e9ac41e8-44cd-4a1d-baae-f1e431e8907e": {
+      "id": "e9ac41e8-44cd-4a1d-baae-f1e431e8907e",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

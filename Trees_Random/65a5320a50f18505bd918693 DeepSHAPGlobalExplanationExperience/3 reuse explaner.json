@@ -1,0 +1,253 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "69b0b8c3-f7a6-4cc6-972c-4789ad5eab08",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b5f98d01-cccb-49e3-8941-74aa12ed8c50",
+  "properties": {},
+  "idModel": "65a5320a50f18505bd918693",
+  "custom_nodes": [],
+  "nodes": {
+    "b5f98d01-cccb-49e3-8941-74aa12ed8c50": {
+      "id": "b5f98d01-cccb-49e3-8941-74aa12ed8c50",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a1963c22-f9b0-4e2d-bb0f-c7be2f13adbf",
+        "Next": {
+          "Id": "f14f1cb1-6f5b-4d01-806c-a13239f1a6d5",
+          "Next": {
+            "Id": "a0ab6b45-109e-4aa8-865a-164954b736e3",
+            "Next": {
+              "Id": "2d67cf7c-2aa6-4b87-a6c7-44cbd8327546",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "a1963c22-f9b0-4e2d-bb0f-c7be2f13adbf": {
+      "id": "a1963c22-f9b0-4e2d-bb0f-c7be2f13adbf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "f14f1cb1-6f5b-4d01-806c-a13239f1a6d5": {
+      "id": "f14f1cb1-6f5b-4d01-806c-a13239f1a6d5",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "b3560e47-0240-40ad-8638-980e68695d6f",
+        "Next": {
+          "Id": "56dd56b8-12b6-4cc7-982b-3fbac82b8df4",
+          "Next": null
+        }
+      }
+    },
+    "a0ab6b45-109e-4aa8-865a-164954b736e3": {
+      "id": "a0ab6b45-109e-4aa8-865a-164954b736e3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "2d67cf7c-2aa6-4b87-a6c7-44cbd8327546": {
+      "id": "2d67cf7c-2aa6-4b87-a6c7-44cbd8327546",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "b3560e47-0240-40ad-8638-980e68695d6f": {
+      "id": "b3560e47-0240-40ad-8638-980e68695d6f",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "f85039ff-dda6-4d16-a9c9-ac3d792aa8b5",
+        "Next": {
+          "Id": "68fcc9c7-bcf8-40b8-867a-7898ae71190e",
+          "Next": null
+        }
+      }
+    },
+    "56dd56b8-12b6-4cc7-982b-3fbac82b8df4": {
+      "id": "56dd56b8-12b6-4cc7-982b-3fbac82b8df4",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "f85039ff-dda6-4d16-a9c9-ac3d792aa8b5": {
+      "id": "f85039ff-dda6-4d16-a9c9-ac3d792aa8b5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "68fcc9c7-bcf8-40b8-867a-7898ae71190e": {
+      "id": "68fcc9c7-bcf8-40b8-867a-7898ae71190e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 880.0999999642372,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

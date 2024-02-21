@@ -1,0 +1,164 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "5bfbbe54-e825-4a07-b20c-cda623ab1248",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b71f64dc-dded-46d1-916b-bdd1743f42cc",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "b71f64dc-dded-46d1-916b-bdd1743f42cc": {
+      "id": "b71f64dc-dded-46d1-916b-bdd1743f42cc",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a46e00a3-8bae-47d1-82b1-cbadc438f90d",
+        "Next": {
+          "Id": "ef49a265-6cd8-425f-897a-a2f98da0e046",
+          "Next": null
+        }
+      }
+    },
+    "a46e00a3-8bae-47d1-82b1-cbadc438f90d": {
+      "id": "a46e00a3-8bae-47d1-82b1-cbadc438f90d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How well does the AI system capture the real-world?"
+        }
+      }
+    },
+    "ef49a265-6cd8-425f-897a-a2f98da0e046": {
+      "id": "ef49a265-6cd8-425f-897a-a2f98da0e046",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5bd08941-9034-4fce-97a0-1414c951984d",
+        "Next": {
+          "Id": "810873c9-d3b1-412e-ba02-8d64a5684321",
+          "Next": null
+        }
+      }
+    },
+    "5bd08941-9034-4fce-97a0-1414c951984d": {
+      "id": "5bd08941-9034-4fce-97a0-1414c951984d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "6746fa9e-d298-4aa7-8a47-8a6fe4b48afb",
+        "Next": {
+          "Id": "10081633-6c94-4749-9425-6081e9068ed8",
+          "Next": null
+        }
+      }
+    },
+    "810873c9-d3b1-412e-ba02-8d64a5684321": {
+      "id": "810873c9-d3b1-412e-ba02-8d64a5684321",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      }
+    },
+    "6746fa9e-d298-4aa7-8a47-8a6fe4b48afb": {
+      "id": "6746fa9e-d298-4aa7-8a47-8a6fe4b48afb",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "10081633-6c94-4749-9425-6081e9068ed8": {
+      "id": "10081633-6c94-4749-9425-6081e9068ed8",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

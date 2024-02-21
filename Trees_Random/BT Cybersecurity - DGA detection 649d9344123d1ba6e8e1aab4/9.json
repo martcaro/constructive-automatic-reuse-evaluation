@@ -1,0 +1,450 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8c6bc5e9-1489-4a43-8059-defe67e364fc",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "00cf7198-221a-44a3-8477-6f9a44082905",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "00cf7198-221a-44a3-8477-6f9a44082905": {
+      "id": "00cf7198-221a-44a3-8477-6f9a44082905",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "0b16822a-14ec-4ef0-82ec-04a1cddc5619",
+        "Next": {
+          "Id": "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf",
+          "Next": {
+            "Id": "eb0e0e6a-5972-47b2-81e7-510a344cbeef",
+            "Next": {
+              "Id": "9086f883-1c0d-470a-8e52-cb0db81a0418",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "0b16822a-14ec-4ef0-82ec-04a1cddc5619": {
+      "id": "0b16822a-14ec-4ef0-82ec-04a1cddc5619",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf": {
+      "id": "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "cf21b627-12f9-4862-8a9b-4a95715c8ce8",
+        "Next": {
+          "Id": "98118a5e-fb4e-4bfb-83ae-508e4805071c",
+          "Next": null
+        }
+      }
+    },
+    "eb0e0e6a-5972-47b2-81e7-510a344cbeef": {
+      "id": "eb0e0e6a-5972-47b2-81e7-510a344cbeef",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "9086f883-1c0d-470a-8e52-cb0db81a0418": {
+      "id": "9086f883-1c0d-470a-8e52-cb0db81a0418",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5172545a-ff09-48d1-b901-b201d5195c0e",
+        "Next": {
+          "Id": "99107f3f-c57e-449c-8002-966aed0794b0",
+          "Next": null
+        }
+      }
+    },
+    "cf21b627-12f9-4862-8a9b-4a95715c8ce8": {
+      "id": "cf21b627-12f9-4862-8a9b-4a95715c8ce8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "27fa96d6-8b44-43eb-80cd-8004f07bdc6a",
+        "Next": {
+          "Id": "38016abd-424b-4a88-b3c8-8c16ed522e7a",
+          "Next": null
+        }
+      }
+    },
+    "98118a5e-fb4e-4bfb-83ae-508e4805071c": {
+      "id": "98118a5e-fb4e-4bfb-83ae-508e4805071c",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      }
+    },
+    "5172545a-ff09-48d1-b901-b201d5195c0e": {
+      "id": "5172545a-ff09-48d1-b901-b201d5195c0e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "82f5b689-c1e3-4072-8c61-63210f2c9810",
+        "Next": {
+          "Id": "002bceaa-7353-419a-8927-dbc757c680ef",
+          "Next": null
+        }
+      }
+    },
+    "99107f3f-c57e-449c-8002-966aed0794b0": {
+      "id": "99107f3f-c57e-449c-8002-966aed0794b0",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Function used to perturb the instances.",
+          "fixed": false
+        }
+      }
+    },
+    "27fa96d6-8b44-43eb-80cd-8004f07bdc6a": {
+      "id": "27fa96d6-8b44-43eb-80cd-8004f07bdc6a",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "fixed": false
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "fixed": false
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "heatmap",
+          "default": "heatmap",
+          "range": [
+            "heatmap",
+            "attributions"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Plot style to be used. It can be either 'heatmap' or 'attributions'. Defaults to 'heatmap'.",
+          "fixed": false
+        }
+      }
+    },
+    "38016abd-424b-4a88-b3c8-8c16ed522e7a": {
+      "id": "38016abd-424b-4a88-b3c8-8c16ed522e7a",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "82f5b689-c1e3-4072-8c61-63210f2c9810": {
+      "id": "82f5b689-c1e3-4072-8c61-63210f2c9810",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "002bceaa-7353-419a-8927-dbc757c680ef": {
+      "id": "002bceaa-7353-419a-8927-dbc757c680ef",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "description": "String with the method to calculate the residuals.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

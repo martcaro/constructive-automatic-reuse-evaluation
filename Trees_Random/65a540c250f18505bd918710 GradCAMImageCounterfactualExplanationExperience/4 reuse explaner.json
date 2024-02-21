@@ -1,0 +1,334 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "1e3621e1-7808-4530-a1fe-8fe7bd15e0d5",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "86b155fc-19fb-43e4-ad57-74f6fdb26b9e",
+  "properties": {},
+  "idModel": "65a540c250f18505bd918710",
+  "custom_nodes": [],
+  "nodes": {
+    "86b155fc-19fb-43e4-ad57-74f6fdb26b9e": {
+      "id": "86b155fc-19fb-43e4-ad57-74f6fdb26b9e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "87322e33-b380-42fe-8094-982a0c8d7aff",
+        "Next": {
+          "Id": "7a8f5c0b-dbcf-4a00-810a-9801851f893e",
+          "Next": null
+        }
+      }
+    },
+    "87322e33-b380-42fe-8094-982a0c8d7aff": {
+      "id": "87322e33-b380-42fe-8094-982a0c8d7aff",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get a similar outcome?"
+        }
+      }
+    },
+    "7a8f5c0b-dbcf-4a00-810a-9801851f893e": {
+      "id": "7a8f5c0b-dbcf-4a00-810a-9801851f893e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "f749b834-090d-4f69-8236-dfd139fbffb7",
+        "Next": {
+          "Id": "bb8651b8-84a7-41af-8ecd-1b7c0794553c",
+          "Next": null
+        }
+      }
+    },
+    "f749b834-090d-4f69-8236-dfd139fbffb7": {
+      "id": "f749b834-090d-4f69-8236-dfd139fbffb7",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2cb6ef26-82b2-4673-894f-502291e2ff57",
+        "Next": {
+          "Id": "38e4d60c-ac6a-4b51-8f3d-08868b589995",
+          "Next": null
+        }
+      }
+    },
+    "bb8651b8-84a7-41af-8ecd-1b7c0794553c": {
+      "id": "bb8651b8-84a7-41af-8ecd-1b7c0794553c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "2cb6ef26-82b2-4673-894f-502291e2ff57": {
+      "id": "2cb6ef26-82b2-4673-894f-502291e2ff57",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "38e4d60c-ac6a-4b51-8f3d-08868b589995": {
+      "id": "38e4d60c-ac6a-4b51-8f3d-08868b589995",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 723.7000000029802,
+    "camera_y": 369.79999999701977,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

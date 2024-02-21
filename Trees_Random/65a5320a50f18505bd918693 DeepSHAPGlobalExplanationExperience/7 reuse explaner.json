@@ -1,0 +1,264 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "86bd5229-4c51-4382-ac9b-c56842e5a044",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "f72d8252-15a4-4d68-989c-5361e0403cec",
+  "properties": {},
+  "idModel": "65a5320a50f18505bd918693",
+  "custom_nodes": [],
+  "nodes": {
+    "f72d8252-15a4-4d68-989c-5361e0403cec": {
+      "id": "f72d8252-15a4-4d68-989c-5361e0403cec",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "1ce74015-9c6a-49d8-86bf-a7b25ce6e4b6",
+        "Next": {
+          "Id": "04ba56a8-90f9-428d-8fc5-0c97b510265d",
+          "Next": {
+            "Id": "05f6191e-4baa-413f-8f5e-e73d8a6ce246",
+            "Next": {
+              "Id": "697590b0-58fe-43c2-829c-01c6de0bf2a3",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "1ce74015-9c6a-49d8-86bf-a7b25ce6e4b6": {
+      "id": "1ce74015-9c6a-49d8-86bf-a7b25ce6e4b6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "04ba56a8-90f9-428d-8fc5-0c97b510265d": {
+      "id": "04ba56a8-90f9-428d-8fc5-0c97b510265d",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "05f6191e-4baa-413f-8f5e-e73d8a6ce246": {
+      "id": "05f6191e-4baa-413f-8f5e-e73d8a6ce246",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "697590b0-58fe-43c2-829c-01c6de0bf2a3": {
+      "id": "697590b0-58fe-43c2-829c-01c6de0bf2a3",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "79864da9-5aee-4aa1-82f7-44bede6ac3f8",
+        "Next": {
+          "Id": "ef1dfcf1-9b4c-4d37-b189-ab3304d8c728",
+          "Next": null
+        }
+      }
+    },
+    "79864da9-5aee-4aa1-82f7-44bede6ac3f8": {
+      "id": "79864da9-5aee-4aa1-82f7-44bede6ac3f8",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "3fd1d60d-b931-4775-8b68-544c1725bde0",
+        "Next": {
+          "Id": "9a7188bd-5f50-4175-aa68-0f7e0f02df6a",
+          "Next": null
+        }
+      }
+    },
+    "ef1dfcf1-9b4c-4d37-b189-ab3304d8c728": {
+      "id": "ef1dfcf1-9b4c-4d37-b189-ab3304d8c728",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "3fd1d60d-b931-4775-8b68-544c1725bde0": {
+      "id": "3fd1d60d-b931-4775-8b68-544c1725bde0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    },
+    "9a7188bd-5f50-4175-aa68-0f7e0f02df6a": {
+      "id": "9a7188bd-5f50-4175-aa68-0f7e0f02df6a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

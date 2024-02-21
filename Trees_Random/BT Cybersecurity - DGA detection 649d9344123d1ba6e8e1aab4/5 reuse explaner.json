@@ -1,0 +1,328 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "547655e0-9abb-442e-9941-18d6877bc572",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "fbf32092-bab8-4522-8e30-83ecf274c5cf",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "fbf32092-bab8-4522-8e30-83ecf274c5cf": {
+      "id": "fbf32092-bab8-4522-8e30-83ecf274c5cf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "48f641da-ac92-4c30-895e-155dcdc8060e",
+        "Next": {
+          "Id": "a7642d27-c729-4ab4-8b11-7c438e538062",
+          "Next": {
+            "Id": "92d8d5e1-4789-41b1-ac6e-1e7d561e6c1b",
+            "Next": {
+              "Id": "1087b70d-de2f-4aee-9beb-0d3419db101b",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "48f641da-ac92-4c30-895e-155dcdc8060e": {
+      "id": "48f641da-ac92-4c30-895e-155dcdc8060e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "a7642d27-c729-4ab4-8b11-7c438e538062": {
+      "id": "a7642d27-c729-4ab4-8b11-7c438e538062",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "658eb05f-dd5b-4579-8f50-24d601fd9cb3",
+        "Next": {
+          "Id": "406dc34b-d3c6-45b9-8156-07da19dbff81",
+          "Next": null
+        }
+      }
+    },
+    "92d8d5e1-4789-41b1-ac6e-1e7d561e6c1b": {
+      "id": "92d8d5e1-4789-41b1-ac6e-1e7d561e6c1b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get outcome {outcome}?"
+        }
+      }
+    },
+    "1087b70d-de2f-4aee-9beb-0d3419db101b": {
+      "id": "1087b70d-de2f-4aee-9beb-0d3419db101b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "opposite",
+          "default": "opposite",
+          "range": [
+            "opposite",
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "type": "select"
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "default": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "range": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "type": "checkbox"
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "type": "select"
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "type": "text"
+        }
+      }
+    },
+    "658eb05f-dd5b-4579-8f50-24d601fd9cb3": {
+      "id": "658eb05f-dd5b-4579-8f50-24d601fd9cb3",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "dfcd73da-3e2b-4441-b0d5-fc2d2bd9dbaa",
+        "Next": {
+          "Id": "c1c8c4fc-0484-4c98-89d4-5639f46c01ae",
+          "Next": null
+        }
+      }
+    },
+    "406dc34b-d3c6-45b9-8156-07da19dbff81": {
+      "id": "406dc34b-d3c6-45b9-8156-07da19dbff81",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "dfcd73da-3e2b-4441-b0d5-fc2d2bd9dbaa": {
+      "id": "dfcd73da-3e2b-4441-b0d5-fc2d2bd9dbaa",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "c1c8c4fc-0484-4c98-89d4-5639f46c01ae": {
+      "id": "c1c8c4fc-0484-4c98-89d4-5639f46c01ae",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

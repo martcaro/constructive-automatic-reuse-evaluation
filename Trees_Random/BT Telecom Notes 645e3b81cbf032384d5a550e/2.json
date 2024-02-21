@@ -1,0 +1,368 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "7e81ce8e-eb72-428a-a280-0e7909e9c5a3",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "9ff46952-e929-4b01-9318-220bfe76e2dd",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "9ff46952-e929-4b01-9318-220bfe76e2dd": {
+      "id": "9ff46952-e929-4b01-9318-220bfe76e2dd",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "185f6467-108e-4113-88ad-578e0854dd9f",
+        "Next": {
+          "Id": "c5bfd385-bee7-4c61-868f-e9f104b2e283",
+          "Next": {
+            "Id": "3b9cc293-4519-4ad7-a488-ec6ee62f15cd",
+            "Next": {
+              "Id": "8488aa3e-2dfa-42dc-ad18-0c3bd3a278bc",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "185f6467-108e-4113-88ad-578e0854dd9f": {
+      "id": "185f6467-108e-4113-88ad-578e0854dd9f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "c5bfd385-bee7-4c61-868f-e9f104b2e283": {
+      "id": "c5bfd385-bee7-4c61-868f-e9f104b2e283",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "3b9cc293-4519-4ad7-a488-ec6ee62f15cd": {
+      "id": "3b9cc293-4519-4ad7-a488-ec6ee62f15cd",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How reliable is the AI system?"
+        }
+      }
+    },
+    "8488aa3e-2dfa-42dc-ad18-0c3bd3a278bc": {
+      "id": "8488aa3e-2dfa-42dc-ad18-0c3bd3a278bc",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "481449d3-127f-43b2-b605-647fefa632ab",
+        "Next": {
+          "Id": "5afc250d-9885-4fb0-8345-6e6626b25a3b",
+          "Next": null
+        }
+      }
+    },
+    "481449d3-127f-43b2-b605-647fefa632ab": {
+      "id": "481449d3-127f-43b2-b605-647fefa632ab",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2e9dd374-373d-4fa9-b7fd-cb0d5baa73eb",
+        "Next": {
+          "Id": "5c5b1273-9f36-40e1-9ee8-941392918661",
+          "Next": null
+        }
+      }
+    },
+    "5afc250d-9885-4fb0-8345-6e6626b25a3b": {
+      "id": "5afc250d-9885-4fb0-8345-6e6626b25a3b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "fixed": false
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "fixed": false
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "fixed": false
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "fixed": false
+        }
+      }
+    },
+    "2e9dd374-373d-4fa9-b7fd-cb0d5baa73eb": {
+      "id": "2e9dd374-373d-4fa9-b7fd-cb0d5baa73eb",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "5c5b1273-9f36-40e1-9ee8-941392918661": {
+      "id": "5c5b1273-9f36-40e1-9ee8-941392918661",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

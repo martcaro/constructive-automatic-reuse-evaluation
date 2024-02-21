@@ -1,0 +1,216 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "deab5b5f-c643-4eef-af28-d7538697838e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "1aa11151-3927-4b1e-8882-e254d15886ef",
+  "properties": {},
+  "idModel": "65a5290050f18505bd91847d",
+  "custom_nodes": [],
+  "nodes": {
+    "1aa11151-3927-4b1e-8882-e254d15886ef": {
+      "id": "1aa11151-3927-4b1e-8882-e254d15886ef",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+        "Next": {
+          "Id": "e19043ca-f779-4480-8a32-921b0d0f2bbd",
+          "Next": null
+        }
+      }
+    },
+    "7e6f46df-dd97-47dd-8c60-9e6d3f479414": {
+      "id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered in the current outcome?"
+        }
+      }
+    },
+    "e19043ca-f779-4480-8a32-921b0d0f2bbd": {
+      "id": "e19043ca-f779-4480-8a32-921b0d0f2bbd",
+      "Concept": "Variant",
+      "Instance": "Variant",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "98489712-951e-4685-8883-76c2bcd9e634",
+        "Next": {
+          "Id": "fad46100-dcf8-42fe-8244-39e383098d32",
+          "Next": null
+        }
+      }
+    },
+    "98489712-951e-4685-8883-76c2bcd9e634": {
+      "id": "98489712-951e-4685-8883-76c2bcd9e634",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 48,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "type": "select"
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "type": "number"
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "fad46100-dcf8-42fe-8244-39e383098d32": {
+      "id": "fad46100-dcf8-42fe-8244-39e383098d32",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 252,
+        "y": 384
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 638.9000000059605,
+    "camera_y": 403.6000000089407,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

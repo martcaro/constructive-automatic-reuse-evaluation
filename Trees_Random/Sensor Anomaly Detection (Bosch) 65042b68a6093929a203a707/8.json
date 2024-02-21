@@ -1,0 +1,204 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "a3318f36-688c-4fb0-b388-769095c64e54",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "0792d0c2-e87a-443f-8315-f7e7073e27f4",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "0792d0c2-e87a-443f-8315-f7e7073e27f4": {
+      "id": "0792d0c2-e87a-443f-8315-f7e7073e27f4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "dbcbbcd9-9172-4fef-b7e1-8f6bb340887e",
+        "Next": {
+          "Id": "12758e1f-ae74-4bd8-8c71-f02f39ea2a06",
+          "Next": null
+        }
+      }
+    },
+    "dbcbbcd9-9172-4fef-b7e1-8f6bb340887e": {
+      "id": "dbcbbcd9-9172-4fef-b7e1-8f6bb340887e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "12758e1f-ae74-4bd8-8c71-f02f39ea2a06": {
+      "id": "12758e1f-ae74-4bd8-8c71-f02f39ea2a06",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6abab3f3-1470-459e-bf29-5e3df42e3317",
+        "Next": {
+          "Id": "55a52fe7-4b6d-4970-901e-3aa8c318b669",
+          "Next": null
+        }
+      }
+    },
+    "6abab3f3-1470-459e-bf29-5e3df42e3317": {
+      "id": "6abab3f3-1470-459e-bf29-5e3df42e3317",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "deba178f-ea32-4b74-895e-745452875a90",
+        "Next": {
+          "Id": "b2e8508f-b636-408f-82ec-3df63fc04234",
+          "Next": null
+        }
+      }
+    },
+    "55a52fe7-4b6d-4970-901e-3aa8c318b669": {
+      "id": "55a52fe7-4b6d-4970-901e-3aa8c318b669",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "deba178f-ea32-4b74-895e-745452875a90": {
+      "id": "deba178f-ea32-4b74-895e-745452875a90",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/FORGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "sigma": {
+          "key": "sigma",
+          "value": 15,
+          "default": 15,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Bandwith of the low pass filter. The higher the sigma, the more frequencies are kept. Sigma should be positive and less than image size. Defaults to 15.",
+          "fixed": false
+        }
+      }
+    },
+    "b2e8508f-b636-408f-82ec-3df63fc04234": {
+      "id": "b2e8508f-b636-408f-82ec-3df63fc04234",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

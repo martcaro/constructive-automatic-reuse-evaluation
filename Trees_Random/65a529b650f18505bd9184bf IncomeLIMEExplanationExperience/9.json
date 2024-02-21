@@ -1,0 +1,412 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2bcdc7a0-80a2-423e-8498-7112fd9674a5",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "7b089d76-e0c6-4696-8418-4dc41832df05",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "7b089d76-e0c6-4696-8418-4dc41832df05": {
+      "id": "7b089d76-e0c6-4696-8418-4dc41832df05",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac",
+        "Next": {
+          "Id": "b47dac91-a4c1-4b2d-bb97-81a355218c3e",
+          "Next": {
+            "Id": "b56dbcc0-47c4-4985-9f1e-e5faebf7977e",
+            "Next": {
+              "Id": "6755c046-fe97-46e7-81e8-b4258c1c2526",
+              "Next": {
+                "Id": "2eedd61e-e2f7-41f3-84ae-76435585d7a6",
+                "Next": {
+                  "Id": "c0e9d396-402e-4487-baa7-ccf071d91e34",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac": {
+      "id": "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "b47dac91-a4c1-4b2d-bb97-81a355218c3e": {
+      "id": "b47dac91-a4c1-4b2d-bb97-81a355218c3e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e",
+        "Next": {
+          "Id": "50988b87-a497-4452-85bd-3a138d128eb2",
+          "Next": null
+        }
+      }
+    },
+    "b56dbcc0-47c4-4985-9f1e-e5faebf7977e": {
+      "id": "b56dbcc0-47c4-4985-9f1e-e5faebf7977e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "6755c046-fe97-46e7-81e8-b4258c1c2526": {
+      "id": "6755c046-fe97-46e7-81e8-b4258c1c2526",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "2eedd61e-e2f7-41f3-84ae-76435585d7a6": {
+      "id": "2eedd61e-e2f7-41f3-84ae-76435585d7a6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "c0e9d396-402e-4487-baa7-ccf071d91e34": {
+      "id": "c0e9d396-402e-4487-baa7-ccf071d91e34",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d",
+        "Next": {
+          "Id": "618a24bc-d0a5-45ff-8c45-bb6e200d5b82",
+          "Next": null
+        }
+      }
+    },
+    "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e": {
+      "id": "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8",
+        "Next": {
+          "Id": "2d1232ab-114c-4fa0-9c44-a8abca3c9933",
+          "Next": null
+        }
+      }
+    },
+    "50988b87-a497-4452-85bd-3a138d128eb2": {
+      "id": "50988b87-a497-4452-85bd-3a138d128eb2",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d": {
+      "id": "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ba56348c-3335-4105-84ce-88b2b2a801dc",
+        "Next": {
+          "Id": "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57",
+          "Next": null
+        }
+      }
+    },
+    "618a24bc-d0a5-45ff-8c45-bb6e200d5b82": {
+      "id": "618a24bc-d0a5-45ff-8c45-bb6e200d5b82",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 984,
+        "y": 384
+      }
+    },
+    "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8": {
+      "id": "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "2d1232ab-114c-4fa0-9c44-a8abca3c9933": {
+      "id": "2d1232ab-114c-4fa0-9c44-a8abca3c9933",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -468,
+        "y": 516
+      }
+    },
+    "ba56348c-3335-4105-84ce-88b2b2a801dc": {
+      "id": "ba56348c-3335-4105-84ce-88b2b2a801dc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 516
+      }
+    },
+    "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57": {
+      "id": "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/CBRFox",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "smoothness_factor": {
+          "key": "smoothness_factor",
+          "value": 0.03,
+          "default": 0.03,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float ranging from 0 to 1 for the smoothness factor that will be applied for metric computation. Defaults to 0.03.",
+          "type": "number"
+        },
+        "punished_sum_factor": {
+          "key": "punished_sum_factor",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float ranging from 0 to 1 for the punished sum factor that will be applied for metric computation. Defaults to 0.5.",
+          "type": "number"
+        },
+        "reference_method": {
+          "key": "reference_method",
+          "value": "average",
+          "default": "average",
+          "range": [
+            "average",
+            "min",
+            "max",
+            "median"
+          ],
+          "required": "false",
+          "description": "The method to be used for the selection of the general cases. It may be 'average','min','max' and 'median'. Defaults to 'average'.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

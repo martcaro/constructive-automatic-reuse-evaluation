@@ -1,0 +1,432 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2bcdc7a0-80a2-423e-8498-7112fd9674a5",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "7b089d76-e0c6-4696-8418-4dc41832df05",
+  "properties": {},
+  "idModel": "65a529b650f18505bd9184bf",
+  "custom_nodes": [],
+  "nodes": {
+    "7b089d76-e0c6-4696-8418-4dc41832df05": {
+      "id": "7b089d76-e0c6-4696-8418-4dc41832df05",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac",
+        "Next": {
+          "Id": "b47dac91-a4c1-4b2d-bb97-81a355218c3e",
+          "Next": {
+            "Id": "b56dbcc0-47c4-4985-9f1e-e5faebf7977e",
+            "Next": {
+              "Id": "6755c046-fe97-46e7-81e8-b4258c1c2526",
+              "Next": {
+                "Id": "2eedd61e-e2f7-41f3-84ae-76435585d7a6",
+                "Next": {
+                  "Id": "c0e9d396-402e-4487-baa7-ccf071d91e34",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac": {
+      "id": "8ea1f3ab-cab2-44c7-8aa2-37e5b85c5eac",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "b47dac91-a4c1-4b2d-bb97-81a355218c3e": {
+      "id": "b47dac91-a4c1-4b2d-bb97-81a355218c3e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e",
+        "Next": {
+          "Id": "50988b87-a497-4452-85bd-3a138d128eb2",
+          "Next": null
+        }
+      }
+    },
+    "b56dbcc0-47c4-4985-9f1e-e5faebf7977e": {
+      "id": "b56dbcc0-47c4-4985-9f1e-e5faebf7977e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "6755c046-fe97-46e7-81e8-b4258c1c2526": {
+      "id": "6755c046-fe97-46e7-81e8-b4258c1c2526",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "2eedd61e-e2f7-41f3-84ae-76435585d7a6": {
+      "id": "2eedd61e-e2f7-41f3-84ae-76435585d7a6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "c0e9d396-402e-4487-baa7-ccf071d91e34": {
+      "id": "c0e9d396-402e-4487-baa7-ccf071d91e34",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d",
+        "Next": {
+          "Id": "618a24bc-d0a5-45ff-8c45-bb6e200d5b82",
+          "Next": null
+        }
+      }
+    },
+    "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e": {
+      "id": "08ebf384-6981-4ae0-8df0-e5cf0ed40f9e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8",
+        "Next": {
+          "Id": "2d1232ab-114c-4fa0-9c44-a8abca3c9933",
+          "Next": null
+        }
+      }
+    },
+    "50988b87-a497-4452-85bd-3a138d128eb2": {
+      "id": "50988b87-a497-4452-85bd-3a138d128eb2",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d": {
+      "id": "fb8a4fab-614a-4fb7-98f3-340bc1bd6b5d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ba56348c-3335-4105-84ce-88b2b2a801dc",
+        "Next": {
+          "Id": "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57",
+          "Next": null
+        }
+      }
+    },
+    "618a24bc-d0a5-45ff-8c45-bb6e200d5b82": {
+      "id": "618a24bc-d0a5-45ff-8c45-bb6e200d5b82",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 984,
+        "y": 384
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    },
+    "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8": {
+      "id": "3a30d5f0-ad79-4bbc-b905-8d383c8a6fa8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "2d1232ab-114c-4fa0-9c44-a8abca3c9933": {
+      "id": "2d1232ab-114c-4fa0-9c44-a8abca3c9933",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -468,
+        "y": 516
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "ba56348c-3335-4105-84ce-88b2b2a801dc": {
+      "id": "ba56348c-3335-4105-84ce-88b2b2a801dc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 564,
+        "y": 516
+      }
+    },
+    "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57": {
+      "id": "e1434cc6-f8b3-457a-83b4-4ff3fb8ecb57",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

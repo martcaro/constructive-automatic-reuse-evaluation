@@ -1,0 +1,459 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "deab5b5f-c643-4eef-af28-d7538697838e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "1aa11151-3927-4b1e-8882-e254d15886ef",
+  "properties": {},
+  "idModel": "65a5290050f18505bd91847d",
+  "custom_nodes": [],
+  "nodes": {
+    "1aa11151-3927-4b1e-8882-e254d15886ef": {
+      "id": "1aa11151-3927-4b1e-8882-e254d15886ef",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e7d1ff8a-030e-4389-84c7-5352fea87811",
+        "Next": {
+          "Id": "4c3e0ad3-ec39-45ac-b1f9-32018cdacab3",
+          "Next": {
+            "Id": "d43bb95a-2237-4266-8513-366621d0a028",
+            "Next": {
+              "Id": "e65abd18-e4c9-49bf-bf9b-37298eb381f9",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "e7d1ff8a-030e-4389-84c7-5352fea87811": {
+      "id": "e7d1ff8a-030e-4389-84c7-5352fea87811",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "4c3e0ad3-ec39-45ac-b1f9-32018cdacab3": {
+      "id": "4c3e0ad3-ec39-45ac-b1f9-32018cdacab3",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "d43bb95a-2237-4266-8513-366621d0a028": {
+      "id": "d43bb95a-2237-4266-8513-366621d0a028",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "e65abd18-e4c9-49bf-bf9b-37298eb381f9": {
+      "id": "e65abd18-e4c9-49bf-bf9b-37298eb381f9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "45313b84-47fb-46b8-816a-e26956b756d1",
+        "Next": {
+          "Id": "5ad1880b-9770-49db-80e4-9cfe325f6829",
+          "Next": null
+        }
+      }
+    },
+    "45313b84-47fb-46b8-816a-e26956b756d1": {
+      "id": "45313b84-47fb-46b8-816a-e26956b756d1",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d212ea2a-b704-40ea-82a8-d1543ac8e87f",
+        "Next": {
+          "Id": "1b029970-bb2c-4b56-9938-3ea4ab595527",
+          "Next": null
+        }
+      }
+    },
+    "5ad1880b-9770-49db-80e4-9cfe325f6829": {
+      "id": "5ad1880b-9770-49db-80e4-9cfe325f6829",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "d212ea2a-b704-40ea-82a8-d1543ac8e87f": {
+      "id": "d212ea2a-b704-40ea-82a8-d1543ac8e87f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "1b029970-bb2c-4b56-9938-3ea4ab595527": {
+      "id": "1b029970-bb2c-4b56-9938-3ea4ab595527",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "type": "select"
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "type": "number"
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "type": "number"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "heatmap",
+          "default": "heatmap",
+          "range": [
+            "heatmap",
+            "attributions"
+          ],
+          "required": "false",
+          "description": "Plot style to be used. It can be either 'heatmap' or 'attributions'. Defaults to 'heatmap'.",
+          "type": "select"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "75e0b5b5-3ff5-433e-97cb-de37bbca3a43",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d46b4fd5-36b8-4219-9f37-8618fc1e56d9",
+  "properties": {},
+  "idModel": "645e3b81cbf032384d5a550e",
+  "custom_nodes": [],
+  "nodes": {
+    "d46b4fd5-36b8-4219-9f37-8618fc1e56d9": {
+      "id": "d46b4fd5-36b8-4219-9f37-8618fc1e56d9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "90d3a5a4-10e5-4ff6-8790-1693a645b532",
+        "Next": {
+          "Id": "85e3ca50-1b26-4f72-97e6-abc622763f31",
+          "Next": {
+            "Id": "d973ad3e-51d0-43a7-83cd-97071007b0df",
+            "Next": {
+              "Id": "1fe94333-2fd4-4eaa-b231-8cf108a28200",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "90d3a5a4-10e5-4ff6-8790-1693a645b532": {
+      "id": "90d3a5a4-10e5-4ff6-8790-1693a645b532",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "85e3ca50-1b26-4f72-97e6-abc622763f31": {
+      "id": "85e3ca50-1b26-4f72-97e6-abc622763f31",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "53703c8c-85c7-4188-9973-4ca707966da4",
+        "Next": {
+          "Id": "5da0010d-bb64-42c3-8d83-4fdf2e0c41b3",
+          "Next": null
+        }
+      }
+    },
+    "d973ad3e-51d0-43a7-83cd-97071007b0df": {
+      "id": "d973ad3e-51d0-43a7-83cd-97071007b0df",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get outcome {outcome}?"
+        }
+      }
+    },
+    "1fe94333-2fd4-4eaa-b231-8cf108a28200": {
+      "id": "1fe94333-2fd4-4eaa-b231-8cf108a28200",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "74d511d7-a8a7-4534-b3d7-0b9f82578084",
+        "Next": {
+          "Id": "0b0477ca-7617-4dd2-8548-b199fe9045d6",
+          "Next": null
+        }
+      }
+    },
+    "53703c8c-85c7-4188-9973-4ca707966da4": {
+      "id": "53703c8c-85c7-4188-9973-4ca707966da4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "95190cdb-c64c-48e8-a1c8-e3419dec23d6",
+        "Next": {
+          "Id": "89268876-a430-497e-b03a-c7918151817e",
+          "Next": null
+        }
+      }
+    },
+    "5da0010d-bb64-42c3-8d83-4fdf2e0c41b3": {
+      "id": "5da0010d-bb64-42c3-8d83-4fdf2e0c41b3",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "74d511d7-a8a7-4534-b3d7-0b9f82578084": {
+      "id": "74d511d7-a8a7-4534-b3d7-0b9f82578084",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "6fd65ef4-b922-4845-a0c0-7138b50837da",
+        "Next": {
+          "Id": "0c9472a9-695c-4a55-823b-a275d3391237",
+          "Next": null
+        }
+      }
+    },
+    "0b0477ca-7617-4dd2-8548-b199fe9045d6": {
+      "id": "0b0477ca-7617-4dd2-8548-b199fe9045d6",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "95190cdb-c64c-48e8-a1c8-e3419dec23d6": {
+      "id": "95190cdb-c64c-48e8-a1c8-e3419dec23d6",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    },
+    "89268876-a430-497e-b03a-c7918151817e": {
+      "id": "89268876-a430-497e-b03a-c7918151817e",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "6fd65ef4-b922-4845-a0c0-7138b50837da": {
+      "id": "6fd65ef4-b922-4845-a0c0-7138b50837da",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "type": "select"
+        }
+      }
+    },
+    "0c9472a9-695c-4a55-823b-a275d3391237": {
+      "id": "0c9472a9-695c-4a55-823b-a275d3391237",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 788.6000000238419,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

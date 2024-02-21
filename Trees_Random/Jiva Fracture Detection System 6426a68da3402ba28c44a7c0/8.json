@@ -1,0 +1,253 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "66523690-6ed1-436d-bde2-f2ef0c33a22f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d71e6ce3-fd78-4468-9a15-15ec04d84b90",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d71e6ce3-fd78-4468-9a15-15ec04d84b90": {
+      "id": "d71e6ce3-fd78-4468-9a15-15ec04d84b90",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "7660a3c8-89d2-429e-829a-648bb5d056e1",
+        "Next": {
+          "Id": "5303d49f-010c-4f4d-90e9-4e97ae89e2b9",
+          "Next": {
+            "Id": "2994c4be-b601-4a47-b427-efb3ec599ae2",
+            "Next": {
+              "Id": "b8478ec9-d9db-441a-8560-fd6cdaee0e9a",
+              "Next": {
+                "Id": "2ce32d32-892e-40e8-b04b-1e83458aa27a",
+                "Next": {
+                  "Id": "fd09726d-822d-47ff-a1e3-798e84ec2696",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "7660a3c8-89d2-429e-829a-648bb5d056e1": {
+      "id": "7660a3c8-89d2-429e-829a-648bb5d056e1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "5303d49f-010c-4f4d-90e9-4e97ae89e2b9": {
+      "id": "5303d49f-010c-4f4d-90e9-4e97ae89e2b9",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      }
+    },
+    "2994c4be-b601-4a47-b427-efb3ec599ae2": {
+      "id": "2994c4be-b601-4a47-b427-efb3ec599ae2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "b8478ec9-d9db-441a-8560-fd6cdaee0e9a": {
+      "id": "b8478ec9-d9db-441a-8560-fd6cdaee0e9a",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained.",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "2ce32d32-892e-40e8-b04b-1e83458aa27a": {
+      "id": "2ce32d32-892e-40e8-b04b-1e83458aa27a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "fd09726d-822d-47ff-a1e3-798e84ec2696": {
+      "id": "fd09726d-822d-47ff-a1e3-798e84ec2696",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/iGenCBR",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "num_neigbours": {
+          "key": "num_neigbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of neighbours to be included in the explanation. Defaults to 3.",
+          "type": "number"
+        },
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the feature to be included in the explanation. Defaults to the first feature in the dataset.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9415f49b-6275-425a-85c9-511ad46d5b34",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8",
+  "properties": {},
+  "idModel": "65a540c250f18505bd918710",
+  "custom_nodes": [],
+  "nodes": {
+    "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8": {
+      "id": "88be48f3-8d9d-46eb-8b7c-049e3d6c64b8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "85081b32-c1b0-45ad-8f4e-ce99248a5fba",
+        "Next": {
+          "Id": "aadda5c2-338b-4477-8790-9d6731b64bd5",
+          "Next": null
+        }
+      }
+    },
+    "85081b32-c1b0-45ad-8f4e-ce99248a5fba": {
+      "id": "85081b32-c1b0-45ad-8f4e-ce99248a5fba",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "aadda5c2-338b-4477-8790-9d6731b64bd5": {
+      "id": "aadda5c2-338b-4477-8790-9d6731b64bd5",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "b4cc3159-26fa-406a-b8e9-4ccb175ec2de",
+        "Next": {
+          "Id": "c02fba75-9adb-4c7a-8090-f6190be8b86b",
+          "Next": null
+        }
+      }
+    },
+    "b4cc3159-26fa-406a-b8e9-4ccb175ec2de": {
+      "id": "b4cc3159-26fa-406a-b8e9-4ccb175ec2de",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "f4ac67a8-3e2d-4a66-8a42-9b88629a1053",
+        "Next": {
+          "Id": "bcf3f20d-019b-4059-8222-e5f36ed8d713",
+          "Next": null
+        }
+      }
+    },
+    "c02fba75-9adb-4c7a-8090-f6190be8b86b": {
+      "id": "c02fba75-9adb-4c7a-8090-f6190be8b86b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "f4ac67a8-3e2d-4a66-8a42-9b88629a1053": {
+      "id": "f4ac67a8-3e2d-4a66-8a42-9b88629a1053",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMCounterfactuals",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "num_cf": {
+          "key": "num_cf",
+          "value": 2,
+          "default": 2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be found. Defaults to 2.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "bcf3f20d-019b-4059-8222-e5f36ed8d713": {
+      "id": "bcf3f20d-019b-4059-8222-e5f36ed8d713",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 791.5999999940395,
+    "camera_y": 403.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

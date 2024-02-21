@@ -1,0 +1,154 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "a7634a0e-5507-414b-b873-fe66b40d1a83",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "64e52e33-0cca-4f29-9e9d-8b72d34f8adb",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "64e52e33-0cca-4f29-9e9d-8b72d34f8adb": {
+      "id": "64e52e33-0cca-4f29-9e9d-8b72d34f8adb",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "99cfaaff-2231-4f6e-818e-13a2cab16010",
+        "Next": {
+          "Id": "a1486038-4361-4746-9b28-3e1c56df1571",
+          "Next": {
+            "Id": "e0612020-0946-4de9-8ec8-1fc1dba41181",
+            "Next": {
+              "Id": "a9299000-ed81-423d-aa54-1ef70630b91b",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "99cfaaff-2231-4f6e-818e-13a2cab16010": {
+      "id": "99cfaaff-2231-4f6e-818e-13a2cab16010",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the goal of the AI system?"
+        }
+      }
+    },
+    "a1486038-4361-4746-9b28-3e1c56df1571": {
+      "id": "a1486038-4361-4746-9b28-3e1c56df1571",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "e0612020-0946-4de9-8ec8-1fc1dba41181": {
+      "id": "e0612020-0946-4de9-8ec8-1fc1dba41181",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which feature contributed to the current outcome?"
+        }
+      }
+    },
+    "a9299000-ed81-423d-aa54-1ef70630b91b": {
+      "id": "a9299000-ed81-423d-aa54-1ef70630b91b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/KernelSHAP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

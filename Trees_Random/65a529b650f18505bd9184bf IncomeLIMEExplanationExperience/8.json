@@ -1,0 +1,282 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "7a6846dc-5114-48da-a425-0a607fc6112b",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "9aa377b9-c91d-46d0-8a11-afdb1b144e78",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "9aa377b9-c91d-46d0-8a11-afdb1b144e78": {
+      "id": "9aa377b9-c91d-46d0-8a11-afdb1b144e78",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "49f4974a-8d07-497a-819f-4d9e1a952481",
+        "Next": {
+          "Id": "67ac2f46-5aa0-4c21-a220-b0cddb073051",
+          "Next": {
+            "Id": "cd1136da-e209-4b53-8021-60cb2064e0c9",
+            "Next": {
+              "Id": "fc3b1ea9-956f-4244-8b91-caa766144ba3",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "49f4974a-8d07-497a-819f-4d9e1a952481": {
+      "id": "49f4974a-8d07-497a-819f-4d9e1a952481",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "67ac2f46-5aa0-4c21-a220-b0cddb073051": {
+      "id": "67ac2f46-5aa0-4c21-a220-b0cddb073051",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "42607d29-76f8-4666-8026-35b93ada6c9b",
+        "Next": {
+          "Id": "fda88497-c705-4c0b-8daa-ec82488279ad",
+          "Next": null
+        }
+      }
+    },
+    "cd1136da-e209-4b53-8021-60cb2064e0c9": {
+      "id": "cd1136da-e209-4b53-8021-60cb2064e0c9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "fc3b1ea9-956f-4244-8b91-caa766144ba3": {
+      "id": "fc3b1ea9-956f-4244-8b91-caa766144ba3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "42607d29-76f8-4666-8026-35b93ada6c9b": {
+      "id": "42607d29-76f8-4666-8026-35b93ada6c9b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "6eee50dc-2ecf-4f83-bc8f-856f11f9fa1f",
+        "Next": {
+          "Id": "6d6bce6a-372d-4854-8aaf-0e98f16f6811",
+          "Next": null
+        }
+      }
+    },
+    "fda88497-c705-4c0b-8daa-ec82488279ad": {
+      "id": "fda88497-c705-4c0b-8daa-ec82488279ad",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Function used to perturb the instances.",
+          "fixed": false
+        }
+      }
+    },
+    "6eee50dc-2ecf-4f83-bc8f-856f11f9fa1f": {
+      "id": "6eee50dc-2ecf-4f83-bc8f-856f11f9fa1f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "6d6bce6a-372d-4854-8aaf-0e98f16f6811": {
+      "id": "6d6bce6a-372d-4854-8aaf-0e98f16f6811",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

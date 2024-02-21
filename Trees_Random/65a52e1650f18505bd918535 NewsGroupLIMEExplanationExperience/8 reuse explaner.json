@@ -1,0 +1,462 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "72c994d6-6813-4eb4-8639-5c0bc052ba7f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "80a4c999-6a22-49d7-87ba-7f90d7f08995",
+  "properties": {},
+  "idModel": "65a52e1650f18505bd918535",
+  "custom_nodes": [],
+  "nodes": {
+    "80a4c999-6a22-49d7-87ba-7f90d7f08995": {
+      "id": "80a4c999-6a22-49d7-87ba-7f90d7f08995",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a",
+        "Next": {
+          "Id": "33fe7911-d407-4312-8a40-016a252cafd9",
+          "Next": {
+            "Id": "66e32428-a57a-42b7-837b-e882a81ba3b5",
+            "Next": {
+              "Id": "9a2c44bf-405b-49d8-8dd6-6d785539aa99",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a": {
+      "id": "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "33fe7911-d407-4312-8a40-016a252cafd9": {
+      "id": "33fe7911-d407-4312-8a40-016a252cafd9",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3fbf6320-1417-40a8-9de6-9dd4598f7d32",
+        "Next": {
+          "Id": "de7e1165-ad67-45fe-bae8-b89a40d009f1",
+          "Next": null
+        }
+      }
+    },
+    "66e32428-a57a-42b7-837b-e882a81ba3b5": {
+      "id": "66e32428-a57a-42b7-837b-e882a81ba3b5",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the alternative scenarios available?"
+        }
+      }
+    },
+    "9a2c44bf-405b-49d8-8dd6-6d785539aa99": {
+      "id": "9a2c44bf-405b-49d8-8dd6-6d785539aa99",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "7cc797c8-4f97-4ad0-939a-c6c070fa0954",
+        "Next": {
+          "Id": "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56",
+          "Next": null
+        }
+      }
+    },
+    "3fbf6320-1417-40a8-9de6-9dd4598f7d32": {
+      "id": "3fbf6320-1417-40a8-9de6-9dd4598f7d32",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "4901460e-191e-4ca4-9c49-627851a95c1a",
+        "Next": {
+          "Id": "a20ccead-35ff-4d2d-8766-90782d97eb60",
+          "Next": null
+        }
+      }
+    },
+    "de7e1165-ad67-45fe-bae8-b89a40d009f1": {
+      "id": "de7e1165-ad67-45fe-bae8-b89a40d009f1",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "7cc797c8-4f97-4ad0-939a-c6c070fa0954": {
+      "id": "7cc797c8-4f97-4ad0-939a-c6c070fa0954",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d490399c-28a8-4c4e-ba6e-49247cc15fb4",
+        "Next": {
+          "Id": "6df8c0f6-f212-463a-9d89-dff678608382",
+          "Next": null
+        }
+      }
+    },
+    "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56": {
+      "id": "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "4901460e-191e-4ca4-9c49-627851a95c1a": {
+      "id": "4901460e-191e-4ca4-9c49-627851a95c1a",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "a20ccead-35ff-4d2d-8766-90782d97eb60": {
+      "id": "a20ccead-35ff-4d2d-8766-90782d97eb60",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "d490399c-28a8-4c4e-ba6e-49247cc15fb4": {
+      "id": "d490399c-28a8-4c4e-ba6e-49247cc15fb4",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "6df8c0f6-f212-463a-9d89-dff678608382": {
+      "id": "6df8c0f6-f212-463a-9d89-dff678608382",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

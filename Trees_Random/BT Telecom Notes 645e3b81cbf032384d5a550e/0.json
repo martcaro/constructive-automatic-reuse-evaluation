@@ -1,0 +1,166 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "553a5d77-2b71-4ce1-890b-dac804a9c90d",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "0e33809f-8262-4a23-a718-0166bd9251b5",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "0e33809f-8262-4a23-a718-0166bd9251b5": {
+      "id": "0e33809f-8262-4a23-a718-0166bd9251b5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "354244a0-f8d6-465b-8b49-9e4ad0465a4b",
+        "Next": {
+          "Id": "8d6c60de-97d9-44f2-af35-1bf41ae16fc0",
+          "Next": null
+        }
+      }
+    },
+    "354244a0-f8d6-465b-8b49-9e4ad0465a4b": {
+      "id": "354244a0-f8d6-465b-8b49-9e4ad0465a4b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "8d6c60de-97d9-44f2-af35-1bf41ae16fc0": {
+      "id": "8d6c60de-97d9-44f2-af35-1bf41ae16fc0",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "aaefbae9-6667-4177-8e8d-7d7014c98e04",
+        "Next": {
+          "Id": "0b4ae014-613c-4da0-8a10-4c6373f09d51",
+          "Next": null
+        }
+      }
+    },
+    "aaefbae9-6667-4177-8e8d-7d7014c98e04": {
+      "id": "aaefbae9-6667-4177-8e8d-7d7014c98e04",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "7211f520-0bc0-4c0b-8173-28ae04cf7c1f",
+        "Next": {
+          "Id": "ed70ecda-516c-42f0-8bc9-443858817603",
+          "Next": null
+        }
+      }
+    },
+    "0b4ae014-613c-4da0-8a10-4c6373f09d51": {
+      "id": "0b4ae014-613c-4da0-8a10-4c6373f09d51",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/FORGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "sigma": {
+          "key": "sigma",
+          "value": 15,
+          "default": 15,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Bandwith of the low pass filter. The higher the sigma, the more frequencies are kept. Sigma should be positive and less than image size. Defaults to 15.",
+          "fixed": false
+        }
+      }
+    },
+    "7211f520-0bc0-4c0b-8173-28ae04cf7c1f": {
+      "id": "7211f520-0bc0-4c0b-8173-28ae04cf7c1f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "fixed": false
+        }
+      }
+    },
+    "ed70ecda-516c-42f0-8bc9-443858817603": {
+      "id": "ed70ecda-516c-42f0-8bc9-443858817603",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

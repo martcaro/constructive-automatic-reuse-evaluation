@@ -1,0 +1,614 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "98f8af1e-818b-4777-99c2-0c42a5668464",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "3a1700a5-d4a3-4581-8b3d-11a928bdf5b9",
+  "properties": {},
+  "idModel": "64a6d3c5c954b54afe2b1d04",
+  "custom_nodes": [],
+  "nodes": {
+    "3a1700a5-d4a3-4581-8b3d-11a928bdf5b9": {
+      "id": "3a1700a5-d4a3-4581-8b3d-11a928bdf5b9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e8af17fc-494d-4e54-b6d6-56bca8554f3b",
+        "Next": {
+          "Id": "e967f5f5-6aea-43d1-9611-ab5e29be6205",
+          "Next": {
+            "Id": "c7424948-c003-446a-82b6-2740211c3497",
+            "Next": {
+              "Id": "025c74b9-a5e9-4658-83a9-7b3b31643811",
+              "Next": {
+                "Id": "5d10eb96-85e6-4fc4-9ebc-7ab86876a958",
+                "Next": {
+                  "Id": "3ccacfa2-6b5b-4b0f-8433-ce0a39a766fb",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "e8af17fc-494d-4e54-b6d6-56bca8554f3b": {
+      "id": "e8af17fc-494d-4e54-b6d6-56bca8554f3b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1068,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "e967f5f5-6aea-43d1-9611-ab5e29be6205": {
+      "id": "e967f5f5-6aea-43d1-9611-ab5e29be6205",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -600,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "a3a79b00-8f36-44fb-863a-80d18885ce96",
+        "Next": {
+          "Id": "3ef1344f-3ae5-4263-8233-842f54aa4785",
+          "Next": null
+        }
+      }
+    },
+    "c7424948-c003-446a-82b6-2740211c3497": {
+      "id": "c7424948-c003-446a-82b6-2740211c3497",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "025c74b9-a5e9-4658-83a9-7b3b31643811": {
+      "id": "025c74b9-a5e9-4658-83a9-7b3b31643811",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "a65838ea-ff63-440a-8ba5-d55f376a7dd6",
+        "Next": {
+          "Id": "dfef6230-6cd7-4b3e-8ee2-1aac11d9bd7a",
+          "Next": null
+        }
+      }
+    },
+    "5d10eb96-85e6-4fc4-9ebc-7ab86876a958": {
+      "id": "5d10eb96-85e6-4fc4-9ebc-7ab86876a958",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "3ccacfa2-6b5b-4b0f-8433-ce0a39a766fb": {
+      "id": "3ccacfa2-6b5b-4b0f-8433-ce0a39a766fb",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1056,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "9c694b78-afeb-4ed3-8181-1754b1c2ad2f",
+        "Next": {
+          "Id": "db92b848-7ca4-44b9-8f01-f75b4bc279e5",
+          "Next": null
+        }
+      }
+    },
+    "a3a79b00-8f36-44fb-863a-80d18885ce96": {
+      "id": "a3a79b00-8f36-44fb-863a-80d18885ce96",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "8ec59b74-432f-4faf-881f-8236ec84e0e7",
+        "Next": {
+          "Id": "a173968c-efcb-4a5b-bd7c-4f7f25343dd0",
+          "Next": null
+        }
+      }
+    },
+    "3ef1344f-3ae5-4263-8233-842f54aa4785": {
+      "id": "3ef1344f-3ae5-4263-8233-842f54aa4785",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -444,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "a65838ea-ff63-440a-8ba5-d55f376a7dd6": {
+      "id": "a65838ea-ff63-440a-8ba5-d55f376a7dd6",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "bebe197d-ace0-4171-9e68-19f6e8eaff09",
+        "Next": {
+          "Id": "d2723deb-fb85-4e32-8c79-b47b6b8c8032",
+          "Next": null
+        }
+      }
+    },
+    "dfef6230-6cd7-4b3e-8ee2-1aac11d9bd7a": {
+      "id": "dfef6230-6cd7-4b3e-8ee2-1aac11d9bd7a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "type": "number"
+        }
+      }
+    },
+    "9c694b78-afeb-4ed3-8181-1754b1c2ad2f": {
+      "id": "9c694b78-afeb-4ed3-8181-1754b1c2ad2f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "10da4d04-eadb-4ba2-a2c5-cbc15c51955c",
+        "Next": {
+          "Id": "87cf12c8-db29-48cb-9c65-ee7477e9d294",
+          "Next": null
+        }
+      }
+    },
+    "db92b848-7ca4-44b9-8f01-f75b4bc279e5": {
+      "id": "db92b848-7ca4-44b9-8f01-f75b4bc279e5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 1212,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            "other",
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "select"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "8ec59b74-432f-4faf-881f-8236ec84e0e7": {
+      "id": "8ec59b74-432f-4faf-881f-8236ec84e0e7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -864,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "a173968c-efcb-4a5b-bd7c-4f7f25343dd0": {
+      "id": "a173968c-efcb-4a5b-bd7c-4f7f25343dd0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -660,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "default": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "range": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "checkbox"
+        }
+      }
+    },
+    "bebe197d-ace0-4171-9e68-19f6e8eaff09": {
+      "id": "bebe197d-ace0-4171-9e68-19f6e8eaff09",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "d2723deb-fb85-4e32-8c79-b47b6b8c8032": {
+      "id": "d2723deb-fb85-4e32-8c79-b47b6b8c8032",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "fixed": false
+        }
+      }
+    },
+    "10da4d04-eadb-4ba2-a2c5-cbc15c51955c": {
+      "id": "10da4d04-eadb-4ba2-a2c5-cbc15c51955c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 804,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "87cf12c8-db29-48cb-9c65-ee7477e9d294": {
+      "id": "87cf12c8-db29-48cb-9c65-ee7477e9d294",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 1008,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 923.1999999880791,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

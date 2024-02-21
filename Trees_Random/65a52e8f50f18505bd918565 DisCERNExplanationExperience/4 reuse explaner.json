@@ -1,0 +1,241 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "d51d1379-2a68-426a-ada1-f8625773de5f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "92e86383-4175-47ca-bd8d-5434774a9b5c",
+  "properties": {},
+  "idModel": "65a52e8f50f18505bd918565",
+  "custom_nodes": [],
+  "nodes": {
+    "92e86383-4175-47ca-bd8d-5434774a9b5c": {
+      "id": "92e86383-4175-47ca-bd8d-5434774a9b5c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "352968fe-f0b1-4852-8486-146e35132d82",
+        "Next": {
+          "Id": "f15c6015-5c13-49e0-89ac-abaa2df81a7f",
+          "Next": null
+        }
+      }
+    },
+    "352968fe-f0b1-4852-8486-146e35132d82": {
+      "id": "352968fe-f0b1-4852-8486-146e35132d82",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "f15c6015-5c13-49e0-89ac-abaa2df81a7f": {
+      "id": "f15c6015-5c13-49e0-89ac-abaa2df81a7f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "754b3dd5-f18f-4246-82ce-f31f042410cf",
+        "Next": {
+          "Id": "1083331c-327e-4a13-9e18-b4e09943ed72",
+          "Next": null
+        }
+      }
+    },
+    "754b3dd5-f18f-4246-82ce-f31f042410cf": {
+      "id": "754b3dd5-f18f-4246-82ce-f31f042410cf",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "68cfcbbd-55fa-450c-8cd9-8d3f9f8abff7",
+        "Next": {
+          "Id": "bc7546be-a44a-45f1-b145-96b077f94190",
+          "Next": null
+        }
+      }
+    },
+    "1083331c-327e-4a13-9e18-b4e09943ed72": {
+      "id": "1083331c-327e-4a13-9e18-b4e09943ed72",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "68cfcbbd-55fa-450c-8cd9-8d3f9f8abff7": {
+      "id": "68cfcbbd-55fa-450c-8cd9-8d3f9f8abff7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "type": "text"
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "type": "text"
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "type": "select"
+        }
+      }
+    },
+    "bc7546be-a44a-45f1-b145-96b077f94190": {
+      "id": "bc7546be-a44a-45f1-b145-96b077f94190",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b35c40b7-42cf-4cb8-84a0-9c8e21531195",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "265bbc86-a971-4d57-a832-64844dd68ce8",
+  "properties": {},
+  "idModel": "65a5313450f18505bd918624",
+  "custom_nodes": [],
+  "nodes": {
+    "265bbc86-a971-4d57-a832-64844dd68ce8": {
+      "id": "265bbc86-a971-4d57-a832-64844dd68ce8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "80bc4815-133d-4479-8e55-df3256bc70a2",
+        "Next": {
+          "Id": "3bbeba6e-c552-4cee-a27c-b940e24a7f2c",
+          "Next": {
+            "Id": "8d2e6393-2f0c-40d9-9359-6892fcd2acb2",
+            "Next": {
+              "Id": "cf16ce3c-509b-4f99-8f8f-cfc993fbba01",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "80bc4815-133d-4479-8e55-df3256bc70a2": {
+      "id": "80bc4815-133d-4479-8e55-df3256bc70a2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered to build the AI system?"
+        }
+      }
+    },
+    "3bbeba6e-c552-4cee-a27c-b940e24a7f2c": {
+      "id": "3bbeba6e-c552-4cee-a27c-b940e24a7f2c",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "8d2e6393-2f0c-40d9-9359-6892fcd2acb2": {
+      "id": "8d2e6393-2f0c-40d9-9359-6892fcd2acb2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the goal of the AI system?"
+        }
+      }
+    },
+    "cf16ce3c-509b-4f99-8f8f-cfc993fbba01": {
+      "id": "cf16ce3c-509b-4f99-8f8f-cfc993fbba01",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

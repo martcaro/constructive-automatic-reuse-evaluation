@@ -1,0 +1,296 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "eb937793-d6f9-4908-8b69-67e7a8ef2362",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "15bed326-4112-499b-814c-081087c80fad",
+  "properties": {},
+  "idModel": "65a5313450f18505bd918624",
+  "custom_nodes": [],
+  "nodes": {
+    "15bed326-4112-499b-814c-081087c80fad": {
+      "id": "15bed326-4112-499b-814c-081087c80fad",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd",
+        "Next": {
+          "Id": "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b",
+          "Next": null
+        }
+      }
+    },
+    "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd": {
+      "id": "fdfc7a3a-ff6a-438b-910e-49aa9f94fedd",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b": {
+      "id": "6a7fbc5b-087c-48b8-8d3b-c3406e230f6b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fe3230d0-d0df-4bee-8720-54eb824e836e",
+        "Next": {
+          "Id": "6b40f0c3-8431-4109-b7af-b9d39b1b9637",
+          "Next": null
+        }
+      }
+    },
+    "fe3230d0-d0df-4bee-8720-54eb824e836e": {
+      "id": "fe3230d0-d0df-4bee-8720-54eb824e836e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "fbd3b9c0-45e9-4457-8308-a6ae61ddb294",
+        "Next": {
+          "Id": "9d2c02b4-8180-4698-9ed0-15c02cded91e",
+          "Next": null
+        }
+      }
+    },
+    "6b40f0c3-8431-4109-b7af-b9d39b1b9637": {
+      "id": "6b40f0c3-8431-4109-b7af-b9d39b1b9637",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "fbd3b9c0-45e9-4457-8308-a6ae61ddb294": {
+      "id": "fbd3b9c0-45e9-4457-8308-a6ae61ddb294",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "type": "number"
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "9d2c02b4-8180-4698-9ed0-15c02cded91e": {
+      "id": "9d2c02b4-8180-4698-9ed0-15c02cded91e",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMCounterfactuals",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "num_cf": {
+          "key": "num_cf",
+          "value": 2,
+          "default": 2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be found. Defaults to 2.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

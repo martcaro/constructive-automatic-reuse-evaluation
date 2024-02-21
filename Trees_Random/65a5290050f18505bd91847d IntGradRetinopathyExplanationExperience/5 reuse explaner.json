@@ -1,0 +1,414 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "1ee77d67-f550-4210-beef-31482f38a781",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "4d9549ed-e5fa-4c9c-8087-fdbbc1fb7f6b",
+  "properties": {},
+  "idModel": "65a5290050f18505bd91847d",
+  "custom_nodes": [],
+  "nodes": {
+    "4d9549ed-e5fa-4c9c-8087-fdbbc1fb7f6b": {
+      "id": "4d9549ed-e5fa-4c9c-8087-fdbbc1fb7f6b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "70100888-9bee-4634-84c9-ae7d8da7ddce",
+        "Next": {
+          "Id": "7b9b709c-0299-4b05-affa-cc201913ee20",
+          "Next": {
+            "Id": "04283346-55f1-45f4-9274-b87a3c190613",
+            "Next": {
+              "Id": "85df9e52-8787-48ac-9b1a-9d03a657c307",
+              "Next": {
+                "Id": "9938d75f-b2ec-4fda-aca4-605a91ef6e03",
+                "Next": {
+                  "Id": "ece7575f-8e79-4db5-8ecf-967f8af9b170",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "70100888-9bee-4634-84c9-ae7d8da7ddce": {
+      "id": "70100888-9bee-4634-84c9-ae7d8da7ddce",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "7b9b709c-0299-4b05-affa-cc201913ee20": {
+      "id": "7b9b709c-0299-4b05-affa-cc201913ee20",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e1066d74-f764-4c63-aefc-7960011e281a",
+        "Next": {
+          "Id": "27018cb5-8fac-4882-820b-5c15ffcacba3",
+          "Next": null
+        }
+      }
+    },
+    "04283346-55f1-45f4-9274-b87a3c190613": {
+      "id": "04283346-55f1-45f4-9274-b87a3c190613",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "85df9e52-8787-48ac-9b1a-9d03a657c307": {
+      "id": "85df9e52-8787-48ac-9b1a-9d03a657c307",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to explain.",
+          "type": "number"
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "type": "select"
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "type": "number"
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "type": "number"
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "9938d75f-b2ec-4fda-aca4-605a91ef6e03": {
+      "id": "9938d75f-b2ec-4fda-aca4-605a91ef6e03",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered to build the AI system?"
+        }
+      }
+    },
+    "ece7575f-8e79-4db5-8ecf-967f8af9b170": {
+      "id": "ece7575f-8e79-4db5-8ecf-967f8af9b170",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "fixed": false
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "fixed": false
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "fixed": false
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "fixed": false
+        }
+      }
+    },
+    "e1066d74-f764-4c63-aefc-7960011e281a": {
+      "id": "e1066d74-f764-4c63-aefc-7960011e281a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "92661a9e-ee91-45e5-95fe-34eae8a458d7",
+        "Next": {
+          "Id": "7c2369e9-0c1c-4b7a-80df-f7a08ac04552",
+          "Next": null
+        }
+      }
+    },
+    "27018cb5-8fac-4882-820b-5c15ffcacba3": {
+      "id": "27018cb5-8fac-4882-820b-5c15ffcacba3",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "type": "number"
+        }
+      }
+    },
+    "92661a9e-ee91-45e5-95fe-34eae8a458d7": {
+      "id": "92661a9e-ee91-45e5-95fe-34eae8a458d7",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        }
+      }
+    },
+    "7c2369e9-0c1c-4b7a-80df-f7a08ac04552": {
+      "id": "7c2369e9-0c1c-4b7a-80df-f7a08ac04552",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

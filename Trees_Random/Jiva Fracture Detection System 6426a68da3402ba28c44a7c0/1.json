@@ -1,0 +1,449 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0d3f04c0-c68c-4e65-8019-dd77e19932d6",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "3b6b8329-aecd-4286-acd3-281306d9ae22",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "3b6b8329-aecd-4286-acd3-281306d9ae22": {
+      "id": "3b6b8329-aecd-4286-acd3-281306d9ae22",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "165baf02-f4ad-4e40-905a-75645c18ee2a",
+        "Next": {
+          "Id": "b47689ec-d5eb-433e-8d14-fdb5752c18a1",
+          "Next": {
+            "Id": "4f34f3a7-d2f3-4bf8-8164-4b90c24645d0",
+            "Next": {
+              "Id": "ed524227-67ca-49e7-8316-a11336f2ace1",
+              "Next": {
+                "Id": "c96216ec-86c9-4db4-9224-95737f55e057",
+                "Next": {
+                  "Id": "92cd6617-e829-4e40-8784-a46af9199d29",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "165baf02-f4ad-4e40-905a-75645c18ee2a": {
+      "id": "165baf02-f4ad-4e40-905a-75645c18ee2a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "b47689ec-d5eb-433e-8d14-fdb5752c18a1": {
+      "id": "b47689ec-d5eb-433e-8d14-fdb5752c18a1",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 252
+      }
+    },
+    "4f34f3a7-d2f3-4bf8-8164-4b90c24645d0": {
+      "id": "4f34f3a7-d2f3-4bf8-8164-4b90c24645d0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -336,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "ed524227-67ca-49e7-8316-a11336f2ace1": {
+      "id": "ed524227-67ca-49e7-8316-a11336f2ace1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 132,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "d9b5b6c6-8fca-4822-88a4-72273c452917",
+        "Next": {
+          "Id": "5b428d45-e03f-492a-be15-26193a605f1c",
+          "Next": null
+        }
+      }
+    },
+    "c96216ec-86c9-4db4-9224-95737f55e057": {
+      "id": "c96216ec-86c9-4db4-9224-95737f55e057",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "92cd6617-e829-4e40-8784-a46af9199d29": {
+      "id": "92cd6617-e829-4e40-8784-a46af9199d29",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 960,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "9bd38635-3508-4b38-bae5-c155882bcd95",
+        "Next": {
+          "Id": "2c844fb5-53c8-43fa-9cfa-8d994e7bc8dc",
+          "Next": null
+        }
+      }
+    },
+    "d9b5b6c6-8fca-4822-88a4-72273c452917": {
+      "id": "d9b5b6c6-8fca-4822-88a4-72273c452917",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "138cf369-eb6d-430d-b5c9-768991f23944",
+        "Next": {
+          "Id": "184453cf-994d-4db9-8138-ccab757f99ae",
+          "Next": null
+        }
+      }
+    },
+    "5b428d45-e03f-492a-be15-26193a605f1c": {
+      "id": "5b428d45-e03f-492a-be15-26193a605f1c",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 288,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of integers representing the classes to be explained.",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "9bd38635-3508-4b38-bae5-c155882bcd95": {
+      "id": "9bd38635-3508-4b38-bae5-c155882bcd95",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1731f6a9-d656-43f1-8751-defccdd00741",
+        "Next": {
+          "Id": "ff872e81-3a48-4d8e-8198-3a425b28251c",
+          "Next": null
+        }
+      }
+    },
+    "2c844fb5-53c8-43fa-9cfa-8d994e7bc8dc": {
+      "id": "2c844fb5-53c8-43fa-9cfa-8d994e7bc8dc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1116,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "138cf369-eb6d-430d-b5c9-768991f23944": {
+      "id": "138cf369-eb6d-430d-b5c9-768991f23944",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -132,
+        "y": 516
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "fixed": false
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "fixed": false
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "fixed": false
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "fixed": false
+        }
+      }
+    },
+    "184453cf-994d-4db9-8138-ccab757f99ae": {
+      "id": "184453cf-994d-4db9-8138-ccab757f99ae",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 84,
+        "y": 516
+      }
+    },
+    "1731f6a9-d656-43f1-8751-defccdd00741": {
+      "id": "1731f6a9-d656-43f1-8751-defccdd00741",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 708,
+        "y": 516
+      }
+    },
+    "ff872e81-3a48-4d8e-8198-3a425b28251c": {
+      "id": "ff872e81-3a48-4d8e-8198-3a425b28251c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 912,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.25,
+    "x": 0,
+    "y": 0
+  }
+}

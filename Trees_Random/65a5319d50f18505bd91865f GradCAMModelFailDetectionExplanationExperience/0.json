@@ -1,0 +1,180 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "e2090391-5d3a-4d9a-9e49-083efc59a015",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "0c763db9-f28b-4335-88da-585b1e1e776e",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "0c763db9-f28b-4335-88da-585b1e1e776e": {
+      "id": "0c763db9-f28b-4335-88da-585b1e1e776e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "b9945485-6f94-423f-8a4c-f6cf07fafe65",
+        "Next": {
+          "Id": "5241e1c4-d2b0-40f3-83d4-48feec77f24d",
+          "Next": {
+            "Id": "42c6c500-9596-4ac7-8a0f-32ae9568ff08",
+            "Next": {
+              "Id": "15c158d5-f439-49c7-85ee-f422a5e4a31c",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "b9945485-6f94-423f-8a4c-f6cf07fafe65": {
+      "id": "b9945485-6f94-423f-8a4c-f6cf07fafe65",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "5241e1c4-d2b0-40f3-83d4-48feec77f24d": {
+      "id": "5241e1c4-d2b0-40f3-83d4-48feec77f24d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "42c6c500-9596-4ac7-8a0f-32ae9568ff08": {
+      "id": "42c6c500-9596-4ac7-8a0f-32ae9568ff08",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "15c158d5-f439-49c7-85ee-f422a5e4a31c": {
+      "id": "15c158d5-f439-49c7-85ee-f422a5e4a31c",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

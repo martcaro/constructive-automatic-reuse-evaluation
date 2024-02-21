@@ -1,0 +1,380 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "38d53423-70f0-460c-8192-a46418d6ab05",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "bf9d0e47-77f6-44b9-8841-c9adbf98f42c",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "bf9d0e47-77f6-44b9-8841-c9adbf98f42c": {
+      "id": "bf9d0e47-77f6-44b9-8841-c9adbf98f42c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "fb614931-e17a-45f5-8ebe-2956ba2bc52f",
+        "Next": {
+          "Id": "75182bfb-67dc-481f-85f8-fb47c4437d76",
+          "Next": {
+            "Id": "2ecb52eb-3e41-4734-aa6a-7ae386714d17",
+            "Next": {
+              "Id": "a2535a22-23f5-403c-874a-f5b51ebcd231",
+              "Next": {
+                "Id": "250e22af-7fcb-4e4a-8a1d-b412cf1061f6",
+                "Next": {
+                  "Id": "0cb20a31-2108-42f9-a7fd-eb1dcee852a8",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fb614931-e17a-45f5-8ebe-2956ba2bc52f": {
+      "id": "fb614931-e17a-45f5-8ebe-2956ba2bc52f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "75182bfb-67dc-481f-85f8-fb47c4437d76": {
+      "id": "75182bfb-67dc-481f-85f8-fb47c4437d76",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LiftCurve",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "2ecb52eb-3e41-4734-aa6a-7ae386714d17": {
+      "id": "2ecb52eb-3e41-4734-aa6a-7ae386714d17",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "a2535a22-23f5-403c-874a-f5b51ebcd231": {
+      "id": "a2535a22-23f5-403c-874a-f5b51ebcd231",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "250e22af-7fcb-4e4a-8a1d-b412cf1061f6": {
+      "id": "250e22af-7fcb-4e4a-8a1d-b412cf1061f6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "0cb20a31-2108-42f9-a7fd-eb1dcee852a8": {
+      "id": "0cb20a31-2108-42f9-a7fd-eb1dcee852a8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5c03fef1-8009-4c16-9463-9c5981a76850",
+        "Next": {
+          "Id": "1a80c869-1fc4-4196-83ea-e86ccdbcd2f4",
+          "Next": null
+        }
+      }
+    },
+    "5c03fef1-8009-4c16-9463-9c5981a76850": {
+      "id": "5c03fef1-8009-4c16-9463-9c5981a76850",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2a5adb6c-bdc7-4372-9333-dbfd4c9b63d9",
+        "Next": {
+          "Id": "ee69d2fb-759d-453b-8774-59bb7aa5ffbb",
+          "Next": null
+        }
+      }
+    },
+    "1a80c869-1fc4-4196-83ea-e86ccdbcd2f4": {
+      "id": "1a80c869-1fc4-4196-83ea-e86ccdbcd2f4",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "fixed": false
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "fixed": false
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "fixed": false
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "fixed": false
+        }
+      }
+    },
+    "2a5adb6c-bdc7-4372-9333-dbfd4c9b63d9": {
+      "id": "2a5adb6c-bdc7-4372-9333-dbfd4c9b63d9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "ee69d2fb-759d-453b-8774-59bb7aa5ffbb": {
+      "id": "ee69d2fb-759d-453b-8774-59bb7aa5ffbb",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "description": "Function used to perturb the instances.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

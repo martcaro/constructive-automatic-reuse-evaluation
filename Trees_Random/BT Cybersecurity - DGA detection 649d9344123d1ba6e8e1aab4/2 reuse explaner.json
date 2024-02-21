@@ -1,0 +1,331 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "fc2fc357-cacb-4f26-8494-1731a7a5ed07",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "a1954fa5-654a-4e2c-9135-830eca23594c",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "a1954fa5-654a-4e2c-9135-830eca23594c": {
+      "id": "a1954fa5-654a-4e2c-9135-830eca23594c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "0dd0bdae-dac8-4532-97ce-534edf66b85a",
+        "Next": {
+          "Id": "d4992517-7462-4fcd-9216-bf35d5aefafb",
+          "Next": {
+            "Id": "052f64ff-eb1f-4cb0-8f48-c9e86b9f3810",
+            "Next": {
+              "Id": "60be0010-2a8d-4f91-80a5-861c4ade4824",
+              "Next": {
+                "Id": "481d62b8-d7be-475d-8dd5-e164689e66c0",
+                "Next": {
+                  "Id": "bee54261-ea6c-4a87-83ff-3601c2f567ed",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "0dd0bdae-dac8-4532-97ce-534edf66b85a": {
+      "id": "0dd0bdae-dac8-4532-97ce-534edf66b85a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to get a different outcome?"
+        }
+      }
+    },
+    "d4992517-7462-4fcd-9216-bf35d5aefafb": {
+      "id": "d4992517-7462-4fcd-9216-bf35d5aefafb",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "22c56380-d9c6-4ff3-8ba4-3fef6a023f1d",
+        "Next": {
+          "Id": "a611eec7-8164-402d-8bc7-ddad9aa98000",
+          "Next": null
+        }
+      }
+    },
+    "052f64ff-eb1f-4cb0-8f48-c9e86b9f3810": {
+      "id": "052f64ff-eb1f-4cb0-8f48-c9e86b9f3810",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "60be0010-2a8d-4f91-80a5-861c4ade4824": {
+      "id": "60be0010-2a8d-4f91-80a5-861c4ade4824",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            "other",
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "select"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "481d62b8-d7be-475d-8dd5-e164689e66c0": {
+      "id": "481d62b8-d7be-475d-8dd5-e164689e66c0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "bee54261-ea6c-4a87-83ff-3601c2f567ed": {
+      "id": "bee54261-ea6c-4a87-83ff-3601c2f567ed",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "22c56380-d9c6-4ff3-8ba4-3fef6a023f1d": {
+      "id": "22c56380-d9c6-4ff3-8ba4-3fef6a023f1d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ad1d86b4-7f4d-45ad-8285-6de581cdf39f",
+        "Next": {
+          "Id": "7b0ff04e-9490-4078-80e6-a231ed8da9ef",
+          "Next": null
+        }
+      }
+    },
+    "a611eec7-8164-402d-8bc7-ddad9aa98000": {
+      "id": "a611eec7-8164-402d-8bc7-ddad9aa98000",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "ad1d86b4-7f4d-45ad-8285-6de581cdf39f": {
+      "id": "ad1d86b4-7f4d-45ad-8285-6de581cdf39f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "default": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "range": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "checkbox"
+        }
+      }
+    },
+    "7b0ff04e-9490-4078-80e6-a231ed8da9ef": {
+      "id": "7b0ff04e-9490-4078-80e6-a231ed8da9ef",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 862.3999999761581,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

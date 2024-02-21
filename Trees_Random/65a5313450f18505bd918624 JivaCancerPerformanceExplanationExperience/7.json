@@ -1,0 +1,295 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "3bc019e8-cc58-4c5a-8131-7beadbe82dfa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "926fcc07-6a8a-4b8d-bb45-797e875c740e",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "926fcc07-6a8a-4b8d-bb45-797e875c740e": {
+      "id": "926fcc07-6a8a-4b8d-bb45-797e875c740e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a86ffa4f-f53c-43c3-8f9a-d0ca5708ac07",
+        "Next": {
+          "Id": "70d16d81-b7c0-4560-934d-092af9344cce",
+          "Next": {
+            "Id": "784685cf-d2ad-480a-8d5c-66d304363e75",
+            "Next": {
+              "Id": "9a6f94f1-24b1-47ae-8d78-a3faf7df72b5",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "a86ffa4f-f53c-43c3-8f9a-d0ca5708ac07": {
+      "id": "a86ffa4f-f53c-43c3-8f9a-d0ca5708ac07",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "70d16d81-b7c0-4560-934d-092af9344cce": {
+      "id": "70d16d81-b7c0-4560-934d-092af9344cce",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradientInput",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "784685cf-d2ad-480a-8d5c-66d304363e75": {
+      "id": "784685cf-d2ad-480a-8d5c-66d304363e75",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "9a6f94f1-24b1-47ae-8d78-a3faf7df72b5": {
+      "id": "9a6f94f1-24b1-47ae-8d78-a3faf7df72b5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fdb95700-a049-4d23-b501-5fcbe6e4bb9f",
+        "Next": {
+          "Id": "fc7995ff-b042-4d51-8b5f-42f7fef180b7",
+          "Next": null
+        }
+      }
+    },
+    "fdb95700-a049-4d23-b501-5fcbe6e4bb9f": {
+      "id": "fdb95700-a049-4d23-b501-5fcbe6e4bb9f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "63305161-3d4a-4faf-88ce-94a29a0cfa06",
+        "Next": {
+          "Id": "e20fba47-8b34-404b-8a99-941124d9ebad",
+          "Next": null
+        }
+      }
+    },
+    "fc7995ff-b042-4d51-8b5f-42f7fef180b7": {
+      "id": "fc7995ff-b042-4d51-8b5f-42f7fef180b7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "63305161-3d4a-4faf-88ce-94a29a0cfa06": {
+      "id": "63305161-3d4a-4faf-88ce-94a29a0cfa06",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "e20fba47-8b34-404b-8a99-941124d9ebad": {
+      "id": "e20fba47-8b34-404b-8a99-941124d9ebad",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2cfc7e1d-a970-452c-b8c5-cbd5fc76c3c0",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "6cf9d297-d410-4d44-a95b-a74a53c92e16",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "6cf9d297-d410-4d44-a95b-a74a53c92e16": {
+      "id": "6cf9d297-d410-4d44-a95b-a74a53c92e16",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f",
+        "Next": {
+          "Id": "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91",
+          "Next": {
+            "Id": "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485",
+            "Next": {
+              "Id": "0d96042e-f01a-4bd8-80e9-ff1838410c82",
+              "Next": {
+                "Id": "131bbe85-40b0-491b-ad4b-ddb43dfb3148",
+                "Next": {
+                  "Id": "a78e06d7-b132-43c9-80bd-027edc6a5dab",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f": {
+      "id": "13a2eb8a-3a25-4fc1-8e6e-e32bba82bd3f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91": {
+      "id": "aba19f4d-1bac-412a-ba68-0ca2d9b8dd91",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485": {
+      "id": "8bc21d51-bf40-4f4f-a44f-a0ecc6bb3485",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "0d96042e-f01a-4bd8-80e9-ff1838410c82": {
+      "id": "0d96042e-f01a-4bd8-80e9-ff1838410c82",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "131bbe85-40b0-491b-ad4b-ddb43dfb3148": {
+      "id": "131bbe85-40b0-491b-ad4b-ddb43dfb3148",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the alternative scenarios available?"
+        }
+      }
+    },
+    "a78e06d7-b132-43c9-80bd-027edc6a5dab": {
+      "id": "a78e06d7-b132-43c9-80bd-027edc6a5dab",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "description": "String with the method to calculate the residuals.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

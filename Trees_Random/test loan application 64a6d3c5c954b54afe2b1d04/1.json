@@ -1,0 +1,225 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b8ed7f32-d848-4cab-bcd5-ee2fa130d245",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "644ea56b-cecd-4c46-8d86-3aa890c3aa23",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "644ea56b-cecd-4c46-8d86-3aa890c3aa23": {
+      "id": "644ea56b-cecd-4c46-8d86-3aa890c3aa23",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e0e64b2c-5b4d-4712-8b59-0862c9d886a9",
+        "Next": {
+          "Id": "7793a838-d51b-4c60-824c-d0a4c0b7feb7",
+          "Next": {
+            "Id": "421d68aa-0549-45cc-b6a2-5f57a57dca2c",
+            "Next": {
+              "Id": "c19ce978-fb82-475b-9dd9-75e0bd0f133a",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "e0e64b2c-5b4d-4712-8b59-0862c9d886a9": {
+      "id": "e0e64b2c-5b4d-4712-8b59-0862c9d886a9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "7793a838-d51b-4c60-824c-d0a4c0b7feb7": {
+      "id": "7793a838-d51b-4c60-824c-d0a4c0b7feb7",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "421d68aa-0549-45cc-b6a2-5f57a57dca2c": {
+      "id": "421d68aa-0549-45cc-b6a2-5f57a57dca2c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "c19ce978-fb82-475b-9dd9-75e0bd0f133a": {
+      "id": "c19ce978-fb82-475b-9dd9-75e0bd0f133a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "d5302d2a-0e8f-4961-8d45-2dfec2f80c88",
+        "Next": {
+          "Id": "afe38b0e-145d-4441-8d8b-1ff443231f79",
+          "Next": null
+        }
+      }
+    },
+    "d5302d2a-0e8f-4961-8d45-2dfec2f80c88": {
+      "id": "d5302d2a-0e8f-4961-8d45-2dfec2f80c88",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a8926b45-3d12-4850-8ac8-768c56a52c20",
+        "Next": {
+          "Id": "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc",
+          "Next": null
+        }
+      }
+    },
+    "afe38b0e-145d-4441-8d8b-1ff443231f79": {
+      "id": "afe38b0e-145d-4441-8d8b-1ff443231f79",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      }
+    },
+    "a8926b45-3d12-4850-8ac8-768c56a52c20": {
+      "id": "a8926b45-3d12-4850-8ac8-768c56a52c20",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc": {
+      "id": "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "type": "number"
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "bb2483d3-317d-4fba-9cda-386703795ad0",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "64181148-cebd-4956-8f84-92e2e0a1ffd0",
+  "properties": {},
+  "idModel": "65a52e8f50f18505bd918565",
+  "custom_nodes": [],
+  "nodes": {
+    "64181148-cebd-4956-8f84-92e2e0a1ffd0": {
+      "id": "64181148-cebd-4956-8f84-92e2e0a1ffd0",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "f41779a5-6a8e-4bd5-9bef-40a783dd3770",
+        "Next": {
+          "Id": "a84f8e27-6c97-4064-824c-b3492c1ff44b",
+          "Next": {
+            "Id": "2e2108f9-863c-4675-8dd9-f5f339c9a5b8",
+            "Next": {
+              "Id": "cde2bc8c-e02d-4d66-8736-192f2b5973aa",
+              "Next": {
+                "Id": "3a6682ec-4eb4-4296-8f28-7c7e871bf118",
+                "Next": {
+                  "Id": "4461c718-bd99-4369-822c-fe72622d3865",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "f41779a5-6a8e-4bd5-9bef-40a783dd3770": {
+      "id": "f41779a5-6a8e-4bd5-9bef-40a783dd3770",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "a84f8e27-6c97-4064-824c-b3492c1ff44b": {
+      "id": "a84f8e27-6c97-4064-824c-b3492c1ff44b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "7bd81d0d-b030-4eaa-b116-758318790f54",
+        "Next": {
+          "Id": "1ccfae20-d96a-4990-a41b-c189905e42e4",
+          "Next": null
+        }
+      }
+    },
+    "2e2108f9-863c-4675-8dd9-f5f339c9a5b8": {
+      "id": "2e2108f9-863c-4675-8dd9-f5f339c9a5b8",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get outcome A?"
+        }
+      }
+    },
+    "cde2bc8c-e02d-4d66-8736-192f2b5973aa": {
+      "id": "cde2bc8c-e02d-4d66-8736-192f2b5973aa",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "3a6682ec-4eb4-4296-8f28-7c7e871bf118": {
+      "id": "3a6682ec-4eb4-4296-8f28-7c7e871bf118",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "4461c718-bd99-4369-822c-fe72622d3865": {
+      "id": "4461c718-bd99-4369-822c-fe72622d3865",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "7bd81d0d-b030-4eaa-b116-758318790f54": {
+      "id": "7bd81d0d-b030-4eaa-b116-758318790f54",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "00de181f-8e26-4eec-9114-ad4f56581029",
+        "Next": {
+          "Id": "8301c8e0-4c09-414e-b74a-f2f9059c3a9f",
+          "Next": null
+        }
+      }
+    },
+    "1ccfae20-d96a-4990-a41b-c189905e42e4": {
+      "id": "1ccfae20-d96a-4990-a41b-c189905e42e4",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "00de181f-8e26-4eec-9114-ad4f56581029": {
+      "id": "00de181f-8e26-4eec-9114-ad4f56581029",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    },
+    "8301c8e0-4c09-414e-b74a-f2f9059c3a9f": {
+      "id": "8301c8e0-4c09-414e-b74a-f2f9059c3a9f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

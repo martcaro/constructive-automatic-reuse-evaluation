@@ -1,0 +1,217 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "60d5a921-6951-4cb0-8b41-7bede04bdcff",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "cac584b0-b1c4-4a3f-8472-285fec606bcc",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "cac584b0-b1c4-4a3f-8472-285fec606bcc": {
+      "id": "cac584b0-b1c4-4a3f-8472-285fec606bcc",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a753851c-6d42-4124-97bf-abb8fd18324e",
+        "Next": {
+          "Id": "3a76ef97-8aab-420a-893f-15e3ebb7c7f4",
+          "Next": null
+        }
+      }
+    },
+    "a753851c-6d42-4124-97bf-abb8fd18324e": {
+      "id": "a753851c-6d42-4124-97bf-abb8fd18324e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How well does the AI system capture the real-world?"
+        }
+      }
+    },
+    "3a76ef97-8aab-420a-893f-15e3ebb7c7f4": {
+      "id": "3a76ef97-8aab-420a-893f-15e3ebb7c7f4",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e9b22c69-b001-4dc8-b41b-923c4c7e260e",
+        "Next": {
+          "Id": "b04c4f4e-cc79-4906-9eb7-acd486e1ec06",
+          "Next": null
+        }
+      }
+    },
+    "e9b22c69-b001-4dc8-b41b-923c4c7e260e": {
+      "id": "e9b22c69-b001-4dc8-b41b-923c4c7e260e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "c0f6e417-7f07-4c96-8a48-e866e7b1aee1",
+        "Next": {
+          "Id": "61d6f802-38cf-4cc4-8e6b-d405dded4dd0",
+          "Next": null
+        }
+      }
+    },
+    "b04c4f4e-cc79-4906-9eb7-acd486e1ec06": {
+      "id": "b04c4f4e-cc79-4906-9eb7-acd486e1ec06",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "c0f6e417-7f07-4c96-8a48-e866e7b1aee1": {
+      "id": "c0f6e417-7f07-4c96-8a48-e866e7b1aee1",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "61d6f802-38cf-4cc4-8e6b-d405dded4dd0": {
+      "id": "61d6f802-38cf-4cc4-8e6b-d405dded4dd0",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "37dc57e9-bd02-4ae0-843b-2b29ab2c9385",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "a2886244-e88b-4d69-b5b9-585f2133f64b",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "a2886244-e88b-4d69-b5b9-585f2133f64b": {
+      "id": "a2886244-e88b-4d69-b5b9-585f2133f64b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "ba0fa435-d971-4396-b976-8bbadc93eac4",
+        "Next": {
+          "Id": "6e19580a-398d-4c60-8b94-37e147f75a7a",
+          "Next": {
+            "Id": "8629e470-f605-44c5-925a-3bdbeb26a4b3",
+            "Next": {
+              "Id": "5a94adee-3489-4129-823d-4b7f4ec0560b",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "ba0fa435-d971-4396-b976-8bbadc93eac4": {
+      "id": "ba0fa435-d971-4396-b976-8bbadc93eac4",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the limitations of the AI system?"
+        }
+      }
+    },
+    "6e19580a-398d-4c60-8b94-37e147f75a7a": {
+      "id": "6e19580a-398d-4c60-8b94-37e147f75a7a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "23075cb5-fef4-4a04-8fb7-5a4cca9cd94e",
+        "Next": {
+          "Id": "be7faa7a-36e4-4868-822b-01c3bdfa6c74",
+          "Next": null
+        }
+      }
+    },
+    "8629e470-f605-44c5-925a-3bdbeb26a4b3": {
+      "id": "8629e470-f605-44c5-925a-3bdbeb26a4b3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get a similar outcome?"
+        }
+      }
+    },
+    "5a94adee-3489-4129-823d-4b7f4ec0560b": {
+      "id": "5a94adee-3489-4129-823d-4b7f4ec0560b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "23075cb5-fef4-4a04-8fb7-5a4cca9cd94e": {
+      "id": "23075cb5-fef4-4a04-8fb7-5a4cca9cd94e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "64f2f1f7-0315-4bfa-af61-4799150f2fd9",
+        "Next": {
+          "Id": "30f213ca-a114-4296-8081-8f5fd1026272",
+          "Next": null
+        }
+      }
+    },
+    "be7faa7a-36e4-4868-822b-01c3bdfa6c74": {
+      "id": "be7faa7a-36e4-4868-822b-01c3bdfa6c74",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "64f2f1f7-0315-4bfa-af61-4799150f2fd9": {
+      "id": "64f2f1f7-0315-4bfa-af61-4799150f2fd9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        }
+      }
+    },
+    "30f213ca-a114-4296-8081-8f5fd1026272": {
+      "id": "30f213ca-a114-4296-8081-8f5fd1026272",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

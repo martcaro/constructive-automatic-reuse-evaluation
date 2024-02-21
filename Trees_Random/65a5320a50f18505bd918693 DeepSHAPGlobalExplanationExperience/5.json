@@ -1,0 +1,301 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "cbcc745c-e400-4984-9fd1-df6f96b8d839",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "f1da4f1b-414d-426f-8dec-db9b015bdca4",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "f1da4f1b-414d-426f-8dec-db9b015bdca4": {
+      "id": "f1da4f1b-414d-426f-8dec-db9b015bdca4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "58ff6433-89cf-4efd-8300-cc65b4a99827",
+        "Next": {
+          "Id": "1756df97-4561-495a-98d6-d6fd8e34a91a",
+          "Next": {
+            "Id": "4830bcb7-421e-4c2c-8d8e-61eb3d362764",
+            "Next": {
+              "Id": "810b3460-704d-4824-90f0-888546c6725c",
+              "Next": {
+                "Id": "9b5d35f1-81ab-493e-b902-c0972d271224",
+                "Next": {
+                  "Id": "c49b4a3c-6297-4d83-87d0-4b4480e9ff13",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "58ff6433-89cf-4efd-8300-cc65b4a99827": {
+      "id": "58ff6433-89cf-4efd-8300-cc65b4a99827",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "1756df97-4561-495a-98d6-d6fd8e34a91a": {
+      "id": "1756df97-4561-495a-98d6-d6fd8e34a91a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "efff2ae9-79e5-4e76-a870-d043e0440bbd",
+        "Next": {
+          "Id": "b6605b80-c514-4a3a-8da5-821c9daeabcd",
+          "Next": null
+        }
+      }
+    },
+    "4830bcb7-421e-4c2c-8d8e-61eb3d362764": {
+      "id": "4830bcb7-421e-4c2c-8d8e-61eb3d362764",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "810b3460-704d-4824-90f0-888546c6725c": {
+      "id": "810b3460-704d-4824-90f0-888546c6725c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DisCERN",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class, or 'opposite' in the case of binary classification. Defaults to 'opposite'.",
+          "fixed": false
+        },
+        "feature_attribution_method": {
+          "key": "feature_attribution_method",
+          "value": "LIME",
+          "default": "LIME",
+          "range": [
+            "LIME",
+            "SHAP",
+            "IntG"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Feature attribution method used for obtaining feature weights; currently supports LIME, SHAP and Integrated Gradients. Defaults to LIME.",
+          "fixed": false
+        },
+        "immutable_features": {
+          "key": "immutable_features",
+          "value": [],
+          "default": [],
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of feature names that are immutable. The counterfactual will not recommend to change these features. Default is an empty array",
+          "fixed": false
+        }
+      }
+    },
+    "9b5d35f1-81ab-493e-b902-c0972d271224": {
+      "id": "9b5d35f1-81ab-493e-b902-c0972d271224",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "c49b4a3c-6297-4d83-87d0-4b4480e9ff13": {
+      "id": "c49b4a3c-6297-4d83-87d0-4b4480e9ff13",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 612,
+        "y": 252
+      }
+    },
+    "efff2ae9-79e5-4e76-a870-d043e0440bbd": {
+      "id": "efff2ae9-79e5-4e76-a870-d043e0440bbd",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "fe7da56d-877c-4017-8867-497a6df41521",
+        "Next": {
+          "Id": "02063d47-6b87-4e1c-909a-055151c28d15",
+          "Next": null
+        }
+      }
+    },
+    "b6605b80-c514-4a3a-8da5-821c9daeabcd": {
+      "id": "b6605b80-c514-4a3a-8da5-821c9daeabcd",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -228,
+        "y": 384
+      }
+    },
+    "fe7da56d-877c-4017-8867-497a6df41521": {
+      "id": "fe7da56d-877c-4017-8867-497a6df41521",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "02063d47-6b87-4e1c-909a-055151c28d15": {
+      "id": "02063d47-6b87-4e1c-909a-055151c28d15",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

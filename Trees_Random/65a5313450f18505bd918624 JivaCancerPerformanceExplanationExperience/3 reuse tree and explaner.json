@@ -1,0 +1,153 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "eb937793-d6f9-4908-8b69-67e7a8ef2362",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "15bed326-4112-499b-814c-081087c80fad",
+  "properties": {},
+  "idModel": "65a5313450f18505bd918624",
+  "custom_nodes": [],
+  "nodes": {
+    "15bed326-4112-499b-814c-081087c80fad": {
+      "id": "15bed326-4112-499b-814c-081087c80fad",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+        "Next": {
+          "Id": "c068c805-6c51-41e3-85ee-d1b647843645",
+          "Next": null
+        }
+      }
+    },
+    "85b9b22e-1b0a-4a9b-81a9-83952d27271a": {
+      "id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which features need changed to get a different outcome?"
+        }
+      }
+    },
+    "c068c805-6c51-41e3-85ee-d1b647843645": {
+      "id": "c068c805-6c51-41e3-85ee-d1b647843645",
+      "Concept": "Replacement",
+      "Instance": "Replacement",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "f207dada-433a-464f-8a24-ccb7d019ae19",
+        "Next": {
+          "Id": "632ae53e-4b08-44af-8da7-53278eaef42c",
+          "Next": null
+        }
+      }
+    },
+    "f207dada-433a-464f-8a24-ccb7d019ae19": {
+      "id": "f207dada-433a-464f-8a24-ccb7d019ae19",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 48,
+        "y": 384
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 2,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 200,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    },
+    "632ae53e-4b08-44af-8da7-53278eaef42c": {
+      "id": "632ae53e-4b08-44af-8da7-53278eaef42c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMCounterfactuals",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 252,
+        "y": 384
+      },
+      "params": {
+        "num_cf": {
+          "key": "num_cf",
+          "value": 1,
+          "default": 2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be found. Defaults to 2.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 200,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

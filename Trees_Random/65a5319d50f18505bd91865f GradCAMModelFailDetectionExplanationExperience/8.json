@@ -1,0 +1,229 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "7f61eb8f-c9cf-4350-88e0-6667c987b9ea",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "7e270425-dc91-415b-8518-59f5c02b9469",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "7e270425-dc91-415b-8518-59f5c02b9469": {
+      "id": "7e270425-dc91-415b-8518-59f5c02b9469",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "14c8b332-7287-493e-853f-0b606708b56a",
+        "Next": {
+          "Id": "8d5a276b-ce97-4545-9ca6-d4a09187dc3b",
+          "Next": {
+            "Id": "91cd3319-0d5b-4f7c-97fe-23aabede2ad5",
+            "Next": {
+              "Id": "187507fa-3531-47b2-bc58-7e3b9370807b",
+              "Next": {
+                "Id": "be78e5a4-2092-4633-b2f3-6fecd63ace3f",
+                "Next": {
+                  "Id": "b68ba373-3ca2-4cb6-aeef-b439e09506da",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "14c8b332-7287-493e-853f-0b606708b56a": {
+      "id": "14c8b332-7287-493e-853f-0b606708b56a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "8d5a276b-ce97-4545-9ca6-d4a09187dc3b": {
+      "id": "8d5a276b-ce97-4545-9ca6-d4a09187dc3b",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      }
+    },
+    "91cd3319-0d5b-4f7c-97fe-23aabede2ad5": {
+      "id": "91cd3319-0d5b-4f7c-97fe-23aabede2ad5",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "187507fa-3531-47b2-bc58-7e3b9370807b": {
+      "id": "187507fa-3531-47b2-bc58-7e3b9370807b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "fixed": false
+        }
+      }
+    },
+    "be78e5a4-2092-4633-b2f3-6fecd63ace3f": {
+      "id": "be78e5a4-2092-4633-b2f3-6fecd63ace3f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "b68ba373-3ca2-4cb6-aeef-b439e09506da": {
+      "id": "b68ba373-3ca2-4cb6-aeef-b439e09506da",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

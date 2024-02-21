@@ -1,0 +1,234 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8598e1c8-64da-451d-83f4-5a5a69af0daa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "67542bb6-96fa-4e65-9fd9-e8dffd4a6305",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "67542bb6-96fa-4e65-9fd9-e8dffd4a6305": {
+      "id": "67542bb6-96fa-4e65-9fd9-e8dffd4a6305",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5",
+        "Next": {
+          "Id": "a74d8091-d874-4615-aaae-3de2b1386dce",
+          "Next": {
+            "Id": "b607ced8-6fe4-43e8-8c16-231c812f627e",
+            "Next": {
+              "Id": "c8ff47cb-2cc6-4ec8-8096-f96337626715",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5": {
+      "id": "c03ba63b-8063-4a5a-ae41-dd5c628bd5d5",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "a74d8091-d874-4615-aaae-3de2b1386dce": {
+      "id": "a74d8091-d874-4615-aaae-3de2b1386dce",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "fixed": false
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "b607ced8-6fe4-43e8-8c16-231c812f627e": {
+      "id": "b607ced8-6fe4-43e8-8c16-231c812f627e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "c8ff47cb-2cc6-4ec8-8096-f96337626715": {
+      "id": "c8ff47cb-2cc6-4ec8-8096-f96337626715",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

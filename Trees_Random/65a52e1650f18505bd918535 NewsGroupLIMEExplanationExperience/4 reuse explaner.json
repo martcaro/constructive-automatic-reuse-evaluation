@@ -1,0 +1,223 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "28040e2d-9cdc-49be-9844-d34fa0928b8f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "bbfc8226-77c1-4be8-84d7-3ea781114a5e",
+  "properties": {},
+  "idModel": "65a52e1650f18505bd918535",
+  "custom_nodes": [],
+  "nodes": {
+    "bbfc8226-77c1-4be8-84d7-3ea781114a5e": {
+      "id": "bbfc8226-77c1-4be8-84d7-3ea781114a5e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "6eba9e2c-73cf-43de-88fe-b799cbdcca89",
+        "Next": {
+          "Id": "af56b3e4-cdc1-4e6b-9db3-34f3431af336",
+          "Next": null
+        }
+      }
+    },
+    "6eba9e2c-73cf-43de-88fe-b799cbdcca89": {
+      "id": "6eba9e2c-73cf-43de-88fe-b799cbdcca89",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "af56b3e4-cdc1-4e6b-9db3-34f3431af336": {
+      "id": "af56b3e4-cdc1-4e6b-9db3-34f3431af336",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "b3a328db-9653-412b-9d49-b5f9dfe4d396",
+        "Next": {
+          "Id": "c4afd267-ba51-4c04-a103-4a57ecb113a6",
+          "Next": null
+        }
+      }
+    },
+    "b3a328db-9653-412b-9d49-b5f9dfe4d396": {
+      "id": "b3a328db-9653-412b-9d49-b5f9dfe4d396",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1db396df-6498-46de-8f2e-e556b559d5d1",
+        "Next": {
+          "Id": "c995a690-4a08-47c2-8140-41e2f9cc820c",
+          "Next": null
+        }
+      }
+    },
+    "c4afd267-ba51-4c04-a103-4a57ecb113a6": {
+      "id": "c4afd267-ba51-4c04-a103-4a57ecb113a6",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "1db396df-6498-46de-8f2e-e556b559d5d1": {
+      "id": "1db396df-6498-46de-8f2e-e556b559d5d1",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "c995a690-4a08-47c2-8140-41e2f9cc820c": {
+      "id": "c995a690-4a08-47c2-8140-41e2f9cc820c",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

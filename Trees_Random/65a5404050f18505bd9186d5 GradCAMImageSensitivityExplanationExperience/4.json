@@ -1,0 +1,442 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8a702afb-c14a-44d2-814b-1528b36871a3",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d1a28e8c-a53e-49c2-8734-aff6050cd6bb",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d1a28e8c-a53e-49c2-8734-aff6050cd6bb": {
+      "id": "d1a28e8c-a53e-49c2-8734-aff6050cd6bb",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "800d22ee-98c5-46d6-bdaa-ef8522566280",
+        "Next": {
+          "Id": "f337d96b-e838-4107-8ed0-9dd7e6af349b",
+          "Next": {
+            "Id": "6dc27dea-5a24-4b59-8303-1a85d8ed9d68",
+            "Next": {
+              "Id": "eb0a2811-18d5-44ff-baf4-86d35b9bffa1",
+              "Next": {
+                "Id": "4c9bef5c-716a-4cce-8c82-fb9b0b550929",
+                "Next": {
+                  "Id": "df4288fe-7b7a-45a2-8178-34272cf0fb4c",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "800d22ee-98c5-46d6-bdaa-ef8522566280": {
+      "id": "800d22ee-98c5-46d6-bdaa-ef8522566280",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "f337d96b-e838-4107-8ed0-9dd7e6af349b": {
+      "id": "f337d96b-e838-4107-8ed0-9dd7e6af349b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 252
+      }
+    },
+    "6dc27dea-5a24-4b59-8303-1a85d8ed9d68": {
+      "id": "6dc27dea-5a24-4b59-8303-1a85d8ed9d68",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -336,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "eb0a2811-18d5-44ff-baf4-86d35b9bffa1": {
+      "id": "eb0a2811-18d5-44ff-baf4-86d35b9bffa1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 132,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3f599a50-cae4-44fe-8e47-f2d51ac39ddd",
+        "Next": {
+          "Id": "0c98d800-b4bb-4aec-8bae-1f811f4d22f3",
+          "Next": null
+        }
+      }
+    },
+    "4c9bef5c-716a-4cce-8c82-fb9b0b550929": {
+      "id": "4c9bef5c-716a-4cce-8c82-fb9b0b550929",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "df4288fe-7b7a-45a2-8178-34272cf0fb4c": {
+      "id": "df4288fe-7b7a-45a2-8178-34272cf0fb4c",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 960,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "8851581d-b5bb-4a88-aca3-edde992be67a",
+        "Next": {
+          "Id": "1b9533b5-71e9-4899-8339-3911de70efd0",
+          "Next": null
+        }
+      }
+    },
+    "3f599a50-cae4-44fe-8e47-f2d51ac39ddd": {
+      "id": "3f599a50-cae4-44fe-8e47-f2d51ac39ddd",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "6c06ddff-b4b7-410a-89bc-80709b5b5fac",
+        "Next": {
+          "Id": "d37c2975-8588-47b5-8644-ab0b6fa43349",
+          "Next": null
+        }
+      }
+    },
+    "0c98d800-b4bb-4aec-8bae-1f811f4d22f3": {
+      "id": "0c98d800-b4bb-4aec-8bae-1f811f4d22f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 288,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "8851581d-b5bb-4a88-aca3-edde992be67a": {
+      "id": "8851581d-b5bb-4a88-aca3-edde992be67a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1d4640ee-993e-4c52-85e3-cb537e4ec89d",
+        "Next": {
+          "Id": "77eb229b-cf79-427f-84d4-5dc7f36ac989",
+          "Next": null
+        }
+      }
+    },
+    "1b9533b5-71e9-4899-8339-3911de70efd0": {
+      "id": "1b9533b5-71e9-4899-8339-3911de70efd0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1116,
+        "y": 384
+      }
+    },
+    "6c06ddff-b4b7-410a-89bc-80709b5b5fac": {
+      "id": "6c06ddff-b4b7-410a-89bc-80709b5b5fac",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -132,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "softdtw",
+            "ctw",
+            "euclidean",
+            "sqeuclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "n_neighbours": {
+          "key": "n_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be shown. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "d37c2975-8588-47b5-8644-ab0b6fa43349": {
+      "id": "d37c2975-8588-47b5-8644-ab0b6fa43349",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 84,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "1d4640ee-993e-4c52-85e3-cb537e4ec89d": {
+      "id": "1d4640ee-993e-4c52-85e3-cb537e4ec89d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 708,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "77eb229b-cf79-427f-84d4-5dc7f36ac989": {
+      "id": "77eb229b-cf79-427f-84d4-5dc7f36ac989",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 912,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "type": "text"
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "type": "text"
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "type": "select"
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

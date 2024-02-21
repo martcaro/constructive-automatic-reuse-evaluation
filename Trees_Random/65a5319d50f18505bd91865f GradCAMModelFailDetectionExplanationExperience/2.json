@@ -1,0 +1,269 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "1f8947be-d3a2-45fc-be48-1d0c05d98e6f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "fe5064f7-4ac5-49c3-868a-a2601b54d680",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "fe5064f7-4ac5-49c3-868a-a2601b54d680": {
+      "id": "fe5064f7-4ac5-49c3-868a-a2601b54d680",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "0d29703f-cb22-4118-9d9d-a14a84da4f11",
+        "Next": {
+          "Id": "21e03c8b-d9f7-480b-8d82-a2e20cc01f45",
+          "Next": {
+            "Id": "b9e30f7a-b36f-4189-9c49-fbc12cac5965",
+            "Next": {
+              "Id": "583bb950-9eab-4043-8091-93f04a66a11b",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "0d29703f-cb22-4118-9d9d-a14a84da4f11": {
+      "id": "0d29703f-cb22-4118-9d9d-a14a84da4f11",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How reliable is the AI system?"
+        }
+      }
+    },
+    "21e03c8b-d9f7-480b-8d82-a2e20cc01f45": {
+      "id": "21e03c8b-d9f7-480b-8d82-a2e20cc01f45",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of integers representing the classes to be explained.",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "b9e30f7a-b36f-4189-9c49-fbc12cac5965": {
+      "id": "b9e30f7a-b36f-4189-9c49-fbc12cac5965",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get a similar outcome?"
+        }
+      }
+    },
+    "583bb950-9eab-4043-8091-93f04a66a11b": {
+      "id": "583bb950-9eab-4043-8091-93f04a66a11b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e944f82a-2496-4bd5-93ca-cc2678a8f74b",
+        "Next": {
+          "Id": "523e68c5-6833-4d30-900d-ba772e2b7680",
+          "Next": null
+        }
+      }
+    },
+    "e944f82a-2496-4bd5-93ca-cc2678a8f74b": {
+      "id": "e944f82a-2496-4bd5-93ca-cc2678a8f74b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "83705815-4258-4ec0-ad24-8b99a61ff487",
+        "Next": {
+          "Id": "f6c9f3dd-65d4-479a-af74-35f91779d9f3",
+          "Next": null
+        }
+      }
+    },
+    "523e68c5-6833-4d30-900d-ba772e2b7680": {
+      "id": "523e68c5-6833-4d30-900d-ba772e2b7680",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "83705815-4258-4ec0-ad24-8b99a61ff487": {
+      "id": "83705815-4258-4ec0-ad24-8b99a61ff487",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "f6c9f3dd-65d4-479a-af74-35f91779d9f3": {
+      "id": "f6c9f3dd-65d4-479a-af74-35f91779d9f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "76524c86-945b-496d-8a56-2f4f1d4d76e8",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d65eaa2c-863a-4ab9-9b49-b6d608f86cc9",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d65eaa2c-863a-4ab9-9b49-b6d608f86cc9": {
+      "id": "d65eaa2c-863a-4ab9-9b49-b6d608f86cc9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e4765726-d9d7-48bc-8801-c6f78024251c",
+        "Next": {
+          "Id": "47e889dd-7129-4a0d-9686-fbd08c55f405",
+          "Next": {
+            "Id": "3f209fb4-6328-44ab-904e-56c9ec08bd77",
+            "Next": {
+              "Id": "e9dc6df0-a52e-4b67-b6ed-6e58b8584e09",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "e4765726-d9d7-48bc-8801-c6f78024251c": {
+      "id": "e4765726-d9d7-48bc-8801-c6f78024251c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "47e889dd-7129-4a0d-9686-fbd08c55f405": {
+      "id": "47e889dd-7129-4a0d-9686-fbd08c55f405",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e7169fa7-988c-4ae0-9c03-8fa2435e1b2e",
+        "Next": {
+          "Id": "df3b47f1-d0f8-45a9-8ee0-bb3abc631d23",
+          "Next": null
+        }
+      }
+    },
+    "3f209fb4-6328-44ab-904e-56c9ec08bd77": {
+      "id": "3f209fb4-6328-44ab-904e-56c9ec08bd77",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "e9dc6df0-a52e-4b67-b6ed-6e58b8584e09": {
+      "id": "e9dc6df0-a52e-4b67-b6ed-6e58b8584e09",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "fixed": false
+        }
+      }
+    },
+    "e7169fa7-988c-4ae0-9c03-8fa2435e1b2e": {
+      "id": "e7169fa7-988c-4ae0-9c03-8fa2435e1b2e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a78e780e-d3d0-41bf-8cef-e34bf8799a6c",
+        "Next": {
+          "Id": "34b4cd60-d735-4f78-8bd1-b1580e533d34",
+          "Next": null
+        }
+      }
+    },
+    "df3b47f1-d0f8-45a9-8ee0-bb3abc631d23": {
+      "id": "df3b47f1-d0f8-45a9-8ee0-bb3abc631d23",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "fixed": false
+        }
+      }
+    },
+    "a78e780e-d3d0-41bf-8cef-e34bf8799a6c": {
+      "id": "a78e780e-d3d0-41bf-8cef-e34bf8799a6c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "34b4cd60-d735-4f78-8bd1-b1580e533d34": {
+      "id": "34b4cd60-d735-4f78-8bd1-b1580e533d34",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

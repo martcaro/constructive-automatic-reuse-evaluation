@@ -1,0 +1,170 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "e2090391-5d3a-4d9a-9e49-083efc59a015",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "0c763db9-f28b-4335-88da-585b1e1e776e",
+  "properties": {},
+  "idModel": "65a5319d50f18505bd91865f",
+  "custom_nodes": [],
+  "nodes": {
+    "0c763db9-f28b-4335-88da-585b1e1e776e": {
+      "id": "0c763db9-f28b-4335-88da-585b1e1e776e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "b9945485-6f94-423f-8a4c-f6cf07fafe65",
+        "Next": {
+          "Id": "5241e1c4-d2b0-40f3-83d4-48feec77f24d",
+          "Next": {
+            "Id": "42c6c500-9596-4ac7-8a0f-32ae9568ff08",
+            "Next": {
+              "Id": "15c158d5-f439-49c7-85ee-f422a5e4a31c",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "b9945485-6f94-423f-8a4c-f6cf07fafe65": {
+      "id": "b9945485-6f94-423f-8a4c-f6cf07fafe65",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "5241e1c4-d2b0-40f3-83d4-48feec77f24d": {
+      "id": "5241e1c4-d2b0-40f3-83d4-48feec77f24d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "42c6c500-9596-4ac7-8a0f-32ae9568ff08": {
+      "id": "42c6c500-9596-4ac7-8a0f-32ae9568ff08",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "15c158d5-f439-49c7-85ee-f422a5e4a31c": {
+      "id": "15c158d5-f439-49c7-85ee-f422a5e4a31c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 475.7999999821186,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

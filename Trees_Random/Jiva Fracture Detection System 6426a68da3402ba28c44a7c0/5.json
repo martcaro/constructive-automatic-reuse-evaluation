@@ -1,0 +1,216 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0108932c-e8ff-4b8f-990d-87cc39d7b89d",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "9948b790-7992-417a-8804-86a9b4ebfb8c",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "9948b790-7992-417a-8804-86a9b4ebfb8c": {
+      "id": "9948b790-7992-417a-8804-86a9b4ebfb8c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "8828d5e3-5aea-4f65-a92a-8d0f7450f0fe",
+        "Next": {
+          "Id": "df54cf5a-f3f6-4143-85e8-869dfc6e0398",
+          "Next": {
+            "Id": "a91c7591-d806-4c35-8eab-bea40ad2361a",
+            "Next": {
+              "Id": "f8fbb7b0-f485-4733-8c7b-004371392488",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "8828d5e3-5aea-4f65-a92a-8d0f7450f0fe": {
+      "id": "8828d5e3-5aea-4f65-a92a-8d0f7450f0fe",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "df54cf5a-f3f6-4143-85e8-869dfc6e0398": {
+      "id": "df54cf5a-f3f6-4143-85e8-869dfc6e0398",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "2b137c95-c191-42d3-850f-39388dfc633d",
+        "Next": {
+          "Id": "c8af3892-d0b2-40e8-899f-b8586ac459ba",
+          "Next": null
+        }
+      }
+    },
+    "a91c7591-d806-4c35-8eab-bea40ad2361a": {
+      "id": "a91c7591-d806-4c35-8eab-bea40ad2361a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which feature contributed to the current outcome?"
+        }
+      }
+    },
+    "f8fbb7b0-f485-4733-8c7b-004371392488": {
+      "id": "f8fbb7b0-f485-4733-8c7b-004371392488",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "2b137c95-c191-42d3-850f-39388dfc633d": {
+      "id": "2b137c95-c191-42d3-850f-39388dfc633d",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ff7baed3-87e2-420f-88dd-a282737627ba",
+        "Next": {
+          "Id": "44f4a5fb-ece3-4138-96ff-a991da8f591d",
+          "Next": null
+        }
+      }
+    },
+    "c8af3892-d0b2-40e8-899f-b8586ac459ba": {
+      "id": "c8af3892-d0b2-40e8-899f-b8586ac459ba",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "ff7baed3-87e2-420f-88dd-a282737627ba": {
+      "id": "ff7baed3-87e2-420f-88dd-a282737627ba",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "44f4a5fb-ece3-4138-96ff-a991da8f591d": {
+      "id": "44f4a5fb-ece3-4138-96ff-a991da8f591d",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

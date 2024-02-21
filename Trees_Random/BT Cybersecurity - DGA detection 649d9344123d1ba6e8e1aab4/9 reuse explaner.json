@@ -1,0 +1,398 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8c6bc5e9-1489-4a43-8059-defe67e364fc",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "00cf7198-221a-44a3-8477-6f9a44082905",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "00cf7198-221a-44a3-8477-6f9a44082905": {
+      "id": "00cf7198-221a-44a3-8477-6f9a44082905",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "0b16822a-14ec-4ef0-82ec-04a1cddc5619",
+        "Next": {
+          "Id": "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf",
+          "Next": {
+            "Id": "eb0e0e6a-5972-47b2-81e7-510a344cbeef",
+            "Next": {
+              "Id": "9086f883-1c0d-470a-8e52-cb0db81a0418",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "0b16822a-14ec-4ef0-82ec-04a1cddc5619": {
+      "id": "0b16822a-14ec-4ef0-82ec-04a1cddc5619",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system respond to feature X?"
+        }
+      }
+    },
+    "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf": {
+      "id": "20e6fa91-7b38-4b57-9b2e-9d69d369dbaf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "cf21b627-12f9-4862-8a9b-4a95715c8ce8",
+        "Next": {
+          "Id": "98118a5e-fb4e-4bfb-83ae-508e4805071c",
+          "Next": null
+        }
+      }
+    },
+    "eb0e0e6a-5972-47b2-81e7-510a344cbeef": {
+      "id": "eb0e0e6a-5972-47b2-81e7-510a344cbeef",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "9086f883-1c0d-470a-8e52-cb0db81a0418": {
+      "id": "9086f883-1c0d-470a-8e52-cb0db81a0418",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5172545a-ff09-48d1-b901-b201d5195c0e",
+        "Next": {
+          "Id": "99107f3f-c57e-449c-8002-966aed0794b0",
+          "Next": null
+        }
+      }
+    },
+    "cf21b627-12f9-4862-8a9b-4a95715c8ce8": {
+      "id": "cf21b627-12f9-4862-8a9b-4a95715c8ce8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "27fa96d6-8b44-43eb-80cd-8004f07bdc6a",
+        "Next": {
+          "Id": "38016abd-424b-4a88-b3c8-8c16ed522e7a",
+          "Next": null
+        }
+      }
+    },
+    "98118a5e-fb4e-4bfb-83ae-508e4805071c": {
+      "id": "98118a5e-fb4e-4bfb-83ae-508e4805071c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 384
+      }
+    },
+    "5172545a-ff09-48d1-b901-b201d5195c0e": {
+      "id": "5172545a-ff09-48d1-b901-b201d5195c0e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "82f5b689-c1e3-4072-8c61-63210f2c9810",
+        "Next": {
+          "Id": "002bceaa-7353-419a-8927-dbc757c680ef",
+          "Next": null
+        }
+      }
+    },
+    "99107f3f-c57e-449c-8002-966aed0794b0": {
+      "id": "99107f3f-c57e-449c-8002-966aed0794b0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePublic",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "opposite",
+          "default": "opposite",
+          "range": [
+            "opposite",
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "type": "select"
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "default": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "range": [
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "type": "checkbox"
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "type": "number"
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic",
+            "kdtrees"
+          ],
+          "required": "false",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "type": "select"
+        },
+        "permitted_range": {
+          "key": "permitted_range",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Dictionary with feature names as keys and permitted range in array as values.",
+          "type": "text"
+        }
+      }
+    },
+    "27fa96d6-8b44-43eb-80cd-8004f07bdc6a": {
+      "id": "27fa96d6-8b44-43eb-80cd-8004f07bdc6a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPDependence",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": "Highest SHAP value",
+          "default": "Highest SHAP value",
+          "range": [
+            "Highest SHAP value",
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "Name of the feature to be displayed. Defaults to the feature with the highest average SHAP value.",
+          "type": "select"
+        },
+        "interaction_feature": {
+          "key": "interaction_feature",
+          "value": "Highest Interact. value",
+          "default": "Highest Interact. value",
+          "range": [
+            "Highest Interact. value",
+            "length",
+            "entropy",
+            "domain_grams",
+            "word_grams"
+          ],
+          "required": "false",
+          "description": "Name of the interaction feature used for coloring the instances. Defaults to the feature with the highest interaction value with the feature specified in the previous parameter.",
+          "type": "select"
+        }
+      }
+    },
+    "38016abd-424b-4a88-b3c8-8c16ed522e7a": {
+      "id": "38016abd-424b-4a88-b3c8-8c16ed522e7a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            "other",
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "select"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "82f5b689-c1e3-4072-8c61-63210f2c9810": {
+      "id": "82f5b689-c1e3-4072-8c61-63210f2c9810",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Anchors",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "The minimum level of precision required for the anchors. Default is 0.95",
+          "type": "number"
+        }
+      }
+    },
+    "002bceaa-7353-419a-8927-dbc757c680ef": {
+      "id": "002bceaa-7353-419a-8927-dbc757c680ef",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

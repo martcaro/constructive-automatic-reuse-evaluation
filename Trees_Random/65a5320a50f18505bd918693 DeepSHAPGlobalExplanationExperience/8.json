@@ -1,0 +1,458 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9ca088d1-8bd0-4b8a-83f6-deb515358c3e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ca19f834-bb1c-432e-83bf-4064005e67a1",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "ca19f834-bb1c-432e-83bf-4064005e67a1": {
+      "id": "ca19f834-bb1c-432e-83bf-4064005e67a1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1",
+        "Next": {
+          "Id": "507c2cdb-4f56-4555-bc6a-a338c32f0d96",
+          "Next": {
+            "Id": "9a772dcf-8923-4833-830c-76934015a5dc",
+            "Next": {
+              "Id": "e0b1e558-d756-4b0c-8746-beaf84a7a3df",
+              "Next": {
+                "Id": "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d",
+                "Next": {
+                  "Id": "dc5e8040-8231-45e4-85bb-eaad0368a583",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1": {
+      "id": "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "507c2cdb-4f56-4555-bc6a-a338c32f0d96": {
+      "id": "507c2cdb-4f56-4555-bc6a-a338c32f0d96",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6cbda2c2-ca9b-43d1-8d3f-994139349464",
+        "Next": {
+          "Id": "be72e9c8-757d-432f-8b16-a5336cfcb331",
+          "Next": null
+        }
+      }
+    },
+    "9a772dcf-8923-4833-830c-76934015a5dc": {
+      "id": "9a772dcf-8923-4833-830c-76934015a5dc",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "e0b1e558-d756-4b0c-8746-beaf84a7a3df": {
+      "id": "e0b1e558-d756-4b0c-8746-beaf84a7a3df",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "62c694e7-67b0-494c-81cb-f73188d9f34c",
+        "Next": {
+          "Id": "74a3ad2a-8afd-4edb-89d4-b80f370251ca",
+          "Next": null
+        }
+      }
+    },
+    "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d": {
+      "id": "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "dc5e8040-8231-45e4-85bb-eaad0368a583": {
+      "id": "dc5e8040-8231-45e4-85bb-eaad0368a583",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "6cbda2c2-ca9b-43d1-8d3f-994139349464": {
+      "id": "6cbda2c2-ca9b-43d1-8d3f-994139349464",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "410afa7f-f485-440e-8a41-ef7759c2040b",
+        "Next": {
+          "Id": "b7055c69-88d7-454e-9b56-68ef4c6d1d46",
+          "Next": null
+        }
+      }
+    },
+    "be72e9c8-757d-432f-8b16-a5336cfcb331": {
+      "id": "be72e9c8-757d-432f-8b16-a5336cfcb331",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "fixed": false
+        }
+      }
+    },
+    "62c694e7-67b0-494c-81cb-f73188d9f34c": {
+      "id": "62c694e7-67b0-494c-81cb-f73188d9f34c",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6",
+        "Next": {
+          "Id": "9164a886-891a-4feb-99b7-481fa017f262",
+          "Next": null
+        }
+      }
+    },
+    "74a3ad2a-8afd-4edb-89d4-b80f370251ca": {
+      "id": "74a3ad2a-8afd-4edb-89d4-b80f370251ca",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 432,
+        "y": 384
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "410afa7f-f485-440e-8a41-ef7759c2040b": {
+      "id": "410afa7f-f485-440e-8a41-ef7759c2040b",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "b7055c69-88d7-454e-9b56-68ef4c6d1d46": {
+      "id": "b7055c69-88d7-454e-9b56-68ef4c6d1d46",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -612,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6": {
+      "id": "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "9164a886-891a-4feb-99b7-481fa017f262": {
+      "id": "9164a886-891a-4feb-99b7-481fa017f262",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

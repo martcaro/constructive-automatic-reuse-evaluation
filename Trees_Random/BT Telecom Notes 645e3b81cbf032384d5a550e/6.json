@@ -1,0 +1,220 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "4abdff34-bc4e-4c41-83b2-33b95dc2776d",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "4bc73aa2-1b1c-4cb7-8e88-424483c14da2",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "4bc73aa2-1b1c-4cb7-8e88-424483c14da2": {
+      "id": "4bc73aa2-1b1c-4cb7-8e88-424483c14da2",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "669f3177-9694-4cb4-8426-35d0699524ed",
+        "Next": {
+          "Id": "5872c59f-905c-471f-be4a-23fbe29b0710",
+          "Next": null
+        }
+      }
+    },
+    "669f3177-9694-4cb4-8426-35d0699524ed": {
+      "id": "669f3177-9694-4cb4-8426-35d0699524ed",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "5872c59f-905c-471f-be4a-23fbe29b0710": {
+      "id": "5872c59f-905c-471f-be4a-23fbe29b0710",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "779b5b02-22f3-40ad-9695-e334a363859a",
+        "Next": {
+          "Id": "cbeac33b-5cc9-47b2-bc04-4c81512e9c47",
+          "Next": null
+        }
+      }
+    },
+    "779b5b02-22f3-40ad-9695-e334a363859a": {
+      "id": "779b5b02-22f3-40ad-9695-e334a363859a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "77aa6860-1e8b-4f90-8c83-c441b2c7e529",
+        "Next": {
+          "Id": "9db43e4d-d76b-4223-837d-d9f9b63166c9",
+          "Next": null
+        }
+      }
+    },
+    "cbeac33b-5cc9-47b2-bc04-4c81512e9c47": {
+      "id": "cbeac33b-5cc9-47b2-bc04-4c81512e9c47",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "77aa6860-1e8b-4f90-8c83-c441b2c7e529": {
+      "id": "77aa6860-1e8b-4f90-8c83-c441b2c7e529",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/CBRFox",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "smoothness_factor": {
+          "key": "smoothness_factor",
+          "value": 0.03,
+          "default": 0.03,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float ranging from 0 to 1 for the smoothness factor that will be applied for metric computation. Defaults to 0.03.",
+          "fixed": false
+        },
+        "punished_sum_factor": {
+          "key": "punished_sum_factor",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float ranging from 0 to 1 for the punished sum factor that will be applied for metric computation. Defaults to 0.5.",
+          "fixed": false
+        },
+        "reference_method": {
+          "key": "reference_method",
+          "value": "average",
+          "default": "average",
+          "range": [
+            "average",
+            "min",
+            "max",
+            "median"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method to be used for the selection of the general cases. It may be 'average','min','max' and 'median'. Defaults to 'average'.",
+          "fixed": false
+        }
+      }
+    },
+    "9db43e4d-d76b-4223-837d-d9f9b63166c9": {
+      "id": "9db43e4d-d76b-4223-837d-d9f9b63166c9",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/iGenCBR",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "num_neigbours": {
+          "key": "num_neigbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of neighbours to be included in the explanation. Defaults to 3.",
+          "type": "number"
+        },
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the feature to be included in the explanation. Defaults to the first feature in the dataset.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

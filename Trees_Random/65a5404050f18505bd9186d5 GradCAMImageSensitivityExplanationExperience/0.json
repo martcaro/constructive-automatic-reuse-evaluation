@@ -1,0 +1,336 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "54ac8987-a6a3-408a-8890-279cc26c4635",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "9406009f-a803-4379-b7ba-c057b14616ed",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "9406009f-a803-4379-b7ba-c057b14616ed": {
+      "id": "9406009f-a803-4379-b7ba-c057b14616ed",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "2b06e857-896f-43ef-88f9-ca8e9e117fe7",
+        "Next": {
+          "Id": "93c8f83c-3437-4335-8c52-d3c418837d58",
+          "Next": {
+            "Id": "b88b04a0-71f4-445d-9641-71b8c257e938",
+            "Next": {
+              "Id": "7e27366d-b7ec-4913-a13e-ca8d2fc6e6ef",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "2b06e857-896f-43ef-88f9-ca8e9e117fe7": {
+      "id": "2b06e857-896f-43ef-88f9-ca8e9e117fe7",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "93c8f83c-3437-4335-8c52-d3c418837d58": {
+      "id": "93c8f83c-3437-4335-8c52-d3c418837d58",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "b88b04a0-71f4-445d-9641-71b8c257e938": {
+      "id": "b88b04a0-71f4-445d-9641-71b8c257e938",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which instances get a similar outcome?"
+        }
+      }
+    },
+    "7e27366d-b7ec-4913-a13e-ca8d2fc6e6ef": {
+      "id": "7e27366d-b7ec-4913-a13e-ca8d2fc6e6ef",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "9c426c94-dcb2-4d3f-b3fc-e35ab68b9447",
+        "Next": {
+          "Id": "07cbce23-9b7d-4864-8e09-e233e7651858",
+          "Next": null
+        }
+      }
+    },
+    "9c426c94-dcb2-4d3f-b3fc-e35ab68b9447": {
+      "id": "9c426c94-dcb2-4d3f-b3fc-e35ab68b9447",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "54af4b83-bd1b-44d9-8ed0-8304bf7c2ab0",
+        "Next": {
+          "Id": "f29b7c51-687f-4572-841c-befd21aafafa",
+          "Next": null
+        }
+      }
+    },
+    "07cbce23-9b7d-4864-8e09-e233e7651858": {
+      "id": "07cbce23-9b7d-4864-8e09-e233e7651858",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "fixed": false
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "fixed": false
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "heatmap",
+          "default": "heatmap",
+          "range": [
+            "heatmap",
+            "attributions"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Plot style to be used. It can be either 'heatmap' or 'attributions'. Defaults to 'heatmap'.",
+          "fixed": false
+        }
+      }
+    },
+    "54af4b83-bd1b-44d9-8ed0-8304bf7c2ab0": {
+      "id": "54af4b83-bd1b-44d9-8ed0-8304bf7c2ab0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "f29b7c51-687f-4572-841c-befd21aafafa": {
+      "id": "f29b7c51-687f-4572-841c-befd21aafafa",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

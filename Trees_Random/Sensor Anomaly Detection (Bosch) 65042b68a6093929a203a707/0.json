@@ -1,0 +1,187 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "4632bf2a-3c62-4549-9609-8c0d74cfdba2",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "12af6699-eb6b-45a0-8e83-1f219bd290c7",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "12af6699-eb6b-45a0-8e83-1f219bd290c7": {
+      "id": "12af6699-eb6b-45a0-8e83-1f219bd290c7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "729bb652-ad8f-4e60-9f24-36d8ea43183b",
+        "Next": {
+          "Id": "2aa1650e-f82f-4ff9-8e14-af36210b4af2",
+          "Next": {
+            "Id": "691c991b-fd23-4448-964d-7f07b33bf002",
+            "Next": {
+              "Id": "4d5bcede-9d1c-432f-824d-d78be5901254",
+              "Next": {
+                "Id": "950f59cb-92e7-49bc-ab84-586724402960",
+                "Next": {
+                  "Id": "9aea18e2-6809-4a25-862c-e36e2bf8330a",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "729bb652-ad8f-4e60-9f24-36d8ea43183b": {
+      "id": "729bb652-ad8f-4e60-9f24-36d8ea43183b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "2aa1650e-f82f-4ff9-8e14-af36210b4af2": {
+      "id": "2aa1650e-f82f-4ff9-8e14-af36210b4af2",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      }
+    },
+    "691c991b-fd23-4448-964d-7f07b33bf002": {
+      "id": "691c991b-fd23-4448-964d-7f07b33bf002",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "4d5bcede-9d1c-432f-824d-d78be5901254": {
+      "id": "4d5bcede-9d1c-432f-824d-d78be5901254",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the method to calculate the residuals.",
+          "fixed": false
+        }
+      }
+    },
+    "950f59cb-92e7-49bc-ab84-586724402960": {
+      "id": "950f59cb-92e7-49bc-ab84-586724402960",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered in the current outcome?"
+        }
+      }
+    },
+    "9aea18e2-6809-4a25-862c-e36e2bf8330a": {
+      "id": "9aea18e2-6809-4a25-862c-e36e2bf8330a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

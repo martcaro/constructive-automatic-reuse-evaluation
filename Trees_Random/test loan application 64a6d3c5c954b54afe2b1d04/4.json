@@ -1,0 +1,611 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "f5869e12-1729-4bc1-851b-93452b8873ac",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ab79aa77-cab3-4387-8ee0-2f28ab0593b9",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "ab79aa77-cab3-4387-8ee0-2f28ab0593b9": {
+      "id": "ab79aa77-cab3-4387-8ee0-2f28ab0593b9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "721802af-2371-4bd8-a588-a41ab07aa7c0",
+        "Next": {
+          "Id": "5e887e1f-873e-43ec-8e86-2896b9d8e927",
+          "Next": {
+            "Id": "38d28c52-dd46-4361-a4eb-0cf5370c9e73",
+            "Next": {
+              "Id": "cef9eb6c-99aa-4e8c-932a-a6b08dba646d",
+              "Next": {
+                "Id": "5f8b1222-d75e-48b4-a30c-6f96b6cc73a1",
+                "Next": {
+                  "Id": "eedd3028-3a9e-4167-86ad-821669398a0a",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "721802af-2371-4bd8-a588-a41ab07aa7c0": {
+      "id": "721802af-2371-4bd8-a588-a41ab07aa7c0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to get a different outcome?"
+        }
+      }
+    },
+    "5e887e1f-873e-43ec-8e86-2896b9d8e927": {
+      "id": "5e887e1f-873e-43ec-8e86-2896b9d8e927",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "4dff3853-95c6-4a5f-8558-feec8351f739",
+        "Next": {
+          "Id": "ab116ad1-cf22-4cc7-a9cc-f82c67525ffd",
+          "Next": null
+        }
+      }
+    },
+    "38d28c52-dd46-4361-a4eb-0cf5370c9e73": {
+      "id": "38d28c52-dd46-4361-a4eb-0cf5370c9e73",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "cef9eb6c-99aa-4e8c-932a-a6b08dba646d": {
+      "id": "cef9eb6c-99aa-4e8c-932a-a6b08dba646d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      }
+    },
+    "5f8b1222-d75e-48b4-a30c-6f96b6cc73a1": {
+      "id": "5f8b1222-d75e-48b4-a30c-6f96b6cc73a1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "eedd3028-3a9e-4167-86ad-821669398a0a": {
+      "id": "eedd3028-3a9e-4167-86ad-821669398a0a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "22719cce-fa9e-47cc-8c0d-cdaf84434278",
+        "Next": {
+          "Id": "0b04d3c0-5944-4807-86e1-75feca535b62",
+          "Next": null
+        }
+      }
+    },
+    "4dff3853-95c6-4a5f-8558-feec8351f739": {
+      "id": "4dff3853-95c6-4a5f-8558-feec8351f739",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "18f42849-ae45-417e-8d06-4ea53b972226",
+        "Next": {
+          "Id": "865ba7c3-7afc-413b-9efa-4164b9a22a42",
+          "Next": null
+        }
+      }
+    },
+    "ab116ad1-cf22-4cc7-a9cc-f82c67525ffd": {
+      "id": "ab116ad1-cf22-4cc7-a9cc-f82c67525ffd",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "fixed": false
+        }
+      }
+    },
+    "22719cce-fa9e-47cc-8c0d-cdaf84434278": {
+      "id": "22719cce-fa9e-47cc-8c0d-cdaf84434278",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ec1ad1d0-c29a-4d22-832e-ebd3456aefe6",
+        "Next": {
+          "Id": "0a9dd7cc-8110-4078-b1d6-76b47e85fe3f",
+          "Next": null
+        }
+      }
+    },
+    "0b04d3c0-5944-4807-86e1-75feca535b62": {
+      "id": "0b04d3c0-5944-4807-86e1-75feca535b62",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 984,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "18f42849-ae45-417e-8d06-4ea53b972226": {
+      "id": "18f42849-ae45-417e-8d06-4ea53b972226",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "865ba7c3-7afc-413b-9efa-4164b9a22a42": {
+      "id": "865ba7c3-7afc-413b-9efa-4164b9a22a42",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -468,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "fixed": false
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "ec1ad1d0-c29a-4d22-832e-ebd3456aefe6": {
+      "id": "ec1ad1d0-c29a-4d22-832e-ebd3456aefe6",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of integers representing the classes to be explained.",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "0a9dd7cc-8110-4078-b1d6-76b47e85fe3f": {
+      "id": "0a9dd7cc-8110-4078-b1d6-76b47e85fe3f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PertCF",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "encode_cat": {
+          "key": "encode_cat",
+          "value": "OrdinalEncoder",
+          "default": "OrdinalEncoder",
+          "range": [
+            "auto",
+            "manual",
+            "BackwardDifferenceEncoder",
+            "BaseNEncoder",
+            "BinaryEncoder",
+            "CatBoostEncoder",
+            "CountEncoder",
+            "GLMMEncoder",
+            "GrayEncoder",
+            "HelmertEncoder",
+            "JamesSteinEncoder",
+            "LeaveOneOutEncoder",
+            "MEstimateEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder",
+            "PolynomialEncoder",
+            "QuantileEncoder",
+            "RankHotEncoder",
+            "SumEncoder",
+            "TargetEncoder",
+            "WOEEncoder"
+          ],
+          "required": "false",
+          "description": "Encoding technique for categorical features. Prefer the same technique that is used for the model for reliable results.",
+          "type": "select"
+        },
+        "global_sim": {
+          "key": "global_sim",
+          "value": "euclidean",
+          "default": "euclidean",
+          "range": [
+            "ManualEuclidean",
+            "ShapEuclidean",
+            "braycurtis",
+            "canberra",
+            "chebyshev",
+            "jaccard",
+            "hamming",
+            "cosine",
+            "sqeuclidean",
+            "cityblock",
+            "minkowski",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Global similarity technique.",
+          "type": "select"
+        },
+        "local_sim": {
+          "key": "local_sim",
+          "value": "auto",
+          "default": "auto",
+          "range": [
+            "manual",
+            "auto"
+          ],
+          "required": "false",
+          "description": "Local similarity technique.",
+          "type": "select"
+        },
+        "shap_sample": {
+          "key": "shap_sample",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use for calculating the SHAP values faster.",
+          "type": "number"
+        },
+        "candidate_threshold": {
+          "key": "candidate_threshold",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Step size threshold between CF candidates.",
+          "type": "number"
+        },
+        "candidate_max_iter": {
+          "key": "candidate_max_iter",
+          "value": 20,
+          "default": 20,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Maximum number of iterations to generate CF.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

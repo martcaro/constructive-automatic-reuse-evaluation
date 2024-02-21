@@ -1,0 +1,304 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "ebb67d98-8190-40b3-8f38-976129763a2e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "e66286a0-8693-465b-95a3-9eacdea6924c",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "e66286a0-8693-465b-95a3-9eacdea6924c": {
+      "id": "e66286a0-8693-465b-95a3-9eacdea6924c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "667f5f7e-39c4-4382-803e-381cb9b9f830",
+        "Next": {
+          "Id": "2c3b3ac0-3223-44f6-84f0-874ce95e71cf",
+          "Next": {
+            "Id": "b870afdd-2aa7-4e26-8d14-595d44c9b50c",
+            "Next": {
+              "Id": "35700c2e-c4f2-4d09-bac5-eeb36c841d27",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "667f5f7e-39c4-4382-803e-381cb9b9f830": {
+      "id": "667f5f7e-39c4-4382-803e-381cb9b9f830",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "2c3b3ac0-3223-44f6-84f0-874ce95e71cf": {
+      "id": "2c3b3ac0-3223-44f6-84f0-874ce95e71cf",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "b870afdd-2aa7-4e26-8d14-595d44c9b50c": {
+      "id": "b870afdd-2aa7-4e26-8d14-595d44c9b50c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "35700c2e-c4f2-4d09-bac5-eeb36c841d27": {
+      "id": "35700c2e-c4f2-4d09-bac5-eeb36c841d27",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "03ea3044-09c4-4c90-8c8c-ca62c96fbec4",
+        "Next": {
+          "Id": "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d",
+          "Next": null
+        }
+      }
+    },
+    "03ea3044-09c4-4c90-8c8c-ca62c96fbec4": {
+      "id": "03ea3044-09c4-4c90-8c8c-ca62c96fbec4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "78cb0972-3cfa-4d66-90ef-1f262787a194",
+        "Next": {
+          "Id": "35f85ed1-13be-4a3d-80d5-3bf76838952d",
+          "Next": null
+        }
+      }
+    },
+    "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d": {
+      "id": "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        }
+      }
+    },
+    "78cb0972-3cfa-4d66-90ef-1f262787a194": {
+      "id": "78cb0972-3cfa-4d66-90ef-1f262787a194",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "35f85ed1-13be-4a3d-80d5-3bf76838952d": {
+      "id": "35f85ed1-13be-4a3d-80d5-3bf76838952d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "type": "text"
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "type": "number"
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "type": "text"
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 713.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

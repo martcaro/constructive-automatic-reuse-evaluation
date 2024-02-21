@@ -1,0 +1,348 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b8ed7f32-d848-4cab-bcd5-ee2fa130d245",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "644ea56b-cecd-4c46-8d86-3aa890c3aa23",
+  "properties": {},
+  "idModel": "64a6d3c5c954b54afe2b1d04",
+  "custom_nodes": [],
+  "nodes": {
+    "644ea56b-cecd-4c46-8d86-3aa890c3aa23": {
+      "id": "644ea56b-cecd-4c46-8d86-3aa890c3aa23",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e0e64b2c-5b4d-4712-8b59-0862c9d886a9",
+        "Next": {
+          "Id": "7793a838-d51b-4c60-824c-d0a4c0b7feb7",
+          "Next": {
+            "Id": "421d68aa-0549-45cc-b6a2-5f57a57dca2c",
+            "Next": {
+              "Id": "c19ce978-fb82-475b-9dd9-75e0bd0f133a",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "e0e64b2c-5b4d-4712-8b59-0862c9d886a9": {
+      "id": "e0e64b2c-5b4d-4712-8b59-0862c9d886a9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "7793a838-d51b-4c60-824c-d0a4c0b7feb7": {
+      "id": "7793a838-d51b-4c60-824c-d0a4c0b7feb7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": "Highest SHAP value",
+          "default": "Highest SHAP value",
+          "range": [
+            "Highest SHAP value",
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "required": "false",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "type": "select"
+        }
+      }
+    },
+    "421d68aa-0549-45cc-b6a2-5f57a57dca2c": {
+      "id": "421d68aa-0549-45cc-b6a2-5f57a57dca2c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "c19ce978-fb82-475b-9dd9-75e0bd0f133a": {
+      "id": "c19ce978-fb82-475b-9dd9-75e0bd0f133a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "d5302d2a-0e8f-4961-8d45-2dfec2f80c88",
+        "Next": {
+          "Id": "afe38b0e-145d-4441-8d8b-1ff443231f79",
+          "Next": null
+        }
+      }
+    },
+    "d5302d2a-0e8f-4961-8d45-2dfec2f80c88": {
+      "id": "d5302d2a-0e8f-4961-8d45-2dfec2f80c88",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a8926b45-3d12-4850-8ac8-768c56a52c20",
+        "Next": {
+          "Id": "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc",
+          "Next": null
+        }
+      }
+    },
+    "afe38b0e-145d-4441-8d8b-1ff443231f79": {
+      "id": "afe38b0e-145d-4441-8d8b-1ff443231f79",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "a8926b45-3d12-4850-8ac8-768c56a52c20": {
+      "id": "a8926b45-3d12-4850-8ac8-768c56a52c20",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc": {
+      "id": "a8cb3539-5ee2-4a31-acb2-3b64c2d904bc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PertCF",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "encode_cat": {
+          "key": "encode_cat",
+          "value": "OrdinalEncoder",
+          "default": "OrdinalEncoder",
+          "range": [
+            "auto",
+            "manual",
+            "BackwardDifferenceEncoder",
+            "BaseNEncoder",
+            "BinaryEncoder",
+            "CatBoostEncoder",
+            "CountEncoder",
+            "GLMMEncoder",
+            "GrayEncoder",
+            "HelmertEncoder",
+            "JamesSteinEncoder",
+            "LeaveOneOutEncoder",
+            "MEstimateEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder",
+            "PolynomialEncoder",
+            "QuantileEncoder",
+            "RankHotEncoder",
+            "SumEncoder",
+            "TargetEncoder",
+            "WOEEncoder"
+          ],
+          "required": "false",
+          "description": "Encoding technique for categorical features. Prefer the same technique that is used for the model for reliable results.",
+          "type": "select"
+        },
+        "global_sim": {
+          "key": "global_sim",
+          "value": "euclidean",
+          "default": "euclidean",
+          "range": [
+            "ManualEuclidean",
+            "ShapEuclidean",
+            "braycurtis",
+            "canberra",
+            "chebyshev",
+            "jaccard",
+            "hamming",
+            "cosine",
+            "sqeuclidean",
+            "cityblock",
+            "minkowski",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Global similarity technique.",
+          "type": "select"
+        },
+        "local_sim": {
+          "key": "local_sim",
+          "value": "auto",
+          "default": "auto",
+          "range": [
+            "manual",
+            "auto"
+          ],
+          "required": "false",
+          "description": "Local similarity technique.",
+          "type": "select"
+        },
+        "shap_sample": {
+          "key": "shap_sample",
+          "value": 200,
+          "default": 200,
+          "range": [
+            1,
+            2000
+          ],
+          "required": "false",
+          "description": "Number of samples to use for calculating the SHAP values faster.",
+          "type": "number"
+        },
+        "candidate_threshold": {
+          "key": "candidate_threshold",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Step size threshold between CF candidates.",
+          "type": "number"
+        },
+        "candidate_max_iter": {
+          "key": "candidate_max_iter",
+          "value": 20,
+          "default": 20,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Maximum number of iterations to generate CF.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 687.3999999761581,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

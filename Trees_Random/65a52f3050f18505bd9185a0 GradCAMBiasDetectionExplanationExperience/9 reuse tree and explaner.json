@@ -1,0 +1,129 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b85ec44b-d5b4-47d4-88f7-d11cf6b58820",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+  "properties": {},
+  "idModel": "65a52f3050f18505bd9185a0",
+  "custom_nodes": [],
+  "nodes": {
+    "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d": {
+      "id": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+        "Next": {
+          "Id": "f0e73498-1f11-4709-aed5-bc0f2269393b",
+          "Next": null
+        }
+      }
+    },
+    "7e6f46df-dd97-47dd-8c60-9e6d3f479414": {
+      "id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "f0e73498-1f11-4709-aed5-bc0f2269393b": {
+      "id": "f0e73498-1f11-4709-aed5-bc0f2269393b",
+      "Concept": "Supplement",
+      "Instance": "Supplement",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6a494a6d-9843-4c25-a97c-36bc0c790323",
+        "Next": {
+          "Id": "7eafe5f9-285c-46a2-8c4f-848fc52d53af",
+          "Next": null
+        }
+      }
+    },
+    "6a494a6d-9843-4c25-a97c-36bc0c790323": {
+      "id": "6a494a6d-9843-4c25-a97c-36bc0c790323",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {
+        "Applicability": true,
+        "Popularity": 1
+      },
+      "display": {
+        "x": 48,
+        "y": 384
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 200,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    },
+    "7eafe5f9-285c-46a2-8c4f-848fc52d53af": {
+      "id": "7eafe5f9-285c-46a2-8c4f-848fc52d53af",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Applicability": true,
+        "Popularity": 1
+      },
+      "display": {
+        "x": 252,
+        "y": 384
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 200,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 703.0999999940395,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

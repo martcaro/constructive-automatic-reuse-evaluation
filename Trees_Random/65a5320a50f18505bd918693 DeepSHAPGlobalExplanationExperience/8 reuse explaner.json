@@ -1,0 +1,435 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9ca088d1-8bd0-4b8a-83f6-deb515358c3e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ca19f834-bb1c-432e-83bf-4064005e67a1",
+  "properties": {},
+  "idModel": "65a5320a50f18505bd918693",
+  "custom_nodes": [],
+  "nodes": {
+    "ca19f834-bb1c-432e-83bf-4064005e67a1": {
+      "id": "ca19f834-bb1c-432e-83bf-4064005e67a1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1",
+        "Next": {
+          "Id": "507c2cdb-4f56-4555-bc6a-a338c32f0d96",
+          "Next": {
+            "Id": "9a772dcf-8923-4833-830c-76934015a5dc",
+            "Next": {
+              "Id": "e0b1e558-d756-4b0c-8746-beaf84a7a3df",
+              "Next": {
+                "Id": "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d",
+                "Next": {
+                  "Id": "dc5e8040-8231-45e4-85bb-eaad0368a583",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1": {
+      "id": "cebbb02e-6dcb-4a04-8ba0-510babe2fcb1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "507c2cdb-4f56-4555-bc6a-a338c32f0d96": {
+      "id": "507c2cdb-4f56-4555-bc6a-a338c32f0d96",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "6cbda2c2-ca9b-43d1-8d3f-994139349464",
+        "Next": {
+          "Id": "be72e9c8-757d-432f-8b16-a5336cfcb331",
+          "Next": null
+        }
+      }
+    },
+    "9a772dcf-8923-4833-830c-76934015a5dc": {
+      "id": "9a772dcf-8923-4833-830c-76934015a5dc",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "e0b1e558-d756-4b0c-8746-beaf84a7a3df": {
+      "id": "e0b1e558-d756-4b0c-8746-beaf84a7a3df",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "62c694e7-67b0-494c-81cb-f73188d9f34c",
+        "Next": {
+          "Id": "74a3ad2a-8afd-4edb-89d4-b80f370251ca",
+          "Next": null
+        }
+      }
+    },
+    "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d": {
+      "id": "79168dd8-4ffd-47a2-8ff5-2ea920ea3e8d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "dc5e8040-8231-45e4-85bb-eaad0368a583": {
+      "id": "dc5e8040-8231-45e4-85bb-eaad0368a583",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "6cbda2c2-ca9b-43d1-8d3f-994139349464": {
+      "id": "6cbda2c2-ca9b-43d1-8d3f-994139349464",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "410afa7f-f485-440e-8a41-ef7759c2040b",
+        "Next": {
+          "Id": "b7055c69-88d7-454e-9b56-68ef4c6d1d46",
+          "Next": null
+        }
+      }
+    },
+    "be72e9c8-757d-432f-8b16-a5336cfcb331": {
+      "id": "be72e9c8-757d-432f-8b16-a5336cfcb331",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "62c694e7-67b0-494c-81cb-f73188d9f34c": {
+      "id": "62c694e7-67b0-494c-81cb-f73188d9f34c",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6",
+        "Next": {
+          "Id": "9164a886-891a-4feb-99b7-481fa017f262",
+          "Next": null
+        }
+      }
+    },
+    "74a3ad2a-8afd-4edb-89d4-b80f370251ca": {
+      "id": "74a3ad2a-8afd-4edb-89d4-b80f370251ca",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 432,
+        "y": 384
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    },
+    "410afa7f-f485-440e-8a41-ef7759c2040b": {
+      "id": "410afa7f-f485-440e-8a41-ef7759c2040b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "b7055c69-88d7-454e-9b56-68ef4c6d1d46": {
+      "id": "b7055c69-88d7-454e-9b56-68ef4c6d1d46",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -612,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6": {
+      "id": "ffa4cc9a-e5c2-4037-8c53-fc41d62d14b6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    },
+    "9164a886-891a-4feb-99b7-481fa017f262": {
+      "id": "9164a886-891a-4feb-99b7-481fa017f262",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

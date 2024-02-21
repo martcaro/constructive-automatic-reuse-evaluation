@@ -1,0 +1,280 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8632421f-7f84-4424-8cb5-025eddf20e80",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "808f207f-cbc4-4919-8136-6d04eeb7d579",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "808f207f-cbc4-4919-8136-6d04eeb7d579": {
+      "id": "808f207f-cbc4-4919-8136-6d04eeb7d579",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "067b87a5-ff1e-4b9e-8ffa-83c2894fcece",
+        "Next": {
+          "Id": "183a05db-0eee-4b20-ab15-1fa471f86246",
+          "Next": null
+        }
+      }
+    },
+    "067b87a5-ff1e-4b9e-8ffa-83c2894fcece": {
+      "id": "067b87a5-ff1e-4b9e-8ffa-83c2894fcece",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "183a05db-0eee-4b20-ab15-1fa471f86246": {
+      "id": "183a05db-0eee-4b20-ab15-1fa471f86246",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5debf13e-7a72-45af-82c0-00dbe8b985e6",
+        "Next": {
+          "Id": "4f18df70-cd5c-49f4-a5af-dd564f6ec406",
+          "Next": null
+        }
+      }
+    },
+    "5debf13e-7a72-45af-82c0-00dbe8b985e6": {
+      "id": "5debf13e-7a72-45af-82c0-00dbe8b985e6",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "09cede1b-ce13-48fa-86bc-2524be6c2289",
+        "Next": {
+          "Id": "e256fb84-0d55-4a0d-8e99-381df1b1dd60",
+          "Next": null
+        }
+      }
+    },
+    "4f18df70-cd5c-49f4-a5af-dd564f6ec406": {
+      "id": "4f18df70-cd5c-49f4-a5af-dd564f6ec406",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "09cede1b-ce13-48fa-86bc-2524be6c2289": {
+      "id": "09cede1b-ce13-48fa-86bc-2524be6c2289",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "e256fb84-0d55-4a0d-8e99-381df1b1dd60": {
+      "id": "e256fb84-0d55-4a0d-8e99-381df1b1dd60",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

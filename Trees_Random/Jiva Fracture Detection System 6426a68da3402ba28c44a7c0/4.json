@@ -1,0 +1,460 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "522468bc-9ac2-47fd-807c-789457f10936",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "abd6de8e-9328-44d6-8a8e-e3d5ce2f74ae",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "abd6de8e-9328-44d6-8a8e-e3d5ce2f74ae": {
+      "id": "abd6de8e-9328-44d6-8a8e-e3d5ce2f74ae",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e5ea2dfe-3c51-4089-9228-70ea40e8ec98",
+        "Next": {
+          "Id": "a9efbae4-d3a6-4688-8660-2eb09b14f9b1",
+          "Next": {
+            "Id": "a3df472b-dc99-491a-8cda-9c231132e6d0",
+            "Next": {
+              "Id": "081fb684-fc0b-4f7c-99f9-103af00e6b44",
+              "Next": {
+                "Id": "d289457a-03e0-4e76-94d0-64464af77466",
+                "Next": {
+                  "Id": "0d01fa60-e444-41d0-8fbf-cf058616ce06",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "e5ea2dfe-3c51-4089-9228-70ea40e8ec98": {
+      "id": "e5ea2dfe-3c51-4089-9228-70ea40e8ec98",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "a9efbae4-d3a6-4688-8660-2eb09b14f9b1": {
+      "id": "a9efbae4-d3a6-4688-8660-2eb09b14f9b1",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "dec27a87-fb67-4074-9fcc-a7084e77377b",
+        "Next": {
+          "Id": "de1b6665-a261-4705-8016-3d7be433eb96",
+          "Next": null
+        }
+      }
+    },
+    "a3df472b-dc99-491a-8cda-9c231132e6d0": {
+      "id": "a3df472b-dc99-491a-8cda-9c231132e6d0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "081fb684-fc0b-4f7c-99f9-103af00e6b44": {
+      "id": "081fb684-fc0b-4f7c-99f9-103af00e6b44",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "72e52a83-f9fa-4555-8975-d56853445f56",
+        "Next": {
+          "Id": "dc8582d4-83ef-46c6-b25e-5902932c92c8",
+          "Next": null
+        }
+      }
+    },
+    "d289457a-03e0-4e76-94d0-64464af77466": {
+      "id": "d289457a-03e0-4e76-94d0-64464af77466",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "0d01fa60-e444-41d0-8fbf-cf058616ce06": {
+      "id": "0d01fa60-e444-41d0-8fbf-cf058616ce06",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "dec27a87-fb67-4074-9fcc-a7084e77377b": {
+      "id": "dec27a87-fb67-4074-9fcc-a7084e77377b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "1439d34f-8e06-43b5-8629-79bc324b7266",
+        "Next": {
+          "Id": "4979f625-bc30-45ed-a66c-2271f32422b8",
+          "Next": null
+        }
+      }
+    },
+    "de1b6665-a261-4705-8016-3d7be433eb96": {
+      "id": "de1b6665-a261-4705-8016-3d7be433eb96",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "72e52a83-f9fa-4555-8975-d56853445f56": {
+      "id": "72e52a83-f9fa-4555-8975-d56853445f56",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "79e4d9b1-1bb7-4b5f-85ae-e61eec898ffd",
+        "Next": {
+          "Id": "50824380-f648-428d-8c22-fd26808685a8",
+          "Next": null
+        }
+      }
+    },
+    "dc8582d4-83ef-46c6-b25e-5902932c92c8": {
+      "id": "dc8582d4-83ef-46c6-b25e-5902932c92c8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LiftCurve",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 432,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "1439d34f-8e06-43b5-8629-79bc324b7266": {
+      "id": "1439d34f-8e06-43b5-8629-79bc324b7266",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "4979f625-bc30-45ed-a66c-2271f32422b8": {
+      "id": "4979f625-bc30-45ed-a66c-2271f32422b8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -612,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "79e4d9b1-1bb7-4b5f-85ae-e61eec898ffd": {
+      "id": "79e4d9b1-1bb7-4b5f-85ae-e61eec898ffd",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "50824380-f648-428d-8c22-fd26808685a8": {
+      "id": "50824380-f648-428d-8c22-fd26808685a8",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "softdtw",
+            "ctw",
+            "euclidean",
+            "sqeuclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "n_neighbours": {
+          "key": "n_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be shown. Default is 3.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.25,
+    "x": 0,
+    "y": 0
+  }
+}

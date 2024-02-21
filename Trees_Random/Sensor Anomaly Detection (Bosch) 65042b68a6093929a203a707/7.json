@@ -1,0 +1,243 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0391f939-50f0-4f75-b16d-f3458e9a5f6b",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "3028c765-fd53-4737-9ba4-0ddfe613236c",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "3028c765-fd53-4737-9ba4-0ddfe613236c": {
+      "id": "3028c765-fd53-4737-9ba4-0ddfe613236c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "275446a4-b768-4226-8100-aaecd99dc541",
+        "Next": {
+          "Id": "6eb88dec-e67e-4c74-8800-3550a538db8c",
+          "Next": {
+            "Id": "98e826b6-0707-4c4b-8cfc-f25ce6368d47",
+            "Next": {
+              "Id": "3e53a87f-d215-4d8a-84de-664c82af7c67",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "275446a4-b768-4226-8100-aaecd99dc541": {
+      "id": "275446a4-b768-4226-8100-aaecd99dc541",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "6eb88dec-e67e-4c74-8800-3550a538db8c": {
+      "id": "6eb88dec-e67e-4c74-8800-3550a538db8c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "8d4187d2-fb1e-41af-8473-980003d8537d",
+        "Next": {
+          "Id": "ad7c6486-72b3-4acd-8943-8c3fa9e7f26c",
+          "Next": null
+        }
+      }
+    },
+    "98e826b6-0707-4c4b-8cfc-f25ce6368d47": {
+      "id": "98e826b6-0707-4c4b-8cfc-f25ce6368d47",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which feature contributed to the current outcome?"
+        }
+      }
+    },
+    "3e53a87f-d215-4d8a-84de-664c82af7c67": {
+      "id": "3e53a87f-d215-4d8a-84de-664c82af7c67",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "fixed": false
+        }
+      }
+    },
+    "8d4187d2-fb1e-41af-8473-980003d8537d": {
+      "id": "8d4187d2-fb1e-41af-8473-980003d8537d",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "7797d5c7-cd75-4476-96d3-0fdd921800d1",
+        "Next": {
+          "Id": "12ad035a-965a-43c2-82b8-4a24f43169aa",
+          "Next": null
+        }
+      }
+    },
+    "ad7c6486-72b3-4acd-8943-8c3fa9e7f26c": {
+      "id": "ad7c6486-72b3-4acd-8943-8c3fa9e7f26c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "7797d5c7-cd75-4476-96d3-0fdd921800d1": {
+      "id": "7797d5c7-cd75-4476-96d3-0fdd921800d1",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "12ad035a-965a-43c2-82b8-4a24f43169aa": {
+      "id": "12ad035a-965a-43c2-82b8-4a24f43169aa",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "81c04f13-a5ce-4f72-9ccd-084bde45eff2",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "cc186b3e-12f6-403c-9986-c6a0275fb0c3",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "cc186b3e-12f6-403c-9986-c6a0275fb0c3": {
+      "id": "cc186b3e-12f6-403c-9986-c6a0275fb0c3",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "e547da8e-ed46-455b-a9a5-52e5b4e744f1",
+        "Next": {
+          "Id": "033ecd24-2b42-46dd-8279-114cc1c3e5e0",
+          "Next": {
+            "Id": "936b563b-ed74-4746-adf8-63185fa6c7f9",
+            "Next": {
+              "Id": "5becba09-a250-4715-84b3-4d9629e15285",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "e547da8e-ed46-455b-a9a5-52e5b4e744f1": {
+      "id": "e547da8e-ed46-455b-a9a5-52e5b4e744f1",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "033ecd24-2b42-46dd-8279-114cc1c3e5e0": {
+      "id": "033ecd24-2b42-46dd-8279-114cc1c3e5e0",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "b6ed9a48-6468-4e70-a4fd-cdba4a2d2d58",
+        "Next": {
+          "Id": "1c4406a8-cbb1-46fa-9910-73a0c2d145b2",
+          "Next": null
+        }
+      }
+    },
+    "936b563b-ed74-4746-adf8-63185fa6c7f9": {
+      "id": "936b563b-ed74-4746-adf8-63185fa6c7f9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "5becba09-a250-4715-84b3-4d9629e15285": {
+      "id": "5becba09-a250-4715-84b3-4d9629e15285",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "65d7ea1e-79db-4af8-b67c-c30c0535ae4e",
+        "Next": {
+          "Id": "b73eec3d-2828-414e-914a-628f5e505e85",
+          "Next": null
+        }
+      }
+    },
+    "b6ed9a48-6468-4e70-a4fd-cdba4a2d2d58": {
+      "id": "b6ed9a48-6468-4e70-a4fd-cdba4a2d2d58",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d5fc07c8-1153-4e41-8c55-d736d86afc55",
+        "Next": {
+          "Id": "570ff6c1-d208-43ef-8750-2330a874ba59",
+          "Next": null
+        }
+      }
+    },
+    "1c4406a8-cbb1-46fa-9910-73a0c2d145b2": {
+      "id": "1c4406a8-cbb1-46fa-9910-73a0c2d145b2",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "65d7ea1e-79db-4af8-b67c-c30c0535ae4e": {
+      "id": "65d7ea1e-79db-4af8-b67c-c30c0535ae4e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "9631abfe-0095-4fa0-915b-c8b621fa37b1",
+        "Next": {
+          "Id": "97110ca3-8941-49be-9191-eb9c1c795d5a",
+          "Next": null
+        }
+      }
+    },
+    "b73eec3d-2828-414e-914a-628f5e505e85": {
+      "id": "b73eec3d-2828-414e-914a-628f5e505e85",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "d5fc07c8-1153-4e41-8c55-d736d86afc55": {
+      "id": "d5fc07c8-1153-4e41-8c55-d736d86afc55",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      }
+    },
+    "570ff6c1-d208-43ef-8750-2330a874ba59": {
+      "id": "570ff6c1-d208-43ef-8750-2330a874ba59",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "9631abfe-0095-4fa0-915b-c8b621fa37b1": {
+      "id": "9631abfe-0095-4fa0-915b-c8b621fa37b1",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      }
+    },
+    "97110ca3-8941-49be-9191-eb9c1c795d5a": {
+      "id": "97110ca3-8941-49be-9191-eb9c1c795d5a",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

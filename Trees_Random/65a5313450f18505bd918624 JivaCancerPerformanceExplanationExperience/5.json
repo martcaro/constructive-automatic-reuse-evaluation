@@ -1,0 +1,181 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "4dc61e36-51a0-47ec-88a8-e1e4a9159cc9",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "515b5cee-27df-4b97-b0a3-91577cfba592",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "515b5cee-27df-4b97-b0a3-91577cfba592": {
+      "id": "515b5cee-27df-4b97-b0a3-91577cfba592",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "d1fe06ca-385e-424e-8da7-642fb97cc27e",
+        "Next": {
+          "Id": "ccb19720-4049-4257-860c-5d58b5f30ed9",
+          "Next": null
+        }
+      }
+    },
+    "d1fe06ca-385e-424e-8da7-642fb97cc27e": {
+      "id": "d1fe06ca-385e-424e-8da7-642fb97cc27e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "ccb19720-4049-4257-860c-5d58b5f30ed9": {
+      "id": "ccb19720-4049-4257-860c-5d58b5f30ed9",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "773f843f-6c30-483a-b3f0-abfc45612082",
+        "Next": {
+          "Id": "4a66921d-fe3c-499c-ab74-44f32d73bd30",
+          "Next": null
+        }
+      }
+    },
+    "773f843f-6c30-483a-b3f0-abfc45612082": {
+      "id": "773f843f-6c30-483a-b3f0-abfc45612082",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "9a2e67bd-af3d-4f93-9fb3-65120da49081",
+        "Next": {
+          "Id": "46e1677e-18e2-44d9-8d96-dc83b6ded043",
+          "Next": null
+        }
+      }
+    },
+    "4a66921d-fe3c-499c-ab74-44f32d73bd30": {
+      "id": "4a66921d-fe3c-499c-ab74-44f32d73bd30",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "9a2e67bd-af3d-4f93-9fb3-65120da49081": {
+      "id": "9a2e67bd-af3d-4f93-9fb3-65120da49081",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "46e1677e-18e2-44d9-8d96-dc83b6ded043": {
+      "id": "46e1677e-18e2-44d9-8d96-dc83b6ded043",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

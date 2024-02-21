@@ -1,0 +1,331 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b85ec44b-d5b4-47d4-88f7-d11cf6b58820",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d": {
+      "id": "08ca94cc-5171-4d0f-a73e-e46c27c7aa9d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "43842ba9-6df6-4657-ae59-758330f33468",
+        "Next": {
+          "Id": "c696b1c9-2c23-4d5d-8b63-7689f7bb4634",
+          "Next": {
+            "Id": "f49afa9c-027e-49c2-9d09-35cf3ce849d0",
+            "Next": {
+              "Id": "9ceec878-28f4-4965-9c42-19f154546f52",
+              "Next": {
+                "Id": "91fbabe4-257b-412d-82c9-945aef8b6e37",
+                "Next": {
+                  "Id": "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "43842ba9-6df6-4657-ae59-758330f33468": {
+      "id": "43842ba9-6df6-4657-ae59-758330f33468",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "c696b1c9-2c23-4d5d-8b63-7689f7bb4634": {
+      "id": "c696b1c9-2c23-4d5d-8b63-7689f7bb4634",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -360,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "f49afa9c-027e-49c2-9d09-35cf3ce849d0": {
+      "id": "f49afa9c-027e-49c2-9d09-35cf3ce849d0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "9ceec878-28f4-4965-9c42-19f154546f52": {
+      "id": "9ceec878-28f4-4965-9c42-19f154546f52",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 60,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "number of neighbours returned as an integer; default is 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "91fbabe4-257b-412d-82c9-945aef8b6e37": {
+      "id": "91fbabe4-257b-412d-82c9-945aef8b6e37",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 264,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf": {
+      "id": "cd9e02cf-ecf3-4ba6-8df1-3921a668e4cf",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 732,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3cdb73be-2ee0-4518-9c78-3924f559b379",
+        "Next": {
+          "Id": "88c8ea75-4c11-465e-b4aa-a5e547eeae0e",
+          "Next": null
+        }
+      }
+    },
+    "3cdb73be-2ee0-4518-9c78-3924f559b379": {
+      "id": "3cdb73be-2ee0-4518-9c78-3924f559b379",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "5a045166-9574-4426-9fdf-29c3b516cc03",
+        "Next": {
+          "Id": "06c6068c-08f3-469e-8eed-b915eb251fd9",
+          "Next": null
+        }
+      }
+    },
+    "88c8ea75-4c11-465e-b4aa-a5e547eeae0e": {
+      "id": "88c8ea75-4c11-465e-b4aa-a5e547eeae0e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 888,
+        "y": 384
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "5a045166-9574-4426-9fdf-29c3b516cc03": {
+      "id": "5a045166-9574-4426-9fdf-29c3b516cc03",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 468,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "06c6068c-08f3-469e-8eed-b915eb251fd9": {
+      "id": "06c6068c-08f3-469e-8eed-b915eb251fd9",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 684,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

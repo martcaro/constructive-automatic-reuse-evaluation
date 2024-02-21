@@ -1,0 +1,181 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "a6fca1c0-4076-4b96-8243-8cdfe1209dc2",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "a1bd8593-bbf1-4d7a-8f05-f2c5fac291f7",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "a1bd8593-bbf1-4d7a-8f05-f2c5fac291f7": {
+      "id": "a1bd8593-bbf1-4d7a-8f05-f2c5fac291f7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "154b6575-c6d5-4906-94a7-b3acc0c55f69",
+        "Next": {
+          "Id": "c3668848-ec2b-47a6-9f1b-4b9ed4961d66",
+          "Next": null
+        }
+      }
+    },
+    "154b6575-c6d5-4906-94a7-b3acc0c55f69": {
+      "id": "154b6575-c6d5-4906-94a7-b3acc0c55f69",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "c3668848-ec2b-47a6-9f1b-4b9ed4961d66": {
+      "id": "c3668848-ec2b-47a6-9f1b-4b9ed4961d66",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "82daf828-dbcb-4ffd-8ec2-0adfb531d2e5",
+        "Next": {
+          "Id": "15ae3b49-a433-4747-9d37-74174ba99750",
+          "Next": null
+        }
+      }
+    },
+    "82daf828-dbcb-4ffd-8ec2-0adfb531d2e5": {
+      "id": "82daf828-dbcb-4ffd-8ec2-0adfb531d2e5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ec8bcbc2-bde4-4402-a0dc-470ce5dd9537",
+        "Next": {
+          "Id": "5fa3e3a6-9707-41de-816c-580a726e8efb",
+          "Next": null
+        }
+      }
+    },
+    "15ae3b49-a433-4747-9d37-74174ba99750": {
+      "id": "15ae3b49-a433-4747-9d37-74174ba99750",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "ec8bcbc2-bde4-4402-a0dc-470ce5dd9537": {
+      "id": "ec8bcbc2-bde4-4402-a0dc-470ce5dd9537",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "5fa3e3a6-9707-41de-816c-580a726e8efb": {
+      "id": "5fa3e3a6-9707-41de-816c-580a726e8efb",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

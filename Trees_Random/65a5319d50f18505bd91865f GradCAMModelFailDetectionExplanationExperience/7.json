@@ -1,0 +1,164 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "fd05dc49-d7d5-43c2-a613-7984989135f1",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "97428cbd-329c-4ad6-b4da-6a409645f486",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "97428cbd-329c-4ad6-b4da-6a409645f486": {
+      "id": "97428cbd-329c-4ad6-b4da-6a409645f486",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "eb89db59-13ba-4cfd-81de-4b3ba545d2a6",
+        "Next": {
+          "Id": "f86a2b3e-f13c-4b4f-9fef-77e835541ea5",
+          "Next": null
+        }
+      }
+    },
+    "eb89db59-13ba-4cfd-81de-4b3ba545d2a6": {
+      "id": "eb89db59-13ba-4cfd-81de-4b3ba545d2a6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How well does the AI system capture the real-world?"
+        }
+      }
+    },
+    "f86a2b3e-f13c-4b4f-9fef-77e835541ea5": {
+      "id": "f86a2b3e-f13c-4b4f-9fef-77e835541ea5",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "cc853dfe-18b2-4dbe-b71f-d9cd1003f04b",
+        "Next": {
+          "Id": "30366571-aa17-4b0a-a73f-8a352044f100",
+          "Next": null
+        }
+      }
+    },
+    "cc853dfe-18b2-4dbe-b71f-d9cd1003f04b": {
+      "id": "cc853dfe-18b2-4dbe-b71f-d9cd1003f04b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "be7f6e42-6561-4cfe-8e31-8092cd3cf41f",
+        "Next": {
+          "Id": "186052a3-99b1-460e-8381-fa2212fdfe01",
+          "Next": null
+        }
+      }
+    },
+    "30366571-aa17-4b0a-a73f-8a352044f100": {
+      "id": "30366571-aa17-4b0a-a73f-8a352044f100",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "be7f6e42-6561-4cfe-8e31-8092cd3cf41f": {
+      "id": "be7f6e42-6561-4cfe-8e31-8092cd3cf41f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      }
+    },
+    "186052a3-99b1-460e-8381-fa2212fdfe01": {
+      "id": "186052a3-99b1-460e-8381-fa2212fdfe01",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMCounterfactuals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "num_cf": {
+          "key": "num_cf",
+          "value": 2,
+          "default": 2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be found. Defaults to 2.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

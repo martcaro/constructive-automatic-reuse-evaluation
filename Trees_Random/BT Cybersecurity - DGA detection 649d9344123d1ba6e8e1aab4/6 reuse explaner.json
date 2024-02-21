@@ -1,0 +1,315 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "22208468-d977-4d8d-863a-7a3f9c45b812",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d6a09f6e-7f05-454c-95da-d22c95e796d9",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "d6a09f6e-7f05-454c-95da-d22c95e796d9": {
+      "id": "d6a09f6e-7f05-454c-95da-d22c95e796d9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "88662f71-c67e-4459-830f-3387b85460ed",
+        "Next": {
+          "Id": "43d85af1-6ce3-4bdb-a852-6ddffc6149f9",
+          "Next": {
+            "Id": "b013e937-dd19-46f8-8562-a6fed5abdb47",
+            "Next": {
+              "Id": "9cbf1e96-5060-4cd5-a97f-a950e4f92f91",
+              "Next": {
+                "Id": "c963047e-6ddd-4853-ab3e-9bf4f8bf088e",
+                "Next": {
+                  "Id": "f896f955-eeb0-45ad-8852-56d390dc0372",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "88662f71-c67e-4459-830f-3387b85460ed": {
+      "id": "88662f71-c67e-4459-830f-3387b85460ed",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -708,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "43d85af1-6ce3-4bdb-a852-6ddffc6149f9": {
+      "id": "43d85af1-6ce3-4bdb-a852-6ddffc6149f9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -504,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "select"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "b013e937-dd19-46f8-8562-a6fed5abdb47": {
+      "id": "b013e937-dd19-46f8-8562-a6fed5abdb47",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -288,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "9cbf1e96-5060-4cd5-a97f-a950e4f92f91": {
+      "id": "9cbf1e96-5060-4cd5-a97f-a950e4f92f91",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "bdb6648b-cbef-40db-8670-30387935d5ae",
+        "Next": {
+          "Id": "1ad0d9e3-8b58-41f0-a5d8-215933600b31",
+          "Next": null
+        }
+      }
+    },
+    "c963047e-6ddd-4853-ab3e-9bf4f8bf088e": {
+      "id": "c963047e-6ddd-4853-ab3e-9bf4f8bf088e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 540,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "f896f955-eeb0-45ad-8852-56d390dc0372": {
+      "id": "f896f955-eeb0-45ad-8852-56d390dc0372",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 744,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "bdb6648b-cbef-40db-8670-30387935d5ae": {
+      "id": "bdb6648b-cbef-40db-8670-30387935d5ae",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "3c1f3375-7641-4468-a458-7f218002f1db",
+        "Next": {
+          "Id": "eb4ae073-1131-419f-9d97-0328212d67b8",
+          "Next": null
+        }
+      }
+    },
+    "1ad0d9e3-8b58-41f0-a5d8-215933600b31": {
+      "id": "1ad0d9e3-8b58-41f0-a5d8-215933600b31",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 336,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "3c1f3375-7641-4468-a458-7f218002f1db": {
+      "id": "3c1f3375-7641-4468-a458-7f218002f1db",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -84,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "eb4ae073-1131-419f-9d97-0328212d67b8": {
+      "id": "eb4ae073-1131-419f-9d97-0328212d67b8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 120,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": "1",
+          "default": "1",
+          "range": [
+            "0",
+            "1"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

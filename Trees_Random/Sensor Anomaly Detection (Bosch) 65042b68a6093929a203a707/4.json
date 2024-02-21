@@ -1,0 +1,268 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "3327b0f6-4206-4332-9cdd-d5fcb488bfc8",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d244092d-bc71-4cf9-8b25-7d93033a1fd7",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d244092d-bc71-4cf9-8b25-7d93033a1fd7": {
+      "id": "d244092d-bc71-4cf9-8b25-7d93033a1fd7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "c6f472ca-c91b-4d49-8f57-4a1742f07cf4",
+        "Next": {
+          "Id": "1a1a9591-72b2-4ba3-8f61-4dca49564e20",
+          "Next": {
+            "Id": "7e792cbd-f833-45c8-ac31-3e7366d61590",
+            "Next": {
+              "Id": "baef6955-949e-43c3-8a3d-0733fa7817c3",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "c6f472ca-c91b-4d49-8f57-4a1742f07cf4": {
+      "id": "c6f472ca-c91b-4d49-8f57-4a1742f07cf4",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "1a1a9591-72b2-4ba3-8f61-4dca49564e20": {
+      "id": "1a1a9591-72b2-4ba3-8f61-4dca49564e20",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "009d9e63-42de-4a4f-9408-019d1c3dec6c",
+        "Next": {
+          "Id": "2f03663b-953d-4c5b-b9e2-a4dd724eb398",
+          "Next": null
+        }
+      }
+    },
+    "7e792cbd-f833-45c8-ac31-3e7366d61590": {
+      "id": "7e792cbd-f833-45c8-ac31-3e7366d61590",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does feature X impact the outcome?"
+        }
+      }
+    },
+    "baef6955-949e-43c3-8a3d-0733fa7817c3": {
+      "id": "baef6955-949e-43c3-8a3d-0733fa7817c3",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "009d9e63-42de-4a4f-9408-019d1c3dec6c": {
+      "id": "009d9e63-42de-4a4f-9408-019d1c3dec6c",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "77f1a8d6-ec31-492b-9658-3f7be12841c3",
+        "Next": {
+          "Id": "fe1ccc98-9a1b-4d87-9324-e9cdf1d5b482",
+          "Next": null
+        }
+      }
+    },
+    "2f03663b-953d-4c5b-b9e2-a4dd724eb398": {
+      "id": "2f03663b-953d-4c5b-b9e2-a4dd724eb398",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "77f1a8d6-ec31-492b-9658-3f7be12841c3": {
+      "id": "77f1a8d6-ec31-492b-9658-3f7be12841c3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "fe1ccc98-9a1b-4d87-9324-e9cdf1d5b482": {
+      "id": "fe1ccc98-9a1b-4d87-9324-e9cdf1d5b482",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

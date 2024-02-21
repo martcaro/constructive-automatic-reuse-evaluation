@@ -1,0 +1,468 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "675a649b-6f76-436d-8b44-71fb9ac930aa",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "675dde42-a620-461b-8ad1-2b74d6dadd9b",
+  "properties": {},
+  "idModel": "65a5320a50f18505bd918693",
+  "custom_nodes": [],
+  "nodes": {
+    "675dde42-a620-461b-8ad1-2b74d6dadd9b": {
+      "id": "675dde42-a620-461b-8ad1-2b74d6dadd9b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "a0cad9af-53e7-4125-8f33-fb07efcf87fa",
+        "Next": {
+          "Id": "6644d10d-54b3-48ac-8b9a-61dc6b1e8a37",
+          "Next": {
+            "Id": "ea4efff4-3475-443b-8023-c72e3081bbe0",
+            "Next": {
+              "Id": "8f6f828b-61eb-46ff-8bcf-578b5e63a0a2",
+              "Next": {
+                "Id": "3ffff58b-9be9-4497-9613-533b96f8438d",
+                "Next": {
+                  "Id": "d14aa44f-c2e3-42cc-819d-74737c2a3c85",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a0cad9af-53e7-4125-8f33-fb07efcf87fa": {
+      "id": "a0cad9af-53e7-4125-8f33-fb07efcf87fa",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "6644d10d-54b3-48ac-8b9a-61dc6b1e8a37": {
+      "id": "6644d10d-54b3-48ac-8b9a-61dc6b1e8a37",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -540,
+        "y": 252
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    },
+    "ea4efff4-3475-443b-8023-c72e3081bbe0": {
+      "id": "ea4efff4-3475-443b-8023-c72e3081bbe0",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -336,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "8f6f828b-61eb-46ff-8bcf-578b5e63a0a2": {
+      "id": "8f6f828b-61eb-46ff-8bcf-578b5e63a0a2",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 132,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "c55b1678-c094-45d5-beba-1f9d8a3a0cc2",
+        "Next": {
+          "Id": "4f9865eb-1414-4f8d-8c8e-9db07ec7a55e",
+          "Next": null
+        }
+      }
+    },
+    "3ffff58b-9be9-4497-9613-533b96f8438d": {
+      "id": "3ffff58b-9be9-4497-9613-533b96f8438d",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "d14aa44f-c2e3-42cc-819d-74737c2a3c85": {
+      "id": "d14aa44f-c2e3-42cc-819d-74737c2a3c85",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 960,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5850927e-d415-4e6d-b45a-c0365b8a79dc",
+        "Next": {
+          "Id": "bccf392a-470e-4b82-8e97-52e17651aef2",
+          "Next": null
+        }
+      }
+    },
+    "c55b1678-c094-45d5-beba-1f9d8a3a0cc2": {
+      "id": "c55b1678-c094-45d5-beba-1f9d8a3a0cc2",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "8bf970b4-4b38-414f-92eb-17b66a0217d6",
+        "Next": {
+          "Id": "b8de96ef-417e-48f4-88d0-b8a0b5672e50",
+          "Next": null
+        }
+      }
+    },
+    "4f9865eb-1414-4f8d-8c8e-9db07ec7a55e": {
+      "id": "4f9865eb-1414-4f8d-8c8e-9db07ec7a55e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 288,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "5850927e-d415-4e6d-b45a-c0365b8a79dc": {
+      "id": "5850927e-d415-4e6d-b45a-c0365b8a79dc",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "e28cd555-d23e-4e68-8e56-6ff122b58a4c",
+        "Next": {
+          "Id": "4fb76887-c3ec-4f21-8002-2318429dcfec",
+          "Next": null
+        }
+      }
+    },
+    "bccf392a-470e-4b82-8e97-52e17651aef2": {
+      "id": "bccf392a-470e-4b82-8e97-52e17651aef2",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 1116,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "8bf970b4-4b38-414f-92eb-17b66a0217d6": {
+      "id": "8bf970b4-4b38-414f-92eb-17b66a0217d6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -132,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "description": "String with the name of the plot to be generated.",
+          "type": "select"
+        }
+      }
+    },
+    "b8de96ef-417e-48f4-88d0-b8a0b5672e50": {
+      "id": "b8de96ef-417e-48f4-88d0-b8a0b5672e50",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 84,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "e28cd555-d23e-4e68-8e56-6ff122b58a4c": {
+      "id": "e28cd555-d23e-4e68-8e56-6ff122b58a4c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 708,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    },
+    "4fb76887-c3ec-4f21-8002-2318429dcfec": {
+      "id": "4fb76887-c3ec-4f21-8002-2318429dcfec",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 912,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

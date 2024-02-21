@@ -1,0 +1,460 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "85d4430e-fea8-4e91-93e2-2f7715f2f76f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "46058aa3-1771-4851-832b-1b44f82070cf",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "46058aa3-1771-4851-832b-1b44f82070cf": {
+      "id": "46058aa3-1771-4851-832b-1b44f82070cf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "73b0aafb-cf98-410f-b186-2473b43af99e",
+        "Next": {
+          "Id": "f47d5cc5-141a-4c1e-8a61-4bf28446a0fb",
+          "Next": {
+            "Id": "900beb53-201c-4fea-9d80-9ccb2f8734de",
+            "Next": {
+              "Id": "80422adf-d269-46a8-8c01-f2a809b2a60e",
+              "Next": {
+                "Id": "65c2d513-83b4-4cbc-b235-c18ffa5713c4",
+                "Next": {
+                  "Id": "cc630770-968f-418e-8af5-d8e226d60dec",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "73b0aafb-cf98-410f-b186-2473b43af99e": {
+      "id": "73b0aafb-cf98-410f-b186-2473b43af99e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "f47d5cc5-141a-4c1e-8a61-4bf28446a0fb": {
+      "id": "f47d5cc5-141a-4c1e-8a61-4bf28446a0fb",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "f2ef125f-3629-4546-aa36-5b37f3a36d3b",
+        "Next": {
+          "Id": "23d7e692-42a8-49af-8b0c-66838d14c971",
+          "Next": null
+        }
+      }
+    },
+    "900beb53-201c-4fea-9d80-9ccb2f8734de": {
+      "id": "900beb53-201c-4fea-9d80-9ccb2f8734de",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "80422adf-d269-46a8-8c01-f2a809b2a60e": {
+      "id": "80422adf-d269-46a8-8c01-f2a809b2a60e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "69657564-5e28-4820-8e9c-9567fed0b64e",
+        "Next": {
+          "Id": "d738e470-0cf2-420c-88f1-92b8509b5e19",
+          "Next": null
+        }
+      }
+    },
+    "65c2d513-83b4-4cbc-b235-c18ffa5713c4": {
+      "id": "65c2d513-83b4-4cbc-b235-c18ffa5713c4",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "cc630770-968f-418e-8af5-d8e226d60dec": {
+      "id": "cc630770-968f-418e-8af5-d8e226d60dec",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "f2ef125f-3629-4546-aa36-5b37f3a36d3b": {
+      "id": "f2ef125f-3629-4546-aa36-5b37f3a36d3b",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "98f30a8e-3e1b-4328-98dc-b8c77e038504",
+        "Next": {
+          "Id": "ed7fb054-7b5b-4007-87f0-4043a7950620",
+          "Next": null
+        }
+      }
+    },
+    "23d7e692-42a8-49af-8b0c-66838d14c971": {
+      "id": "23d7e692-42a8-49af-8b0c-66838d14c971",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "69657564-5e28-4820-8e9c-9567fed0b64e": {
+      "id": "69657564-5e28-4820-8e9c-9567fed0b64e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "4ae696c0-5e42-4dcf-b94f-9133dc43e077",
+        "Next": {
+          "Id": "33bfb01c-af55-4dba-82af-4c84551c7d37",
+          "Next": null
+        }
+      }
+    },
+    "d738e470-0cf2-420c-88f1-92b8509b5e19": {
+      "id": "d738e470-0cf2-420c-88f1-92b8509b5e19",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PertCF",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 432,
+        "y": 384
+      },
+      "params": {
+        "encode_cat": {
+          "key": "encode_cat",
+          "value": "OrdinalEncoder",
+          "default": "OrdinalEncoder",
+          "range": [
+            "auto",
+            "manual",
+            "BackwardDifferenceEncoder",
+            "BaseNEncoder",
+            "BinaryEncoder",
+            "CatBoostEncoder",
+            "CountEncoder",
+            "GLMMEncoder",
+            "GrayEncoder",
+            "HelmertEncoder",
+            "JamesSteinEncoder",
+            "LeaveOneOutEncoder",
+            "MEstimateEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder",
+            "PolynomialEncoder",
+            "QuantileEncoder",
+            "RankHotEncoder",
+            "SumEncoder",
+            "TargetEncoder",
+            "WOEEncoder"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Encoding technique for categorical features. Prefer the same technique that is used for the model for reliable results.",
+          "fixed": false
+        },
+        "global_sim": {
+          "key": "global_sim",
+          "value": "euclidean",
+          "default": "euclidean",
+          "range": [
+            "ManualEuclidean",
+            "ShapEuclidean",
+            "braycurtis",
+            "canberra",
+            "chebyshev",
+            "jaccard",
+            "hamming",
+            "cosine",
+            "sqeuclidean",
+            "cityblock",
+            "minkowski",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Global similarity technique.",
+          "fixed": false
+        },
+        "local_sim": {
+          "key": "local_sim",
+          "value": "auto",
+          "default": "auto",
+          "range": [
+            "manual",
+            "auto"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Local similarity technique.",
+          "fixed": false
+        },
+        "shap_sample": {
+          "key": "shap_sample",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use for calculating the SHAP values faster.",
+          "fixed": false
+        },
+        "candidate_threshold": {
+          "key": "candidate_threshold",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Step size threshold between CF candidates.",
+          "fixed": false
+        },
+        "candidate_max_iter": {
+          "key": "candidate_max_iter",
+          "value": 20,
+          "default": 20,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Maximum number of iterations to generate CF.",
+          "fixed": false
+        }
+      }
+    },
+    "98f30a8e-3e1b-4328-98dc-b8c77e038504": {
+      "id": "98f30a8e-3e1b-4328-98dc-b8c77e038504",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "ed7fb054-7b5b-4007-87f0-4043a7950620": {
+      "id": "ed7fb054-7b5b-4007-87f0-4043a7950620",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -612,
+        "y": 516
+      }
+    },
+    "4ae696c0-5e42-4dcf-b94f-9133dc43e077": {
+      "id": "4ae696c0-5e42-4dcf-b94f-9133dc43e077",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "33bfb01c-af55-4dba-82af-4c84551c7d37": {
+      "id": "33bfb01c-af55-4dba-82af-4c84551c7d37",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

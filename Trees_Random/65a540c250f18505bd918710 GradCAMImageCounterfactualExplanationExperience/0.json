@@ -1,0 +1,242 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "5be15434-f25c-43e6-85cf-76d6338bca9a",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "54b5c411-6308-4ddc-8f60-6442f6e1308d",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "54b5c411-6308-4ddc-8f60-6442f6e1308d": {
+      "id": "54b5c411-6308-4ddc-8f60-6442f6e1308d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "44cf7ec9-4e58-4c76-8e2d-23d0f9e7ac12",
+        "Next": {
+          "Id": "97b5ead9-8376-4c29-887c-6326f18b16d7",
+          "Next": {
+            "Id": "86d5692a-4c3e-415c-8b5a-81e0f58ac342",
+            "Next": {
+              "Id": "0a5fe089-3378-4d8d-8b2c-912dfd22f2f6",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "44cf7ec9-4e58-4c76-8e2d-23d0f9e7ac12": {
+      "id": "44cf7ec9-4e58-4c76-8e2d-23d0f9e7ac12",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "97b5ead9-8376-4c29-887c-6326f18b16d7": {
+      "id": "97b5ead9-8376-4c29-887c-6326f18b16d7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "376ccd37-d863-46e0-af9d-a28130095988",
+        "Next": {
+          "Id": "27377c36-0b09-4d72-8b6d-7cc3d99825c3",
+          "Next": null
+        }
+      }
+    },
+    "86d5692a-4c3e-415c-8b5a-81e0f58ac342": {
+      "id": "86d5692a-4c3e-415c-8b5a-81e0f58ac342",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "0a5fe089-3378-4d8d-8b2c-912dfd22f2f6": {
+      "id": "0a5fe089-3378-4d8d-8b2c-912dfd22f2f6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "376ccd37-d863-46e0-af9d-a28130095988": {
+      "id": "376ccd37-d863-46e0-af9d-a28130095988",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ae9e26c0-88c4-4936-870d-3ed49837f193",
+        "Next": {
+          "Id": "33b991f5-cb33-43f8-8713-349c3c5c2c9d",
+          "Next": null
+        }
+      }
+    },
+    "27377c36-0b09-4d72-8b6d-7cc3d99825c3": {
+      "id": "27377c36-0b09-4d72-8b6d-7cc3d99825c3",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      }
+    },
+    "ae9e26c0-88c4-4936-870d-3ed49837f193": {
+      "id": "ae9e26c0-88c4-4936-870d-3ed49837f193",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Function used to perturb the instances.",
+          "fixed": false
+        }
+      }
+    },
+    "33b991f5-cb33-43f8-8713-349c3c5c2c9d": {
+      "id": "33b991f5-cb33-43f8-8713-349c3c5c2c9d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

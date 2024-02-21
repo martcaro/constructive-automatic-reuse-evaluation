@@ -1,0 +1,510 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "9359fad0-2912-4b5d-9f4d-755fcabd30cb",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "7ac1a64c-e466-4000-8969-8ccf8dab969c",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "7ac1a64c-e466-4000-8969-8ccf8dab969c": {
+      "id": "7ac1a64c-e466-4000-8969-8ccf8dab969c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "57cd2c71-2176-4068-8a1e-a32a0037ebd2",
+        "Next": {
+          "Id": "22d0bb4c-7e47-40e3-89cd-63dc879858a1",
+          "Next": {
+            "Id": "f3458512-f7db-4cd6-92a3-5d22461a34ef",
+            "Next": {
+              "Id": "467cb434-cd99-451a-8eea-e4ab087ea1a2",
+              "Next": {
+                "Id": "ce1493d5-7456-4cb3-8bc0-502bfc857008",
+                "Next": {
+                  "Id": "d3f54346-49fd-4170-85bb-52861ac915ce",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "57cd2c71-2176-4068-8a1e-a32a0037ebd2": {
+      "id": "57cd2c71-2176-4068-8a1e-a32a0037ebd2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1032,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How does the AI system react if feature X is changed?"
+        }
+      }
+    },
+    "22d0bb4c-7e47-40e3-89cd-63dc879858a1": {
+      "id": "22d0bb4c-7e47-40e3-89cd-63dc879858a1",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -564,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "65cd32a5-5320-4de4-816f-c08c24775849",
+        "Next": {
+          "Id": "120c1183-e74b-4fb8-8dfb-b53bbfb0cc84",
+          "Next": null
+        }
+      }
+    },
+    "f3458512-f7db-4cd6-92a3-5d22461a34ef": {
+      "id": "f3458512-f7db-4cd6-92a3-5d22461a34ef",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "467cb434-cd99-451a-8eea-e4ab087ea1a2": {
+      "id": "467cb434-cd99-451a-8eea-e4ab087ea1a2",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 276,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "fcea3425-9ab3-4cc7-816d-af543d14192e",
+        "Next": {
+          "Id": "45f2371f-57e7-4e5a-9f74-2781987a455c",
+          "Next": null
+        }
+      }
+    },
+    "ce1493d5-7456-4cb3-8bc0-502bfc857008": {
+      "id": "ce1493d5-7456-4cb3-8bc0-502bfc857008",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 636,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "d3f54346-49fd-4170-85bb-52861ac915ce": {
+      "id": "d3f54346-49fd-4170-85bb-52861ac915ce",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/KernelSHAP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 840,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "65cd32a5-5320-4de4-816f-c08c24775849": {
+      "id": "65cd32a5-5320-4de4-816f-c08c24775849",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -720,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ddefb65c-8891-4cda-8412-2cc844a7244d",
+        "Next": {
+          "Id": "88a718e8-c2e1-4191-8887-a2ebd70553aa",
+          "Next": null
+        }
+      }
+    },
+    "120c1183-e74b-4fb8-8dfb-b53bbfb0cc84": {
+      "id": "120c1183-e74b-4fb8-8dfb-b53bbfb0cc84",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -408,
+        "y": 384
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "fcea3425-9ab3-4cc7-816d-af543d14192e": {
+      "id": "fcea3425-9ab3-4cc7-816d-af543d14192e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "96c463e9-8cd8-4b81-815f-0b2219f4f35f",
+        "Next": {
+          "Id": "fa621309-d484-4cfd-8da8-91dca19821e9",
+          "Next": null
+        }
+      }
+    },
+    "45f2371f-57e7-4e5a-9f74-2781987a455c": {
+      "id": "45f2371f-57e7-4e5a-9f74-2781987a455c",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 432,
+        "y": 384
+      }
+    },
+    "ddefb65c-8891-4cda-8412-2cc844a7244d": {
+      "id": "ddefb65c-8891-4cda-8412-2cc844a7244d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -816,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "fixed": false
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "88a718e8-c2e1-4191-8887-a2ebd70553aa": {
+      "id": "88a718e8-c2e1-4191-8887-a2ebd70553aa",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -612,
+        "y": 516
+      },
+      "params": {
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained.",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "quickshift",
+          "default": "quickshift",
+          "range": [
+            "quickshift",
+            "slic",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "96c463e9-8cd8-4b81-815f-0b2219f4f35f": {
+      "id": "96c463e9-8cd8-4b81-815f-0b2219f4f35f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/TreeSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 12,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "fa621309-d484-4cfd-8da8-91dca19821e9": {
+      "id": "fa621309-d484-4cfd-8da8-91dca19821e9",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 216,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

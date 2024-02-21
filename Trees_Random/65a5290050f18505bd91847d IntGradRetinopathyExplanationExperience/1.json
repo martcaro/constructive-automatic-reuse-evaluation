@@ -1,0 +1,288 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "fac923a5-ecb3-4a1f-b83d-7344beee4996",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d99c8839-449c-4678-9eab-1265ab63564a",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d99c8839-449c-4678-9eab-1265ab63564a": {
+      "id": "d99c8839-449c-4678-9eab-1265ab63564a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "2b6f15d2-9a29-43b2-9853-9485d78702bb",
+        "Next": {
+          "Id": "b827f0b7-5b6c-49da-a9b5-60760b4c29ae",
+          "Next": {
+            "Id": "65d19723-20b4-4c2b-ab14-35b2bca0efd7",
+            "Next": {
+              "Id": "e5a6215b-0535-45a4-8cfe-62b5afcf100d",
+              "Next": {
+                "Id": "1fb69610-0dd9-4549-8641-10c417449929",
+                "Next": {
+                  "Id": "763a2c9c-f22d-479b-8dcc-b85ba23271d7",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2b6f15d2-9a29-43b2-9853-9485d78702bb": {
+      "id": "2b6f15d2-9a29-43b2-9853-9485d78702bb",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "b827f0b7-5b6c-49da-a9b5-60760b4c29ae": {
+      "id": "b827f0b7-5b6c-49da-a9b5-60760b4c29ae",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "2a21921c-81b7-4e76-823b-7de60247cc5d",
+        "Next": {
+          "Id": "6e2c6d81-a2fd-448d-b2ed-8bd2cbed94d6",
+          "Next": null
+        }
+      }
+    },
+    "65d19723-20b4-4c2b-ab14-35b2bca0efd7": {
+      "id": "65d19723-20b4-4c2b-ab14-35b2bca0efd7",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get outcome {outcome}?"
+        }
+      }
+    },
+    "e5a6215b-0535-45a4-8cfe-62b5afcf100d": {
+      "id": "e5a6215b-0535-45a4-8cfe-62b5afcf100d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "1fb69610-0dd9-4549-8641-10c417449929": {
+      "id": "1fb69610-0dd9-4549-8641-10c417449929",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the alternative scenarios available?"
+        }
+      }
+    },
+    "763a2c9c-f22d-479b-8dcc-b85ba23271d7": {
+      "id": "763a2c9c-f22d-479b-8dcc-b85ba23271d7",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "2a21921c-81b7-4e76-823b-7de60247cc5d": {
+      "id": "2a21921c-81b7-4e76-823b-7de60247cc5d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "837bf14c-2371-4b25-8b2a-724a55525fbc",
+        "Next": {
+          "Id": "b663d3d6-aa60-4e07-92df-6fe54c83d959",
+          "Next": null
+        }
+      }
+    },
+    "6e2c6d81-a2fd-448d-b2ed-8bd2cbed94d6": {
+      "id": "6e2c6d81-a2fd-448d-b2ed-8bd2cbed94d6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "837bf14c-2371-4b25-8b2a-724a55525fbc": {
+      "id": "837bf14c-2371-4b25-8b2a-724a55525fbc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -636,
+        "y": 516
+      }
+    },
+    "b663d3d6-aa60-4e07-92df-6fe54c83d959": {
+      "id": "b663d3d6-aa60-4e07-92df-6fe54c83d959",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0c251b55-9f0e-43c5-9876-7f71a112833a",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "fa9ceced-c49d-46c5-b927-ac5e14fa2499",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "fa9ceced-c49d-46c5-b927-ac5e14fa2499": {
+      "id": "fa9ceced-c49d-46c5-b927-ac5e14fa2499",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "314c5c21-2f90-4e45-898f-0e20b92b42c2",
+        "Next": {
+          "Id": "bb039e70-8d09-42ea-819c-8224485645a8",
+          "Next": {
+            "Id": "22dacf22-4a4f-45a5-9082-8fb3c6f9d856",
+            "Next": {
+              "Id": "af8f206b-8de8-4500-8b8e-18a6019e4034",
+              "Next": {
+                "Id": "3ae2e579-645a-46bd-8ea6-b92be07d103c",
+                "Next": {
+                  "Id": "bb6c99fe-a3e1-426d-82b3-dc0a26c67289",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "314c5c21-2f90-4e45-898f-0e20b92b42c2": {
+      "id": "314c5c21-2f90-4e45-898f-0e20b92b42c2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the necessary features that guarantee this outcome?"
+        }
+      }
+    },
+    "bb039e70-8d09-42ea-819c-8224485645a8": {
+      "id": "bb039e70-8d09-42ea-819c-8224485645a8",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 252
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "22dacf22-4a4f-45a5-9082-8fb3c6f9d856": {
+      "id": "22dacf22-4a4f-45a5-9082-8fb3c6f9d856",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -336,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A?"
+        }
+      }
+    },
+    "af8f206b-8de8-4500-8b8e-18a6019e4034": {
+      "id": "af8f206b-8de8-4500-8b8e-18a6019e4034",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 132,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "8c948f71-0a55-4b96-b71a-b7778cb6ff2d",
+        "Next": {
+          "Id": "0aa587d8-e70b-4024-8b45-f6158d5066fa",
+          "Next": null
+        }
+      }
+    },
+    "3ae2e579-645a-46bd-8ea6-b92be07d103c": {
+      "id": "3ae2e579-645a-46bd-8ea6-b92be07d103c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered to build the AI system?"
+        }
+      }
+    },
+    "bb6c99fe-a3e1-426d-82b3-dc0a26c67289": {
+      "id": "bb6c99fe-a3e1-426d-82b3-dc0a26c67289",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 960,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "4ff4793c-5b10-41c8-ab80-d7a2df82855b",
+        "Next": {
+          "Id": "ef7187ea-69bf-4caf-b1da-b6a0af5e843b",
+          "Next": null
+        }
+      }
+    },
+    "8c948f71-0a55-4b96-b71a-b7778cb6ff2d": {
+      "id": "8c948f71-0a55-4b96-b71a-b7778cb6ff2d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ad4781ac-71b2-4c2b-84e4-e7b80bb33273",
+        "Next": {
+          "Id": "674973d3-c9fd-49d7-af60-ca7a13160c44",
+          "Next": null
+        }
+      }
+    },
+    "0aa587d8-e70b-4024-8b45-f6158d5066fa": {
+      "id": "0aa587d8-e70b-4024-8b45-f6158d5066fa",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 288,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "fixed": false
+        }
+      }
+    },
+    "4ff4793c-5b10-41c8-ab80-d7a2df82855b": {
+      "id": "4ff4793c-5b10-41c8-ab80-d7a2df82855b",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "0a4d9533-499c-42d4-85e1-a7877e20521e",
+        "Next": {
+          "Id": "e72ed6ef-30a9-46f9-b15d-b2792a56d8d8",
+          "Next": null
+        }
+      }
+    },
+    "ef7187ea-69bf-4caf-b1da-b6a0af5e843b": {
+      "id": "ef7187ea-69bf-4caf-b1da-b6a0af5e843b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1116,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "ad4781ac-71b2-4c2b-84e4-e7b80bb33273": {
+      "id": "ad4781ac-71b2-4c2b-84e4-e7b80bb33273",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -132,
+        "y": 516
+      }
+    },
+    "674973d3-c9fd-49d7-af60-ca7a13160c44": {
+      "id": "674973d3-c9fd-49d7-af60-ca7a13160c44",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 84,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "0a4d9533-499c-42d4-85e1-a7877e20521e": {
+      "id": "0a4d9533-499c-42d4-85e1-a7877e20521e",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 708,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "e72ed6ef-30a9-46f9-b15d-b2792a56d8d8": {
+      "id": "e72ed6ef-30a9-46f9-b15d-b2792a56d8d8",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 912,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

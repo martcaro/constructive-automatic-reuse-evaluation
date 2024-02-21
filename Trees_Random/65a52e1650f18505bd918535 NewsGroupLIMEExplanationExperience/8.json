@@ -1,0 +1,342 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "72c994d6-6813-4eb4-8639-5c0bc052ba7f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "80a4c999-6a22-49d7-87ba-7f90d7f08995",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "80a4c999-6a22-49d7-87ba-7f90d7f08995": {
+      "id": "80a4c999-6a22-49d7-87ba-7f90d7f08995",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a",
+        "Next": {
+          "Id": "33fe7911-d407-4312-8a40-016a252cafd9",
+          "Next": {
+            "Id": "66e32428-a57a-42b7-837b-e882a81ba3b5",
+            "Next": {
+              "Id": "9a2c44bf-405b-49d8-8dd6-6d785539aa99",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a": {
+      "id": "91f93ac0-b0d6-4ee2-81a5-564f3e3c216a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "33fe7911-d407-4312-8a40-016a252cafd9": {
+      "id": "33fe7911-d407-4312-8a40-016a252cafd9",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3fbf6320-1417-40a8-9de6-9dd4598f7d32",
+        "Next": {
+          "Id": "de7e1165-ad67-45fe-bae8-b89a40d009f1",
+          "Next": null
+        }
+      }
+    },
+    "66e32428-a57a-42b7-837b-e882a81ba3b5": {
+      "id": "66e32428-a57a-42b7-837b-e882a81ba3b5",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the alternative scenarios available?"
+        }
+      }
+    },
+    "9a2c44bf-405b-49d8-8dd6-6d785539aa99": {
+      "id": "9a2c44bf-405b-49d8-8dd6-6d785539aa99",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "7cc797c8-4f97-4ad0-939a-c6c070fa0954",
+        "Next": {
+          "Id": "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56",
+          "Next": null
+        }
+      }
+    },
+    "3fbf6320-1417-40a8-9de6-9dd4598f7d32": {
+      "id": "3fbf6320-1417-40a8-9de6-9dd4598f7d32",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "4901460e-191e-4ca4-9c49-627851a95c1a",
+        "Next": {
+          "Id": "a20ccead-35ff-4d2d-8766-90782d97eb60",
+          "Next": null
+        }
+      }
+    },
+    "de7e1165-ad67-45fe-bae8-b89a40d009f1": {
+      "id": "de7e1165-ad67-45fe-bae8-b89a40d009f1",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "7cc797c8-4f97-4ad0-939a-c6c070fa0954": {
+      "id": "7cc797c8-4f97-4ad0-939a-c6c070fa0954",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d490399c-28a8-4c4e-ba6e-49247cc15fb4",
+        "Next": {
+          "Id": "6df8c0f6-f212-463a-9d89-dff678608382",
+          "Next": null
+        }
+      }
+    },
+    "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56": {
+      "id": "3da48e4e-bd3e-4322-99a0-8ef95a9cdd56",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "4901460e-191e-4ca4-9c49-627851a95c1a": {
+      "id": "4901460e-191e-4ca4-9c49-627851a95c1a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      }
+    },
+    "a20ccead-35ff-4d2d-8766-90782d97eb60": {
+      "id": "a20ccead-35ff-4d2d-8766-90782d97eb60",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "d490399c-28a8-4c4e-ba6e-49247cc15fb4": {
+      "id": "d490399c-28a8-4c4e-ba6e-49247cc15fb4",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "6df8c0f6-f212-463a-9d89-dff678608382": {
+      "id": "6df8c0f6-f212-463a-9d89-dff678608382",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

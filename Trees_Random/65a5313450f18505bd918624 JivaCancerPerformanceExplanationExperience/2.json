@@ -1,0 +1,431 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0f032ec4-d505-4c24-87e1-a5e9dffeed96",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "5d811ce5-0ce5-44a4-a773-bb5710e513a9",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "5d811ce5-0ce5-44a4-a773-bb5710e513a9": {
+      "id": "5d811ce5-0ce5-44a4-a773-bb5710e513a9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "55dbe8e9-a6f6-4770-819e-f575e4194dce",
+        "Next": {
+          "Id": "131eea41-1904-4524-85e1-d5a70fb9fa75",
+          "Next": {
+            "Id": "bb1e6281-1014-40cc-8cf2-0814f54b14a7",
+            "Next": {
+              "Id": "dc323c51-1b45-4743-86a4-73e3fe5f7547",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "55dbe8e9-a6f6-4770-819e-f575e4194dce": {
+      "id": "55dbe8e9-a6f6-4770-819e-f575e4194dce",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get outcome {outcome}?"
+        }
+      }
+    },
+    "131eea41-1904-4524-85e1-d5a70fb9fa75": {
+      "id": "131eea41-1904-4524-85e1-d5a70fb9fa75",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e0f99b2d-bc18-42b5-aab7-681ab8b3ccd5",
+        "Next": {
+          "Id": "6357af0a-ac64-41ad-81fe-37fbb2a6c6bd",
+          "Next": null
+        }
+      }
+    },
+    "bb1e6281-1014-40cc-8cf2-0814f54b14a7": {
+      "id": "bb1e6281-1014-40cc-8cf2-0814f54b14a7",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "dc323c51-1b45-4743-86a4-73e3fe5f7547": {
+      "id": "dc323c51-1b45-4743-86a4-73e3fe5f7547",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3dfc7302-0665-485e-83e0-9cbe3c5c64ae",
+        "Next": {
+          "Id": "0b74abfd-290b-4d26-823e-ca788d6bbec2",
+          "Next": null
+        }
+      }
+    },
+    "e0f99b2d-bc18-42b5-aab7-681ab8b3ccd5": {
+      "id": "e0f99b2d-bc18-42b5-aab7-681ab8b3ccd5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "4808e14a-a09a-40f2-93d9-23732240fc67",
+        "Next": {
+          "Id": "28d9f123-f4e1-4762-8cc8-ea923eb76bed",
+          "Next": null
+        }
+      }
+    },
+    "6357af0a-ac64-41ad-81fe-37fbb2a6c6bd": {
+      "id": "6357af0a-ac64-41ad-81fe-37fbb2a6c6bd",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      }
+    },
+    "3dfc7302-0665-485e-83e0-9cbe3c5c64ae": {
+      "id": "3dfc7302-0665-485e-83e0-9cbe3c5c64ae",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "75ea3248-ef4c-4762-8e65-b41c10abf4f6",
+        "Next": {
+          "Id": "e5b6bc90-e86d-4352-9a5f-425761197b1c",
+          "Next": null
+        }
+      }
+    },
+    "0b74abfd-290b-4d26-823e-ca788d6bbec2": {
+      "id": "0b74abfd-290b-4d26-823e-ca788d6bbec2",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "target_layer": {
+          "key": "target_layer",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Name of target layer to be provided as a string. This is the layer that you want to compute the visualization for. Usually this will be the last convolutional layer in the model. It is also possible to specify internal components of this layer by passing the target_layer_index parameter in params. To get the target layer, this method executes 'model.<target_layer>[<target_layer_index>]' Some common examples of these parameters for well-known models: Resnet18 and 50: model.layer4 -> 'target_layer':'layer4' VGG, densenet161: model.features[-1] -> 'target_layer':'features', 'target_layer_index':-1 mnasnet1_0: model.layers[-1] -> 'target_layer':'layers', 'target_layer_index':-1",
+          "fixed": false
+        },
+        "target_layer_index": {
+          "key": "target_layer_index",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Index of the target layer to be accessed. Provide it when you want to focus on a specific component of the target layer. If not provided, the whole layer specified as target when uploading the model will be used.",
+          "fixed": false
+        },
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the target class to generate the explanation. If not provided, defaults to the class with the highest predicted probability.",
+          "fixed": false
+        },
+        "aug_smooth": {
+          "key": "aug_smooth",
+          "value": true,
+          "default": true,
+          "range": [
+            true,
+            false
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Boolean indicating whether to apply augmentation smoothing (defaults to True). This has the effect of better centering the CAM around the objects. However, it increases the run time by a factor of x6.",
+          "fixed": false
+        }
+      }
+    },
+    "4808e14a-a09a-40f2-93d9-23732240fc67": {
+      "id": "4808e14a-a09a-40f2-93d9-23732240fc67",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Function used to perturb the instances.",
+          "fixed": false
+        }
+      }
+    },
+    "28d9f123-f4e1-4762-8cc8-ea923eb76bed": {
+      "id": "28d9f123-f4e1-4762-8cc8-ea923eb76bed",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "75ea3248-ef4c-4762-8e65-b41c10abf4f6": {
+      "id": "75ea3248-ef4c-4762-8e65-b41c10abf4f6",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "e5b6bc90-e86d-4352-9a5f-425761197b1c": {
+      "id": "e5b6bc90-e86d-4352-9a5f-425761197b1c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Sobol",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 32,
+          "default": 32,
+          "range": [
+            16,
+            32,
+            64
+          ],
+          "required": "false",
+          "description": "Used to estimate the number of forward passes. The number of forwards is given by nb_design * (grid_size**2 + 2). Defaults to 32.",
+          "type": "number"
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            7,
+            12
+          ],
+          "required": "false",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "type": "number"
+        },
+        "perturbation_function": {
+          "key": "perturbation_function",
+          "value": "inpainting",
+          "default": "inpainting",
+          "range": [
+            "inpainting",
+            "blur"
+          ],
+          "required": "false",
+          "description": "Function used to perturb the instances.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

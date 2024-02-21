@@ -1,0 +1,394 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "4268c7b1-142f-4308-a330-95a56903bb5f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "8fcf8ef5-56cd-4928-8f11-874c14865479",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "8fcf8ef5-56cd-4928-8f11-874c14865479": {
+      "id": "8fcf8ef5-56cd-4928-8f11-874c14865479",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "43c51d35-1b1a-4998-9adc-3d9b26001ccf",
+        "Next": {
+          "Id": "5f2def12-98e9-4a0d-8087-66be736c1dfd",
+          "Next": {
+            "Id": "c90e0be7-fef0-422f-817f-1e4fd213f11b",
+            "Next": {
+              "Id": "f098ca45-395c-4d88-b74e-d9fe4164ed8c",
+              "Next": {
+                "Id": "d49f81f8-6dd9-48e9-8b71-c6bd94ccc2a3",
+                "Next": {
+                  "Id": "52ad5c07-5caa-4366-b684-5f6d367b8e37",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "43c51d35-1b1a-4998-9adc-3d9b26001ccf": {
+      "id": "43c51d35-1b1a-4998-9adc-3d9b26001ccf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -852,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "5f2def12-98e9-4a0d-8087-66be736c1dfd": {
+      "id": "5f2def12-98e9-4a0d-8087-66be736c1dfd",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0bf7184b-7123-4433-8f15-2de51d8b6b3d",
+        "Next": {
+          "Id": "b8c33e29-d16d-42a1-b13d-2efcd4813147",
+          "Next": null
+        }
+      }
+    },
+    "c90e0be7-fef0-422f-817f-1e4fd213f11b": {
+      "id": "c90e0be7-fef0-422f-817f-1e4fd213f11b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -12,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "f098ca45-395c-4d88-b74e-d9fe4164ed8c": {
+      "id": "f098ca45-395c-4d88-b74e-d9fe4164ed8c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPDependence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 192,
+        "y": 252
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature to be displayed. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        },
+        "interaction_feature": {
+          "key": "interaction_feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the interaction feature used for coloring the instances. Defaults to the feature with the highest interaction value with the feature specified in the previous parameter.",
+          "fixed": false
+        }
+      }
+    },
+    "d49f81f8-6dd9-48e9-8b71-c6bd94ccc2a3": {
+      "id": "d49f81f8-6dd9-48e9-8b71-c6bd94ccc2a3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 396,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "52ad5c07-5caa-4366-b684-5f6d367b8e37": {
+      "id": "52ad5c07-5caa-4366-b684-5f6d367b8e37",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 612,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "0bf7184b-7123-4433-8f15-2de51d8b6b3d": {
+      "id": "0bf7184b-7123-4433-8f15-2de51d8b6b3d",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -540,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "9235b8a6-905f-4adc-80fe-c5be9d130286",
+        "Next": {
+          "Id": "a75624f8-4aa3-453f-8a64-59c62ab73eac",
+          "Next": null
+        }
+      }
+    },
+    "b8c33e29-d16d-42a1-b13d-2efcd4813147": {
+      "id": "b8c33e29-d16d-42a1-b13d-2efcd4813147",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -228,
+        "y": 384
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "9235b8a6-905f-4adc-80fe-c5be9d130286": {
+      "id": "9235b8a6-905f-4adc-80fe-c5be9d130286",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -636,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "a75624f8-4aa3-453f-8a64-59c62ab73eac": {
+      "id": "a75624f8-4aa3-453f-8a64-59c62ab73eac",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -432,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

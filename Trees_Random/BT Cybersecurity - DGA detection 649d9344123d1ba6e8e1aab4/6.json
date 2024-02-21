@@ -1,0 +1,318 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "22208468-d977-4d8d-863a-7a3f9c45b812",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d6a09f6e-7f05-454c-95da-d22c95e796d9",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "d6a09f6e-7f05-454c-95da-d22c95e796d9": {
+      "id": "d6a09f6e-7f05-454c-95da-d22c95e796d9",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "88662f71-c67e-4459-830f-3387b85460ed",
+        "Next": {
+          "Id": "43d85af1-6ce3-4bdb-a852-6ddffc6149f9",
+          "Next": {
+            "Id": "b013e937-dd19-46f8-8562-a6fed5abdb47",
+            "Next": {
+              "Id": "9cbf1e96-5060-4cd5-a97f-a950e4f92f91",
+              "Next": {
+                "Id": "c963047e-6ddd-4853-ab3e-9bf4f8bf088e",
+                "Next": {
+                  "Id": "f896f955-eeb0-45ad-8852-56d390dc0372",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "88662f71-c67e-4459-830f-3387b85460ed": {
+      "id": "88662f71-c67e-4459-830f-3387b85460ed",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -708,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "43d85af1-6ce3-4bdb-a852-6ddffc6149f9": {
+      "id": "43d85af1-6ce3-4bdb-a852-6ddffc6149f9",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/IntegratedGradients",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -504,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "gausslegendre",
+          "default": "gausslegendre",
+          "range": [
+            "gausslegendre",
+            "riemann_left",
+            "riemann_right",
+            "riemann_middle",
+            "riemann_trapezoid"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+          "fixed": false
+        },
+        "n_steps": {
+          "key": "n_steps",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+          "fixed": false
+        },
+        "internal_batch_size": {
+          "key": "internal_batch_size",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Batch size for the internal batching. Defaults to 100.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1200,
+          "default": 1200,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 600,
+          "default": 600,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "heatmap",
+          "default": "heatmap",
+          "range": [
+            "heatmap",
+            "attributions"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Plot style to be used. It can be either 'heatmap' or 'attributions'. Defaults to 'heatmap'.",
+          "fixed": false
+        }
+      }
+    },
+    "b013e937-dd19-46f8-8562-a6fed5abdb47": {
+      "id": "b013e937-dd19-46f8-8562-a6fed5abdb47",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -288,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "9cbf1e96-5060-4cd5-a97f-a950e4f92f91": {
+      "id": "9cbf1e96-5060-4cd5-a97f-a950e4f92f91",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "bdb6648b-cbef-40db-8670-30387935d5ae",
+        "Next": {
+          "Id": "1ad0d9e3-8b58-41f0-a5d8-215933600b31",
+          "Next": null
+        }
+      }
+    },
+    "c963047e-6ddd-4853-ab3e-9bf4f8bf088e": {
+      "id": "c963047e-6ddd-4853-ab3e-9bf4f8bf088e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 540,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "f896f955-eeb0-45ad-8852-56d390dc0372": {
+      "id": "f896f955-eeb0-45ad-8852-56d390dc0372",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 744,
+        "y": 252
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the method to calculate the residuals.",
+          "fixed": false
+        }
+      }
+    },
+    "bdb6648b-cbef-40db-8670-30387935d5ae": {
+      "id": "bdb6648b-cbef-40db-8670-30387935d5ae",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "3c1f3375-7641-4468-a458-7f218002f1db",
+        "Next": {
+          "Id": "eb4ae073-1131-419f-9d97-0328212d67b8",
+          "Next": null
+        }
+      }
+    },
+    "1ad0d9e3-8b58-41f0-a5d8-215933600b31": {
+      "id": "1ad0d9e3-8b58-41f0-a5d8-215933600b31",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 336,
+        "y": 384
+      }
+    },
+    "3c1f3375-7641-4468-a458-7f218002f1db": {
+      "id": "3c1f3375-7641-4468-a458-7f218002f1db",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -84,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "eb4ae073-1131-419f-9d97-0328212d67b8": {
+      "id": "eb4ae073-1131-419f-9d97-0328212d67b8",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

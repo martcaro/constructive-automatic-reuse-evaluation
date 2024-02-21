@@ -1,0 +1,477 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b669faee-4e67-43a5-825a-b7c655a5e480",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "fe966f6d-8a95-434a-8d94-92328b83a451",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "fe966f6d-8a95-434a-8d94-92328b83a451": {
+      "id": "fe966f6d-8a95-434a-8d94-92328b83a451",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "f734ab4b-2115-4a68-8752-f4ca8cf5a927",
+        "Next": {
+          "Id": "13f52478-8b4b-4b1b-8260-cea683beaeb5",
+          "Next": {
+            "Id": "1b7d1463-be3b-4d94-832c-90e03cdbdbeb",
+            "Next": {
+              "Id": "a1d68253-2023-4801-83c7-11b53dfde5b0",
+              "Next": {
+                "Id": "28a2ccb8-8ad7-4116-bb1d-cc70c7e0fc7c",
+                "Next": {
+                  "Id": "9b275d9d-c033-4af4-842e-c98ecfe68662",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "f734ab4b-2115-4a68-8752-f4ca8cf5a927": {
+      "id": "f734ab4b-2115-4a68-8752-f4ca8cf5a927",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1068,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What type of instances would get a different outcome?"
+        }
+      }
+    },
+    "13f52478-8b4b-4b1b-8260-cea683beaeb5": {
+      "id": "13f52478-8b4b-4b1b-8260-cea683beaeb5",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -600,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "8b947e20-29a3-42a3-bb87-b0b4414cade3",
+        "Next": {
+          "Id": "84b4f700-ffe4-4eee-86c0-f8fa53c0f86d",
+          "Next": null
+        }
+      }
+    },
+    "1b7d1463-be3b-4d94-832c-90e03cdbdbeb": {
+      "id": "1b7d1463-be3b-4d94-832c-90e03cdbdbeb",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to get a different outcome?"
+        }
+      }
+    },
+    "a1d68253-2023-4801-83c7-11b53dfde5b0": {
+      "id": "a1d68253-2023-4801-83c7-11b53dfde5b0",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "c6038226-2483-4e90-87bb-8cec8d90c61f",
+        "Next": {
+          "Id": "1e11108f-a0ff-4120-87b0-c4752f099c5c",
+          "Next": null
+        }
+      }
+    },
+    "28a2ccb8-8ad7-4116-bb1d-cc70c7e0fc7c": {
+      "id": "28a2ccb8-8ad7-4116-bb1d-cc70c7e0fc7c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "9b275d9d-c033-4af4-842e-c98ecfe68662": {
+      "id": "9b275d9d-c033-4af4-842e-c98ecfe68662",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1056,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5232ce59-a365-4674-ab39-396a0a25a084",
+        "Next": {
+          "Id": "e3b3b2d2-de55-47d6-ab41-8b24ee6cbbf5",
+          "Next": null
+        }
+      }
+    },
+    "8b947e20-29a3-42a3-bb87-b0b4414cade3": {
+      "id": "8b947e20-29a3-42a3-bb87-b0b4414cade3",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "dea78e95-7f87-44f3-ba4e-6216e33708a0",
+        "Next": {
+          "Id": "039ac4c4-2504-427f-a60f-78359115cf7f",
+          "Next": null
+        }
+      }
+    },
+    "84b4f700-ffe4-4eee-86c0-f8fa53c0f86d": {
+      "id": "84b4f700-ffe4-4eee-86c0-f8fa53c0f86d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPGlobal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "c6038226-2483-4e90-87bb-8cec8d90c61f": {
+      "id": "c6038226-2483-4e90-87bb-8cec8d90c61f",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "c485b36a-6078-40d8-91b0-9df5dcbd9e9f",
+        "Next": {
+          "Id": "8ea44dfb-8689-4c76-8645-4ded25219eca",
+          "Next": null
+        }
+      }
+    },
+    "1e11108f-a0ff-4120-87b0-c4752f099c5c": {
+      "id": "1e11108f-a0ff-4120-87b0-c4752f099c5c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      }
+    },
+    "5232ce59-a365-4674-ab39-396a0a25a084": {
+      "id": "5232ce59-a365-4674-ab39-396a0a25a084",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "f87d4d42-f1c9-4e23-8a18-a55e15201ab9",
+        "Next": {
+          "Id": "3f3f3810-4b4d-445a-89a3-cc973d151e13",
+          "Next": null
+        }
+      }
+    },
+    "e3b3b2d2-de55-47d6-ab41-8b24ee6cbbf5": {
+      "id": "e3b3b2d2-de55-47d6-ab41-8b24ee6cbbf5",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1212,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "dea78e95-7f87-44f3-ba4e-6216e33708a0": {
+      "id": "dea78e95-7f87-44f3-ba4e-6216e33708a0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionResiduals",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -864,
+        "y": 516
+      },
+      "params": {
+        "residuals_method": {
+          "key": "residuals_method",
+          "value": "difference",
+          "default": "difference",
+          "range": [
+            "difference",
+            "ratio",
+            "log-ratio"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the method to calculate the residuals.",
+          "fixed": false
+        }
+      }
+    },
+    "039ac4c4-2504-427f-a60f-78359115cf7f": {
+      "id": "039ac4c4-2504-427f-a60f-78359115cf7f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "c485b36a-6078-40d8-91b0-9df5dcbd9e9f": {
+      "id": "c485b36a-6078-40d8-91b0-9df5dcbd9e9f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "8ea44dfb-8689-4c76-8645-4ded25219eca": {
+      "id": "8ea44dfb-8689-4c76-8645-4ded25219eca",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "f87d4d42-f1c9-4e23-8a18-a55e15201ab9": {
+      "id": "f87d4d42-f1c9-4e23-8a18-a55e15201ab9",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NEVES",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 516
+      }
+    },
+    "3f3f3810-4b4d-445a-89a3-cc973d151e13": {
+      "id": "3f3f3810-4b4d-445a-89a3-cc973d151e13",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1008,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "71361f0d-44bc-4966-9150-75510ae2ded8",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "445f8e0d-96f7-4ab1-8c52-3392acc08686",
+  "properties": {},
+  "idModel": "65a529b650f18505bd9184bf",
+  "custom_nodes": [],
+  "nodes": {
+    "445f8e0d-96f7-4ab1-8c52-3392acc08686": {
+      "id": "445f8e0d-96f7-4ab1-8c52-3392acc08686",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "5546d0e8-1aed-46c5-a34a-05e281783541",
+        "Next": {
+          "Id": "980939d3-58b3-43ae-b594-58243568d569",
+          "Next": null
+        }
+      }
+    },
+    "5546d0e8-1aed-46c5-a34a-05e281783541": {
+      "id": "5546d0e8-1aed-46c5-a34a-05e281783541",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "In what situations does the AI system make errors?"
+        }
+      }
+    },
+    "980939d3-58b3-43ae-b594-58243568d569": {
+      "id": "980939d3-58b3-43ae-b594-58243568d569",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "85022c55-173e-424b-86f6-d06055c71296",
+        "Next": {
+          "Id": "543bdd09-50e1-4efb-bbe7-7441ba3b0ce6",
+          "Next": null
+        }
+      }
+    },
+    "85022c55-173e-424b-86f6-d06055c71296": {
+      "id": "85022c55-173e-424b-86f6-d06055c71296",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a1557c8d-1724-40e5-8853-b326a06af086",
+        "Next": {
+          "Id": "bdc7af7e-e005-41de-94af-93048547de77",
+          "Next": null
+        }
+      }
+    },
+    "543bdd09-50e1-4efb-bbe7-7441ba3b0ce6": {
+      "id": "543bdd09-50e1-4efb-bbe7-7441ba3b0ce6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPDependence",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the feature to be displayed. Defaults to the feature with the highest average SHAP value.",
+          "type": "text"
+        },
+        "interaction_feature": {
+          "key": "interaction_feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the interaction feature used for coloring the instances. Defaults to the feature with the highest interaction value with the feature specified in the previous parameter.",
+          "type": "text"
+        }
+      }
+    },
+    "a1557c8d-1724-40e5-8853-b326a06af086": {
+      "id": "a1557c8d-1724-40e5-8853-b326a06af086",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "bdc7af7e-e005-41de-94af-93048547de77": {
+      "id": "bdc7af7e-e005-41de-94af-93048547de77",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

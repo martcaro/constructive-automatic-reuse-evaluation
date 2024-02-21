@@ -1,0 +1,459 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "875e4d7a-56f1-47b3-80d1-f868488a1b82",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "714759f9-fb75-40f5-8219-957a38f78e32",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "714759f9-fb75-40f5-8219-957a38f78e32": {
+      "id": "714759f9-fb75-40f5-8219-957a38f78e32",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "f054e8b3-4d97-41c8-8ce4-87e1a63f51f4",
+        "Next": {
+          "Id": "f91a83e5-e48f-492b-88fe-5ba506f4625f",
+          "Next": {
+            "Id": "c1c67ad7-d0e4-40bc-9e5a-f645996530f9",
+            "Next": {
+              "Id": "14ae8b2a-8b0c-4e0f-ad13-b103428568b3",
+              "Next": {
+                "Id": "8dc651b4-ac93-4a50-84ba-4a421383947f",
+                "Next": {
+                  "Id": "47c5337e-4bfd-4d40-9f7e-abc32a8272e7",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "f054e8b3-4d97-41c8-8ce4-87e1a63f51f4": {
+      "id": "f054e8b3-4d97-41c8-8ce4-87e1a63f51f4",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "f91a83e5-e48f-492b-88fe-5ba506f4625f": {
+      "id": "f91a83e5-e48f-492b-88fe-5ba506f4625f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "1bebebc8-6a03-4e3b-8244-4e43134d0247",
+        "Next": {
+          "Id": "5b6c1196-9295-431c-8630-f07d206eb006",
+          "Next": null
+        }
+      }
+    },
+    "c1c67ad7-d0e4-40bc-9e5a-f645996530f9": {
+      "id": "c1c67ad7-d0e4-40bc-9e5a-f645996530f9",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "14ae8b2a-8b0c-4e0f-ad13-b103428568b3": {
+      "id": "14ae8b2a-8b0c-4e0f-ad13-b103428568b3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "8dc651b4-ac93-4a50-84ba-4a421383947f": {
+      "id": "8dc651b4-ac93-4a50-84ba-4a421383947f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "47c5337e-4bfd-4d40-9f7e-abc32a8272e7": {
+      "id": "47c5337e-4bfd-4d40-9f7e-abc32a8272e7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "91b8df60-95ce-4a30-a433-8a86ac307e94",
+        "Next": {
+          "Id": "72444f81-87db-40d2-9b8a-2a99cb3b7d76",
+          "Next": null
+        }
+      }
+    },
+    "1bebebc8-6a03-4e3b-8244-4e43134d0247": {
+      "id": "1bebebc8-6a03-4e3b-8244-4e43134d0247",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "bb770627-f8b6-412d-a8e9-4439b29bceda",
+        "Next": {
+          "Id": "9b1287d1-7b1f-466c-82c2-2945249c6efe",
+          "Next": null
+        }
+      }
+    },
+    "5b6c1196-9295-431c-8630-f07d206eb006": {
+      "id": "5b6c1196-9295-431c-8630-f07d206eb006",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "91b8df60-95ce-4a30-a433-8a86ac307e94": {
+      "id": "91b8df60-95ce-4a30-a433-8a86ac307e94",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a2c0a316-e1c5-4743-8cbc-ddd7ead00359",
+        "Next": {
+          "Id": "875f7549-1ff9-497f-9465-661625823f8d",
+          "Next": null
+        }
+      }
+    },
+    "72444f81-87db-40d2-9b8a-2a99cb3b7d76": {
+      "id": "72444f81-87db-40d2-9b8a-2a99cb3b7d76",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 984,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "bb770627-f8b6-412d-a8e9-4439b29bceda": {
+      "id": "bb770627-f8b6-412d-a8e9-4439b29bceda",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "fixed": false
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "9b1287d1-7b1f-466c-82c2-2945249c6efe": {
+      "id": "9b1287d1-7b1f-466c-82c2-2945249c6efe",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -468,
+        "y": 516
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "type": "text",
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "fixed": false
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "fixed": false
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "fixed": false
+        }
+      }
+    },
+    "a2c0a316-e1c5-4743-8cbc-ddd7ead00359": {
+      "id": "a2c0a316-e1c5-4743-8cbc-ddd7ead00359",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "875f7549-1ff9-497f-9465-661625823f8d": {
+      "id": "875f7549-1ff9-497f-9465-661625823f8d",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/KernelSHAP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

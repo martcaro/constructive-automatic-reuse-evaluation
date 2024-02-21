@@ -1,0 +1,141 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "b508f4b9-56f6-4178-8fae-27a2b2f90d23",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "c855068b-f017-431e-943f-da9dab1185ca",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "c855068b-f017-431e-943f-da9dab1185ca": {
+      "id": "c855068b-f017-431e-943f-da9dab1185ca",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "48e9e7df-154c-4fe5-8cb2-bb4f42ce4488",
+        "Next": {
+          "Id": "8604ab9a-5c1c-4d15-af7e-93ed2e35d354",
+          "Next": {
+            "Id": "31d7ae1b-0e61-4871-8aab-5f6e0ba0b15e",
+            "Next": {
+              "Id": "3caa812b-d04d-48f4-9ff4-50ca15c96a9f",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "48e9e7df-154c-4fe5-8cb2-bb4f42ce4488": {
+      "id": "48e9e7df-154c-4fe5-8cb2-bb4f42ce4488",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "8604ab9a-5c1c-4d15-af7e-93ed2e35d354": {
+      "id": "8604ab9a-5c1c-4d15-af7e-93ed2e35d354",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "31d7ae1b-0e61-4871-8aab-5f6e0ba0b15e": {
+      "id": "31d7ae1b-0e61-4871-8aab-5f6e0ba0b15e",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "3caa812b-d04d-48f4-9ff4-50ca15c96a9f": {
+      "id": "3caa812b-d04d-48f4-9ff4-50ca15c96a9f",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

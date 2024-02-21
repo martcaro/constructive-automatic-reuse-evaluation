@@ -1,0 +1,242 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "4ece9b74-05f1-49b4-88b4-0bb6aa59d8a8",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "fbf6059c-9007-4e53-a627-ce25ea3a50cc",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "fbf6059c-9007-4e53-a627-ce25ea3a50cc": {
+      "id": "fbf6059c-9007-4e53-a627-ce25ea3a50cc",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "6f44a941-8f43-4000-8ae7-30e16a0f135f",
+        "Next": {
+          "Id": "cf54eccc-3086-4a7f-8b9a-74bbe6a8c12d",
+          "Next": {
+            "Id": "c43fdc3c-6f22-4a71-9537-f0dbd37ba7b3",
+            "Next": {
+              "Id": "efc759bf-510d-473b-9403-5f2835df8a4e",
+              "Next": {
+                "Id": "8b641f6a-5387-4c41-95f9-c1a5cbda2451",
+                "Next": {
+                  "Id": "ee5d7588-6346-40ce-828f-fca3317afcde",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "6f44a941-8f43-4000-8ae7-30e16a0f135f": {
+      "id": "6f44a941-8f43-4000-8ae7-30e16a0f135f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -528,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "cf54eccc-3086-4a7f-8b9a-74bbe6a8c12d": {
+      "id": "cf54eccc-3086-4a7f-8b9a-74bbe6a8c12d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "c43fdc3c-6f22-4a71-9537-f0dbd37ba7b3": {
+      "id": "c43fdc3c-6f22-4a71-9537-f0dbd37ba7b3",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "efc759bf-510d-473b-9403-5f2835df8a4e": {
+      "id": "efc759bf-510d-473b-9403-5f2835df8a4e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "8b641f6a-5387-4c41-95f9-c1a5cbda2451": {
+      "id": "8b641f6a-5387-4c41-95f9-c1a5cbda2451",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "ee5d7588-6346-40ce-828f-fca3317afcde": {
+      "id": "ee5d7588-6346-40ce-828f-fca3317afcde",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 516,
+        "y": 252
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 0.25,
+    "x": 0,
+    "y": 0
+  }
+}

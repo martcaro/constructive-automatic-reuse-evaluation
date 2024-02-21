@@ -1,0 +1,134 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "ca80f8cf-e749-4517-83ad-3cf7353a0e27",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "d0b7000e-71ad-43ea-9eae-86ff95f1039c",
+  "properties": {},
+  "idModel": "65a540c250f18505bd918710",
+  "custom_nodes": [],
+  "nodes": {
+    "d0b7000e-71ad-43ea-9eae-86ff95f1039c": {
+      "id": "d0b7000e-71ad-43ea-9eae-86ff95f1039c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "c78033f0-d5a4-44af-811a-e43c93d89856",
+        "Next": {
+          "Id": "d159b55c-abc1-401b-a499-88031bacf4f8",
+          "Next": {
+            "Id": "10d58ec4-c44c-40cc-8782-f9b1eaa4b470",
+            "Next": {
+              "Id": "20195be7-2901-4e4e-8e14-ab2ba92e69d8",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "c78033f0-d5a4-44af-811a-e43c93d89856": {
+      "id": "c78033f0-d5a4-44af-811a-e43c93d89856",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "d159b55c-abc1-401b-a499-88031bacf4f8": {
+      "id": "d159b55c-abc1-401b-a499-88031bacf4f8",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        }
+      }
+    },
+    "10d58ec4-c44c-40cc-8782-f9b1eaa4b470": {
+      "id": "10d58ec4-c44c-40cc-8782-f9b1eaa4b470",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How reliable is the AI system?"
+        }
+      }
+    },
+    "20195be7-2901-4e4e-8e14-ab2ba92e69d8": {
+      "id": "20195be7-2901-4e4e-8e14-ab2ba92e69d8",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ConfusionMatrix",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": 100,
+          "default": 100,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. A hundred samples are used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 689,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

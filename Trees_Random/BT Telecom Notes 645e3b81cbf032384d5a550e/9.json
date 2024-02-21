@@ -1,0 +1,528 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "91be23a3-ed2b-4e18-9075-207a1c56f8a8",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "80726002-a55a-4d78-886d-6657cded28be",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "80726002-a55a-4d78-886d-6657cded28be": {
+      "id": "80726002-a55a-4d78-886d-6657cded28be",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "4635e269-8331-443e-8216-fff2c1dc5d4b",
+        "Next": {
+          "Id": "ee3d2848-5517-41e6-9e5b-f22a157b550d",
+          "Next": {
+            "Id": "aee25c02-f380-45b0-8df2-95676315939b",
+            "Next": {
+              "Id": "551b5571-940c-46b8-8045-7a90f5005d38",
+              "Next": {
+                "Id": "203b5682-4256-4af5-8ad9-3154623a2c44",
+                "Next": {
+                  "Id": "16388e79-3441-46be-8d54-21a91c8ad87b",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "4635e269-8331-443e-8216-fff2c1dc5d4b": {
+      "id": "4635e269-8331-443e-8216-fff2c1dc5d4b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1068,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the scope of the AI system capabilities?"
+        }
+      }
+    },
+    "ee3d2848-5517-41e6-9e5b-f22a157b550d": {
+      "id": "ee3d2848-5517-41e6-9e5b-f22a157b550d",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -600,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "5b567345-65f4-456e-8f4a-25424ae695f0",
+        "Next": {
+          "Id": "2309cbcd-2b02-41a7-8308-40ece6f45e20",
+          "Next": null
+        }
+      }
+    },
+    "aee25c02-f380-45b0-8df2-95676315939b": {
+      "id": "aee25c02-f380-45b0-8df2-95676315939b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What features does the AI system consider?"
+        }
+      }
+    },
+    "551b5571-940c-46b8-8045-7a90f5005d38": {
+      "id": "551b5571-940c-46b8-8045-7a90f5005d38",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "25fac2b5-77c4-41f0-9610-58bb5e83cc32",
+        "Next": {
+          "Id": "1f8055bd-8529-4469-917d-5b04b6226fad",
+          "Next": null
+        }
+      }
+    },
+    "203b5682-4256-4af5-8ad9-3154623a2c44": {
+      "id": "203b5682-4256-4af5-8ad9-3154623a2c44",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How much evidence has been considered to build the AI system?"
+        }
+      }
+    },
+    "16388e79-3441-46be-8d54-21a91c8ad87b": {
+      "id": "16388e79-3441-46be-8d54-21a91c8ad87b",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1056,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "52cb5f84-f838-433a-8111-d76e2ea1d7ab",
+        "Next": {
+          "Id": "9e1012e4-850d-4fff-88e1-97434c8943a8",
+          "Next": null
+        }
+      }
+    },
+    "5b567345-65f4-456e-8f4a-25424ae695f0": {
+      "id": "5b567345-65f4-456e-8f4a-25424ae695f0",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "c742f380-bd0a-46f1-8f43-0346a88ce386",
+        "Next": {
+          "Id": "e6060ed3-5e02-44c6-9b95-6961a2c47cbc",
+          "Next": null
+        }
+      }
+    },
+    "2309cbcd-2b02-41a7-8308-40ece6f45e20": {
+      "id": "2309cbcd-2b02-41a7-8308-40ece6f45e20",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 384
+      }
+    },
+    "25fac2b5-77c4-41f0-9610-58bb5e83cc32": {
+      "id": "25fac2b5-77c4-41f0-9610-58bb5e83cc32",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "c6c3d508-03bd-4db2-8d88-639e40602920",
+        "Next": {
+          "Id": "3fb3e042-87fe-44f1-8d98-92f1d43d6ed1",
+          "Next": null
+        }
+      }
+    },
+    "1f8055bd-8529-4469-917d-5b04b6226fad": {
+      "id": "1f8055bd-8529-4469-917d-5b04b6226fad",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/FORGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "sigma": {
+          "key": "sigma",
+          "value": 15,
+          "default": 15,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Bandwith of the low pass filter. The higher the sigma, the more frequencies are kept. Sigma should be positive and less than image size. Defaults to 15.",
+          "fixed": false
+        }
+      }
+    },
+    "52cb5f84-f838-433a-8111-d76e2ea1d7ab": {
+      "id": "52cb5f84-f838-433a-8111-d76e2ea1d7ab",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "5cb22204-c839-46ff-8d20-de649c577126",
+        "Next": {
+          "Id": "4e32e221-27f7-411a-ad5a-8d5265111ff6",
+          "Next": null
+        }
+      }
+    },
+    "9e1012e4-850d-4fff-88e1-97434c8943a8": {
+      "id": "9e1012e4-850d-4fff-88e1-97434c8943a8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LiftCurve",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1212,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "c742f380-bd0a-46f1-8f43-0346a88ce386": {
+      "id": "c742f380-bd0a-46f1-8f43-0346a88ce386",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPDependence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -864,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature to be displayed. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        },
+        "interaction_feature": {
+          "key": "interaction_feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the interaction feature used for coloring the instances. Defaults to the feature with the highest interaction value with the feature specified in the previous parameter.",
+          "fixed": false
+        }
+      }
+    },
+    "e6060ed3-5e02-44c6-9b95-6961a2c47cbc": {
+      "id": "e6060ed3-5e02-44c6-9b95-6961a2c47cbc",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/RISE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 4000,
+          "default": 4000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of masks generated for Monte Carlo sampling. A small number of samples will not provide a precise enough estimator, thus leading to noisy explanations. A large number of sample can only have a good impact on the explanation, however it will impact the computation time linearly. The number of samples should be increased when using setting greater grid sizes. Defaults to 4000.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 7,
+          "default": 7,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Size of the grid used to generate the scaled-down masks. Masks are then rescale to and cropped to input_size. Small grid sizes will create large group of pixels resulting in low-precision explanations. Large grid sizes will drastically increase the number of pixel groups. Therefore, the number of sample necessary for the method to converge will be much higher. If you do not know which order of value to try, you should try 7, the square root of your image size and some other in the same order of magnitude. But remember to increase your nb_samples for larger values of grid_size. Defaults to 7.",
+          "fixed": false
+        }
+      }
+    },
+    "c6c3d508-03bd-4db2-8d88-639e40602920": {
+      "id": "c6c3d508-03bd-4db2-8d88-639e40602920",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/FORGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "sigma": {
+          "key": "sigma",
+          "value": 15,
+          "default": 15,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Bandwith of the low pass filter. The higher the sigma, the more frequencies are kept. Sigma should be positive and less than image size. Defaults to 15.",
+          "fixed": false
+        }
+      }
+    },
+    "3fb3e042-87fe-44f1-8d98-92f1d43d6ed1": {
+      "id": "3fb3e042-87fe-44f1-8d98-92f1d43d6ed1",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "5cb22204-c839-46ff-8d20-de649c577126": {
+      "id": "5cb22204-c839-46ff-8d20-de649c577126",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 516
+      }
+    },
+    "4e32e221-27f7-411a-ad5a-8d5265111ff6": {
+      "id": "4e32e221-27f7-411a-ad5a-8d5265111ff6",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1008,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

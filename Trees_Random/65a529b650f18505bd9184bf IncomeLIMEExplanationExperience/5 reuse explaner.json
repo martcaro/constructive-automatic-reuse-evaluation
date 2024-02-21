@@ -1,0 +1,287 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "817b803a-3114-422e-9356-8c333ee07d33",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "506d47a6-e68e-402c-8c4d-4d627803a7f4",
+  "properties": {},
+  "idModel": "65a529b650f18505bd9184bf",
+  "custom_nodes": [],
+  "nodes": {
+    "506d47a6-e68e-402c-8c4d-4d627803a7f4": {
+      "id": "506d47a6-e68e-402c-8c4d-4d627803a7f4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "3f5cdf45-89eb-4fd7-bfe5-8ff899e7c3cf",
+        "Next": {
+          "Id": "6b89a505-7a4a-4e08-8f64-61b4adef0488",
+          "Next": {
+            "Id": "7126a663-c040-4c52-ab88-a148dc407099",
+            "Next": {
+              "Id": "36d0b5aa-c6f8-43fd-84d7-d679f2b93aa4",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "3f5cdf45-89eb-4fd7-bfe5-8ff899e7c3cf": {
+      "id": "3f5cdf45-89eb-4fd7-bfe5-8ff899e7c3cf",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Which feature contributed to the current outcome?"
+        }
+      }
+    },
+    "6b89a505-7a4a-4e08-8f64-61b4adef0488": {
+      "id": "6b89a505-7a4a-4e08-8f64-61b4adef0488",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "7126a663-c040-4c52-ab88-a148dc407099": {
+      "id": "7126a663-c040-4c52-ab88-a148dc407099",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the impact of feature X on the outcome?"
+        }
+      }
+    },
+    "36d0b5aa-c6f8-43fd-84d7-d679f2b93aa4": {
+      "id": "36d0b5aa-c6f8-43fd-84d7-d679f2b93aa4",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "ae91dd25-28db-4a82-bae1-21476a1fc203",
+        "Next": {
+          "Id": "24d5fbf7-2395-439e-940c-a51123f0cb01",
+          "Next": null
+        }
+      }
+    },
+    "ae91dd25-28db-4a82-bae1-21476a1fc203": {
+      "id": "ae91dd25-28db-4a82-bae1-21476a1fc203",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "79b89d76-3c9b-4f30-9d94-1bde84f73411",
+        "Next": {
+          "Id": "0bd2281d-b4ed-4af4-b146-177c344678e7",
+          "Next": null
+        }
+      }
+    },
+    "24d5fbf7-2395-439e-940c-a51123f0cb01": {
+      "id": "24d5fbf7-2395-439e-940c-a51123f0cb01",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the classes to be explained. Defaults to class at index 1. This parameter is overriden by 'top_classes' so make sure to set 'top_classes' to 0 to use it",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "79b89d76-3c9b-4f30-9d94-1bde84f73411": {
+      "id": "79b89d76-3c9b-4f30-9d94-1bde84f73411",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "text"
+        }
+      }
+    },
+    "0bd2281d-b4ed-4af4-b146-177c344678e7": {
+      "id": "0bd2281d-b4ed-4af4-b146-177c344678e7",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

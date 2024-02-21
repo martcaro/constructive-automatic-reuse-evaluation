@@ -1,0 +1,182 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "e18c1d53-a16d-4f79-8784-4b738625f06f",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "6f2ac2c1-4c74-48aa-8238-ec778bc4309f",
+  "properties": {},
+  "idModel": "65a52e1650f18505bd918535",
+  "custom_nodes": [],
+  "nodes": {
+    "6f2ac2c1-4c74-48aa-8238-ec778bc4309f": {
+      "id": "6f2ac2c1-4c74-48aa-8238-ec778bc4309f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "fe7300d4-3435-4a7a-9337-2483197d9469",
+        "Next": {
+          "Id": "f562c5d5-a902-43e4-9fcd-bea801badf54",
+          "Next": {
+            "Id": "86de79b3-904a-438d-940a-6592b9a3f025",
+            "Next": {
+              "Id": "d2078ed2-9f50-414f-8ae3-30aeff8726d9",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "fe7300d4-3435-4a7a-9337-2483197d9469": {
+      "id": "fe7300d4-3435-4a7a-9337-2483197d9469",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to get a different outcome?"
+        }
+      }
+    },
+    "f562c5d5-a902-43e4-9fcd-bea801badf54": {
+      "id": "f562c5d5-a902-43e4-9fcd-bea801badf54",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    },
+    "86de79b3-904a-438d-940a-6592b9a3f025": {
+      "id": "86de79b3-904a-438d-940a-6592b9a3f025",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "d2078ed2-9f50-414f-8ae3-30aeff8726d9": {
+      "id": "d2078ed2-9f50-414f-8ae3-30aeff8726d9",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

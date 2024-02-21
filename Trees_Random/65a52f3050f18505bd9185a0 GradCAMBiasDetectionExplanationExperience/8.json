@@ -1,0 +1,190 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "19f1e7a2-9d32-434a-b70a-087cc8138b3c",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "26a565bb-d7b7-4cc6-80ea-c09c7ff70a9a",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "26a565bb-d7b7-4cc6-80ea-c09c7ff70a9a": {
+      "id": "26a565bb-d7b7-4cc6-80ea-c09c7ff70a9a",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "3e04dff2-c1ad-4c9a-9945-14428e8d651c",
+        "Next": {
+          "Id": "a9b261aa-5c20-475e-b4e2-c385b71c31dd",
+          "Next": null
+        }
+      }
+    },
+    "3e04dff2-c1ad-4c9a-9945-14428e8d651c": {
+      "id": "3e04dff2-c1ad-4c9a-9945-14428e8d651c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "a9b261aa-5c20-475e-b4e2-c385b71c31dd": {
+      "id": "a9b261aa-5c20-475e-b4e2-c385b71c31dd",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "3260ca1b-a5a2-4a71-8c09-f1c005d78098",
+        "Next": {
+          "Id": "a5b6f32a-42bd-4bb0-8029-ad4f72c54253",
+          "Next": null
+        }
+      }
+    },
+    "3260ca1b-a5a2-4a71-8c09-f1c005d78098": {
+      "id": "3260ca1b-a5a2-4a71-8c09-f1c005d78098",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "19082bc3-f29b-4046-8765-d9ffcc021df9",
+        "Next": {
+          "Id": "0a104cd1-ceaa-4f6a-83c5-367330a1a89b",
+          "Next": null
+        }
+      }
+    },
+    "a5b6f32a-42bd-4bb0-8029-ad4f72c54253": {
+      "id": "a5b6f32a-42bd-4bb0-8029-ad4f72c54253",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/RegressionPredictedVsActual",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      }
+    },
+    "19082bc3-f29b-4046-8765-d9ffcc021df9": {
+      "id": "19082bc3-f29b-4046-8765-d9ffcc021df9",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "0a104cd1-ceaa-4f6a-83c5-367330a1a89b": {
+      "id": "0a104cd1-ceaa-4f6a-83c5-367330a1a89b",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "type": "number"
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

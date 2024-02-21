@@ -1,0 +1,147 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "d943edca-7a13-4fed-8944-ef48c6548318",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b8dc0963-a9be-4bba-8f82-1d42dd287955",
+  "properties": {},
+  "idModel": "649d9344123d1ba6e8e1aab4",
+  "custom_nodes": [],
+  "nodes": {
+    "b8dc0963-a9be-4bba-8f82-1d42dd287955": {
+      "id": "b8dc0963-a9be-4bba-8f82-1d42dd287955",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "379e0aa9-387b-4e85-bf67-acab8c71209c",
+        "Next": {
+          "Id": "ca16e8d8-e74e-4a98-b96d-a42eb77ebee0",
+          "Next": {
+            "Id": "e30f36b7-9c15-40ba-8443-ef0753af0b1f",
+            "Next": {
+              "Id": "6311ce70-2722-472d-8070-cdc3fb989f2f",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "379e0aa9-387b-4e85-bf67-acab8c71209c": {
+      "id": "379e0aa9-387b-4e85-bf67-acab8c71209c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -312,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "ca16e8d8-e74e-4a98-b96d-a42eb77ebee0": {
+      "id": "ca16e8d8-e74e-4a98-b96d-a42eb77ebee0",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -108,
+        "y": 252
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "e30f36b7-9c15-40ba-8443-ef0753af0b1f": {
+      "id": "e30f36b7-9c15-40ba-8443-ef0753af0b1f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 96,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "6311ce70-2722-472d-8070-cdc3fb989f2f": {
+      "id": "6311ce70-2722-472d-8070-cdc3fb989f2f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 312,
+        "y": 252
+      },
+      "params": {
+        "num_cf": {
+          "key": "num_cf",
+          "value": 2,
+          "default": 2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of counterfactuals to be found. Defaults to 2.",
+          "type": "number"
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

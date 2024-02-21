@@ -1,0 +1,455 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "0a68637f-d035-4bd7-ba68-1f178d9c8363",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "589dfe77-e1cb-401d-8dc4-af2eaca11f9b",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "589dfe77-e1cb-401d-8dc4-af2eaca11f9b": {
+      "id": "589dfe77-e1cb-401d-8dc4-af2eaca11f9b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "c496c826-a3d6-4122-8fda-c4455f595dce",
+        "Next": {
+          "Id": "c928adaf-235f-488d-85e1-4a108e498f0a",
+          "Next": {
+            "Id": "4a8deca6-7e1a-4d61-8ebc-066776aa8330",
+            "Next": {
+              "Id": "9f5afc2d-3f3f-4794-88ac-96ccd365371f",
+              "Next": {
+                "Id": "3863a015-5959-40db-8c1a-2e47c70df76b",
+                "Next": {
+                  "Id": "e72aefe6-e9f7-4d65-a4d1-c05ad3de562e",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "c496c826-a3d6-4122-8fda-c4455f595dce": {
+      "id": "c496c826-a3d6-4122-8fda-c4455f595dce",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "c928adaf-235f-488d-85e1-4a108e498f0a": {
+      "id": "c928adaf-235f-488d-85e1-4a108e498f0a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "61d243e0-9a6f-433f-9d40-e5ab6e39daaf",
+        "Next": {
+          "Id": "1b38cf9b-780c-407d-8b44-3ad8f9a66119",
+          "Next": null
+        }
+      }
+    },
+    "4a8deca6-7e1a-4d61-8ebc-066776aa8330": {
+      "id": "4a8deca6-7e1a-4d61-8ebc-066776aa8330",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "9f5afc2d-3f3f-4794-88ac-96ccd365371f": {
+      "id": "9f5afc2d-3f3f-4794-88ac-96ccd365371f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "3863a015-5959-40db-8c1a-2e47c70df76b": {
+      "id": "3863a015-5959-40db-8c1a-2e47c70df76b",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "e72aefe6-e9f7-4d65-a4d1-c05ad3de562e": {
+      "id": "e72aefe6-e9f7-4d65-a4d1-c05ad3de562e",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "dc4c1beb-00f5-4e8a-b74c-ce8ca76a681c",
+        "Next": {
+          "Id": "a32b8039-e842-4d0b-8486-84c51fbaff6b",
+          "Next": null
+        }
+      }
+    },
+    "61d243e0-9a6f-433f-9d40-e5ab6e39daaf": {
+      "id": "61d243e0-9a6f-433f-9d40-e5ab6e39daaf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "b356a4df-b734-4a64-82f3-37f94b36a0ba",
+        "Next": {
+          "Id": "9d13896d-d451-4de4-b53e-30bafef26ae2",
+          "Next": null
+        }
+      }
+    },
+    "1b38cf9b-780c-407d-8b44-3ad8f9a66119": {
+      "id": "1b38cf9b-780c-407d-8b44-3ad8f9a66119",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "dc4c1beb-00f5-4e8a-b74c-ce8ca76a681c": {
+      "id": "dc4c1beb-00f5-4e8a-b74c-ce8ca76a681c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "b212e5e6-bd99-44ea-9c90-adc3ca4ce228",
+        "Next": {
+          "Id": "8e99c3fb-b43a-4a11-9de0-5db6a829ff80",
+          "Next": null
+        }
+      }
+    },
+    "a32b8039-e842-4d0b-8486-84c51fbaff6b": {
+      "id": "a32b8039-e842-4d0b-8486-84c51fbaff6b",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 984,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "b356a4df-b734-4a64-82f3-37f94b36a0ba": {
+      "id": "b356a4df-b734-4a64-82f3-37f94b36a0ba",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PR-AUC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "9d13896d-d451-4de4-b53e-30bafef26ae2": {
+      "id": "9d13896d-d451-4de4-b53e-30bafef26ae2",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GuidedBackprop",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -468,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "b212e5e6-bd99-44ea-9c90-adc3ca4ce228": {
+      "id": "b212e5e6-bd99-44ea-9c90-adc3ca4ce228",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/ClassificationReport",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 564,
+        "y": 516
+      },
+      "params": {
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    },
+    "8e99c3fb-b43a-4a11-9de0-5db6a829ff80": {
+      "id": "8e99c3fb-b43a-4a11-9de0-5db6a829ff80",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LIMESegment",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "window_size": {
+          "key": "window_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Window size to be used by the segmentation algorithm. Default is T/5 (T = series length).",
+          "type": "number"
+        },
+        "change_points": {
+          "key": "change_points",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Number of change points to be determined by the segmentation algorithm. Default is 3.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 1453.3999999999069,
+    "camera_y": 464.39999999990687,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

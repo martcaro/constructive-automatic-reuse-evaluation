@@ -1,0 +1,192 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "e0f95121-4f58-4536-bc2b-d559d268cc16",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "c913e462-ac0a-42db-ae4a-ae0f393c0d2d",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "c913e462-ac0a-42db-ae4a-ae0f393c0d2d": {
+      "id": "c913e462-ac0a-42db-ae4a-ae0f393c0d2d",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "59a3921c-9e3f-4e12-9d1b-f30a1ff92d96",
+        "Next": {
+          "Id": "23084e7f-55e8-4828-8242-c98601225a83",
+          "Next": null
+        }
+      }
+    },
+    "59a3921c-9e3f-4e12-9d1b-f30a1ff92d96": {
+      "id": "59a3921c-9e3f-4e12-9d1b-f30a1ff92d96",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A?"
+        }
+      }
+    },
+    "23084e7f-55e8-4828-8242-c98601225a83": {
+      "id": "23084e7f-55e8-4828-8242-c98601225a83",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e34d62c7-b906-42d3-aab8-4e7e5b9c255e",
+        "Next": {
+          "Id": "d81f273a-6d64-435e-89b4-d7b368c9103d",
+          "Next": null
+        }
+      }
+    },
+    "e34d62c7-b906-42d3-aab8-4e7e5b9c255e": {
+      "id": "e34d62c7-b906-42d3-aab8-4e7e5b9c255e",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "e6b11f2b-c3cc-4066-aae3-e9266e51c44f",
+        "Next": {
+          "Id": "8f8bd824-7ed1-445c-8511-dea1a0697b2e",
+          "Next": null
+        }
+      }
+    },
+    "d81f273a-6d64-435e-89b4-d7b368c9103d": {
+      "id": "d81f273a-6d64-435e-89b4-d7b368c9103d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "e6b11f2b-c3cc-4066-aae3-e9266e51c44f": {
+      "id": "e6b11f2b-c3cc-4066-aae3-e9266e51c44f",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "8f8bd824-7ed1-445c-8511-dea1a0697b2e": {
+      "id": "8f8bd824-7ed1-445c-8511-dea1a0697b2e",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/FORGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        },
+        "sigma": {
+          "key": "sigma",
+          "value": 15,
+          "default": 15,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Bandwith of the low pass filter. The higher the sigma, the more frequencies are kept. Sigma should be positive and less than image size. Defaults to 15.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "bf7326e3-9f3c-49b5-97ce-deffe06faf28",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b46bded6-3cdd-44dc-8b84-21ac9bbd5ad4",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "b46bded6-3cdd-44dc-8b84-21ac9bbd5ad4": {
+      "id": "b46bded6-3cdd-44dc-8b84-21ac9bbd5ad4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "0378f784-548c-48c1-8791-52ad05c49ab6",
+        "Next": {
+          "Id": "36c31815-4c2c-4289-9f67-c2a19b1fa065",
+          "Next": {
+            "Id": "3711f98e-de1a-41ed-9995-519dd633aa74",
+            "Next": {
+              "Id": "43e6eefc-d605-4d22-8336-5e004be8d45a",
+              "Next": {
+                "Id": "14f201e0-6928-460c-833a-7671d4c7c305",
+                "Next": {
+                  "Id": "5ad96814-f9b0-4c3a-9627-10c34878fedf",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "0378f784-548c-48c1-8791-52ad05c49ab6": {
+      "id": "0378f784-548c-48c1-8791-52ad05c49ab6",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1068,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How reliable is the AI system?"
+        }
+      }
+    },
+    "36c31815-4c2c-4289-9f67-c2a19b1fa065": {
+      "id": "36c31815-4c2c-4289-9f67-c2a19b1fa065",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -600,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "2837c346-965b-4366-8544-46bc4fdd1418",
+        "Next": {
+          "Id": "2aa5405a-0e94-40cf-8020-768c854c4ff9",
+          "Next": null
+        }
+      }
+    },
+    "3711f98e-de1a-41ed-9995-519dd633aa74": {
+      "id": "3711f98e-de1a-41ed-9995-519dd633aa74",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "43e6eefc-d605-4d22-8336-5e004be8d45a": {
+      "id": "43e6eefc-d605-4d22-8336-5e004be8d45a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "e98e70cb-6a16-49a7-a588-581ce7fd8bba",
+        "Next": {
+          "Id": "01d658b1-0226-49ab-a8b8-9e7456d163f3",
+          "Next": null
+        }
+      }
+    },
+    "14f201e0-6928-460c-833a-7671d4c7c305": {
+      "id": "14f201e0-6928-460c-833a-7671d4c7c305",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "5ad96814-f9b0-4c3a-9627-10c34878fedf": {
+      "id": "5ad96814-f9b0-4c3a-9627-10c34878fedf",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1056,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "88029358-136e-4545-8207-40690402c565",
+        "Next": {
+          "Id": "10f40aa4-66f9-4e3a-8333-2c1f0474bd11",
+          "Next": null
+        }
+      }
+    },
+    "2837c346-965b-4366-8544-46bc4fdd1418": {
+      "id": "2837c346-965b-4366-8544-46bc4fdd1418",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "90d1b304-7096-4e03-b5f4-d97ef9e27e5c",
+        "Next": {
+          "Id": "371c608f-b0e0-45a1-93a1-4f6e82d7f385",
+          "Next": null
+        }
+      }
+    },
+    "2aa5405a-0e94-40cf-8020-768c854c4ff9": {
+      "id": "2aa5405a-0e94-40cf-8020-768c854c4ff9",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "e98e70cb-6a16-49a7-a588-581ce7fd8bba": {
+      "id": "e98e70cb-6a16-49a7-a588-581ce7fd8bba",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "b0907c49-acd5-4aeb-b321-f2bd0b1af559",
+        "Next": {
+          "Id": "65589562-bab7-4416-80ca-1fefaf42dbae",
+          "Next": null
+        }
+      }
+    },
+    "01d658b1-0226-49ab-a8b8-9e7456d163f3": {
+      "id": "01d658b1-0226-49ab-a8b8-9e7456d163f3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DisCERN",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class, or 'opposite' in the case of binary classification. Defaults to 'opposite'.",
+          "fixed": false
+        },
+        "feature_attribution_method": {
+          "key": "feature_attribution_method",
+          "value": "LIME",
+          "default": "LIME",
+          "range": [
+            "LIME",
+            "SHAP",
+            "IntG"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Feature attribution method used for obtaining feature weights; currently supports LIME, SHAP and Integrated Gradients. Defaults to LIME.",
+          "fixed": false
+        },
+        "immutable_features": {
+          "key": "immutable_features",
+          "value": [],
+          "default": [],
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of feature names that are immutable. The counterfactual will not recommend to change these features. Default is an empty array",
+          "fixed": false
+        }
+      }
+    },
+    "88029358-136e-4545-8207-40690402c565": {
+      "id": "88029358-136e-4545-8207-40690402c565",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "719a533c-3248-4950-807b-ff9d0247acaa",
+        "Next": {
+          "Id": "3575bbfa-3a6b-4e79-8343-4434ab6d772f",
+          "Next": null
+        }
+      }
+    },
+    "10f40aa4-66f9-4e3a-8333-2c1f0474bd11": {
+      "id": "10f40aa4-66f9-4e3a-8333-2c1f0474bd11",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1212,
+        "y": 384
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "90d1b304-7096-4e03-b5f4-d97ef9e27e5c": {
+      "id": "90d1b304-7096-4e03-b5f4-d97ef9e27e5c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -864,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "fixed": false
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The counterfactual criteria to optimize.",
+          "fixed": false
+        }
+      }
+    },
+    "371c608f-b0e0-45a1-93a1-4f6e82d7f385": {
+      "id": "371c608f-b0e0-45a1-93a1-4f6e82d7f385",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "b0907c49-acd5-4aeb-b321-f2bd0b1af559": {
+      "id": "b0907c49-acd5-4aeb-b321-f2bd0b1af559",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Saliency",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "65589562-bab7-4416-80ca-1fefaf42dbae": {
+      "id": "65589562-bab7-4416-80ca-1fefaf42dbae",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "719a533c-3248-4950-807b-ff9d0247acaa": {
+      "id": "719a533c-3248-4950-807b-ff9d0247acaa",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "3575bbfa-3a6b-4e79-8343-4434ab6d772f": {
+      "id": "3575bbfa-3a6b-4e79-8343-4434ab6d772f",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1008,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "type": "select"
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 713.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

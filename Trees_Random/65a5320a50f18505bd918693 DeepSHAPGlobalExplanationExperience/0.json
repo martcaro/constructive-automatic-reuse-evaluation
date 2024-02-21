@@ -1,0 +1,298 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "02b544ac-ea26-46a2-bf29-21d846b3f4a4",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "46fada1a-deb7-4750-80f3-2c36efb181e2",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "46fada1a-deb7-4750-80f3-2c36efb181e2": {
+      "id": "46fada1a-deb7-4750-80f3-2c36efb181e2",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "89e1c52a-ad8e-411b-b256-2be636370789",
+        "Next": {
+          "Id": "295a1ec6-43aa-413a-8e49-0626e6fdfb66",
+          "Next": null
+        }
+      }
+    },
+    "89e1c52a-ad8e-411b-b256-2be636370789": {
+      "id": "89e1c52a-ad8e-411b-b256-2be636370789",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Is this the same outcome for similar instances?"
+        }
+      }
+    },
+    "295a1ec6-43aa-413a-8e49-0626e6fdfb66": {
+      "id": "295a1ec6-43aa-413a-8e49-0626e6fdfb66",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0e2d7a01-0ad4-4f9f-b338-88d0e3b9efc6",
+        "Next": {
+          "Id": "7beebd42-cc65-49f7-b620-8d1ba65735db",
+          "Next": null
+        }
+      }
+    },
+    "0e2d7a01-0ad4-4f9f-b338-88d0e3b9efc6": {
+      "id": "0e2d7a01-0ad4-4f9f-b338-88d0e3b9efc6",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a0f466f7-f778-464c-bac8-0543903cc3ef",
+        "Next": {
+          "Id": "2864a658-5b25-4047-827c-625d4e1bc131",
+          "Next": null
+        }
+      }
+    },
+    "7beebd42-cc65-49f7-b620-8d1ba65735db": {
+      "id": "7beebd42-cc65-49f7-b620-8d1ba65735db",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DisCERN",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class, or 'opposite' in the case of binary classification. Defaults to 'opposite'.",
+          "fixed": false
+        },
+        "feature_attribution_method": {
+          "key": "feature_attribution_method",
+          "value": "LIME",
+          "default": "LIME",
+          "range": [
+            "LIME",
+            "SHAP",
+            "IntG"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Feature attribution method used for obtaining feature weights; currently supports LIME, SHAP and Integrated Gradients. Defaults to LIME.",
+          "fixed": false
+        },
+        "immutable_features": {
+          "key": "immutable_features",
+          "value": [],
+          "default": [],
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of feature names that are immutable. The counterfactual will not recommend to change these features. Default is an empty array",
+          "fixed": false
+        }
+      }
+    },
+    "a0f466f7-f778-464c-bac8-0543903cc3ef": {
+      "id": "a0f466f7-f778-464c-bac8-0543903cc3ef",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Anchors",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "threshold": {
+          "key": "threshold",
+          "value": 0.95,
+          "default": 0.95,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "The minimum level of precision required for the anchor. Default is 0.95",
+          "fixed": false
+        },
+        "delta": {
+          "key": "delta",
+          "value": 0.1,
+          "default": 0.1,
+          "range": [
+            0.00001,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Confidence threshold for the precision of the anchor. Default is 0.1",
+          "fixed": false
+        },
+        "segmentation_fn": {
+          "key": "segmentation_fn",
+          "value": "slic",
+          "default": "slic",
+          "range": [
+            "slic",
+            "quickshift",
+            "felzenszwalb"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "A string with an image segmentation algorithm from the following:'quickshift', 'slic', or 'felzenszwalb'.",
+          "fixed": false
+        },
+        "n_segments": {
+          "key": "n_segments",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for slic segmentation algorithm. Specifies the (approximate) number of segments of the image.",
+          "fixed": false
+        },
+        "kernel_size": {
+          "key": "kernel_size",
+          "value": 5,
+          "default": 5,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for quickshift segmentation algorithm. Higher means fewer clusters",
+          "fixed": false
+        },
+        "scale": {
+          "key": "scale",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Only used for felzenszwalb segmentation algorithm. Higher scale means less and larger segments",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "2864a658-5b25-4047-827c-625d4e1bc131": {
+      "id": "2864a658-5b25-4047-827c-625d4e1bc131",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPDependence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the feature to be displayed. Defaults to the feature with the highest average SHAP value.",
+          "type": "text"
+        },
+        "interaction_feature": {
+          "key": "interaction_feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Name of the interaction feature used for coloring the instances. Defaults to the feature with the highest interaction value with the feature specified in the previous parameter.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

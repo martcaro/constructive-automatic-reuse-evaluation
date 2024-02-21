@@ -1,0 +1,194 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "2268a4a8-8ff1-48f1-8836-28c3f136d353",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "daea60a8-1118-429a-83ea-e49a920065f8",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "daea60a8-1118-429a-83ea-e49a920065f8": {
+      "id": "daea60a8-1118-429a-83ea-e49a920065f8",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "ebe2b594-fc45-4bd6-887b-edcc38d14a8f",
+        "Next": {
+          "Id": "c747df2d-30b9-4a44-8348-167c269b3c93",
+          "Next": null
+        }
+      }
+    },
+    "ebe2b594-fc45-4bd6-887b-edcc38d14a8f": {
+      "id": "ebe2b594-fc45-4bd6-887b-edcc38d14a8f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How well does the AI system capture the real-world?"
+        }
+      }
+    },
+    "c747df2d-30b9-4a44-8348-167c269b3c93": {
+      "id": "c747df2d-30b9-4a44-8348-167c269b3c93",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "c2dc876a-118e-4c8b-8e57-9743ad340221",
+        "Next": {
+          "Id": "a455bf5e-c76d-4c19-85f3-c80753aa4da8",
+          "Next": null
+        }
+      }
+    },
+    "c2dc876a-118e-4c8b-8e57-9743ad340221": {
+      "id": "c2dc876a-118e-4c8b-8e57-9743ad340221",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2ae398a8-0ad2-4673-bb1d-2fcfb8f29fe9",
+        "Next": {
+          "Id": "96a6c82b-1761-44bb-84e8-c1f878b9e380",
+          "Next": null
+        }
+      }
+    },
+    "a455bf5e-c76d-4c19-85f3-c80753aa4da8": {
+      "id": "a455bf5e-c76d-4c19-85f3-c80753aa4da8",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/HSIC",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "grid_size": {
+          "key": "grid_size",
+          "value": 8,
+          "default": 8,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Divides the image in a grid of (grid_size, grid_size) to estimate an indice per cell. Defaults to 8.",
+          "fixed": false
+        },
+        "nb_design": {
+          "key": "nb_design",
+          "value": 500,
+          "default": 500,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of design for the sampler. Defaults to 500.",
+          "fixed": false
+        }
+      }
+    },
+    "2ae398a8-0ad2-4673-bb1d-2fcfb8f29fe9": {
+      "id": "2ae398a8-0ad2-4673-bb1d-2fcfb8f29fe9",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/NLPClassifier",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "output_format": {
+          "key": "output_format",
+          "value": "html",
+          "default": "html",
+          "range": [
+            "html",
+            "json",
+            "png"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String defining the output format of the explanation. Can be set to either 'html' (default value), 'json', or 'png' (for a wordcloud representation).",
+          "fixed": false
+        }
+      }
+    },
+    "96a6c82b-1761-44bb-84e8-c1f878b9e380": {
+      "id": "96a6c82b-1761-44bb-84e8-c1f878b9e380",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

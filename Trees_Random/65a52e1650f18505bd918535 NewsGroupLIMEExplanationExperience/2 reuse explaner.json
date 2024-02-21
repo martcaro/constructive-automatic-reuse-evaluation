@@ -1,0 +1,224 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "95190cff-a249-4958-be41-206a00a83082",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "ecce1f72-90df-4929-9739-c5066b5dbb44",
+  "properties": {},
+  "idModel": "65a52e1650f18505bd918535",
+  "custom_nodes": [],
+  "nodes": {
+    "ecce1f72-90df-4929-9739-c5066b5dbb44": {
+      "id": "ecce1f72-90df-4929-9739-c5066b5dbb44",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "45198bcb-56da-4406-bb1c-b215352070d4",
+        "Next": {
+          "Id": "b9b030a4-c656-407f-8048-4b5553c6644a",
+          "Next": null
+        }
+      }
+    },
+    "45198bcb-56da-4406-bb1c-b215352070d4": {
+      "id": "45198bcb-56da-4406-bb1c-b215352070d4",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How well does the AI system capture the real-world?"
+        }
+      }
+    },
+    "b9b030a4-c656-407f-8048-4b5553c6644a": {
+      "id": "b9b030a4-c656-407f-8048-4b5553c6644a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "1453d9bd-af25-43f8-9dc3-646f74eb9ac2",
+        "Next": {
+          "Id": "70b46e1d-fd18-4da9-b091-143fcdd0077b",
+          "Next": null
+        }
+      }
+    },
+    "1453d9bd-af25-43f8-9dc3-646f74eb9ac2": {
+      "id": "1453d9bd-af25-43f8-9dc3-646f74eb9ac2",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "2404f33b-e60e-41b3-8f9f-9f57405d63a4",
+        "Next": {
+          "Id": "63c0a24c-718d-4b23-ab3c-fb12c5ba5b4b",
+          "Next": null
+        }
+      }
+    },
+    "70b46e1d-fd18-4da9-b091-143fcdd0077b": {
+      "id": "70b46e1d-fd18-4da9-b091-143fcdd0077b",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "2404f33b-e60e-41b3-8f9f-9f57405d63a4": {
+      "id": "2404f33b-e60e-41b3-8f9f-9f57405d63a4",
+      "Concept": "Explanation Method",
+      "Instance": "/Misc/AIModelPerformance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "selected_metrics": {
+          "key": "selected_metrics",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "63c0a24c-718d-4b23-ab3c-fb12c5ba5b4b": {
+      "id": "63c0a24c-718d-4b23-ab3c-fb12c5ba5b4b",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings representing the names of the classes to be explained. Overrides 'top_classes' if provided.",
+          "type": "text"
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. ",
+          "type": "number"
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "type": "number"
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": null,
+          "default": null,
+          "range": [
+            100,
+            4096
+          ],
+          "required": "false",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

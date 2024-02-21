@@ -1,0 +1,218 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "1c929cb3-e1c3-4a0f-841c-eb013aed52f5",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "5c502a27-9124-4bb9-8693-922c68cab3ee",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "5c502a27-9124-4bb9-8693-922c68cab3ee": {
+      "id": "5c502a27-9124-4bb9-8693-922c68cab3ee",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "6d934424-0b76-4ac5-910c-03be05f18706",
+        "Next": {
+          "Id": "004d3072-4fb7-43dd-84b7-1e389815aa61",
+          "Next": null
+        }
+      }
+    },
+    "6d934424-0b76-4ac5-910c-03be05f18706": {
+      "id": "6d934424-0b76-4ac5-910c-03be05f18706",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to change the instance to get a different outcome?"
+        }
+      }
+    },
+    "004d3072-4fb7-43dd-84b7-1e389815aa61": {
+      "id": "004d3072-4fb7-43dd-84b7-1e389815aa61",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0efa4e0f-901b-4bc5-8e99-497d32ad0004",
+        "Next": {
+          "Id": "39f1ab20-281d-495e-8a34-29fbc5acff2c",
+          "Next": null
+        }
+      }
+    },
+    "0efa4e0f-901b-4bc5-8e99-497d32ad0004": {
+      "id": "0efa4e0f-901b-4bc5-8e99-497d32ad0004",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "4d8ebb1d-8ccf-4179-8888-106ae21da81e",
+        "Next": {
+          "Id": "edaf3c64-9c62-428f-8c6e-38bb573bc884",
+          "Next": null
+        }
+      }
+    },
+    "39f1ab20-281d-495e-8a34-29fbc5acff2c": {
+      "id": "39f1ab20-281d-495e-8a34-29fbc5acff2c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SquareGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    },
+    "4d8ebb1d-8ccf-4179-8888-106ae21da81e": {
+      "id": "4d8ebb1d-8ccf-4179-8888-106ae21da81e",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "edaf3c64-9c62-428f-8c6e-38bb573bc884": {
+      "id": "edaf3c64-9c62-428f-8c6e-38bb573bc884",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PrecisionGraph",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

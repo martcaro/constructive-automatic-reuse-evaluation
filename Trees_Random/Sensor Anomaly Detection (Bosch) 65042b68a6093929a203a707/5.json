@@ -1,0 +1,344 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "8cd8bb9f-e4be-4d8d-8062-576daf95087b",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "a1c1c44c-c5af-4dc8-8f5e-2a33ad8f536f",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "a1c1c44c-c5af-4dc8-8f5e-2a33ad8f536f": {
+      "id": "a1c1c44c-c5af-4dc8-8f5e-2a33ad8f536f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "6dc1495a-b45b-43d5-8222-0bd341eb77cb",
+        "Next": {
+          "Id": "65178921-ee70-4c82-827f-559729383dac",
+          "Next": {
+            "Id": "d65ff15b-4f00-4310-a5a9-16c9db4e52b8",
+            "Next": {
+              "Id": "5834c111-945b-489e-82d0-7194c80f4337",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "6dc1495a-b45b-43d5-8222-0bd341eb77cb": {
+      "id": "6dc1495a-b45b-43d5-8222-0bd341eb77cb",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "65178921-ee70-4c82-827f-559729383dac": {
+      "id": "65178921-ee70-4c82-827f-559729383dac",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -192,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "49feb894-7954-4894-9bd1-725fda17b567",
+        "Next": {
+          "Id": "d3d3f1c6-558c-44b1-a279-9d8c2567046c",
+          "Next": null
+        }
+      }
+    },
+    "d65ff15b-4f00-4310-a5a9-16c9db4e52b8": {
+      "id": "d65ff15b-4f00-4310-a5a9-16c9db4e52b8",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "5834c111-945b-489e-82d0-7194c80f4337": {
+      "id": "5834c111-945b-489e-82d0-7194c80f4337",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 648,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "32af8176-8486-44f4-970b-fd17f7d7f02a",
+        "Next": {
+          "Id": "a5fc57d4-895a-4cf5-af03-feeb86be1244",
+          "Next": null
+        }
+      }
+    },
+    "49feb894-7954-4894-9bd1-725fda17b567": {
+      "id": "49feb894-7954-4894-9bd1-725fda17b567",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "d32d6f7b-5b57-4d25-809e-a3e6967a5f42",
+        "Next": {
+          "Id": "03f4d18d-35b2-4f5d-8a2b-86df60db946f",
+          "Next": null
+        }
+      }
+    },
+    "d3d3f1c6-558c-44b1-a279-9d8c2567046c": {
+      "id": "d3d3f1c6-558c-44b1-a279-9d8c2567046c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 384
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        }
+      }
+    },
+    "32af8176-8486-44f4-970b-fd17f7d7f02a": {
+      "id": "32af8176-8486-44f4-970b-fd17f7d7f02a",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 492,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "fb2ea6fe-bafe-4642-a365-b1782478bfe3",
+        "Next": {
+          "Id": "83e95633-0651-4b4a-a41c-f48e478628c6",
+          "Next": null
+        }
+      }
+    },
+    "a5fc57d4-895a-4cf5-af03-feeb86be1244": {
+      "id": "a5fc57d4-895a-4cf5-af03-feeb86be1244",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 384
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "d32d6f7b-5b57-4d25-809e-a3e6967a5f42": {
+      "id": "d32d6f7b-5b57-4d25-809e-a3e6967a5f42",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "03f4d18d-35b2-4f5d-8a2b-86df60db946f": {
+      "id": "03f4d18d-35b2-4f5d-8a2b-86df60db946f",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DeepSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated. The supported plots are 'waterfall','decision' and 'bar'. Defaults to 'waterfall'.",
+          "fixed": false
+        }
+      }
+    },
+    "fb2ea6fe-bafe-4642-a365-b1782478bfe3": {
+      "id": "fb2ea6fe-bafe-4642-a365-b1782478bfe3",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "83e95633-0651-4b4a-a41c-f48e478628c6": {
+      "id": "83e95633-0651-4b4a-a41c-f48e478628c6",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 516
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

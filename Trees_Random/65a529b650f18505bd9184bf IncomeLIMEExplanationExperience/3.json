@@ -1,0 +1,346 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "d4d7b4d3-ff7f-4ddd-8084-f6e1c4b1564e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "c04f626a-9261-416f-bb81-d03ef0d2b8b3",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "c04f626a-9261-416f-bb81-d03ef0d2b8b3": {
+      "id": "c04f626a-9261-416f-bb81-d03ef0d2b8b3",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "3eb415bb-26eb-40fe-99e5-66dc21ee1c8a",
+        "Next": {
+          "Id": "64aa3280-8def-4d2f-850a-05ea86fb03d4",
+          "Next": {
+            "Id": "67a278f9-03f7-405d-8d25-54fb12cc0d96",
+            "Next": {
+              "Id": "ac1b95f1-bdb9-4f85-9195-70215509d648",
+              "Next": {
+                "Id": "ad9dd005-60b5-484f-9c48-8c9d76f27866",
+                "Next": {
+                  "Id": "321bea32-b60f-4d0f-8af0-ba1a3ed42bd4",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "3eb415bb-26eb-40fe-99e5-66dc21ee1c8a": {
+      "id": "3eb415bb-26eb-40fe-99e5-66dc21ee1c8a",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -708,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to improve the AI system performance?"
+        }
+      }
+    },
+    "64aa3280-8def-4d2f-850a-05ea86fb03d4": {
+      "id": "64aa3280-8def-4d2f-850a-05ea86fb03d4",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPLocal",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -504,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "fixed": false
+        },
+        "plot_type": {
+          "key": "plot_type",
+          "value": "waterfall",
+          "default": "waterfall",
+          "range": [
+            "waterfall",
+            "decision",
+            "force",
+            "bar"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "String with the name of the plot to be generated.",
+          "fixed": false
+        }
+      }
+    },
+    "67a278f9-03f7-405d-8d25-54fb12cc0d96": {
+      "id": "67a278f9-03f7-405d-8d25-54fb12cc0d96",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -288,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What is the overall logic of the AI system?"
+        }
+      }
+    },
+    "ac1b95f1-bdb9-4f85-9195-70215509d648": {
+      "id": "ac1b95f1-bdb9-4f85-9195-70215509d648",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "0c494f98-ca17-48df-9e2b-bd5c11ba0f20",
+        "Next": {
+          "Id": "27efcb33-6972-4112-8241-fafadc65614c",
+          "Next": null
+        }
+      }
+    },
+    "ad9dd005-60b5-484f-9c48-8c9d76f27866": {
+      "id": "ad9dd005-60b5-484f-9c48-8c9d76f27866",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 540,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What does term X mean?"
+        }
+      }
+    },
+    "321bea32-b60f-4d0f-8af0-ba1a3ed42bd4": {
+      "id": "321bea32-b60f-4d0f-8af0-ba1a3ed42bd4",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/DeconvNet",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 744,
+        "y": 252
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "0c494f98-ca17-48df-9e2b-bd5c11ba0f20": {
+      "id": "0c494f98-ca17-48df-9e2b-bd5c11ba0f20",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 24,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "ee29dcb8-a292-48ec-87d7-038d420c5edd",
+        "Next": {
+          "Id": "ce9449f6-65e5-4a6c-bdc0-2df5bac44a06",
+          "Next": null
+        }
+      }
+    },
+    "27efcb33-6972-4112-8241-fafadc65614c": {
+      "id": "27efcb33-6972-4112-8241-fafadc65614c",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/Occlusion",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 336,
+        "y": 384
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "patch_size": {
+          "key": "patch_size",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "size of the occlusion patch (in pixels), it should be big enough to cover informative elements. Defaults to square root of the smallest dimension of the image.",
+          "fixed": false
+        },
+        "patch_stride": {
+          "key": "patch_stride",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Stride between each patch. Small values are unncessary and lead to higher computation time. Defaults to a third of the patch_size.",
+          "fixed": false
+        },
+        "occlusion_value": {
+          "key": "occlusion_value",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Value given to the perturbated pixels. It should represent non-information. The mean value of the image or zero are often good values.",
+          "fixed": false
+        }
+      }
+    },
+    "ee29dcb8-a292-48ec-87d7-038d420c5edd": {
+      "id": "ee29dcb8-a292-48ec-87d7-038d420c5edd",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SummaryMetrics",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -84,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "ce9449f6-65e5-4a6c-bdc0-2df5bac44a06": {
+      "id": "ce9449f6-65e5-4a6c-bdc0-2df5bac44a06",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/VarGrad",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 120,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        },
+        "nb_samples": {
+          "key": "nb_samples",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of noisy samples generated for the smoothing procedure. Defaults to 50.",
+          "fixed": false
+        },
+        "noise": {
+          "key": "noise",
+          "value": 0.2,
+          "default": 0.2,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Scalar, noise used as standard deviation of a normal law centered on zero. Defaults to 0.2.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 713.5,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

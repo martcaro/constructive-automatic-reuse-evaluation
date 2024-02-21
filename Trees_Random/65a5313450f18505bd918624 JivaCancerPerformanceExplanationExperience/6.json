@@ -1,0 +1,254 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "e4052825-52e6-427d-ac12-fd6464f0fb33",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "3037bfeb-9e55-417d-8fb5-c52b5777410b",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "3037bfeb-9e55-417d-8fb5-c52b5777410b": {
+      "id": "3037bfeb-9e55-417d-8fb5-c52b5777410b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "36d7421f-e55e-4440-8600-188e52a50c7f",
+        "Next": {
+          "Id": "814a367a-c907-4401-ad4c-d8d80ee063c7",
+          "Next": {
+            "Id": "a95bad12-3809-4a96-b8f9-521762410f37",
+            "Next": {
+              "Id": "5a3f6690-0d69-4842-bb19-0a01d57d13d1",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "36d7421f-e55e-4440-8600-188e52a50c7f": {
+      "id": "36d7421f-e55e-4440-8600-188e52a50c7f",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the results when others use the AI System?"
+        }
+      }
+    },
+    "814a367a-c907-4401-ad4c-d8d80ee063c7": {
+      "id": "814a367a-c907-4401-ad4c-d8d80ee063c7",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "94e2c3e2-f3b4-4365-97bd-543d6786dd77",
+        "Next": {
+          "Id": "7c88750f-6386-493f-85b5-8ca03c6c8b2a",
+          "Next": null
+        }
+      }
+    },
+    "a95bad12-3809-4a96-b8f9-521762410f37": {
+      "id": "a95bad12-3809-4a96-b8f9-521762410f37",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "5a3f6690-0d69-4842-bb19-0a01d57d13d1": {
+      "id": "5a3f6690-0d69-4842-bb19-0a01d57d13d1",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 444,
+        "y": 252
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "94e2c3e2-f3b4-4365-97bd-543d6786dd77": {
+      "id": "94e2c3e2-f3b4-4365-97bd-543d6786dd77",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -276,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "14ecea11-2c7d-4463-9abe-0345220ad5a2",
+        "Next": {
+          "Id": "e653a75b-1a3b-42f1-84a7-7e2d9c73ba21",
+          "Next": null
+        }
+      }
+    },
+    "7c88750f-6386-493f-85b5-8ca03c6c8b2a": {
+      "id": "7c88750f-6386-493f-85b5-8ca03c6c8b2a",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NativeGuides",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 384
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "timeout": {
+          "key": "timeout",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Timeout in seconds before stopping the counterfactual search. Defaults to 10 seconds.",
+          "fixed": false
+        }
+      }
+    },
+    "14ecea11-2c7d-4463-9abe-0345220ad5a2": {
+      "id": "14ecea11-2c7d-4463-9abe-0345220ad5a2",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/LEFTIST",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 516
+      }
+    },
+    "e653a75b-1a3b-42f1-84a7-7e2d9c73ba21": {
+      "id": "e653a75b-1a3b-42f1-84a7-7e2d9c73ba21",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/SSIMNearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -180,
+        "y": 516
+      },
+      "params": {
+        "no_neighbours": {
+          "key": "no_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be found. Defaults to 3.",
+          "fixed": false
+        },
+        "samples": {
+          "key": "samples",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use from the background data. The whole dataset is used by default.",
+          "fixed": false
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

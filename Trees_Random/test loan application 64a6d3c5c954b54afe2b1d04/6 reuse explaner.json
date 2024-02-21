@@ -1,0 +1,301 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "60e4a867-6c4e-476e-9332-7e817badf7bd",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "2c674c6c-e116-4ca4-a533-87f2320182ec",
+  "properties": {},
+  "idModel": "64a6d3c5c954b54afe2b1d04",
+  "custom_nodes": [],
+  "nodes": {
+    "2c674c6c-e116-4ca4-a533-87f2320182ec": {
+      "id": "2c674c6c-e116-4ca4-a533-87f2320182ec",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "7cc49758-1453-4042-8388-c803e9e91a23",
+        "Next": {
+          "Id": "1408032e-fe10-4b6c-8990-ea2b002b5753",
+          "Next": {
+            "Id": "0fdd7bb3-2579-4a70-8808-17022d99b3ef",
+            "Next": {
+              "Id": "88f37eeb-6e7b-499f-8df7-28f04b616264",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "7cc49758-1453-4042-8388-c803e9e91a23": {
+      "id": "7cc49758-1453-4042-8388-c803e9e91a23",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the possible outcomes of the AI system?"
+        }
+      }
+    },
+    "1408032e-fe10-4b6c-8990-ea2b002b5753": {
+      "id": "1408032e-fe10-4b6c-8990-ea2b002b5753",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ROC-AUC",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "0fdd7bb3-2579-4a70-8808-17022d99b3ef": {
+      "id": "0fdd7bb3-2579-4a70-8808-17022d99b3ef",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What are the important features for the AI system?"
+        }
+      }
+    },
+    "88f37eeb-6e7b-499f-8df7-28f04b616264": {
+      "id": "88f37eeb-6e7b-499f-8df7-28f04b616264",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "4b1e220a-69ee-46f1-897d-089ea5c3c279",
+        "Next": {
+          "Id": "ad75ba17-6c96-42f9-836c-f31133b9c4bc",
+          "Next": null
+        }
+      }
+    },
+    "4b1e220a-69ee-46f1-897d-089ea5c3c279": {
+      "id": "4b1e220a-69ee-46f1-897d-089ea5c3c279",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a34c585a-4d8d-4a43-b976-bfc576f8ae5a",
+        "Next": {
+          "Id": "1560f730-a114-4a36-87d4-b58fd0783a58",
+          "Next": null
+        }
+      }
+    },
+    "ad75ba17-6c96-42f9-836c-f31133b9c4bc": {
+      "id": "ad75ba17-6c96-42f9-836c-f31133b9c4bc",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "default": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "range": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "checkbox"
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "",
+          "type": "text"
+        }
+      }
+    },
+    "a34c585a-4d8d-4a43-b976-bfc576f8ae5a": {
+      "id": "a34c585a-4d8d-4a43-b976-bfc576f8ae5a",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": "Highest SHAP value",
+          "default": "Highest SHAP value",
+          "range": [
+            "Highest SHAP value",
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "required": "false",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "type": "select"
+        }
+      }
+    },
+    "1560f730-a114-4a36-87d4-b58fd0783a58": {
+      "id": "1560f730-a114-4a36-87d4-b58fd0783a58",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/KernelSHAPGlobal",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "Name of the target class to be explained. Ignore for regression models. Defaults to the first class target class defined in the configuration file.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 693.4000000357628,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}

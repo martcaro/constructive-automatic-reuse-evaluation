@@ -1,0 +1,627 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "713aec14-81cc-472f-ab0c-54cacb33c1bf",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "b2706e83-7cff-43ff-bad8-085395f754ff",
+  "properties": {},
+  "custom_nodes": [],
+  "nodes": {
+    "b2706e83-7cff-43ff-bad8-085395f754ff": {
+      "id": "b2706e83-7cff-43ff-bad8-085395f754ff",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "22839b44-0aab-460a-80f3-8da93e015095",
+        "Next": {
+          "Id": "7544320c-faad-41c6-8c84-9a26cbabda2d",
+          "Next": {
+            "Id": "1e2ac01d-fe9e-4b9c-bf73-807e0c44a127",
+            "Next": {
+              "Id": "4a116ad2-377a-4b02-8291-0b0dcdbd42b1",
+              "Next": {
+                "Id": "2622265d-d462-47b2-a8d9-209e11452362",
+                "Next": {
+                  "Id": "5174d19d-78c1-462c-a7e2-3e8a79162814",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "22839b44-0aab-460a-80f3-8da93e015095": {
+      "id": "22839b44-0aab-460a-80f3-8da93e015095",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -1068,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How reliable is the AI system?"
+        }
+      }
+    },
+    "7544320c-faad-41c6-8c84-9a26cbabda2d": {
+      "id": "7544320c-faad-41c6-8c84-9a26cbabda2d",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -600,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "574df4bf-c0b5-4e0c-a059-c7c935cd5e82",
+        "Next": {
+          "Id": "1d7d9b68-da9a-439e-a195-7cdf1f503e3d",
+          "Next": null
+        }
+      }
+    },
+    "1e2ac01d-fe9e-4b9c-bf73-807e0c44a127": {
+      "id": "1e2ac01d-fe9e-4b9c-bf73-807e0c44a127",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -240,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How accurate is the AI system?"
+        }
+      }
+    },
+    "4a116ad2-377a-4b02-8291-0b0dcdbd42b1": {
+      "id": "4a116ad2-377a-4b02-8291-0b0dcdbd42b1",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 228,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "a68f6e54-9903-4187-9519-c8584de80d6f",
+        "Next": {
+          "Id": "ff82541b-c367-4a38-b013-8eb0f79e4468",
+          "Next": null
+        }
+      }
+    },
+    "2622265d-d462-47b2-a8d9-209e11452362": {
+      "id": "2622265d-d462-47b2-a8d9-209e11452362",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 588,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How confident is the AI system with the outcome?"
+        }
+      }
+    },
+    "5174d19d-78c1-462c-a7e2-3e8a79162814": {
+      "id": "5174d19d-78c1-462c-a7e2-3e8a79162814",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1056,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "9b14d4a3-30ad-4ed4-8677-c1251da791b9",
+        "Next": {
+          "Id": "45ba34cd-2fab-4401-9053-eddb0e2c44a0",
+          "Next": null
+        }
+      }
+    },
+    "574df4bf-c0b5-4e0c-a059-c7c935cd5e82": {
+      "id": "574df4bf-c0b5-4e0c-a059-c7c935cd5e82",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -756,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "62ee1e82-b613-4e22-bd85-dfd5abb6f170",
+        "Next": {
+          "Id": "b40c36f5-7ad4-44a9-8d67-d42994b79808",
+          "Next": null
+        }
+      }
+    },
+    "1d7d9b68-da9a-439e-a195-7cdf1f503e3d": {
+      "id": "1d7d9b68-da9a-439e-a195-7cdf1f503e3d",
+      "Concept": "Explanation Method",
+      "Instance": "/Text/LIME",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -444,
+        "y": 384
+      },
+      "params": {
+        "output_classes": {
+          "key": "output_classes",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of integers representing the classes to be explained.",
+          "fixed": false
+        },
+        "top_classes": {
+          "key": "top_classes",
+          "value": 1,
+          "default": 1,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+          "fixed": false
+        },
+        "num_features": {
+          "key": "num_features",
+          "value": 10,
+          "default": 10,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Integer representing the maximum number of features to be included in the explanation.",
+          "fixed": false
+        },
+        "png_width": {
+          "key": "png_width",
+          "value": 1000,
+          "default": 1000,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Width (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        },
+        "png_height": {
+          "key": "png_height",
+          "value": 400,
+          "default": 400,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Height (in pixels) of the png image containing the explanation.",
+          "fixed": false
+        }
+      }
+    },
+    "a68f6e54-9903-4187-9519-c8584de80d6f": {
+      "id": "a68f6e54-9903-4187-9519-c8584de80d6f",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 72,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "986a6bb4-121f-453b-8cda-c9a8f084bf9c",
+        "Next": {
+          "Id": "05538545-accd-4feb-8b54-1ebeea3b1655",
+          "Next": null
+        }
+      }
+    },
+    "ff82541b-c367-4a38-b013-8eb0f79e4468": {
+      "id": "ff82541b-c367-4a38-b013-8eb0f79e4468",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DicePrivate",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 384,
+        "y": 384
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the desired counterfactual class. Defaults to class 0 for multiclass problems and to opposite class for binary class problems. You may also use the string 'opposite' for binary classification",
+          "fixed": false
+        },
+        "features_to_vary": {
+          "key": "features_to_vary",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "List of strings representing the feature names to vary. Defaults to all features.",
+          "fixed": false
+        },
+        "num_cfs": {
+          "key": "num_cfs",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of counterfactuals to be generated for each instance.",
+          "fixed": false
+        },
+        "method": {
+          "key": "method",
+          "value": "random",
+          "default": "random",
+          "range": [
+            "random",
+            "genetic"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "The method used for counterfactual generation. The supported methods for private data are: 'random' (random sampling) and 'genetic' (genetic algorithms). Defaults to 'random'.",
+          "fixed": false
+        }
+      }
+    },
+    "9b14d4a3-30ad-4ed4-8677-c1251da791b9": {
+      "id": "9b14d4a3-30ad-4ed4-8677-c1251da791b9",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 900,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "a40fc8b6-d426-41a6-a37e-db9528c617cd",
+        "Next": {
+          "Id": "479c0a63-7142-4727-9cd3-d16d3a8fec23",
+          "Next": null
+        }
+      }
+    },
+    "45ba34cd-2fab-4401-9053-eddb0e2c44a0": {
+      "id": "45ba34cd-2fab-4401-9053-eddb0e2c44a0",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1212,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        }
+      }
+    },
+    "62ee1e82-b613-4e22-bd85-dfd5abb6f170": {
+      "id": "62ee1e82-b613-4e22-bd85-dfd5abb6f170",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPSummary",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -864,
+        "y": 516
+      }
+    },
+    "b40c36f5-7ad4-44a9-8d67-d42994b79808": {
+      "id": "b40c36f5-7ad4-44a9-8d67-d42994b79808",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PertCF",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -660,
+        "y": 516
+      },
+      "params": {
+        "encode_cat": {
+          "key": "encode_cat",
+          "value": "OrdinalEncoder",
+          "default": "OrdinalEncoder",
+          "range": [
+            "auto",
+            "manual",
+            "BackwardDifferenceEncoder",
+            "BaseNEncoder",
+            "BinaryEncoder",
+            "CatBoostEncoder",
+            "CountEncoder",
+            "GLMMEncoder",
+            "GrayEncoder",
+            "HelmertEncoder",
+            "JamesSteinEncoder",
+            "LeaveOneOutEncoder",
+            "MEstimateEncoder",
+            "OneHotEncoder",
+            "OrdinalEncoder",
+            "PolynomialEncoder",
+            "QuantileEncoder",
+            "RankHotEncoder",
+            "SumEncoder",
+            "TargetEncoder",
+            "WOEEncoder"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Encoding technique for categorical features. Prefer the same technique that is used for the model for reliable results.",
+          "fixed": false
+        },
+        "global_sim": {
+          "key": "global_sim",
+          "value": "euclidean",
+          "default": "euclidean",
+          "range": [
+            "ManualEuclidean",
+            "ShapEuclidean",
+            "braycurtis",
+            "canberra",
+            "chebyshev",
+            "jaccard",
+            "hamming",
+            "cosine",
+            "sqeuclidean",
+            "cityblock",
+            "minkowski",
+            "euclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Global similarity technique.",
+          "fixed": false
+        },
+        "local_sim": {
+          "key": "local_sim",
+          "value": "auto",
+          "default": "auto",
+          "range": [
+            "manual",
+            "auto"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Local similarity technique.",
+          "fixed": false
+        },
+        "shap_sample": {
+          "key": "shap_sample",
+          "value": 50,
+          "default": 50,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of samples to use for calculating the SHAP values faster.",
+          "fixed": false
+        },
+        "candidate_threshold": {
+          "key": "candidate_threshold",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Step size threshold between CF candidates.",
+          "fixed": false
+        },
+        "candidate_max_iter": {
+          "key": "candidate_max_iter",
+          "value": 20,
+          "default": 20,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Maximum number of iterations to generate CF.",
+          "fixed": false
+        }
+      }
+    },
+    "986a6bb4-121f-453b-8cda-c9a8f084bf9c": {
+      "id": "986a6bb4-121f-453b-8cda-c9a8f084bf9c",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ConfusionMatrix",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -36,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "fixed": false
+        }
+      }
+    },
+    "05538545-accd-4feb-8b54-1ebeea3b1655": {
+      "id": "05538545-accd-4feb-8b54-1ebeea3b1655",
+      "Concept": "Explanation Method",
+      "Instance": "/Timeseries/NearestNeighbours",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 180,
+        "y": 516
+      },
+      "params": {
+        "distance": {
+          "key": "distance",
+          "value": "dtw",
+          "default": "dtw",
+          "range": [
+            "dtw",
+            "softdtw",
+            "ctw",
+            "euclidean",
+            "sqeuclidean"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Distance metric to be used. Defaults to 'dtw'.",
+          "fixed": false
+        },
+        "n_neighbours": {
+          "key": "n_neighbours",
+          "value": 3,
+          "default": 3,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "number",
+          "description": "Number of neighbours to be shown. Default is 3.",
+          "fixed": false
+        }
+      }
+    },
+    "a40fc8b6-d426-41a6-a37e-db9528c617cd": {
+      "id": "a40fc8b6-d426-41a6-a37e-db9528c617cd",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradCam++",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 804,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "fixed": false
+        }
+      }
+    },
+    "479c0a63-7142-4727-9cd3-d16d3a8fec23": {
+      "id": "479c0a63-7142-4727-9cd3-d16d3a8fec23",
+      "Concept": "Explanation Method",
+      "Instance": "/Images/GradientInput",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 1008,
+        "y": 516
+      },
+      "params": {
+        "target_class": {
+          "key": "target_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 960,
+    "camera_y": 536.5,
+    "camera_z": 1,
+    "x": 0,
+    "y": 0
+  }
+}

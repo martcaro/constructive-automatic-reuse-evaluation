@@ -1,0 +1,264 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "ebb67d98-8190-40b3-8f38-976129763a2e",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "e66286a0-8693-465b-95a3-9eacdea6924c",
+  "properties": {},
+  "idModel": "65a529b650f18505bd9184bf",
+  "custom_nodes": [],
+  "nodes": {
+    "e66286a0-8693-465b-95a3-9eacdea6924c": {
+      "id": "e66286a0-8693-465b-95a3-9eacdea6924c",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "667f5f7e-39c4-4382-803e-381cb9b9f830",
+        "Next": {
+          "Id": "2c3b3ac0-3223-44f6-84f0-874ce95e71cf",
+          "Next": {
+            "Id": "b870afdd-2aa7-4e26-8d14-595d44c9b50c",
+            "Next": {
+              "Id": "35700c2e-c4f2-4d09-bac5-eeb36c841d27",
+              "Next": null
+            }
+          }
+        }
+      }
+    },
+    "667f5f7e-39c4-4382-803e-381cb9b9f830": {
+      "id": "667f5f7e-39c4-4382-803e-381cb9b9f830",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -384,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What would be the outcome if features X is changed to value V?"
+        }
+      }
+    },
+    "2c3b3ac0-3223-44f6-84f0-874ce95e71cf": {
+      "id": "2c3b3ac0-3223-44f6-84f0-874ce95e71cf",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/Importance",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -180,
+        "y": 252
+      },
+      "params": {
+        "variables": {
+          "key": "variables",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of strings with the names of the features for which the importance will be calculated. Defaults to all features.",
+          "type": "text"
+        }
+      }
+    },
+    "b870afdd-2aa7-4e26-8d14-595d44c9b50c": {
+      "id": "b870afdd-2aa7-4e26-8d14-595d44c9b50c",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 36,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "What other instances would get the same outcome?"
+        }
+      }
+    },
+    "35700c2e-c4f2-4d09-bac5-eeb36c841d27": {
+      "id": "35700c2e-c4f2-4d09-bac5-eeb36c841d27",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 504,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "03ea3044-09c4-4c90-8c8c-ca62c96fbec4",
+        "Next": {
+          "Id": "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d",
+          "Next": null
+        }
+      }
+    },
+    "03ea3044-09c4-4c90-8c8c-ca62c96fbec4": {
+      "id": "03ea3044-09c4-4c90-8c8c-ca62c96fbec4",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 348,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "78cb0972-3cfa-4d66-90ef-1f262787a194",
+        "Next": {
+          "Id": "35f85ed1-13be-4a3d-80d5-3bf76838952d",
+          "Next": null
+        }
+      }
+    },
+    "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d": {
+      "id": "89f7b2a4-3cdb-4af6-bbc7-e7aab9b75d7d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SHAPInteraction",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 660,
+        "y": 384
+      },
+      "params": {
+        "feature": {
+          "key": "feature",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Name of the feature which will be used to calculate the SHAP interaction values. Defaults to the feature with the highest average SHAP value.",
+          "fixed": false
+        }
+      }
+    },
+    "78cb0972-3cfa-4d66-90ef-1f262787a194": {
+      "id": "78cb0972-3cfa-4d66-90ef-1f262787a194",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/NICE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 240,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": "other",
+          "default": "other",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "String representing the name of the desired counterfactual class. Defaults to string 'other', which will look for any different class.",
+          "type": "text"
+        },
+        "optimization_criteria": {
+          "key": "optimization_criteria",
+          "value": "sparsity",
+          "default": "sparsity",
+          "range": [
+            "sparsity",
+            "proximity",
+            "plausibility"
+          ],
+          "required": "false",
+          "description": "The counterfactual criteria to optimize.",
+          "type": "select"
+        }
+      }
+    },
+    "35f85ed1-13be-4a3d-80d5-3bf76838952d": {
+      "id": "35f85ed1-13be-4a3d-80d5-3bf76838952d",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 444,
+        "y": 516
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 713.5,
+    "camera_y": 536.5,
+    "camera_z": 0.75,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "version": "0.1.0",
+  "scope": "tree",
+  "id": "a45a7800-87a7-4e1d-bffe-db7b3ec432b1",
+  "Instance": "Explanation Experience",
+  "description": "",
+  "root": "84ef9987-e30e-475f-9cb8-f0c1647057de",
+  "properties": {},
+  "idModel": "64a6d3c5c954b54afe2b1d04",
+  "custom_nodes": [],
+  "nodes": {
+    "84ef9987-e30e-475f-9cb8-f0c1647057de": {
+      "id": "84ef9987-e30e-475f-9cb8-f0c1647057de",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 0,
+        "y": 120
+      },
+      "firstChild": {
+        "Id": "501cf82f-cbec-4a1f-8c15-e142b91c66a2",
+        "Next": {
+          "Id": "744a7b39-a7e6-41bb-97d8-e1b4a20a1db6",
+          "Next": {
+            "Id": "f211c187-117b-45a6-936c-1d4a4842ec75",
+            "Next": {
+              "Id": "cb0d8aa9-01de-4196-8d11-941178e9d002",
+              "Next": {
+                "Id": "60ef92f4-5e79-4da7-8772-3aa268d0e0f8",
+                "Next": {
+                  "Id": "11ae90eb-529e-405c-923d-0e5f3cbae5c0",
+                  "Next": null
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "501cf82f-cbec-4a1f-8c15-e142b91c66a2": {
+      "id": "501cf82f-cbec-4a1f-8c15-e142b91c66a2",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -888,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "Why does the AI system have given outcome A not B?"
+        }
+      }
+    },
+    "744a7b39-a7e6-41bb-97d8-e1b4a20a1db6": {
+      "id": "744a7b39-a7e6-41bb-97d8-e1b4a20a1db6",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -420,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "dc0ed686-6dcd-425b-9ea7-3dc443b5ea6b",
+        "Next": {
+          "Id": "2edf1340-a98b-4d8e-8f81-7dfcc0d049f8",
+          "Next": null
+        }
+      }
+    },
+    "f211c187-117b-45a6-936c-1d4a4842ec75": {
+      "id": "f211c187-117b-45a6-936c-1d4a4842ec75",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -60,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How to get a different outcome?"
+        }
+      }
+    },
+    "cb0d8aa9-01de-4196-8d11-941178e9d002": {
+      "id": "cb0d8aa9-01de-4196-8d11-941178e9d002",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/SummaryMetrics",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 156,
+        "y": 252
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String with the name of the label that will be considered the positive class. Only for used for classifier models. Defaults to class at index 1 in configuration file.",
+          "fixed": false
+        }
+      }
+    },
+    "60ef92f4-5e79-4da7-8772-3aa268d0e0f8": {
+      "id": "60ef92f4-5e79-4da7-8772-3aa268d0e0f8",
+      "Concept": "User Question",
+      "Instance": "User Question",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 360,
+        "y": 252
+      },
+      "params": {
+        "Question": {
+          "key": "Question",
+          "value": "How can I change feature X to get the same outcome?"
+        }
+      }
+    },
+    "11ae90eb-529e-405c-923d-0e5f3cbae5c0": {
+      "id": "11ae90eb-529e-405c-923d-0e5f3cbae5c0",
+      "Concept": "Priority",
+      "Instance": "Priority",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 828,
+        "y": 252
+      },
+      "firstChild": {
+        "Id": "571e0358-3c52-4055-828d-f6da6f14d0b0",
+        "Next": {
+          "Id": "f3c1d6d8-925c-47c9-90c6-152895066870",
+          "Next": null
+        }
+      }
+    },
+    "dc0ed686-6dcd-425b-9ea7-3dc443b5ea6b": {
+      "id": "dc0ed686-6dcd-425b-9ea7-3dc443b5ea6b",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -576,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "f180e240-df6f-4f7d-8541-6ba5cfdce54e",
+        "Next": {
+          "Id": "b6a1985e-0ba7-4575-8d2d-1971a9b5a3af",
+          "Next": null
+        }
+      }
+    },
+    "2edf1340-a98b-4d8e-8f81-7dfcc0d049f8": {
+      "id": "2edf1340-a98b-4d8e-8f81-7dfcc0d049f8",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/IREX",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -264,
+        "y": 384
+      },
+      "params": {
+        "expected_answers": {
+          "key": "expected_answers",
+          "value": "[ ]",
+          "default": "[ ]",
+          "range": [
+            null,
+            null
+          ],
+          "required": true,
+          "description": "Array containing the expected answers (according to experts) to the questions of a questionnaire that supossedly contribute to the target class.",
+          "type": "text"
+        },
+        "threshold": {
+          "key": "threshold",
+          "value": 0.01,
+          "default": 0.01,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "A float between 0 and 1 for the threshold that will be used to determine anomalous variables. If a feature seems to be contradictory but its absolute ALE value is below this threshold, it will not be considered anomalous. Defaults to 0.01.",
+          "type": "number"
+        },
+        "classes_to_show": {
+          "key": "classes_to_show",
+          "value": [
+            "Rejected",
+            "Accepted"
+          ],
+          "default": [
+            "Rejected",
+            "Accepted"
+          ],
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "Array of string representing the names of the classes to be explained. Defaults to all classes.",
+          "type": "checkbox"
+        }
+      }
+    },
+    "571e0358-3c52-4055-828d-f6da6f14d0b0": {
+      "id": "571e0358-3c52-4055-828d-f6da6f14d0b0",
+      "Concept": "Sequence",
+      "Instance": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": 672,
+        "y": 384
+      },
+      "firstChild": {
+        "Id": "53077bf0-c786-4337-86f9-d22112575414",
+        "Next": {
+          "Id": "64a0f62c-3230-46c0-820f-f6d8df312675",
+          "Next": null
+        }
+      }
+    },
+    "f3c1d6d8-925c-47c9-90c6-152895066870": {
+      "id": "f3c1d6d8-925c-47c9-90c6-152895066870",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/PDP",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 984,
+        "y": 384
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "fixed": false
+        },
+        "output_description": {
+          "key": "output_description",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        },
+        "meta": {
+          "key": "meta",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "",
+          "fixed": false
+        }
+      }
+    },
+    "f180e240-df6f-4f7d-8541-6ba5cfdce54e": {
+      "id": "f180e240-df6f-4f7d-8541-6ba5cfdce54e",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/LiftCurve",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -684,
+        "y": 516
+      },
+      "params": {
+        "cutoff": {
+          "key": "cutoff",
+          "value": 0.5,
+          "default": 0.5,
+          "range": [
+            0,
+            1
+          ],
+          "required": "false",
+          "description": "Float value for the cutoff to consider when building the confusion matrix.",
+          "type": "number"
+        },
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    },
+    "b6a1985e-0ba7-4575-8d2d-1971a9b5a3af": {
+      "id": "b6a1985e-0ba7-4575-8d2d-1971a9b5a3af",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/ALE",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": -468,
+        "y": 516
+      },
+      "params": {
+        "features_to_show": {
+          "key": "features_to_show",
+          "value": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "default": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "range": [
+            "loan_amnt",
+            "total_pymnt",
+            "total_rec_int",
+            "term",
+            "int_rate",
+            "installment",
+            "home_ownership",
+            "annual_inc",
+            "verification_status",
+            "purpose"
+          ],
+          "required": "false",
+          "description": "Array of strings representing the name of the features to be explained. Defaults to all features.",
+          "type": "checkbox"
+        }
+      }
+    },
+    "53077bf0-c786-4337-86f9-d22112575414": {
+      "id": "53077bf0-c786-4337-86f9-d22112575414",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/DisCERN",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 564,
+        "y": 516
+      },
+      "params": {
+        "desired_class": {
+          "key": "desired_class",
+          "value": null,
+          "default": null,
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "String representing the name of the desired counterfactual class, or 'opposite' in the case of binary classification. Defaults to 'opposite'.",
+          "fixed": false
+        },
+        "feature_attribution_method": {
+          "key": "feature_attribution_method",
+          "value": "LIME",
+          "default": "LIME",
+          "range": [
+            "LIME",
+            "SHAP",
+            "IntG"
+          ],
+          "required": "false",
+          "type": "select",
+          "description": "Feature attribution method used for obtaining feature weights; currently supports LIME, SHAP and Integrated Gradients. Defaults to LIME.",
+          "fixed": false
+        },
+        "immutable_features": {
+          "key": "immutable_features",
+          "value": [],
+          "default": [],
+          "range": [
+            null,
+            null
+          ],
+          "required": "false",
+          "type": "text",
+          "description": "Array of feature names that are immutable. The counterfactual will not recommend to change these features. Default is an empty array",
+          "fixed": false
+        }
+      }
+    },
+    "64a0f62c-3230-46c0-820f-f6d8df312675": {
+      "id": "64a0f62c-3230-46c0-820f-f6d8df312675",
+      "Concept": "Explanation Method",
+      "Instance": "/Tabular/CumulativePrecision",
+      "description": "",
+      "properties": {
+        "Popularity": 1,
+        "Applicability": true
+      },
+      "display": {
+        "x": 780,
+        "y": 516
+      },
+      "params": {
+        "label": {
+          "key": "label",
+          "value": "Accepted",
+          "default": "Accepted",
+          "range": [
+            "Rejected",
+            "Accepted"
+          ],
+          "required": "false",
+          "description": "String with the name of the label that will be considered the positive class. Defaults to class at index 1 in configuration file.",
+          "type": "select"
+        }
+      }
+    }
+  },
+  "display": {
+    "camera_x": 652.8000000715256,
+    "camera_y": 536.5,
+    "camera_z": 0.5,
+    "x": 0,
+    "y": 0
+  }
+}
