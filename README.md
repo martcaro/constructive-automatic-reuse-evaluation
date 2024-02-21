@@ -1,4 +1,4 @@
-# Evaluation Metric Library to evaluate Explanation Strategies & their use to check Constructive Reuse applied on explanation strategies performance
+# Evaluation Metric Library to evaluate Explanation Strategies & their use to evaluate Constructive Reuse applied on explanation strategies
 
 This repository contains the following:
 
