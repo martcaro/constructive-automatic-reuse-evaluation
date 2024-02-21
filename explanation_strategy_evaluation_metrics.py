@@ -406,7 +406,7 @@ def serendipity(explanation_strategy):
     if len(serendipity_explainers) <= (len(properties) - properties_needed_serendipity) and len(serendipity_explainers) != 0:
         return (True, "The explainers that are a surprise are " + str(serendipity_explainers))
     else:
-        return (False, "No serendipia")
+        return (False, "No serendipity")
 
 
 def granularity(explanation_strategy):
