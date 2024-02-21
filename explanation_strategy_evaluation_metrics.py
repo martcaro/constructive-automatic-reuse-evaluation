@@ -4,10 +4,6 @@
 from statistics import mean
 from collections import Counter
 
-
-# In[2]:
-
-
 class Explainer:
     
     def __init__(self, name, explainer_properties):
