@@ -26,7 +26,7 @@ class Explainer:
         properties_print = ""
         
         for prop in self.properties.items():
-            properties_print = properties_print + prop[0] + ": " + prop[1] + "; "
+            properties_print = properties_print + str(prop[0]) + ": " + str(prop[1]) + "; "
             
         return properties_print
     
@@ -399,7 +399,7 @@ def serendipity(explanation_strategy):
                 
     serendipity_explainers = [explainer for explainer in candidates.keys() if candidates[explainer] >= properties_needed_serendipity]
     
-    if len(serendipity_explainers) <= (len(properties) - properties_needed_serendipity) and len(serendipity_explainers) != 0:
+    if len(serendipity_explainers) <= (len(properties) - properties_needed_serendipity) and len(serendipity_explainers) != 0 and len(serendipity_explainers) < (explanation_strategy.numberExplainers()/4):
         return (True, "The explainers that are a surprise are " + str(serendipity_explainers))
     else:
         return (False, "No serendipity")
