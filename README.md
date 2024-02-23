@@ -1,8 +1,8 @@
-# Evaluation Metric Library to evaluate Explanation Strategies & their use to evaluate Constructive Reuse applied on explanation strategies
+# Evaluation Metrics Library to evaluate Explanation Strategies & their use to evaluate Constructive Reuse applied on explanation strategies
 
 This repository contains the following:
 
-- explanation_strategy_evaluation_metrics.py --> the evaluation metric library to evaluate explanation strategies. This code contains the implementation of the following metrics:
+- explanation_strategy_evaluation_metrics.py --> the evaluation metrics library to evaluate explanation strategies. This code contains the implementation of the following metrics:
   - *Timeliness*. It returns the explanation strategy computational complexity, i.e., the highest computational complexity of all the explainers within the explanation strategy in a normalised format ([0,1]).
   - *Popularity*. It returns the mean popularity of all the explainers in the strategy.
   - *Completeness*. It returns a score that decides the level of the strategy uniformity in terms of explanations provided, and it returns a value between 0 (totally diverse) and 1 (totally complete).
