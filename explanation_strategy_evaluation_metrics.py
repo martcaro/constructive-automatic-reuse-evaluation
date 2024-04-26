@@ -120,7 +120,7 @@ class ExplanationStrategy:
     def numberElements(self):
         """
             It returns the number of elements that form the strategy regarding the elements involved
-            in completeness and diversity
+            in uniformity and diversity
         """
         numElements = len(self.explainers) + self.supplement + self.replacement + self.variant + self.complement
         return numElements
@@ -224,7 +224,7 @@ def getComputationalComplexityEnumValue(cc_value):
         raise Exception("The value " + cc_value + " is not a proper value for computational complexity. Please look over the following proper values: constant_time, logarithmic_time, linear_time, log_logarithmic_time, linearithmic_time, quadratic_time, polynomial_time, exponential_time, factorial_time")
     return value[0]
 
-def timeliness(explanation_strategy):
+def computational_complexity(explanation_strategy):
     """
         To execute this metric, the explanations in the explanation strategy have to have 
         computational_complexity as a property, and the possible values for this property should be among the following:
@@ -277,15 +277,15 @@ def popularity(explanation_strategy, min_popularity, max_popularity):
     return (popularity_values_mean - min_popularity)/(max_popularity - min_popularity)
 
 
-def completeness_plain(explanation_strategy):
+def uniformity_plain(explanation_strategy):
     """
-        This function is an auxiliar function to be used in diversity and completeness. 
-        It is going to retrieve the completeness value, i.e. how the score that says if the explainers 
+        This function is an auxiliar function to be used in diversity and uniformity. 
+        It is going to retrieve the uniformity value, i.e. how the score that says if the explainers 
         in an explanation strategy are equals
         0: totally diverse
-        1: totally complete
+        1: totally uniform
     """
-    compl_score_tmp = 0
+    uni_score_tmp = 0
     for explainer_property in explanation_strategy.getPropertyNames():
         my_values = Counter(explanation_strategy.getAllValueProperty(explainer_property))
         count = 0
@@ -295,8 +295,8 @@ def completeness_plain(explanation_strategy):
         mean = 1
         if denominator != 0:
             mean = count/denominator
-        compl_score_tmp = compl_score_tmp + mean
-    compl_score = compl_score_tmp/len(explanation_strategy.getPropertyNames())
+        uni_score_tmp = uni_score_tmp + mean
+    compl_score = uni_score_tmp/len(explanation_strategy.getPropertyNames())
     
     return compl_score
 
@@ -320,21 +320,21 @@ def compositeNodesScores(explanation_strategy):
     return supplement_score, replacement_score, variant_score, complement_score
 
 
-def completeness(explanation_strategy):
+def uniformity(explanation_strategy):
     """
-        Returns a score that decides the level of completeness of the strategy
-        Completeness can be enhanced if the strategy includes variant and/or supplement nodes
+        Returns a score that decides the level of uniformity of the strategy
+        Uniformity can be enhanced if the strategy includes variant and/or supplement nodes
         it can be decreased if the strategy includes replacement and/or complement nodes
         It is symmetric with diversity
-        It returns a value between 0 (totally diverse) and 1 (totally complete)
+        It returns a value between 0 (totally diverse) and 1 (totally uniform)
     """
     
     supplement_score,replacement_score,variant_score,complement_score = compositeNodesScores(explanation_strategy)
     
-    score_temp = completeness_plain(explanation_strategy)
-    completness_score_tmp = score_temp + variant_score + supplement_score - replacement_score - complement_score
+    score_temp = uniformity_plain(explanation_strategy)
+    uniformity_score_tmp = score_temp + variant_score + supplement_score - replacement_score - complement_score
         
-    return completness_score_tmp
+    return uniformity_score_tmp
 
 
 def diversity(explanation_strategy):
@@ -342,10 +342,10 @@ def diversity(explanation_strategy):
         Returns a score that decides the level of diversity of the strategy
         Diversity can be decreased if the strategy includes variant and/or supplement nodes
         it can be enhanced if the strategy includes replacement and/or complement nodes
-        It is symmetric with completeness
-        It returns a value between 0 (totally complete) and 1 (totally diverse)
+        It is symmetric with uniformity
+        It returns a value between 0 (totally uniform) and 1 (totally diverse)
     """
-    return 1 - completeness(explanation_strategy)
+    return 1 - uniformity(explanation_strategy)
 
 
 def serendipity(explanation_strategy):
